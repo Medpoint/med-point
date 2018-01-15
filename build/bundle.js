@@ -39132,11 +39132,10 @@
 	var arrayOfQuestions = [{
 	    key: 2,
 	    question: "Ваш возраст ?",
-	    video: _react2["default"].createElement(
-	        "video",
-	        { controls: true, autoPlay: true, playsInline: true, loop: true, preload: true, width: "240" },
-	        _react2["default"].createElement("source", { src: "video/test.webm", type: "video/webm" })
-	    ),
+	    // video: <video controls autoPlay playsInline loop preload width='240'>
+	    //             <source src="video/test.webm" type="video/webm"/>
+	    //        </video>,
+	    img: _react2["default"].createElement("img", { src: "images/bg/medical-bg-1.jpg", width: "240" }),
 	    answers: [{
 	        next: 3,
 	        text: "28-35",
@@ -39153,11 +39152,10 @@
 	}, {
 	    key: 3,
 	    question: "Прошли ли вы операцию ?",
-	    video: _react2["default"].createElement(
-	        "video",
-	        { autoPlay: true, playsInline: true, muted: true, loop: true, preload: true, width: "240" },
-	        _react2["default"].createElement("source", { src: "http://thenewcode.com/assets/videos/nambia3.webm" })
-	    ),
+	    // video:<video autoPlay playsInline muted loop preload width='240'>
+	    //             <source src="http://thenewcode.com/assets/videos/nambia3.webm" />
+	    //       </video>,
+	    img: _react2["default"].createElement("img", { src: "images/bg/medical-bg-2.jpg", width: "240" }),
 	    answers: [{
 	        next: 170,
 	        text: "Лампэктомия",
@@ -39175,11 +39173,10 @@
 	}, {
 	    key: 170,
 	    question: "Размер опухоли",
-	    video: _react2["default"].createElement(
-	        "video",
-	        { autoPlay: true, playsInline: true, muted: true, loop: true, preload: true, width: "240" },
-	        _react2["default"].createElement("source", { src: "http://thenewcode.com/assets/videos/fashion-export.mp4" })
-	    ),
+	    img: _react2["default"].createElement("img", { src: "images/med-block/block-2.jpg", width: "240" }),
+	    // video: <video autoPlay playsInline muted loop preload width='240'>
+	    //             <source src="http://thenewcode.com/assets/videos/fashion-export.mp4" />
+	    //        </video>,
 	    answers: [{
 	        next: 7,
 	        text: ">2 см",
@@ -39200,6 +39197,7 @@
 	}, {
 	    key: 5,
 	    question: "Наступила ли у вас менопауза ?",
+	    img: _react2["default"].createElement("img", { src: "images/bg/medical-bg-3.jpg", width: "240" }),
 	    answers: [{
 	        next: 3,
 	        text: "Да",
@@ -39212,6 +39210,7 @@
 	}, {
 	    key: 7,
 	    question: "Проходили ли вы диагностику ?",
+	    img: _react2["default"].createElement("img", { src: "images/bg/bg.jpg", width: "240" }),
 	    lotOf: [{
 	        id: 1,
 	        item: "ПэТ"
@@ -39230,6 +39229,7 @@
 	}, {
 	    key: 8,
 	    question: "Были обнаружены удаленные метастазы ?",
+	    img: _react2["default"].createElement("img", { src: "images/med-block/block-3.jpg", width: "240" }),
 	    answers: [{
 	        next: 49,
 	        text: "Да",
@@ -39242,6 +39242,7 @@
 	}, {
 	    key: 9,
 	    question: "Удалены прилегающие Лимфоузлы ?",
+	    img: _react2["default"].createElement("img", { src: "images/med-block/block-4.jpg", width: "240" }),
 	    answers: [{
 	        next: 10,
 	        text: "Да",
@@ -39254,6 +39255,7 @@
 	}, {
 	    key: 10,
 	    question: "Сколько ?",
+	    img: _react2["default"].createElement("img", { src: "images/med-block/block-5.jpg", width: "240" }),
 	    answers: [{
 	        next: 11,
 	        text: "2-3",
@@ -39270,6 +39272,7 @@
 	}, {
 	    key: 11,
 	    question: "Рецепторы ?",
+	    img: _react2["default"].createElement("img", { src: "images/med-block/block-6.jpg", width: "240" }),
 	    answers: [{
 	        next: 12,
 	        text: "Гармонозависимая",
@@ -39325,6 +39328,7 @@
 	{
 	    key: 12,
 	    question: "Установлена cтадия ?",
+	    img: _react2["default"].createElement("img", { src: "images/med-block/block-7.jpg", width: "240" }),
 	    answers: [{
 	        next: 13,
 	        text: "1",
@@ -39345,6 +39349,7 @@
 	}, {
 	    key: 13,
 	    question: "Какое лечение Вы получали",
+	    img: _react2["default"].createElement("img", { src: "images/med-block/block-8.jpg", width: "240" }),
 	    answers: [{
 	        next: 14,
 	        text: "Next", //Next
@@ -39370,6 +39375,7 @@
 	}, {
 	    key: 14,
 	    question: "Рецидив Заболевания",
+	    img: _react2["default"].createElement("img", { src: "images/med-block/block-10.jpg", width: "240" }),
 	    answers: [{
 	        next: 15, // null
 	        text: "Да",
@@ -39382,6 +39388,7 @@
 	}, {
 	    key: 15,
 	    question: "ПэТ/КТ/ после лечения ?",
+	    img: _react2["default"].createElement("img", { src: "images/med-block/block-9.jpg", width: "240" }),
 
 	    answers: [{
 	        next: 16, // null
@@ -39395,6 +39402,7 @@
 	}, {
 	    key: 16,
 	    question: "Обнаружены новые образования ?",
+	    img: _react2["default"].createElement("img", { src: "images/med-block/block-11.jpg", width: "240" }),
 	    answers: [{
 	        next: 17, // null
 	        text: "Да",
@@ -39407,6 +39415,7 @@
 	}, {
 	    key: 17,
 	    question: "Где ?",
+	    img: _react2["default"].createElement("img", { src: "images/med-block/block-12.jpg", width: "240" }),
 	    answers: [{
 	        next: null,
 	        text: "Next", // Next
@@ -39924,6 +39933,7 @@
 	                        "Если у Вас диагностирован  РМЖ Мы предлагаем пройти данный тест , для выявления возможных альтернатив в лечении и диагностики"
 	                    )
 	                ) : "",
+	                this.props.answer[this.props.answer.length - 1].ask.img,
 	                _react2["default"].createElement(
 	                    "ul",
 	                    { className: "answerFormulate" },
@@ -39950,7 +39960,6 @@
 
 	exports["default"] = (0, _reactRedux.connect)(mapStateToProps)(SmarttestsLeftSide);
 	module.exports = exports["default"];
-	/*{this.props.answer[this.props.answer.length - 1].ask.video}*/
 
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/volodymyr/Стільниця/Medical/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "SmartTestLeftSide.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
