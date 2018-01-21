@@ -27305,7 +27305,7 @@
 
 
 	// module
-	exports.push([module.id, ".test {\n  -moz-transform: skew(25deg, 10deg);\n  -o-transform: skew(25deg, 10deg);\n  -ms-transform: skew(25deg, 10deg);\n  -webkit-transform: skew(25deg, 10deg);\n  transform: skew(25deg, 10deg);\n  moz-transform-origin: top left;\n  -o-transform-origin: top left;\n  -ms-transform-origin: top left;\n  -webkit-transform-origin: top left;\n  transform-origin: top left;\n  position: absolute;\n  top: 25%;\n  bottom: 25%;\n  left: 25%;\n  right: 25%;\n  background-color: rgba(20, 20, 20, 0.5); }\n\n@font-face {\n  font-family: 'MuseoSans-Bold';\n  src: local(\"MuseoSansCyrl-900\"), url(\"https://nomail.com.ua/files/woff/73e5c73d4e80e6c080cd1bc5894cf3e8.woff\") format(\"woff\"); }\n\n@font-face {\n  font-family: 'MuseoSans-Normal';\n  src: local(\"MuseoSansCyrl-500\"), url(\"https://nomail.com.ua/files/woff/02f7d6b8e3cda79742b374cbc5595a8f.woff\") format(\"woff\"); }\n\n@font-face {\n  font-family: 'MuseoSans-Light';\n  src: local(\"MuseoSansCyrl-100\"), url(\"https://nomail.com.ua/files/woff/1913b09835e902f7123ad3ac38b4cd93.woff\") format(\"woff\"); }\n\n* {\n  box-sizing: border-box;\n  padding: 0;\n  margin: 0; }\n\nhtml, body {\n  height: 100%;\n  min-height: 100%;\n  width: 100%; }\n\na, p, span, div, li {\n  font-family: 'Roboto Mono', monospace; }\n\nh1, h2, h3, h4, h5, h6 {\n  font-family: 'Roboto Mono', monospace; }\n\n.flex-blocks {\n  height: 100%; }\n  .flex-blocks .content {\n    padding-left: 50px;\n    height: 100%; }\n    @media (max-width: 768px) {\n      .flex-blocks .content {\n        padding-left: 0px;\n        padding-top: 50px; } }\n\n.clickToOpen {\n  position: fixed;\n  height: 100%;\n  cursor: pointer;\n  background-color: white;\n  z-index: 9999 !important; }\n  @media (max-width: 768px) {\n    .clickToOpen {\n      width: 100%;\n      height: 50px; } }\n  .clickToOpen .open-side-bar {\n    background-color: #e5e5e5;\n    position: relative;\n    height: 100%;\n    width: 50px; }\n    @media (max-width: 768px) {\n      .clickToOpen .open-side-bar {\n        width: 100%;\n        height: 50px; } }\n    .clickToOpen .open-side-bar .logo {\n      position: absolute;\n      top: 30px;\n      left: 7px; }\n      @media (max-width: 768px) {\n        .clickToOpen .open-side-bar .logo {\n          position: absolute;\n          top: 7px;\n          left: 30px; } }\n    .clickToOpen .open-side-bar .text-bottom {\n      display: block;\n      position: absolute;\n      bottom: 100px;\n      left: -7px;\n      font-size: 25px;\n      -moz-transform: rotate(-90deg);\n      -o-transform: rotate(-90deg);\n      -ms-transform: rotate(-90deg);\n      -webkit-transform: rotate(-90deg);\n      transform: rotate(-90deg); }\n      @media (max-width: 768px) {\n        .clickToOpen .open-side-bar .text-bottom {\n          position: absolute;\n          bottom: 7px;\n          left: 80%;\n          -moz-transform: rotate(0deg);\n          -o-transform: rotate(0deg);\n          -ms-transform: rotate(0deg);\n          -webkit-transform: rotate(0deg);\n          transform: rotate(0deg); } }\n\n/*animation menu X*/\n.spinner-master4 * {\n  transition: all 0.3s;\n  -webkit-transition: all 0.3s;\n  box-sizing: border-box; }\n\n.spinner-master4 {\n  position: absolute;\n  margin: 0 auto;\n  height: 30px;\n  width: 30px;\n  bottom: 50px;\n  left: 8px; }\n  @media (max-width: 768px) {\n    .spinner-master4 {\n      left: 70%;\n      bottom: 0;\n      top: 7px; } }\n\n.spinner-master4 input[type=checkbox] {\n  display: none; }\n\n.spinner-master4 label {\n  cursor: pointer;\n  position: absolute;\n  z-index: 99;\n  height: 100%;\n  width: 100%;\n  top: 10px;\n  left: 0; }\n\n.spinner-master4 .spinner4 {\n  position: absolute;\n  height: 2px;\n  width: 100%;\n  background-color: #333;\n  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1); }\n\n.spinner-master4 .diagonal.part-1 {\n  position: relative;\n  float: left; }\n\n.spinner-master4 .horizontal {\n  position: relative;\n  float: left;\n  margin-top: 6px; }\n\n.spinner-master4 .diagonal.part-2 {\n  position: relative;\n  float: left;\n  margin-top: 6px; }\n\n.spinner-master4 input[type=checkbox]:checked ~ .spinner-spin4 > .horizontal {\n  transform: translate(-100px, 0px);\n  opacity: 0; }\n\n.spinner-master4 input[type=checkbox]:checked ~ .spinner-spin4 > .diagonal.part-1 {\n  transform: rotate(-135deg);\n  margin-top: 10px; }\n\n.spinner-master4 input[type=checkbox]:checked ~ .spinner-spin4 > .diagonal.part-2 {\n  transform: rotate(135deg);\n  -webkit-transform: rotate(135deg);\n  margin-top: -10px; }\n", ""]);
+	exports.push([module.id, ".test {\n  -moz-transform: skew(25deg, 10deg);\n  -o-transform: skew(25deg, 10deg);\n  -ms-transform: skew(25deg, 10deg);\n  -webkit-transform: skew(25deg, 10deg);\n  transform: skew(25deg, 10deg);\n  moz-transform-origin: top left;\n  -o-transform-origin: top left;\n  -ms-transform-origin: top left;\n  -webkit-transform-origin: top left;\n  transform-origin: top left;\n  position: absolute;\n  top: 25%;\n  bottom: 25%;\n  left: 25%;\n  right: 25%;\n  background-color: rgba(20, 20, 20, 0.5); }\n\n@font-face {\n  font-family: 'MuseoSans-Bold';\n  src: local(\"MuseoSansCyrl-900\"), url(\"https://nomail.com.ua/files/woff/73e5c73d4e80e6c080cd1bc5894cf3e8.woff\") format(\"woff\"); }\n\n@font-face {\n  font-family: 'MuseoSans-Normal';\n  src: local(\"MuseoSansCyrl-500\"), url(\"https://nomail.com.ua/files/woff/02f7d6b8e3cda79742b374cbc5595a8f.woff\") format(\"woff\"); }\n\n@font-face {\n  font-family: 'MuseoSans-Light';\n  src: local(\"MuseoSansCyrl-100\"), url(\"https://nomail.com.ua/files/woff/1913b09835e902f7123ad3ac38b4cd93.woff\") format(\"woff\"); }\n\n* {\n  box-sizing: border-box;\n  padding: 0;\n  margin: 0; }\n\nhtml, body {\n  height: 100%;\n  min-height: 100%;\n  width: 100%; }\n\na, p, span, div, li {\n  font-family: 'Roboto Mono', monospace; }\n\nh1, h2, h3, h4, h5, h6 {\n  font-family: 'Roboto Mono', monospace; }\n\n.flex-blocks {\n  height: 100%; }\n  .flex-blocks .content {\n    padding-left: 50px;\n    height: 100%; }\n    @media (max-width: 768px) {\n      .flex-blocks .content {\n        padding-left: 0px;\n        padding-top: 50px; } }\n\n.clickToOpen {\n  position: fixed;\n  height: 100%;\n  cursor: pointer;\n  background-color: #e5e5e5;\n  z-index: 9999 !important; }\n  @media (max-width: 768px) {\n    .clickToOpen {\n      width: 100%;\n      height: 50px; } }\n  .clickToOpen .open-side-bar {\n    background-color: #e5e5e5;\n    position: relative;\n    height: 100%;\n    width: 50px; }\n    @media (max-width: 768px) {\n      .clickToOpen .open-side-bar {\n        width: 100%;\n        height: 50px; } }\n    .clickToOpen .open-side-bar .logo {\n      position: absolute;\n      top: 30px;\n      left: 7px; }\n      @media (max-width: 768px) {\n        .clickToOpen .open-side-bar .logo {\n          position: absolute;\n          top: 7px;\n          left: 30px; } }\n    .clickToOpen .open-side-bar .text-bottom {\n      display: block;\n      position: absolute;\n      bottom: 100px;\n      left: -7px;\n      font-size: 25px;\n      -moz-transform: rotate(-90deg);\n      -o-transform: rotate(-90deg);\n      -ms-transform: rotate(-90deg);\n      -webkit-transform: rotate(-90deg);\n      transform: rotate(-90deg); }\n      @media (max-width: 768px) {\n        .clickToOpen .open-side-bar .text-bottom {\n          position: absolute;\n          bottom: 7px;\n          left: 80%;\n          -moz-transform: rotate(0deg);\n          -o-transform: rotate(0deg);\n          -ms-transform: rotate(0deg);\n          -webkit-transform: rotate(0deg);\n          transform: rotate(0deg); } }\n\n/*animation menu X*/\n.spinner-master4 * {\n  transition: all 0.3s;\n  -webkit-transition: all 0.3s;\n  box-sizing: border-box; }\n\n.spinner-master4 {\n  position: absolute;\n  margin: 0 auto;\n  height: 30px;\n  width: 30px;\n  bottom: 50px;\n  left: 8px; }\n  @media (max-width: 768px) {\n    .spinner-master4 {\n      left: 70%;\n      bottom: 0;\n      top: 7px; } }\n\n.spinner-master4 input[type=checkbox] {\n  display: none; }\n\n.spinner-master4 label {\n  cursor: pointer;\n  position: absolute;\n  z-index: 99;\n  height: 100%;\n  width: 100%;\n  top: 10px;\n  left: 0; }\n\n.spinner-master4 .spinner4 {\n  position: absolute;\n  height: 2px;\n  width: 100%;\n  background-color: #333;\n  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1); }\n\n.spinner-master4 .diagonal.part-1 {\n  position: relative;\n  float: left; }\n\n.spinner-master4 .horizontal {\n  position: relative;\n  float: left;\n  margin-top: 6px; }\n\n.spinner-master4 .diagonal.part-2 {\n  position: relative;\n  float: left;\n  margin-top: 6px; }\n\n.spinner-master4 input[type=checkbox]:checked ~ .spinner-spin4 > .horizontal {\n  transform: translate(-100px, 0px);\n  opacity: 0; }\n\n.spinner-master4 input[type=checkbox]:checked ~ .spinner-spin4 > .diagonal.part-1 {\n  transform: rotate(-135deg);\n  margin-top: 10px; }\n\n.spinner-master4 input[type=checkbox]:checked ~ .spinner-spin4 > .diagonal.part-2 {\n  transform: rotate(135deg);\n  -webkit-transform: rotate(135deg);\n  margin-top: -10px; }\n", ""]);
 
 	// exports
 
@@ -36577,6 +36577,14 @@
 
 	var _materialUiFlatButton2 = _interopRequireDefault(_materialUiFlatButton);
 
+	var mquery = true;
+
+	if (window.matchMedia('(max-width: 768px)').matches) {
+	    mquery = true;
+	} else {
+	    mquery = false;
+	}
+
 	var Smarttests = (function (_React$Component) {
 	    _inherits(Smarttests, _React$Component);
 
@@ -36591,7 +36599,8 @@
 	            checkboxes: [],
 	            finished: false,
 	            stepIndex: 0,
-	            date: new Date().toString().slice(0, 15)
+	            date: new Date().toString().slice(0, 15),
+	            mq: true
 	        };
 	    }
 
@@ -36618,7 +36627,7 @@
 	            });
 
 	            this.setState({
-	                PositionStyle: this.state.PositionStyle - 80
+	                PositionStyle: this.state.PositionStyle - 103
 	            });
 
 	            var formAnswer = answerCurrent.answerForView;
@@ -36723,7 +36732,7 @@
 
 	            var stepIndex = this.state.stepIndex;
 
-	            this.setState({ PositionStyle: this.state.PositionStyle + 80 });
+	            this.setState({ PositionStyle: this.state.PositionStyle + 103 });
 	            if (stepIndex > 0) {
 	                this.setState({ stepIndex: stepIndex - 1 });
 	            }
@@ -36750,15 +36759,9 @@
 	                            { className: 'logic-block' },
 	                            _react2['default'].createElement(
 	                                'div',
-	                                { style: {
-	                                        transform: 'rotate(90deg)',
-	                                        width: 500,
-	                                        height: 500,
-	                                        margin: 'auto',
-	                                        position: 'absolute',
-	                                        right: this.state.PositionStyle + 'px',
-	                                        top: '50px',
-	                                        transition: 'all 1s' } },
+	                                {
+	                                    className: 'logic-container',
+	                                    style: mquery ? { top: this.state.PositionStyle + 'px' } : { right: this.state.PositionStyle + 'px' } },
 	                                _react2['default'].createElement(
 	                                    _materialUiStepper.Stepper,
 	                                    { activeStep: stepIndex, orientation: 'vertical' },
@@ -36766,13 +36769,13 @@
 	                                        return _react2['default'].createElement(
 	                                            _materialUiStepper.Step,
 	                                            { key: index },
-	                                            _react2['default'].createElement(_materialUiStepper.StepLabel, { iconContainerStyle: { transform: 'scale(1.5) rotate(-90deg)', padding: '0' }, className: 'step-label' }),
+	                                            _react2['default'].createElement(_materialUiStepper.StepLabel, { iconContainerStyle: mquery ? { transform: 'scale(1.5) rotate(0deg)', padding: '0' } : { transform: 'scale(1.5) rotate(-90deg)', padding: '0' }, className: 'step-label' }),
 	                                            _react2['default'].createElement(
 	                                                _materialUiStepper.StepContent,
-	                                                { style: { paddingTop: '20px' } },
+	                                                { style: { padding: '20px' } },
 	                                                _react2['default'].createElement(
 	                                                    'div',
-	                                                    { style: { transform: 'rotate(-90deg)', padding: '50px' } },
+	                                                    { className: 'SteperContent' },
 	                                                    _react2['default'].createElement(
 	                                                        'h2',
 	                                                        { className: 'askQuestion' },
@@ -36795,7 +36798,7 @@
 	                                                                        font: '14px',
 	                                                                        fontWeight: '400',
 	                                                                        fontFamily: 'Lato',
-	                                                                        marginBottom: '20px'
+	                                                                        marginBottom: '10px'
 	                                                                    }
 	                                                                })
 	                                                            );
@@ -36872,7 +36875,7 @@
 	                                    _react2['default'].createElement(
 	                                        _materialUiStepper.Step,
 	                                        null,
-	                                        _react2['default'].createElement(_materialUiStepper.StepLabel, { iconContainerStyle: { transform: 'scale(1.5) rotate(-90deg)', padding: '0' } })
+	                                        _react2['default'].createElement(_materialUiStepper.StepLabel, { iconContainerStyle: mquery ? { transform: 'scale(1.5) rotate(0deg)', padding: '0' } : { transform: 'scale(1.5) rotate(-90deg)', padding: '0' } })
 	                                    )
 	                                )
 	                            )
@@ -39156,7 +39159,7 @@
 
 
 	// module
-	exports.push([module.id, ".test {\n  -moz-transform: skew(25deg, 10deg);\n  -o-transform: skew(25deg, 10deg);\n  -ms-transform: skew(25deg, 10deg);\n  -webkit-transform: skew(25deg, 10deg);\n  transform: skew(25deg, 10deg);\n  moz-transform-origin: top left;\n  -o-transform-origin: top left;\n  -ms-transform-origin: top left;\n  -webkit-transform-origin: top left;\n  transform-origin: top left;\n  position: absolute;\n  top: 25%;\n  bottom: 25%;\n  left: 25%;\n  right: 25%;\n  background-color: rgba(20, 20, 20, 0.5); }\n\n* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0; }\n\n.smartest-wrapper {\n  height: 100%; }\n  .smartest-wrapper .smarttests {\n    display: -webkit-box;\n    display: -webkit-flex;\n    display: -moz-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: justify;\n    -ms-flex-pack: justify;\n    -webkit-justify-content: space-between;\n    -moz-justify-content: space-between;\n    justify-content: space-between;\n    height: 100%; }\n    .smartest-wrapper .smarttests .logic {\n      flex: 0 0 70%;\n      padding: 5%; }\n      .smartest-wrapper .smarttests .logic .logic-block {\n        height: 100%;\n        width: 100%;\n        position: relative;\n        overflow: hidden; }\n        .smartest-wrapper .smarttests .logic .logic-block .step-label svg {\n          fill: #43afb3 !important; }\n        .smartest-wrapper .smarttests .logic .logic-block .button {\n          display: flex;\n          align-items: center;\n          margin-top: 20px; }\n          .smartest-wrapper .smarttests .logic .logic-block .button .icon-what {\n            display: inline-block;\n            margin-left: 20px; }\n            .smartest-wrapper .smarttests .logic .logic-block .button .icon-what svg {\n              fill: #6d6d6d; }\n          .smartest-wrapper .smarttests .logic .logic-block .button .btn {\n            position: relative;\n            display: inline-block;\n            cursor: pointer;\n            overflow: hidden;\n            width: 190px;\n            padding: 4px;\n            text-align: center;\n            border: 1px solid #43afb3;\n            color: #43afb3;\n            border-radius: 20px; }\n            .smartest-wrapper .smarttests .logic .logic-block .button .btn:after {\n              content: \"\";\n              display: block;\n              position: absolute;\n              height: 0%;\n              left: 50%;\n              top: 50%;\n              width: 150%;\n              z-index: -1;\n              -webkit-transition: all 1s ease 0s;\n              -moz-transition: all 1s ease 0s;\n              -o-transition: all 1s ease 0s;\n              transition: all 1s ease 0s;\n              background: #43afb3;\n              -moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);\n              -ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);\n              -webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);\n              transform: translateX(-50%) translateY(-50%) rotate(-25deg); }\n            .smartest-wrapper .smarttests .logic .logic-block .button .btn:hover:after {\n              height: 480%; }\n            .smartest-wrapper .smarttests .logic .logic-block .button .btn:hover {\n              color: #ffffff; }\n        .smartest-wrapper .smarttests .logic .logic-block .button-back {\n          margin-top: 30px;\n          margin-bottom: 50px; }\n          .smartest-wrapper .smarttests .logic .logic-block .button-back .back-icon {\n            display: flex;\n            align-items: center; }\n            .smartest-wrapper .smarttests .logic .logic-block .button-back .back-icon svg {\n              margin-right: -10px; }\n    .smartest-wrapper .smarttests .askQuestion {\n      font-size: 24px;\n      font-family: 'MuseoSans-Light';\n      margin-bottom: 35px; }\n    .smartest-wrapper .smarttests .description {\n      color: #464646;\n      font-size: 16px;\n      margin-bottom: 20px; }\n\n::-webkit-scrollbar-track {\n  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);\n  border-radius: 10px;\n  background-color: #F5F5F5; }\n\n::-webkit-scrollbar {\n  width: 8px;\n  background-color: #F5F5F5; }\n\n::-webkit-scrollbar-thumb {\n  border-radius: 10px;\n  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);\n  background-color: #bdbdbd; }\n", ""]);
+	exports.push([module.id, ".test {\n  -moz-transform: skew(25deg, 10deg);\n  -o-transform: skew(25deg, 10deg);\n  -ms-transform: skew(25deg, 10deg);\n  -webkit-transform: skew(25deg, 10deg);\n  transform: skew(25deg, 10deg);\n  moz-transform-origin: top left;\n  -o-transform-origin: top left;\n  -ms-transform-origin: top left;\n  -webkit-transform-origin: top left;\n  transform-origin: top left;\n  position: absolute;\n  top: 25%;\n  bottom: 25%;\n  left: 25%;\n  right: 25%;\n  background-color: rgba(20, 20, 20, 0.5); }\n\n* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0; }\n\n.smartest-wrapper {\n  height: 100%; }\n  .smartest-wrapper .smarttests {\n    display: -webkit-box;\n    display: -webkit-flex;\n    display: -moz-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: justify;\n    -ms-flex-pack: justify;\n    -webkit-justify-content: space-between;\n    -moz-justify-content: space-between;\n    justify-content: space-between;\n    height: 100%; }\n    @media (max-width: 770px) {\n      .smartest-wrapper .smarttests {\n        flex-direction: column; } }\n    .smartest-wrapper .smarttests .logic {\n      flex: 0 0 70%;\n      padding: 5%; }\n      @media (max-width: 770px) {\n        .smartest-wrapper .smarttests .logic {\n          flex: 0 0 85%;\n          margin-top: -80px; } }\n      .smartest-wrapper .smarttests .logic .logic-block {\n        height: 100%;\n        width: 100%;\n        position: relative;\n        overflow-x: hidden; }\n        @media (max-width: 770px) {\n          .smartest-wrapper .smarttests .logic .logic-block {\n            overflow-x: visible; } }\n        .smartest-wrapper .smarttests .logic .logic-block .logic-container {\n          transition: all 1s;\n          width: 500px;\n          height: 500px;\n          margin: auto;\n          position: absolute;\n          transform: rotate(90deg); }\n          @media (max-width: 770px) {\n            .smartest-wrapper .smarttests .logic .logic-block .logic-container {\n              left: 0;\n              right: 0;\n              transform: rotate(0deg);\n              width: 100%;\n              height: auto; } }\n        .smartest-wrapper .smarttests .logic .logic-block .SteperContent {\n          transform: rotate(-90deg);\n          padding-left: 60px; }\n          @media (max-width: 770px) {\n            .smartest-wrapper .smarttests .logic .logic-block .SteperContent {\n              transform: rotate(0deg);\n              padding-left: 20px; } }\n        .smartest-wrapper .smarttests .logic .logic-block .step-label svg {\n          fill: #43afb3 !important; }\n        .smartest-wrapper .smarttests .logic .logic-block .button {\n          display: flex;\n          align-items: center;\n          margin-top: 20px; }\n          @media (max-width: 770px) {\n            .smartest-wrapper .smarttests .logic .logic-block .button {\n              margin-top: 10px; } }\n          .smartest-wrapper .smarttests .logic .logic-block .button .icon-what {\n            display: inline-block;\n            margin-left: 20px; }\n            .smartest-wrapper .smarttests .logic .logic-block .button .icon-what svg {\n              fill: #6d6d6d; }\n          .smartest-wrapper .smarttests .logic .logic-block .button .btn {\n            position: relative;\n            display: inline-block;\n            cursor: pointer;\n            overflow: hidden;\n            width: 190px;\n            padding: 4px;\n            text-align: center;\n            border: 1px solid #43afb3;\n            color: #43afb3;\n            border-radius: 20px; }\n            .smartest-wrapper .smarttests .logic .logic-block .button .btn:after {\n              content: \"\";\n              display: block;\n              position: absolute;\n              height: 0%;\n              left: 50%;\n              top: 50%;\n              width: 150%;\n              z-index: -1;\n              -webkit-transition: all 1s ease 0s;\n              -moz-transition: all 1s ease 0s;\n              -o-transition: all 1s ease 0s;\n              transition: all 1s ease 0s;\n              background: #43afb3;\n              -moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);\n              -ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);\n              -webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);\n              transform: translateX(-50%) translateY(-50%) rotate(-25deg); }\n            .smartest-wrapper .smarttests .logic .logic-block .button .btn:hover:after {\n              height: 480%; }\n            .smartest-wrapper .smarttests .logic .logic-block .button .btn:hover {\n              color: #ffffff; }\n        .smartest-wrapper .smarttests .logic .logic-block .button-back {\n          margin-top: 30px;\n          margin-bottom: 50px; }\n          .smartest-wrapper .smarttests .logic .logic-block .button-back .back-icon {\n            display: flex;\n            align-items: center; }\n            .smartest-wrapper .smarttests .logic .logic-block .button-back .back-icon svg {\n              margin-right: -10px; }\n    .smartest-wrapper .smarttests .askQuestion {\n      font-size: 24px;\n      font-family: 'MuseoSans-Light';\n      margin-bottom: 35px; }\n      @media (max-width: 770px) {\n        .smartest-wrapper .smarttests .askQuestion {\n          font-size: 14px;\n          margin-bottom: 15px; } }\n    .smartest-wrapper .smarttests .description {\n      color: #464646;\n      font-size: 16px;\n      margin-bottom: 20px; }\n\n::-webkit-scrollbar-track {\n  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);\n  border-radius: 10px;\n  background-color: #F5F5F5; }\n\n::-webkit-scrollbar {\n  width: 8px;\n  background-color: #F5F5F5; }\n\n::-webkit-scrollbar-thumb {\n  border-radius: 10px;\n  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);\n  background-color: #bdbdbd; }\n", ""]);
 
 	// exports
 
@@ -39911,41 +39914,45 @@
 	                _react2["default"].createElement(_SmartUserInfoJsx2["default"], null),
 	                _react2["default"].createElement(
 	                    "div",
-	                    { className: "line-bottom" },
+	                    { className: "hide-block-for-mobile" },
 	                    _react2["default"].createElement(
-	                        "i",
-	                        { className: "icon-for-line" },
+	                        "div",
+	                        { className: "line-bottom" },
 	                        _react2["default"].createElement(
-	                            "svg",
-	                            { width: "18", height: "21", viewBox: "0 0 18 21" },
+	                            "i",
+	                            { className: "icon-for-line" },
 	                            _react2["default"].createElement(
-	                                "defs",
-	                                null,
-	                                _react2["default"].createElement("path", { id: "60h9a", d: "M666.86 220.42a1.1 1.1 0 0 1-.98.58h-11.23c-.9 0-1.65-.76-1.65-1.69v-9.57c0-.68.4-1.27.97-1.54v-4c0-.67.52-1.2 1.16-1.2H665c.65 0 1.17.53 1.17 1.2v14.01l.7 1.06.02.03c.17.35.17.77-.02 1.12zm-11.6-12.37h3.6c.66 0 1 .59 1.16.83l.01.03 4.83 7.34v-11.93h-9.6zm10.3 11.63l-.58-.9-6.06-9.18-.01-.03-.13-.2h-4.13c-.2 0-.36.17-.36.37v9.57c0 .2.17.37.36.37zm-5.85-5.27c0 .37-.29.67-.64.67h-.85v.86c0 .36-.29.66-.64.66a.65.65 0 0 1-.65-.66v-.86h-.85a.65.65 0 0 1-.64-.67c0-.36.29-.66.64-.66h.85v-.86c0-.37.29-.66.65-.66.35 0 .64.3.64.66v.86h.85c.35 0 .64.3.64.66zm4.29-8.28c0 .37-.3.66-.65.66h-6.56a.65.65 0 0 1-.65-.66c0-.37.3-.66.65-.66h6.56c.36 0 .65.3.65.66zm0 2.6c0 .37-.3.67-.65.67h-1.91a.65.65 0 0 1-.65-.67c0-.36.3-.66.65-.66h1.91c.36 0 .65.3.65.66z" })
-	                            ),
-	                            _react2["default"].createElement(
-	                                "g",
-	                                null,
+	                                "svg",
+	                                { width: "18", height: "21", viewBox: "0 0 18 21" },
+	                                _react2["default"].createElement(
+	                                    "defs",
+	                                    null,
+	                                    _react2["default"].createElement("path", { id: "60h9a", d: "M666.86 220.42a1.1 1.1 0 0 1-.98.58h-11.23c-.9 0-1.65-.76-1.65-1.69v-9.57c0-.68.4-1.27.97-1.54v-4c0-.67.52-1.2 1.16-1.2H665c.65 0 1.17.53 1.17 1.2v14.01l.7 1.06.02.03c.17.35.17.77-.02 1.12zm-11.6-12.37h3.6c.66 0 1 .59 1.16.83l.01.03 4.83 7.34v-11.93h-9.6zm10.3 11.63l-.58-.9-6.06-9.18-.01-.03-.13-.2h-4.13c-.2 0-.36.17-.36.37v9.57c0 .2.17.37.36.37zm-5.85-5.27c0 .37-.29.67-.64.67h-.85v.86c0 .36-.29.66-.64.66a.65.65 0 0 1-.65-.66v-.86h-.85a.65.65 0 0 1-.64-.67c0-.36.29-.66.64-.66h.85v-.86c0-.37.29-.66.65-.66.35 0 .64.3.64.66v.86h.85c.35 0 .64.3.64.66zm4.29-8.28c0 .37-.3.66-.65.66h-6.56a.65.65 0 0 1-.65-.66c0-.37.3-.66.65-.66h6.56c.36 0 .65.3.65.66zm0 2.6c0 .37-.3.67-.65.67h-1.91a.65.65 0 0 1-.65-.67c0-.36.3-.66.65-.66h1.91c.36 0 .65.3.65.66z" })
+	                                ),
 	                                _react2["default"].createElement(
 	                                    "g",
-	                                    { transform: "translate(-651 -201)" },
-	                                    _react2["default"].createElement("use", { href: "#60h9a" }),
-	                                    _react2["default"].createElement("use", { href: "#60h9a" })
+	                                    null,
+	                                    _react2["default"].createElement(
+	                                        "g",
+	                                        { transform: "translate(-651 -201)" },
+	                                        _react2["default"].createElement("use", { href: "#60h9a" }),
+	                                        _react2["default"].createElement("use", { href: "#60h9a" })
+	                                    )
 	                                )
 	                            )
 	                        )
+	                    ),
+	                    _react2["default"].createElement(
+	                        "ul",
+	                        { className: "answerFormulate" },
+	                        this.props.answer.map(function (item, index) {
+	                            return _react2["default"].createElement(
+	                                "li",
+	                                { key: index + 400 },
+	                                item.answerForView
+	                            );
+	                        })
 	                    )
-	                ),
-	                _react2["default"].createElement(
-	                    "ul",
-	                    { className: "answerFormulate" },
-	                    this.props.answer.map(function (item, index) {
-	                        return _react2["default"].createElement(
-	                            "li",
-	                            { key: index + 400 },
-	                            item.answerForView
-	                        );
-	                    })
 	                )
 	            );
 	        }
@@ -40001,7 +40008,7 @@
 
 
 	// module
-	exports.push([module.id, ".test {\n  -moz-transform: skew(25deg, 10deg);\n  -o-transform: skew(25deg, 10deg);\n  -ms-transform: skew(25deg, 10deg);\n  -webkit-transform: skew(25deg, 10deg);\n  transform: skew(25deg, 10deg);\n  moz-transform-origin: top left;\n  -o-transform-origin: top left;\n  -ms-transform-origin: top left;\n  -webkit-transform-origin: top left;\n  transform-origin: top left;\n  position: absolute;\n  top: 25%;\n  bottom: 25%;\n  left: 25%;\n  right: 25%;\n  background-color: rgba(20, 20, 20, 0.5); }\n\n.left-part-of-screen {\n  flex: 0 0 30%;\n  background-color: #e5e5e5;\n  height: 100%;\n  -webkit-box-flex: 0;\n  -webkit-flex-grow: 0;\n  -moz-flex-grow: 0;\n  -ms-flex-positive: 0;\n  flex-grow: 0;\n  -webkit-flex-basis: 300px;\n  -moz-flex-basis: 300px;\n  -ms-flex-preferred-size: 300px;\n  flex-basis: 300px;\n  padding: 30px;\n  text-align: left; }\n  .left-part-of-screen .line-bottom, .left-part-of-screen .line-top {\n    position: relative;\n    width: 100%;\n    height: 1px;\n    background-color: #aeaeae;\n    margin-bottom: 32px; }\n    .left-part-of-screen .line-bottom .icon-for-line, .left-part-of-screen .line-top .icon-for-line {\n      background-color: #e5e5e5;\n      position: absolute;\n      top: -11px;\n      left: calc(50% - 14px);\n      padding: 0 4px; }\n      .left-part-of-screen .line-bottom .icon-for-line svg, .left-part-of-screen .line-top .icon-for-line svg {\n        fill: #aeaeae; }\n  @media (max-width: 600px) {\n    .left-part-of-screen {\n      display: none; } }\n  .left-part-of-screen h2 {\n    font-family: 'MuseoSans-Light';\n    margin-bottom: 10px; }\n  .left-part-of-screen p {\n    font-family: 'MuseoSans-Light'; }\n  .left-part-of-screen .answerFormulate {\n    border-radius: 5px;\n    padding: 20px;\n    padding-left: 30px;\n    margin-top: 50px;\n    color: black;\n    font-size: 14px;\n    list-style: none; }\n    .left-part-of-screen .answerFormulate li {\n      margin-bottom: 5px; }\n      .left-part-of-screen .answerFormulate li:nth-child(+n+3) {\n        list-style-image: url(" + __webpack_require__(444) + "); }\n", ""]);
+	exports.push([module.id, ".test {\n  -moz-transform: skew(25deg, 10deg);\n  -o-transform: skew(25deg, 10deg);\n  -ms-transform: skew(25deg, 10deg);\n  -webkit-transform: skew(25deg, 10deg);\n  transform: skew(25deg, 10deg);\n  moz-transform-origin: top left;\n  -o-transform-origin: top left;\n  -ms-transform-origin: top left;\n  -webkit-transform-origin: top left;\n  transform-origin: top left;\n  position: absolute;\n  top: 25%;\n  bottom: 25%;\n  left: 25%;\n  right: 25%;\n  background-color: rgba(20, 20, 20, 0.5); }\n\n.left-part-of-screen {\n  flex: 0 0 30%;\n  background-color: #e5e5e5;\n  height: 100%;\n  z-index: 10;\n  padding: 30px;\n  text-align: left; }\n  @media (max-width: 770px) {\n    .left-part-of-screen {\n      flex: 0 0 15%;\n      padding: 15px;\n      padding-bottom: 0; } }\n  .left-part-of-screen .line-bottom, .left-part-of-screen .line-top {\n    position: relative;\n    width: 100%;\n    height: 1px;\n    background-color: #aeaeae;\n    margin-bottom: 32px; }\n    .left-part-of-screen .line-bottom .icon-for-line, .left-part-of-screen .line-top .icon-for-line {\n      background-color: #e5e5e5;\n      position: absolute;\n      top: -11px;\n      left: calc(50% - 14px);\n      padding: 0 4px; }\n      .left-part-of-screen .line-bottom .icon-for-line svg, .left-part-of-screen .line-top .icon-for-line svg {\n        fill: #aeaeae; }\n  @media (max-width: 770px) {\n    .left-part-of-screen .hide-block-for-mobile {\n      display: none; } }\n  .left-part-of-screen h2 {\n    font-family: 'MuseoSans-Light';\n    margin-bottom: 10px; }\n  .left-part-of-screen p {\n    font-family: 'MuseoSans-Light'; }\n  .left-part-of-screen .answerFormulate {\n    border-radius: 5px;\n    padding: 20px;\n    padding-left: 30px;\n    margin-top: 50px;\n    color: black;\n    font-size: 14px;\n    list-style: none; }\n    .left-part-of-screen .answerFormulate li {\n      margin-bottom: 5px; }\n      .left-part-of-screen .answerFormulate li:nth-child(+n+3) {\n        list-style-image: url(" + __webpack_require__(444) + "); }\n", ""]);
 
 	// exports
 
