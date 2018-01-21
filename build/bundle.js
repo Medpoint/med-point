@@ -70,37 +70,37 @@
 
 	var _componentsCategorySmarttestSmarttestsJsx2 = _interopRequireDefault(_componentsCategorySmarttestSmarttestsJsx);
 
-	var _componentsCategorySmarttestSmartTestResultJsx = __webpack_require__(500);
+	var _componentsCategorySmarttestSmartTestResultJsx = __webpack_require__(504);
 
 	var _componentsCategorySmarttestSmartTestResultJsx2 = _interopRequireDefault(_componentsCategorySmarttestSmartTestResultJsx);
 
-	var _componentsCategorySmarttestAuthFormAuthFormJsx = __webpack_require__(504);
+	var _componentsCategorySmarttestAuthFormAuthFormJsx = __webpack_require__(508);
 
 	var _componentsCategorySmarttestAuthFormAuthFormJsx2 = _interopRequireDefault(_componentsCategorySmarttestAuthFormAuthFormJsx);
 
 	// For presentation
 
-	var _componentsCategoryDesignForDeleteSmarttest2Jsx = __webpack_require__(507);
+	var _componentsCategoryDesignForDeleteSmarttest2Jsx = __webpack_require__(511);
 
 	var _componentsCategoryDesignForDeleteSmarttest2Jsx2 = _interopRequireDefault(_componentsCategoryDesignForDeleteSmarttest2Jsx);
 
-	var _componentsCategoryDesignForDeleteSmarttest3Jsx = __webpack_require__(511);
+	var _componentsCategoryDesignForDeleteSmarttest3Jsx = __webpack_require__(515);
 
 	var _componentsCategoryDesignForDeleteSmarttest3Jsx2 = _interopRequireDefault(_componentsCategoryDesignForDeleteSmarttest3Jsx);
 
-	var _componentsCategoryDesignForDeleteSmarttest4Jsx = __webpack_require__(514);
+	var _componentsCategoryDesignForDeleteSmarttest4Jsx = __webpack_require__(518);
 
 	var _componentsCategoryDesignForDeleteSmarttest4Jsx2 = _interopRequireDefault(_componentsCategoryDesignForDeleteSmarttest4Jsx);
 
-	var _componentsCategorySocialJsx = __webpack_require__(517);
+	var _componentsCategorySocialJsx = __webpack_require__(521);
 
 	var _componentsCategorySocialJsx2 = _interopRequireDefault(_componentsCategorySocialJsx);
 
-	var _componentsCategoryContactsJsx = __webpack_require__(524);
+	var _componentsCategoryContactsJsx = __webpack_require__(528);
 
 	var _componentsCategoryContactsJsx2 = _interopRequireDefault(_componentsCategoryContactsJsx);
 
-	var _reducers = __webpack_require__(527);
+	var _reducers = __webpack_require__(531);
 
 	var _reducers2 = _interopRequireDefault(_reducers);
 
@@ -110,11 +110,11 @@
 
 	var _redux2 = _interopRequireDefault(_redux);
 
-	var _reduxThunk = __webpack_require__(534);
+	var _reduxThunk = __webpack_require__(538);
 
 	var _reduxThunk2 = _interopRequireDefault(_reduxThunk);
 
-	var _reduxDevtoolsExtension = __webpack_require__(535);
+	var _reduxDevtoolsExtension = __webpack_require__(539);
 
 	// import { syncHistoryWithStore } from "react-router-redux";
 	// window.store = .......
@@ -27305,7 +27305,7 @@
 
 
 	// module
-	exports.push([module.id, ".test {\n  -moz-transform: skew(25deg, 10deg);\n  -o-transform: skew(25deg, 10deg);\n  -ms-transform: skew(25deg, 10deg);\n  -webkit-transform: skew(25deg, 10deg);\n  transform: skew(25deg, 10deg);\n  moz-transform-origin: top left;\n  -o-transform-origin: top left;\n  -ms-transform-origin: top left;\n  -webkit-transform-origin: top left;\n  transform-origin: top left;\n  position: absolute;\n  top: 25%;\n  bottom: 25%;\n  left: 25%;\n  right: 25%;\n  background-color: rgba(20, 20, 20, 0.5); }\n\n@font-face {\n  font-family: 'MuseoSans-Bold';\n  src: local(\"MuseoSansCyrl-900\"), url(\"https://nomail.com.ua/files/woff/73e5c73d4e80e6c080cd1bc5894cf3e8.woff\") format(\"woff\"); }\n\n@font-face {\n  font-family: 'MuseoSans-Normal';\n  src: local(\"MuseoSansCyrl-500\"), url(\"https://nomail.com.ua/files/woff/02f7d6b8e3cda79742b374cbc5595a8f.woff\") format(\"woff\"); }\n\n@font-face {\n  font-family: 'MuseoSans-Light';\n  src: local(\"MuseoSansCyrl-100\"), url(\"https://nomail.com.ua/files/woff/1913b09835e902f7123ad3ac38b4cd93.woff\") format(\"woff\"); }\n\n* {\n  box-sizing: border-box;\n  padding: 0;\n  margin: 0; }\n\nhtml, body {\n  height: 100%;\n  min-height: 100%;\n  width: 100%; }\n\na, p, span, div, li {\n  font-family: 'Roboto Mono', monospace; }\n\nh1, h2, h3, h4, h5, h6 {\n  font-family: 'Roboto Mono', monospace; }\n\n.flex-blocks {\n  height: 100%; }\n  .flex-blocks .content {\n    padding-left: 50px;\n    height: 100%; }\n    @media (max-width: 768px) {\n      .flex-blocks .content {\n        padding-left: 0px;\n        padding-top: 50px; } }\n\n.clickToOpen {\n  position: fixed;\n  height: 100%;\n  cursor: pointer;\n  background-color: white;\n  z-index: 9999 !important; }\n  @media (max-width: 768px) {\n    .clickToOpen {\n      width: 100%;\n      height: 50px; } }\n  .clickToOpen .open-side-bar {\n    position: relative;\n    height: 100%;\n    width: 50px; }\n    @media (max-width: 768px) {\n      .clickToOpen .open-side-bar {\n        width: 100%;\n        height: 50px; } }\n    .clickToOpen .open-side-bar .logo {\n      position: absolute;\n      top: 30px;\n      left: 7px; }\n      @media (max-width: 768px) {\n        .clickToOpen .open-side-bar .logo {\n          position: absolute;\n          top: 7px;\n          left: 30px; } }\n    .clickToOpen .open-side-bar .text-bottom {\n      display: block;\n      position: absolute;\n      bottom: 100px;\n      left: -7px;\n      font-size: 25px;\n      -moz-transform: rotate(-90deg);\n      -o-transform: rotate(-90deg);\n      -ms-transform: rotate(-90deg);\n      -webkit-transform: rotate(-90deg);\n      transform: rotate(-90deg); }\n      @media (max-width: 768px) {\n        .clickToOpen .open-side-bar .text-bottom {\n          position: absolute;\n          bottom: 7px;\n          left: 80%;\n          -moz-transform: rotate(0deg);\n          -o-transform: rotate(0deg);\n          -ms-transform: rotate(0deg);\n          -webkit-transform: rotate(0deg);\n          transform: rotate(0deg); } }\n\n/*animation menu X*/\n.spinner-master4 * {\n  transition: all 0.3s;\n  -webkit-transition: all 0.3s;\n  box-sizing: border-box; }\n\n.spinner-master4 {\n  position: absolute;\n  margin: 0 auto;\n  height: 30px;\n  width: 30px;\n  bottom: 50px;\n  left: 8px; }\n  @media (max-width: 768px) {\n    .spinner-master4 {\n      left: 70%;\n      bottom: 0;\n      top: 7px; } }\n\n.spinner-master4 input[type=checkbox] {\n  display: none; }\n\n.spinner-master4 label {\n  cursor: pointer;\n  position: absolute;\n  z-index: 99;\n  height: 100%;\n  width: 100%;\n  top: 10px;\n  left: 0; }\n\n.spinner-master4 .spinner4 {\n  position: absolute;\n  height: 2px;\n  width: 100%;\n  background-color: #333;\n  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1); }\n\n.spinner-master4 .diagonal.part-1 {\n  position: relative;\n  float: left; }\n\n.spinner-master4 .horizontal {\n  position: relative;\n  float: left;\n  margin-top: 6px; }\n\n.spinner-master4 .diagonal.part-2 {\n  position: relative;\n  float: left;\n  margin-top: 6px; }\n\n.spinner-master4 input[type=checkbox]:checked ~ .spinner-spin4 > .horizontal {\n  transform: translate(-100px, 0px);\n  opacity: 0; }\n\n.spinner-master4 input[type=checkbox]:checked ~ .spinner-spin4 > .diagonal.part-1 {\n  transform: rotate(-135deg);\n  margin-top: 10px; }\n\n.spinner-master4 input[type=checkbox]:checked ~ .spinner-spin4 > .diagonal.part-2 {\n  transform: rotate(135deg);\n  -webkit-transform: rotate(135deg);\n  margin-top: -10px; }\n", ""]);
+	exports.push([module.id, ".test {\n  -moz-transform: skew(25deg, 10deg);\n  -o-transform: skew(25deg, 10deg);\n  -ms-transform: skew(25deg, 10deg);\n  -webkit-transform: skew(25deg, 10deg);\n  transform: skew(25deg, 10deg);\n  moz-transform-origin: top left;\n  -o-transform-origin: top left;\n  -ms-transform-origin: top left;\n  -webkit-transform-origin: top left;\n  transform-origin: top left;\n  position: absolute;\n  top: 25%;\n  bottom: 25%;\n  left: 25%;\n  right: 25%;\n  background-color: rgba(20, 20, 20, 0.5); }\n\n@font-face {\n  font-family: 'MuseoSans-Bold';\n  src: local(\"MuseoSansCyrl-900\"), url(\"https://nomail.com.ua/files/woff/73e5c73d4e80e6c080cd1bc5894cf3e8.woff\") format(\"woff\"); }\n\n@font-face {\n  font-family: 'MuseoSans-Normal';\n  src: local(\"MuseoSansCyrl-500\"), url(\"https://nomail.com.ua/files/woff/02f7d6b8e3cda79742b374cbc5595a8f.woff\") format(\"woff\"); }\n\n@font-face {\n  font-family: 'MuseoSans-Light';\n  src: local(\"MuseoSansCyrl-100\"), url(\"https://nomail.com.ua/files/woff/1913b09835e902f7123ad3ac38b4cd93.woff\") format(\"woff\"); }\n\n* {\n  box-sizing: border-box;\n  padding: 0;\n  margin: 0; }\n\nhtml, body {\n  height: 100%;\n  min-height: 100%;\n  width: 100%; }\n\na, p, span, div, li {\n  font-family: 'Roboto Mono', monospace; }\n\nh1, h2, h3, h4, h5, h6 {\n  font-family: 'Roboto Mono', monospace; }\n\n.flex-blocks {\n  height: 100%; }\n  .flex-blocks .content {\n    padding-left: 50px;\n    height: 100%; }\n    @media (max-width: 768px) {\n      .flex-blocks .content {\n        padding-left: 0px;\n        padding-top: 50px; } }\n\n.clickToOpen {\n  position: fixed;\n  height: 100%;\n  cursor: pointer;\n  background-color: white;\n  z-index: 9999 !important; }\n  @media (max-width: 768px) {\n    .clickToOpen {\n      width: 100%;\n      height: 50px; } }\n  .clickToOpen .open-side-bar {\n    background-color: #e5e5e5;\n    position: relative;\n    height: 100%;\n    width: 50px; }\n    @media (max-width: 768px) {\n      .clickToOpen .open-side-bar {\n        width: 100%;\n        height: 50px; } }\n    .clickToOpen .open-side-bar .logo {\n      position: absolute;\n      top: 30px;\n      left: 7px; }\n      @media (max-width: 768px) {\n        .clickToOpen .open-side-bar .logo {\n          position: absolute;\n          top: 7px;\n          left: 30px; } }\n    .clickToOpen .open-side-bar .text-bottom {\n      display: block;\n      position: absolute;\n      bottom: 100px;\n      left: -7px;\n      font-size: 25px;\n      -moz-transform: rotate(-90deg);\n      -o-transform: rotate(-90deg);\n      -ms-transform: rotate(-90deg);\n      -webkit-transform: rotate(-90deg);\n      transform: rotate(-90deg); }\n      @media (max-width: 768px) {\n        .clickToOpen .open-side-bar .text-bottom {\n          position: absolute;\n          bottom: 7px;\n          left: 80%;\n          -moz-transform: rotate(0deg);\n          -o-transform: rotate(0deg);\n          -ms-transform: rotate(0deg);\n          -webkit-transform: rotate(0deg);\n          transform: rotate(0deg); } }\n\n/*animation menu X*/\n.spinner-master4 * {\n  transition: all 0.3s;\n  -webkit-transition: all 0.3s;\n  box-sizing: border-box; }\n\n.spinner-master4 {\n  position: absolute;\n  margin: 0 auto;\n  height: 30px;\n  width: 30px;\n  bottom: 50px;\n  left: 8px; }\n  @media (max-width: 768px) {\n    .spinner-master4 {\n      left: 70%;\n      bottom: 0;\n      top: 7px; } }\n\n.spinner-master4 input[type=checkbox] {\n  display: none; }\n\n.spinner-master4 label {\n  cursor: pointer;\n  position: absolute;\n  z-index: 99;\n  height: 100%;\n  width: 100%;\n  top: 10px;\n  left: 0; }\n\n.spinner-master4 .spinner4 {\n  position: absolute;\n  height: 2px;\n  width: 100%;\n  background-color: #333;\n  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1); }\n\n.spinner-master4 .diagonal.part-1 {\n  position: relative;\n  float: left; }\n\n.spinner-master4 .horizontal {\n  position: relative;\n  float: left;\n  margin-top: 6px; }\n\n.spinner-master4 .diagonal.part-2 {\n  position: relative;\n  float: left;\n  margin-top: 6px; }\n\n.spinner-master4 input[type=checkbox]:checked ~ .spinner-spin4 > .horizontal {\n  transform: translate(-100px, 0px);\n  opacity: 0; }\n\n.spinner-master4 input[type=checkbox]:checked ~ .spinner-spin4 > .diagonal.part-1 {\n  transform: rotate(-135deg);\n  margin-top: 10px; }\n\n.spinner-master4 input[type=checkbox]:checked ~ .spinner-spin4 > .diagonal.part-2 {\n  transform: rotate(135deg);\n  -webkit-transform: rotate(135deg);\n  margin-top: -10px; }\n", ""]);
 
 	// exports
 
@@ -36563,17 +36563,17 @@
 
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 
-	var _materialUiCheckbox = __webpack_require__(444);
+	var _materialUiCheckbox = __webpack_require__(448);
 
 	var _materialUiCheckbox2 = _interopRequireDefault(_materialUiCheckbox);
 
-	var _materialUiStepper = __webpack_require__(483);
+	var _materialUiStepper = __webpack_require__(487);
 
-	var _materialUiRaisedButton = __webpack_require__(495);
+	var _materialUiRaisedButton = __webpack_require__(499);
 
 	var _materialUiRaisedButton2 = _interopRequireDefault(_materialUiRaisedButton);
 
-	var _materialUiFlatButton = __webpack_require__(497);
+	var _materialUiFlatButton = __webpack_require__(501);
 
 	var _materialUiFlatButton2 = _interopRequireDefault(_materialUiFlatButton);
 
@@ -36747,85 +36747,138 @@
 	                        { className: 'logic' },
 	                        _react2['default'].createElement(
 	                            'div',
-	                            { style: {
-	                                    maxWidth: 380,
-	                                    maxHeight: 400,
-	                                    margin: 'auto',
-	                                    position: 'absolute',
-	                                    top: this.state.PositionStyle + 'px',
-	                                    transition: 'all 1s' } },
+	                            { className: 'logic-block' },
 	                            _react2['default'].createElement(
-	                                _materialUiStepper.Stepper,
-	                                { activeStep: stepIndex, orientation: 'vertical' },
-	                                this.props.answer.map(function (item, index) {
-	                                    return _react2['default'].createElement(
-	                                        _materialUiStepper.Step,
-	                                        { key: index },
-	                                        _react2['default'].createElement(
-	                                            _materialUiStepper.StepLabel,
-	                                            { iconContainerStyle: { transform: 'scale(1.3)' } },
-	                                            '  ',
-	                                            item.answerForView
-	                                        ),
-	                                        _react2['default'].createElement(
-	                                            _materialUiStepper.StepContent,
-	                                            { style: { paddingTop: '20px' } },
+	                                'div',
+	                                { style: {
+	                                        maxWidth: 500,
+	                                        maxHeight: 400,
+	                                        margin: 'auto',
+	                                        marginLeft: '10%',
+	                                        position: 'absolute',
+	                                        top: this.state.PositionStyle + 'px',
+	                                        transition: 'all 1s' } },
+	                                _react2['default'].createElement(
+	                                    _materialUiStepper.Stepper,
+	                                    { activeStep: stepIndex, orientation: 'vertical' },
+	                                    this.props.answer.map(function (item, index) {
+	                                        return _react2['default'].createElement(
+	                                            _materialUiStepper.Step,
+	                                            { key: index },
 	                                            _react2['default'].createElement(
-	                                                'h2',
-	                                                { className: 'askQuestion' },
-	                                                item.ask.question
+	                                                _materialUiStepper.StepLabel,
+	                                                { iconContainerStyle: { transform: 'scale(1.5)' }, className: 'step-label' },
+	                                                '  ',
+	                                                item.answerForView
 	                                            ),
-	                                            item.ask.lotOf ? _react2['default'].createElement(
-	                                                'div',
-	                                                null,
-	                                                item.ask.lotOf.map(function (item, index) {
+	                                            _react2['default'].createElement(
+	                                                _materialUiStepper.StepContent,
+	                                                { style: { paddingTop: '20px' } },
+	                                                _react2['default'].createElement(
+	                                                    'h2',
+	                                                    { className: 'askQuestion' },
+	                                                    item.ask.question
+	                                                ),
+	                                                _react2['default'].createElement(
+	                                                    'div',
+	                                                    { className: 'description' },
+	                                                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation'
+	                                                ),
+	                                                item.ask.lotOf ? _react2['default'].createElement(
+	                                                    'div',
+	                                                    null,
+	                                                    item.ask.lotOf.map(function (item, index) {
+	                                                        return _react2['default'].createElement(
+	                                                            'div',
+	                                                            { key: item + index },
+	                                                            _react2['default'].createElement(_materialUiCheckbox2['default'], {
+	                                                                value: index,
+	                                                                onCheck: _this4.handleCheck.bind(_this4),
+	                                                                iconStyle: { fill: '#43afb3' },
+	                                                                label: item.item,
+	                                                                labelStyle: {
+	                                                                    color: '#43afb3',
+	                                                                    font: '14px',
+	                                                                    fontWeight: '400',
+	                                                                    fontFamily: 'Lato',
+	                                                                    marginBottom: '20px'
+	                                                                }
+	                                                            })
+	                                                        );
+	                                                    })
+	                                                ) : "",
+	                                                item.ask.answers.map(function (currentAnswer, index) {
 	                                                    return _react2['default'].createElement(
 	                                                        'div',
-	                                                        { key: item + index },
-	                                                        _react2['default'].createElement(_materialUiCheckbox2['default'], {
-	                                                            value: index,
-	                                                            onCheck: _this4.handleCheck.bind(_this4),
-	                                                            iconStyle: { fill: 'rgb(0, 188, 212)' },
-	                                                            label: item.item,
-	                                                            labelStyle: {
-	                                                                color: 'rgb(0, 188, 212)',
-	                                                                font: '15px',
-	                                                                fontWeight: '400',
-	                                                                fontFamily: 'Lato'
-	                                                            }
-	                                                        })
-	                                                    );
-	                                                })
-	                                            ) : "",
-	                                            item.ask.answers.map(function (currentAnswer, index) {
-	                                                return _react2['default'].createElement(
-	                                                    'div',
-	                                                    { key: index + 500 },
-	                                                    _react2['default'].createElement(
-	                                                        'div',
-	                                                        { className: 'button' },
+	                                                        { key: index + 500 },
 	                                                        _react2['default'].createElement(
 	                                                            'div',
-	                                                            { className: 'btn', onClick: _this4.handleFindNextQuestion.bind(_this4, currentAnswer, item.ask, index) },
-	                                                            currentAnswer.text
+	                                                            { className: 'button' },
+	                                                            _react2['default'].createElement(
+	                                                                'div',
+	                                                                { className: 'btn', onClick: _this4.handleFindNextQuestion.bind(_this4, currentAnswer, item.ask, index) },
+	                                                                currentAnswer.text
+	                                                            ),
+	                                                            _react2['default'].createElement(
+	                                                                'i',
+	                                                                { className: 'icon-what' },
+	                                                                _react2['default'].createElement(
+	                                                                    'svg',
+	                                                                    { width: '16', height: '16', version: '1.1', x: '0px', y: '0px', viewBox: '0 0 1000 1000', enableBackground: 'new 0 0 1000 1000' },
+	                                                                    _react2['default'].createElement(
+	                                                                        'g',
+	                                                                        null,
+	                                                                        _react2['default'].createElement('path', { d: 'M500,10C227,10,10,227,10,500s217,490,490,490s490-217,490-490S773,10,500,10z M500,920C269,920,80,731,80,500S269,80,500,80s420,189,420,420S731,920,500,920z' }),
+	                                                                        _react2['default'].createElement('path', { d: 'M542,633h-70c0-7,0-14,0-28c0-49,21-91,63-126c49-35,70-70,70-105c0-56-28-77-84-84c-56,0-91,35-112,105l-70-21c21-105,84-154,196-154c91,7,147,56,154,140c0,56-28,105-91,147c-42,28-63,63-56,98C542,619,542,626,542,633z M549,780h-84v-84h84V780z' })
+	                                                                    )
+	                                                                )
+	                                                            )
 	                                                        )
+	                                                    );
+	                                                }),
+	                                                index > 0 && _react2['default'].createElement(
+	                                                    'div',
+	                                                    { className: 'button-back' },
+	                                                    _react2['default'].createElement(
+	                                                        'i',
+	                                                        { className: 'back-icon' },
+	                                                        _react2['default'].createElement(
+	                                                            'svg',
+	                                                            { width: '10', height: '15', viewBox: '0 0 10 15' },
+	                                                            _react2['default'].createElement(
+	                                                                'defs',
+	                                                                null,
+	                                                                _react2['default'].createElement('path', { id: '7dpia', d: 'M708.68 650l1.32 1.4-4.35 4.6 4.35 4.6-1.32 1.4-5.68-6z' })
+	                                                            ),
+	                                                            _react2['default'].createElement(
+	                                                                'g',
+	                                                                null,
+	                                                                _react2['default'].createElement(
+	                                                                    'g',
+	                                                                    { transform: 'translate(-701 -648)' },
+	                                                                    _react2['default'].createElement('use', { href: '#7dpia' }),
+	                                                                    _react2['default'].createElement('use', { fill: '#43afb3', href: '#7dpia' })
+	                                                                )
+	                                                            )
+	                                                        ),
+	                                                        _react2['default'].createElement(_materialUiFlatButton2['default'], {
+	                                                            label: 'Back',
+	                                                            disabled: _this4.state.stepIndex === 0,
+	                                                            disableTouchRipple: true,
+	                                                            disableFocusRipple: true,
+	                                                            onClick: _this4.handlePrev.bind(_this4, index),
+	                                                            className: 'flat-button'
+	                                                        })
 	                                                    )
-	                                                );
-	                                            }),
-	                                            index > 0 && _react2['default'].createElement(_materialUiFlatButton2['default'], {
-	                                                label: 'Back',
-	                                                disabled: _this4.state.stepIndex === 0,
-	                                                disableTouchRipple: true,
-	                                                disableFocusRipple: true,
-	                                                onClick: _this4.handlePrev.bind(_this4, index)
-	                                            })
-	                                        )
-	                                    );
-	                                }),
-	                                _react2['default'].createElement(
-	                                    _materialUiStepper.Step,
-	                                    null,
-	                                    _react2['default'].createElement(_materialUiStepper.StepLabel, null)
+	                                                )
+	                                            )
+	                                        );
+	                                    }),
+	                                    _react2['default'].createElement(
+	                                        _materialUiStepper.Step,
+	                                        null,
+	                                        _react2['default'].createElement(_materialUiStepper.StepLabel, { iconContainerStyle: { transform: 'scale(1.5)' } })
+	                                    )
 	                                )
 	                            )
 	                        )
@@ -39107,7 +39160,7 @@
 
 
 	// module
-	exports.push([module.id, ".test {\n  -moz-transform: skew(25deg, 10deg);\n  -o-transform: skew(25deg, 10deg);\n  -ms-transform: skew(25deg, 10deg);\n  -webkit-transform: skew(25deg, 10deg);\n  transform: skew(25deg, 10deg);\n  moz-transform-origin: top left;\n  -o-transform-origin: top left;\n  -ms-transform-origin: top left;\n  -webkit-transform-origin: top left;\n  transform-origin: top left;\n  position: absolute;\n  top: 25%;\n  bottom: 25%;\n  left: 25%;\n  right: 25%;\n  background-color: rgba(20, 20, 20, 0.5); }\n\n* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0; }\n\n.smarttests {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -moz-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: justify;\n  -ms-flex-pack: justify;\n  -webkit-justify-content: space-between;\n  -moz-justify-content: space-between;\n  justify-content: space-between; }\n  .smarttests .logic {\n    -webkit-box-flex: 1;\n    -webkit-flex-grow: 1;\n    -moz-flex-grow: 1;\n    -ms-flex-positive: 1;\n    flex-grow: 1; }\n    .smarttests .logic .btn {\n      position: relative;\n      cursor: pointer;\n      overflow: hidden;\n      margin-top: 10px;\n      width: 190px;\n      padding: 4px;\n      text-align: center;\n      border: 1px solid #00bcd4;\n      color: #00bcd4;\n      border-radius: 8px; }\n      .smarttests .logic .btn:after {\n        content: \"\";\n        display: block;\n        position: absolute;\n        height: 0%;\n        left: 50%;\n        top: 50%;\n        width: 150%;\n        z-index: -1;\n        -webkit-transition: all 1s ease 0s;\n        -moz-transition: all 1s ease 0s;\n        -o-transition: all 1s ease 0s;\n        transition: all 1s ease 0s;\n        background: #00bcd4;\n        -moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);\n        -ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);\n        -webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);\n        transform: translateX(-50%) translateY(-50%) rotate(-25deg); }\n      .smarttests .logic .btn:hover:after {\n        height: 480%; }\n      .smarttests .logic .btn:hover {\n        color: #ffffff; }\n  .smarttests .askQuestion {\n    font-size: 18px;\n    font-family: 'MuseoSans-Light'; }\n\n::-webkit-scrollbar-track {\n  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);\n  border-radius: 10px;\n  background-color: #F5F5F5; }\n\n::-webkit-scrollbar {\n  width: 8px;\n  background-color: #F5F5F5; }\n\n::-webkit-scrollbar-thumb {\n  border-radius: 10px;\n  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);\n  background-color: #bdbdbd; }\n", ""]);
+	exports.push([module.id, ".test {\n  -moz-transform: skew(25deg, 10deg);\n  -o-transform: skew(25deg, 10deg);\n  -ms-transform: skew(25deg, 10deg);\n  -webkit-transform: skew(25deg, 10deg);\n  transform: skew(25deg, 10deg);\n  moz-transform-origin: top left;\n  -o-transform-origin: top left;\n  -ms-transform-origin: top left;\n  -webkit-transform-origin: top left;\n  transform-origin: top left;\n  position: absolute;\n  top: 25%;\n  bottom: 25%;\n  left: 25%;\n  right: 25%;\n  background-color: rgba(20, 20, 20, 0.5); }\n\n* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0; }\n\n.smartest-wrapper {\n  height: 100%; }\n  .smartest-wrapper .smarttests {\n    display: -webkit-box;\n    display: -webkit-flex;\n    display: -moz-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: justify;\n    -ms-flex-pack: justify;\n    -webkit-justify-content: space-between;\n    -moz-justify-content: space-between;\n    justify-content: space-between;\n    height: 100%; }\n    .smartest-wrapper .smarttests .logic {\n      -webkit-box-flex: 1;\n      -webkit-flex-grow: 1;\n      -moz-flex-grow: 1;\n      -ms-flex-positive: 1;\n      flex-grow: 1; }\n      .smartest-wrapper .smarttests .logic .logic-block .step-label svg {\n        fill: #43afb3 !important; }\n      .smartest-wrapper .smarttests .logic .logic-block .button {\n        display: flex;\n        align-items: center;\n        margin-top: 20px; }\n        .smartest-wrapper .smarttests .logic .logic-block .button .icon-what {\n          display: inline-block;\n          margin-left: 20px; }\n          .smartest-wrapper .smarttests .logic .logic-block .button .icon-what svg {\n            fill: #6d6d6d; }\n        .smartest-wrapper .smarttests .logic .logic-block .button .btn {\n          position: relative;\n          display: inline-block;\n          cursor: pointer;\n          overflow: hidden;\n          width: 190px;\n          padding: 4px;\n          text-align: center;\n          border: 1px solid #43afb3;\n          color: #43afb3;\n          border-radius: 20px; }\n          .smartest-wrapper .smarttests .logic .logic-block .button .btn:after {\n            content: \"\";\n            display: block;\n            position: absolute;\n            height: 0%;\n            left: 50%;\n            top: 50%;\n            width: 150%;\n            z-index: -1;\n            -webkit-transition: all 1s ease 0s;\n            -moz-transition: all 1s ease 0s;\n            -o-transition: all 1s ease 0s;\n            transition: all 1s ease 0s;\n            background: #43afb3;\n            -moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);\n            -ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);\n            -webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);\n            transform: translateX(-50%) translateY(-50%) rotate(-25deg); }\n          .smartest-wrapper .smarttests .logic .logic-block .button .btn:hover:after {\n            height: 480%; }\n          .smartest-wrapper .smarttests .logic .logic-block .button .btn:hover {\n            color: #ffffff; }\n      .smartest-wrapper .smarttests .logic .logic-block .button-back {\n        margin-top: 30px; }\n        .smartest-wrapper .smarttests .logic .logic-block .button-back .back-icon {\n          display: flex;\n          align-items: center; }\n          .smartest-wrapper .smarttests .logic .logic-block .button-back .back-icon svg {\n            margin-right: -10px; }\n    .smartest-wrapper .smarttests .askQuestion {\n      font-size: 24px;\n      font-family: 'MuseoSans-Light';\n      margin-bottom: 35px; }\n    .smartest-wrapper .smarttests .description {\n      color: #464646;\n      font-size: 16px;\n      margin-bottom: 20px; }\n\n::-webkit-scrollbar-track {\n  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);\n  border-radius: 10px;\n  background-color: #F5F5F5; }\n\n::-webkit-scrollbar {\n  width: 8px;\n  background-color: #F5F5F5; }\n\n::-webkit-scrollbar-thumb {\n  border-radius: 10px;\n  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);\n  background-color: #bdbdbd; }\n", ""]);
 
 	// exports
 
@@ -39836,6 +39889,10 @@
 
 	__webpack_require__(442);
 
+	var _SmartUserInfoJsx = __webpack_require__(445);
+
+	var _SmartUserInfoJsx2 = _interopRequireDefault(_SmartUserInfoJsx);
+
 	var SmarttestsLeftSide = (function (_React$Component) {
 	    _inherits(SmarttestsLeftSide, _React$Component);
 
@@ -39855,6 +39912,182 @@
 	            return _react2["default"].createElement(
 	                "div",
 	                { className: "left-part-of-screen" },
+	                _react2["default"].createElement(_SmartUserInfoJsx2["default"], null),
+	                _react2["default"].createElement(
+	                    "div",
+	                    { className: "line-bottom" },
+	                    _react2["default"].createElement(
+	                        "i",
+	                        { className: "icon-for-line" },
+	                        _react2["default"].createElement(
+	                            "svg",
+	                            { width: "18", height: "21", viewBox: "0 0 18 21" },
+	                            _react2["default"].createElement(
+	                                "defs",
+	                                null,
+	                                _react2["default"].createElement("path", { id: "60h9a", d: "M666.86 220.42a1.1 1.1 0 0 1-.98.58h-11.23c-.9 0-1.65-.76-1.65-1.69v-9.57c0-.68.4-1.27.97-1.54v-4c0-.67.52-1.2 1.16-1.2H665c.65 0 1.17.53 1.17 1.2v14.01l.7 1.06.02.03c.17.35.17.77-.02 1.12zm-11.6-12.37h3.6c.66 0 1 .59 1.16.83l.01.03 4.83 7.34v-11.93h-9.6zm10.3 11.63l-.58-.9-6.06-9.18-.01-.03-.13-.2h-4.13c-.2 0-.36.17-.36.37v9.57c0 .2.17.37.36.37zm-5.85-5.27c0 .37-.29.67-.64.67h-.85v.86c0 .36-.29.66-.64.66a.65.65 0 0 1-.65-.66v-.86h-.85a.65.65 0 0 1-.64-.67c0-.36.29-.66.64-.66h.85v-.86c0-.37.29-.66.65-.66.35 0 .64.3.64.66v.86h.85c.35 0 .64.3.64.66zm4.29-8.28c0 .37-.3.66-.65.66h-6.56a.65.65 0 0 1-.65-.66c0-.37.3-.66.65-.66h6.56c.36 0 .65.3.65.66zm0 2.6c0 .37-.3.67-.65.67h-1.91a.65.65 0 0 1-.65-.67c0-.36.3-.66.65-.66h1.91c.36 0 .65.3.65.66z" })
+	                            ),
+	                            _react2["default"].createElement(
+	                                "g",
+	                                null,
+	                                _react2["default"].createElement(
+	                                    "g",
+	                                    { transform: "translate(-651 -201)" },
+	                                    _react2["default"].createElement("use", { href: "#60h9a" }),
+	                                    _react2["default"].createElement("use", { href: "#60h9a" })
+	                                )
+	                            )
+	                        )
+	                    )
+	                ),
+	                _react2["default"].createElement(
+	                    "ul",
+	                    { className: "answerFormulate" },
+	                    this.props.answer.map(function (item, index) {
+	                        return _react2["default"].createElement(
+	                            "li",
+	                            { key: index + 400 },
+	                            item.answerForView
+	                        );
+	                    })
+	                )
+	            );
+	        }
+	    }]);
+
+	    return SmarttestsLeftSide;
+	})(_react2["default"].Component);
+
+	function mapStateToProps(state) {
+	    return {
+	        answer: state.answer
+	    };
+	}
+
+	exports["default"] = (0, _reactRedux.connect)(mapStateToProps)(SmarttestsLeftSide);
+	module.exports = exports["default"];
+	/*{this.props.answer[this.props.answer.length - 1].ask.img}*/
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/volodymyr/Стільниця/Medical/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "SmartTestLeftSide.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ }),
+/* 442 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(443);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(246)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/sass-loader/lib/loader.js!./SmartTestLeftSide.scss", function() {
+				var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/sass-loader/lib/loader.js!./SmartTestLeftSide.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ }),
+/* 443 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(245)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".test {\n  -moz-transform: skew(25deg, 10deg);\n  -o-transform: skew(25deg, 10deg);\n  -ms-transform: skew(25deg, 10deg);\n  -webkit-transform: skew(25deg, 10deg);\n  transform: skew(25deg, 10deg);\n  moz-transform-origin: top left;\n  -o-transform-origin: top left;\n  -ms-transform-origin: top left;\n  -webkit-transform-origin: top left;\n  transform-origin: top left;\n  position: absolute;\n  top: 25%;\n  bottom: 25%;\n  left: 25%;\n  right: 25%;\n  background-color: rgba(20, 20, 20, 0.5); }\n\n.left-part-of-screen {\n  background-color: #e5e5e5;\n  height: 100%;\n  -webkit-box-flex: 0;\n  -webkit-flex-grow: 0;\n  -moz-flex-grow: 0;\n  -ms-flex-positive: 0;\n  flex-grow: 0;\n  -webkit-flex-basis: 300px;\n  -moz-flex-basis: 300px;\n  -ms-flex-preferred-size: 300px;\n  flex-basis: 300px;\n  padding: 30px;\n  text-align: left; }\n  .left-part-of-screen .line-bottom, .left-part-of-screen .line-top {\n    position: relative;\n    width: 100%;\n    height: 1px;\n    background-color: #aeaeae;\n    margin-bottom: 32px; }\n    .left-part-of-screen .line-bottom .icon-for-line, .left-part-of-screen .line-top .icon-for-line {\n      background-color: #e5e5e5;\n      position: absolute;\n      top: -11px;\n      left: calc(50% - 14px);\n      padding: 0 4px; }\n      .left-part-of-screen .line-bottom .icon-for-line svg, .left-part-of-screen .line-top .icon-for-line svg {\n        fill: #aeaeae; }\n  @media (max-width: 600px) {\n    .left-part-of-screen {\n      display: none; } }\n  .left-part-of-screen h2 {\n    font-family: 'MuseoSans-Light';\n    margin-bottom: 10px; }\n  .left-part-of-screen p {\n    font-family: 'MuseoSans-Light'; }\n  .left-part-of-screen .answerFormulate {\n    border-radius: 5px;\n    padding: 20px;\n    padding-left: 30px;\n    margin-top: 50px;\n    color: black;\n    font-size: 14px;\n    list-style: none; }\n    .left-part-of-screen .answerFormulate li {\n      margin-bottom: 5px; }\n      .left-part-of-screen .answerFormulate li:nth-child(+n+3) {\n        list-style-image: url(" + __webpack_require__(444) + "); }\n", ""]);
+
+	// exports
+
+
+/***/ }),
+/* 444 */
+/***/ (function(module, exports) {
+
+	module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTYiIGhlaWdodD0iMTMiIHZpZXdCb3g9IjAgMCAxNiAxMyI+PGRlZnM+PHBhdGggaWQ9ImdvcGJhIiBkPSJNMTUyIDQ4NWwtNiA2LTMtMy0yIDIgNSA1IDgtOHoiLz48L2RlZnM+PGc+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEzOSAtNDgzKSI+PHVzZSB4bGluazpocmVmPSIjZ29wYmEiLz48dXNlIGZpbGw9IiM0NGEyYTUiIHhsaW5rOmhyZWY9IiNnb3BiYSIvPjwvZz48L2c+PC9zdmc+"
+
+/***/ }),
+/* 445 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/home/volodymyr/Стільниця/Medical/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/home/volodymyr/Стільниця/Medical/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _react = __webpack_require__(183);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	__webpack_require__(446);
+
+	var SmartUserInfo = (function (_React$Component) {
+	    _inherits(SmartUserInfo, _React$Component);
+
+	    function SmartUserInfo(props) {
+	        _classCallCheck(this, SmartUserInfo);
+
+	        _get(Object.getPrototypeOf(SmartUserInfo.prototype), "constructor", this).call(this, props);
+	        this.state = {
+	            date: new Date().toString().slice(0, 15)
+	        };
+	    }
+
+	    _createClass(SmartUserInfo, [{
+	        key: "render",
+	        value: function render() {
+	            return _react2["default"].createElement(
+	                "div",
+	                { className: "smart-user-info" },
+	                _react2["default"].createElement(
+	                    "div",
+	                    { className: "line-top" },
+	                    _react2["default"].createElement(
+	                        "i",
+	                        { className: "icon-for-line" },
+	                        _react2["default"].createElement(
+	                            "svg",
+	                            { width: "23", height: "23", viewBox: "0 0 23 23" },
+	                            _react2["default"].createElement(
+	                                "defs",
+	                                null,
+	                                _react2["default"].createElement("path", { id: "f9zia", d: "M260.16 210.16h1.67V216h-1.67zm0-4.16h1.67v2.5h-1.67zm10.84 5c0 5.5-4.5 10-10 10s-10-4.5-10-10 4.5-10 10-10 10 4.5 10 10zm-1.67 0a8.36 8.36 0 0 0-8.33-8.34 8.36 8.36 0 0 0-8.34 8.34 8.36 8.36 0 0 0 8.34 8.33 8.36 8.36 0 0 0 8.33-8.33z" })
+	                            ),
+	                            _react2["default"].createElement(
+	                                "g",
+	                                null,
+	                                _react2["default"].createElement(
+	                                    "g",
+	                                    { transform: "translate(-249 -199)" },
+	                                    _react2["default"].createElement("use", { href: "#f9zia" })
+	                                )
+	                            )
+	                        )
+	                    )
+	                ),
 	                _react2["default"].createElement(
 	                    "table",
 	                    { className: "contacts" },
@@ -39918,59 +40151,27 @@
 	                            )
 	                        )
 	                    )
-	                ),
-	                this.props.answer.length === 1 ? _react2["default"].createElement(
-	                    "div",
-	                    null,
-	                    _react2["default"].createElement(
-	                        "h2",
-	                        null,
-	                        "Lorem ipsum dolor"
-	                    ),
-	                    _react2["default"].createElement(
-	                        "p",
-	                        null,
-	                        "Если у Вас диагностирован  РМЖ Мы предлагаем пройти данный тест , для выявления возможных альтернатив в лечении и диагностики"
-	                    )
-	                ) : "",
-	                this.props.answer[this.props.answer.length - 1].ask.img,
-	                _react2["default"].createElement(
-	                    "ul",
-	                    { className: "answerFormulate" },
-	                    this.props.answer.map(function (item, index) {
-	                        return _react2["default"].createElement(
-	                            "li",
-	                            { key: index + 400 },
-	                            item.answerForView
-	                        );
-	                    })
 	                )
 	            );
 	        }
 	    }]);
 
-	    return SmarttestsLeftSide;
+	    return SmartUserInfo;
 	})(_react2["default"].Component);
 
-	function mapStateToProps(state) {
-	    return {
-	        answer: state.answer
-	    };
-	}
-
-	exports["default"] = (0, _reactRedux.connect)(mapStateToProps)(SmarttestsLeftSide);
+	exports["default"] = SmartUserInfo;
 	module.exports = exports["default"];
 
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/volodymyr/Стільниця/Medical/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "SmartTestLeftSide.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/volodymyr/Стільниця/Medical/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "SmartUserInfo.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ }),
-/* 442 */
+/* 446 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(443);
+	var content = __webpack_require__(447);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(246)(content, {});
@@ -39979,8 +40180,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/sass-loader/lib/loader.js!./SmartTestLeftSide.scss", function() {
-				var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/sass-loader/lib/loader.js!./SmartTestLeftSide.scss");
+			module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/sass-loader/lib/loader.js!./SmartUserInfo.scss", function() {
+				var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/sass-loader/lib/loader.js!./SmartUserInfo.scss");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -39990,7 +40191,7 @@
 	}
 
 /***/ }),
-/* 443 */
+/* 447 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(245)();
@@ -39998,13 +40199,13 @@
 
 
 	// module
-	exports.push([module.id, ".test {\n  -moz-transform: skew(25deg, 10deg);\n  -o-transform: skew(25deg, 10deg);\n  -ms-transform: skew(25deg, 10deg);\n  -webkit-transform: skew(25deg, 10deg);\n  transform: skew(25deg, 10deg);\n  moz-transform-origin: top left;\n  -o-transform-origin: top left;\n  -ms-transform-origin: top left;\n  -webkit-transform-origin: top left;\n  transform-origin: top left;\n  position: absolute;\n  top: 25%;\n  bottom: 25%;\n  left: 25%;\n  right: 25%;\n  background-color: rgba(20, 20, 20, 0.5); }\n\n.left-part-of-screen {\n  -webkit-box-flex: 0;\n  -webkit-flex-grow: 0;\n  -moz-flex-grow: 0;\n  -ms-flex-positive: 0;\n  flex-grow: 0;\n  -webkit-flex-basis: 300px;\n  -moz-flex-basis: 300px;\n  -ms-flex-preferred-size: 300px;\n  flex-basis: 300px;\n  padding: 30px;\n  text-align: left; }\n  @media (max-width: 600px) {\n    .left-part-of-screen {\n      display: none; } }\n  .left-part-of-screen h2 {\n    font-family: 'MuseoSans-Light';\n    margin-bottom: 10px; }\n  .left-part-of-screen table {\n    margin-bottom: 30px; }\n    .left-part-of-screen table tr {\n      font-family: 'MuseoSans-Light'; }\n    .left-part-of-screen table td:nth-child(even) {\n      color: #00bcd4; }\n  .left-part-of-screen p {\n    font-family: 'MuseoSans-Light'; }\n  .left-part-of-screen .answerFormulate {\n    border-radius: 5px;\n    padding: 20px;\n    padding-left: 30px;\n    margin-top: 50px;\n    color: black;\n    font-size: 14px;\n    list-style: none; }\n    .left-part-of-screen .answerFormulate li {\n      margin-bottom: 5px; }\n      .left-part-of-screen .answerFormulate li:nth-child(+n+3) {\n        list-style: circle; }\n", ""]);
+	exports.push([module.id, ".test {\n  -moz-transform: skew(25deg, 10deg);\n  -o-transform: skew(25deg, 10deg);\n  -ms-transform: skew(25deg, 10deg);\n  -webkit-transform: skew(25deg, 10deg);\n  transform: skew(25deg, 10deg);\n  moz-transform-origin: top left;\n  -o-transform-origin: top left;\n  -ms-transform-origin: top left;\n  -webkit-transform-origin: top left;\n  transform-origin: top left;\n  position: absolute;\n  top: 25%;\n  bottom: 25%;\n  left: 25%;\n  right: 25%;\n  background-color: rgba(20, 20, 20, 0.5); }\n\n.smart-user-info .line-bottom, .smart-user-info .line-top {\n  position: relative;\n  width: 100%;\n  height: 1px;\n  background-color: #aeaeae;\n  margin-bottom: 32px; }\n  .smart-user-info .line-bottom .icon-for-line, .smart-user-info .line-top .icon-for-line {\n    background-color: #e5e5e5;\n    position: absolute;\n    top: -11px;\n    left: calc(50% - 14px);\n    padding: 0 4px; }\n    .smart-user-info .line-bottom .icon-for-line svg, .smart-user-info .line-top .icon-for-line svg {\n      fill: #aeaeae; }\n\n.smart-user-info table {\n  width: 100%;\n  margin-bottom: 30px; }\n  .smart-user-info table tr {\n    font-family: 'MuseoSans-Light'; }\n  .smart-user-info table td {\n    color: #464646;\n    font-weight: 700; }\n    .smart-user-info table td:nth-child(even) {\n      color: #6d6d6d;\n      font-weight: 400;\n      padding-left: 10px; }\n", ""]);
 
 	// exports
 
 
 /***/ }),
-/* 444 */
+/* 448 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -40014,7 +40215,7 @@
 	});
 	exports.default = undefined;
 
-	var _Checkbox = __webpack_require__(445);
+	var _Checkbox = __webpack_require__(449);
 
 	var _Checkbox2 = _interopRequireDefault(_Checkbox);
 
@@ -40023,7 +40224,7 @@
 	exports.default = _Checkbox2.default;
 
 /***/ }),
-/* 445 */
+/* 449 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -40032,11 +40233,11 @@
 	  value: true
 	});
 
-	var _extends2 = __webpack_require__(446);
+	var _extends2 = __webpack_require__(450);
 
 	var _extends3 = _interopRequireDefault(_extends2);
 
-	var _objectWithoutProperties2 = __webpack_require__(451);
+	var _objectWithoutProperties2 = __webpack_require__(455);
 
 	var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -40060,7 +40261,7 @@
 
 	var _inherits3 = _interopRequireDefault(_inherits2);
 
-	var _simpleAssign = __webpack_require__(452);
+	var _simpleAssign = __webpack_require__(456);
 
 	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -40072,19 +40273,19 @@
 
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 
-	var _EnhancedSwitch = __webpack_require__(453);
+	var _EnhancedSwitch = __webpack_require__(457);
 
 	var _EnhancedSwitch2 = _interopRequireDefault(_EnhancedSwitch);
 
-	var _transitions = __webpack_require__(457);
+	var _transitions = __webpack_require__(461);
 
 	var _transitions2 = _interopRequireDefault(_transitions);
 
-	var _checkBoxOutlineBlank = __webpack_require__(473);
+	var _checkBoxOutlineBlank = __webpack_require__(477);
 
 	var _checkBoxOutlineBlank2 = _interopRequireDefault(_checkBoxOutlineBlank);
 
-	var _checkBox = __webpack_require__(482);
+	var _checkBox = __webpack_require__(486);
 
 	var _checkBox2 = _interopRequireDefault(_checkBox);
 
@@ -40323,14 +40524,14 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ }),
-/* 446 */
+/* 450 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
 
 	exports.__esModule = true;
 
-	var _assign = __webpack_require__(447);
+	var _assign = __webpack_require__(451);
 
 	var _assign2 = _interopRequireDefault(_assign);
 
@@ -40351,31 +40552,31 @@
 	};
 
 /***/ }),
-/* 447 */
+/* 451 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	module.exports = { "default": __webpack_require__(448), __esModule: true };
+	module.exports = { "default": __webpack_require__(452), __esModule: true };
 
 /***/ }),
-/* 448 */
+/* 452 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	__webpack_require__(449);
+	__webpack_require__(453);
 	module.exports = __webpack_require__(267).Object.assign;
 
 
 /***/ }),
-/* 449 */
+/* 453 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// 19.1.3.1 Object.assign(target, source)
 	var $export = __webpack_require__(266);
 
-	$export($export.S + $export.F, 'Object', { assign: __webpack_require__(450) });
+	$export($export.S + $export.F, 'Object', { assign: __webpack_require__(454) });
 
 
 /***/ }),
-/* 450 */
+/* 454 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -40415,7 +40616,7 @@
 
 
 /***/ }),
-/* 451 */
+/* 455 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -40435,7 +40636,7 @@
 	};
 
 /***/ }),
-/* 452 */
+/* 456 */
 /***/ (function(module, exports) {
 
 	module.exports = function (target) {
@@ -40452,7 +40653,7 @@
 
 
 /***/ }),
-/* 453 */
+/* 457 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -40461,11 +40662,11 @@
 	  value: true
 	});
 
-	var _extends2 = __webpack_require__(446);
+	var _extends2 = __webpack_require__(450);
 
 	var _extends3 = _interopRequireDefault(_extends2);
 
-	var _objectWithoutProperties2 = __webpack_require__(451);
+	var _objectWithoutProperties2 = __webpack_require__(455);
 
 	var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -40489,7 +40690,7 @@
 
 	var _inherits3 = _interopRequireDefault(_inherits2);
 
-	var _simpleAssign = __webpack_require__(452);
+	var _simpleAssign = __webpack_require__(456);
 
 	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -40501,27 +40702,27 @@
 
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 
-	var _reactEventListener = __webpack_require__(454);
+	var _reactEventListener = __webpack_require__(458);
 
 	var _reactEventListener2 = _interopRequireDefault(_reactEventListener);
 
-	var _keycode = __webpack_require__(456);
+	var _keycode = __webpack_require__(460);
 
 	var _keycode2 = _interopRequireDefault(_keycode);
 
-	var _transitions = __webpack_require__(457);
+	var _transitions = __webpack_require__(461);
 
 	var _transitions2 = _interopRequireDefault(_transitions);
 
-	var _FocusRipple = __webpack_require__(458);
+	var _FocusRipple = __webpack_require__(462);
 
 	var _FocusRipple2 = _interopRequireDefault(_FocusRipple);
 
-	var _TouchRipple = __webpack_require__(466);
+	var _TouchRipple = __webpack_require__(470);
 
 	var _TouchRipple2 = _interopRequireDefault(_TouchRipple);
 
-	var _Paper = __webpack_require__(470);
+	var _Paper = __webpack_require__(474);
 
 	var _Paper2 = _interopRequireDefault(_Paper);
 
@@ -40922,7 +41123,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ }),
-/* 454 */
+/* 458 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -40959,11 +41160,11 @@
 
 	var _keys2 = _interopRequireDefault(_keys);
 
-	var _objectWithoutProperties2 = __webpack_require__(451);
+	var _objectWithoutProperties2 = __webpack_require__(455);
 
 	var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
-	var _assign = __webpack_require__(447);
+	var _assign = __webpack_require__(451);
 
 	var _assign2 = _interopRequireDefault(_assign);
 
@@ -40983,7 +41184,7 @@
 
 	var _warning2 = _interopRequireDefault(_warning);
 
-	var _supports = __webpack_require__(455);
+	var _supports = __webpack_require__(459);
 
 	var supports = _interopRequireWildcard(_supports);
 
@@ -41150,7 +41351,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ }),
-/* 455 */
+/* 459 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -41207,7 +41408,7 @@
 	}();
 
 /***/ }),
-/* 456 */
+/* 460 */
 /***/ (function(module, exports) {
 
 	// Source: http://jsfiddle.net/vWx8V/
@@ -41359,7 +41560,7 @@
 
 
 /***/ }),
-/* 457 */
+/* 461 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -41398,7 +41599,7 @@
 	};
 
 /***/ }),
-/* 458 */
+/* 462 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -41427,7 +41628,7 @@
 
 	var _inherits3 = _interopRequireDefault(_inherits2);
 
-	var _simpleAssign = __webpack_require__(452);
+	var _simpleAssign = __webpack_require__(456);
 
 	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -41443,19 +41644,19 @@
 
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 
-	var _shallowEqual = __webpack_require__(459);
+	var _shallowEqual = __webpack_require__(463);
 
 	var _shallowEqual2 = _interopRequireDefault(_shallowEqual);
 
-	var _autoPrefix = __webpack_require__(460);
+	var _autoPrefix = __webpack_require__(464);
 
 	var _autoPrefix2 = _interopRequireDefault(_autoPrefix);
 
-	var _transitions = __webpack_require__(457);
+	var _transitions = __webpack_require__(461);
 
 	var _transitions2 = _interopRequireDefault(_transitions);
 
-	var _ScaleIn = __webpack_require__(461);
+	var _ScaleIn = __webpack_require__(465);
 
 	var _ScaleIn2 = _interopRequireDefault(_ScaleIn);
 
@@ -41603,7 +41804,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ }),
-/* 459 */
+/* 463 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -41619,7 +41820,7 @@
 	exports.default = _shallowEqual2.default;
 
 /***/ }),
-/* 460 */
+/* 464 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -41634,7 +41835,7 @@
 	};
 
 /***/ }),
-/* 461 */
+/* 465 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -41643,11 +41844,11 @@
 	  value: true
 	});
 
-	var _extends2 = __webpack_require__(446);
+	var _extends2 = __webpack_require__(450);
 
 	var _extends3 = _interopRequireDefault(_extends2);
 
-	var _objectWithoutProperties2 = __webpack_require__(451);
+	var _objectWithoutProperties2 = __webpack_require__(455);
 
 	var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -41671,7 +41872,7 @@
 
 	var _inherits3 = _interopRequireDefault(_inherits2);
 
-	var _simpleAssign = __webpack_require__(452);
+	var _simpleAssign = __webpack_require__(456);
 
 	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -41683,11 +41884,11 @@
 
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 
-	var _TransitionGroup = __webpack_require__(462);
+	var _TransitionGroup = __webpack_require__(466);
 
 	var _TransitionGroup2 = _interopRequireDefault(_TransitionGroup);
 
-	var _ScaleInChild = __webpack_require__(465);
+	var _ScaleInChild = __webpack_require__(469);
 
 	var _ScaleInChild2 = _interopRequireDefault(_ScaleInChild);
 
@@ -41768,7 +41969,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ }),
-/* 462 */
+/* 466 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -41777,7 +41978,7 @@
 
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-	var _chainFunction = __webpack_require__(463);
+	var _chainFunction = __webpack_require__(467);
 
 	var _chainFunction2 = _interopRequireDefault(_chainFunction);
 
@@ -41793,7 +41994,7 @@
 
 	var _warning2 = _interopRequireDefault(_warning);
 
-	var _ChildMapping = __webpack_require__(464);
+	var _ChildMapping = __webpack_require__(468);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -42043,7 +42244,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ }),
-/* 463 */
+/* 467 */
 /***/ (function(module, exports) {
 
 	
@@ -42069,7 +42270,7 @@
 
 
 /***/ }),
-/* 464 */
+/* 468 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42165,7 +42366,7 @@
 	}
 
 /***/ }),
-/* 465 */
+/* 469 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -42174,11 +42375,11 @@
 	  value: true
 	});
 
-	var _extends2 = __webpack_require__(446);
+	var _extends2 = __webpack_require__(450);
 
 	var _extends3 = _interopRequireDefault(_extends2);
 
-	var _objectWithoutProperties2 = __webpack_require__(451);
+	var _objectWithoutProperties2 = __webpack_require__(455);
 
 	var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -42202,7 +42403,7 @@
 
 	var _inherits3 = _interopRequireDefault(_inherits2);
 
-	var _simpleAssign = __webpack_require__(452);
+	var _simpleAssign = __webpack_require__(456);
 
 	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -42218,11 +42419,11 @@
 
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 
-	var _autoPrefix = __webpack_require__(460);
+	var _autoPrefix = __webpack_require__(464);
 
 	var _autoPrefix2 = _interopRequireDefault(_autoPrefix);
 
-	var _transitions = __webpack_require__(457);
+	var _transitions = __webpack_require__(461);
 
 	var _transitions2 = _interopRequireDefault(_transitions);
 
@@ -42341,7 +42542,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ }),
-/* 466 */
+/* 470 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -42374,11 +42575,11 @@
 
 	var _inherits3 = _interopRequireDefault(_inherits2);
 
-	var _toArray2 = __webpack_require__(467);
+	var _toArray2 = __webpack_require__(471);
 
 	var _toArray3 = _interopRequireDefault(_toArray2);
 
-	var _simpleAssign = __webpack_require__(452);
+	var _simpleAssign = __webpack_require__(456);
 
 	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -42394,15 +42595,15 @@
 
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 
-	var _TransitionGroup = __webpack_require__(462);
+	var _TransitionGroup = __webpack_require__(466);
 
 	var _TransitionGroup2 = _interopRequireDefault(_TransitionGroup);
 
-	var _dom = __webpack_require__(468);
+	var _dom = __webpack_require__(472);
 
 	var _dom2 = _interopRequireDefault(_dom);
 
-	var _CircleRipple = __webpack_require__(469);
+	var _CircleRipple = __webpack_require__(473);
 
 	var _CircleRipple2 = _interopRequireDefault(_CircleRipple);
 
@@ -42658,7 +42859,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ }),
-/* 467 */
+/* 471 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -42676,7 +42877,7 @@
 	};
 
 /***/ }),
-/* 468 */
+/* 472 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -42705,7 +42906,7 @@
 	};
 
 /***/ }),
-/* 469 */
+/* 473 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -42714,11 +42915,11 @@
 	  value: true
 	});
 
-	var _extends2 = __webpack_require__(446);
+	var _extends2 = __webpack_require__(450);
 
 	var _extends3 = _interopRequireDefault(_extends2);
 
-	var _objectWithoutProperties2 = __webpack_require__(451);
+	var _objectWithoutProperties2 = __webpack_require__(455);
 
 	var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -42742,7 +42943,7 @@
 
 	var _inherits3 = _interopRequireDefault(_inherits2);
 
-	var _simpleAssign = __webpack_require__(452);
+	var _simpleAssign = __webpack_require__(456);
 
 	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -42758,15 +42959,15 @@
 
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 
-	var _shallowEqual = __webpack_require__(459);
+	var _shallowEqual = __webpack_require__(463);
 
 	var _shallowEqual2 = _interopRequireDefault(_shallowEqual);
 
-	var _autoPrefix = __webpack_require__(460);
+	var _autoPrefix = __webpack_require__(464);
 
 	var _autoPrefix2 = _interopRequireDefault(_autoPrefix);
 
-	var _transitions = __webpack_require__(457);
+	var _transitions = __webpack_require__(461);
 
 	var _transitions2 = _interopRequireDefault(_transitions);
 
@@ -42883,7 +43084,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ }),
-/* 470 */
+/* 474 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42893,7 +43094,7 @@
 	});
 	exports.default = undefined;
 
-	var _Paper = __webpack_require__(471);
+	var _Paper = __webpack_require__(475);
 
 	var _Paper2 = _interopRequireDefault(_Paper);
 
@@ -42902,7 +43103,7 @@
 	exports.default = _Paper2.default;
 
 /***/ }),
-/* 471 */
+/* 475 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -42911,11 +43112,11 @@
 	  value: true
 	});
 
-	var _extends2 = __webpack_require__(446);
+	var _extends2 = __webpack_require__(450);
 
 	var _extends3 = _interopRequireDefault(_extends2);
 
-	var _objectWithoutProperties2 = __webpack_require__(451);
+	var _objectWithoutProperties2 = __webpack_require__(455);
 
 	var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -42939,7 +43140,7 @@
 
 	var _inherits3 = _interopRequireDefault(_inherits2);
 
-	var _simpleAssign = __webpack_require__(452);
+	var _simpleAssign = __webpack_require__(456);
 
 	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -42951,11 +43152,11 @@
 
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 
-	var _propTypes3 = __webpack_require__(472);
+	var _propTypes3 = __webpack_require__(476);
 
 	var _propTypes4 = _interopRequireDefault(_propTypes3);
 
-	var _transitions = __webpack_require__(457);
+	var _transitions = __webpack_require__(461);
 
 	var _transitions2 = _interopRequireDefault(_transitions);
 
@@ -43059,7 +43260,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ }),
-/* 472 */
+/* 476 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -43099,7 +43300,7 @@
 	};
 
 /***/ }),
-/* 473 */
+/* 477 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -43112,11 +43313,11 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _pure = __webpack_require__(474);
+	var _pure = __webpack_require__(478);
 
 	var _pure2 = _interopRequireDefault(_pure);
 
-	var _SvgIcon = __webpack_require__(480);
+	var _SvgIcon = __webpack_require__(484);
 
 	var _SvgIcon2 = _interopRequireDefault(_SvgIcon);
 
@@ -43136,26 +43337,26 @@
 	exports.default = ToggleCheckBoxOutlineBlank;
 
 /***/ }),
-/* 474 */
+/* 478 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
 
 	exports.__esModule = true;
 
-	var _shouldUpdate = __webpack_require__(475);
+	var _shouldUpdate = __webpack_require__(479);
 
 	var _shouldUpdate2 = _interopRequireDefault(_shouldUpdate);
 
-	var _shallowEqual = __webpack_require__(459);
+	var _shallowEqual = __webpack_require__(463);
 
 	var _shallowEqual2 = _interopRequireDefault(_shallowEqual);
 
-	var _setDisplayName = __webpack_require__(476);
+	var _setDisplayName = __webpack_require__(480);
 
 	var _setDisplayName2 = _interopRequireDefault(_setDisplayName);
 
-	var _wrapDisplayName = __webpack_require__(478);
+	var _wrapDisplayName = __webpack_require__(482);
 
 	var _wrapDisplayName2 = _interopRequireDefault(_wrapDisplayName);
 
@@ -43177,7 +43378,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ }),
-/* 475 */
+/* 479 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -43186,11 +43387,11 @@
 
 	var _react = __webpack_require__(183);
 
-	var _setDisplayName = __webpack_require__(476);
+	var _setDisplayName = __webpack_require__(480);
 
 	var _setDisplayName2 = _interopRequireDefault(_setDisplayName);
 
-	var _wrapDisplayName = __webpack_require__(478);
+	var _wrapDisplayName = __webpack_require__(482);
 
 	var _wrapDisplayName2 = _interopRequireDefault(_wrapDisplayName);
 
@@ -43237,14 +43438,14 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ }),
-/* 476 */
+/* 480 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	exports.__esModule = true;
 
-	var _setStatic = __webpack_require__(477);
+	var _setStatic = __webpack_require__(481);
 
 	var _setStatic2 = _interopRequireDefault(_setStatic);
 
@@ -43257,7 +43458,7 @@
 	exports.default = setDisplayName;
 
 /***/ }),
-/* 477 */
+/* 481 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -43275,14 +43476,14 @@
 	exports.default = setStatic;
 
 /***/ }),
-/* 478 */
+/* 482 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	exports.__esModule = true;
 
-	var _getDisplayName = __webpack_require__(479);
+	var _getDisplayName = __webpack_require__(483);
 
 	var _getDisplayName2 = _interopRequireDefault(_getDisplayName);
 
@@ -43295,7 +43496,7 @@
 	exports.default = wrapDisplayName;
 
 /***/ }),
-/* 479 */
+/* 483 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -43316,7 +43517,7 @@
 	exports.default = getDisplayName;
 
 /***/ }),
-/* 480 */
+/* 484 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -43326,7 +43527,7 @@
 	});
 	exports.default = undefined;
 
-	var _SvgIcon = __webpack_require__(481);
+	var _SvgIcon = __webpack_require__(485);
 
 	var _SvgIcon2 = _interopRequireDefault(_SvgIcon);
 
@@ -43335,7 +43536,7 @@
 	exports.default = _SvgIcon2.default;
 
 /***/ }),
-/* 481 */
+/* 485 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -43344,11 +43545,11 @@
 	  value: true
 	});
 
-	var _extends2 = __webpack_require__(446);
+	var _extends2 = __webpack_require__(450);
 
 	var _extends3 = _interopRequireDefault(_extends2);
 
-	var _objectWithoutProperties2 = __webpack_require__(451);
+	var _objectWithoutProperties2 = __webpack_require__(455);
 
 	var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -43372,7 +43573,7 @@
 
 	var _inherits3 = _interopRequireDefault(_inherits2);
 
-	var _simpleAssign = __webpack_require__(452);
+	var _simpleAssign = __webpack_require__(456);
 
 	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -43384,7 +43585,7 @@
 
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 
-	var _transitions = __webpack_require__(457);
+	var _transitions = __webpack_require__(461);
 
 	var _transitions2 = _interopRequireDefault(_transitions);
 
@@ -43506,7 +43707,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ }),
-/* 482 */
+/* 486 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -43519,11 +43720,11 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _pure = __webpack_require__(474);
+	var _pure = __webpack_require__(478);
 
 	var _pure2 = _interopRequireDefault(_pure);
 
-	var _SvgIcon = __webpack_require__(480);
+	var _SvgIcon = __webpack_require__(484);
 
 	var _SvgIcon2 = _interopRequireDefault(_SvgIcon);
 
@@ -43543,7 +43744,7 @@
 	exports.default = ToggleCheckBox;
 
 /***/ }),
-/* 483 */
+/* 487 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -43553,23 +43754,23 @@
 	});
 	exports.Stepper = exports.StepLabel = exports.StepContent = exports.StepButton = exports.Step = undefined;
 
-	var _Step2 = __webpack_require__(484);
+	var _Step2 = __webpack_require__(488);
 
 	var _Step3 = _interopRequireDefault(_Step2);
 
-	var _StepButton2 = __webpack_require__(485);
+	var _StepButton2 = __webpack_require__(489);
 
 	var _StepButton3 = _interopRequireDefault(_StepButton2);
 
-	var _StepContent2 = __webpack_require__(490);
+	var _StepContent2 = __webpack_require__(494);
 
 	var _StepContent3 = _interopRequireDefault(_StepContent2);
 
-	var _StepLabel2 = __webpack_require__(488);
+	var _StepLabel2 = __webpack_require__(492);
 
 	var _StepLabel3 = _interopRequireDefault(_StepLabel2);
 
-	var _Stepper2 = __webpack_require__(493);
+	var _Stepper2 = __webpack_require__(497);
 
 	var _Stepper3 = _interopRequireDefault(_Stepper2);
 
@@ -43582,7 +43783,7 @@
 	exports.Stepper = _Stepper3.default;
 
 /***/ }),
-/* 484 */
+/* 488 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -43591,11 +43792,11 @@
 	  value: true
 	});
 
-	var _extends2 = __webpack_require__(446);
+	var _extends2 = __webpack_require__(450);
 
 	var _extends3 = _interopRequireDefault(_extends2);
 
-	var _objectWithoutProperties2 = __webpack_require__(451);
+	var _objectWithoutProperties2 = __webpack_require__(455);
 
 	var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -43619,7 +43820,7 @@
 
 	var _inherits3 = _interopRequireDefault(_inherits2);
 
-	var _simpleAssign = __webpack_require__(452);
+	var _simpleAssign = __webpack_require__(456);
 
 	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -43750,7 +43951,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ }),
-/* 485 */
+/* 489 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -43759,11 +43960,11 @@
 	  value: true
 	});
 
-	var _extends2 = __webpack_require__(446);
+	var _extends2 = __webpack_require__(450);
 
 	var _extends3 = _interopRequireDefault(_extends2);
 
-	var _objectWithoutProperties2 = __webpack_require__(451);
+	var _objectWithoutProperties2 = __webpack_require__(455);
 
 	var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -43787,7 +43988,7 @@
 
 	var _inherits3 = _interopRequireDefault(_inherits2);
 
-	var _simpleAssign = __webpack_require__(452);
+	var _simpleAssign = __webpack_require__(456);
 
 	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -43799,15 +44000,15 @@
 
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 
-	var _transitions = __webpack_require__(457);
+	var _transitions = __webpack_require__(461);
 
 	var _transitions2 = _interopRequireDefault(_transitions);
 
-	var _EnhancedButton = __webpack_require__(486);
+	var _EnhancedButton = __webpack_require__(490);
 
 	var _EnhancedButton2 = _interopRequireDefault(_EnhancedButton);
 
-	var _StepLabel = __webpack_require__(488);
+	var _StepLabel = __webpack_require__(492);
 
 	var _StepLabel2 = _interopRequireDefault(_StepLabel);
 
@@ -43973,7 +44174,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ }),
-/* 486 */
+/* 490 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -43982,11 +44183,11 @@
 	  value: true
 	});
 
-	var _extends2 = __webpack_require__(446);
+	var _extends2 = __webpack_require__(450);
 
 	var _extends3 = _interopRequireDefault(_extends2);
 
-	var _objectWithoutProperties2 = __webpack_require__(451);
+	var _objectWithoutProperties2 = __webpack_require__(455);
 
 	var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -44010,7 +44211,7 @@
 
 	var _inherits3 = _interopRequireDefault(_inherits2);
 
-	var _simpleAssign = __webpack_require__(452);
+	var _simpleAssign = __webpack_require__(456);
 
 	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -44022,19 +44223,19 @@
 
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 
-	var _events = __webpack_require__(487);
+	var _events = __webpack_require__(491);
 
 	var _events2 = _interopRequireDefault(_events);
 
-	var _keycode = __webpack_require__(456);
+	var _keycode = __webpack_require__(460);
 
 	var _keycode2 = _interopRequireDefault(_keycode);
 
-	var _FocusRipple = __webpack_require__(458);
+	var _FocusRipple = __webpack_require__(462);
 
 	var _FocusRipple2 = _interopRequireDefault(_FocusRipple);
 
-	var _TouchRipple = __webpack_require__(466);
+	var _TouchRipple = __webpack_require__(470);
 
 	var _TouchRipple2 = _interopRequireDefault(_TouchRipple);
 
@@ -44376,7 +44577,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ }),
-/* 487 */
+/* 491 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -44420,7 +44621,7 @@
 	};
 
 /***/ }),
-/* 488 */
+/* 492 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -44429,11 +44630,11 @@
 	  value: true
 	});
 
-	var _extends2 = __webpack_require__(446);
+	var _extends2 = __webpack_require__(450);
 
 	var _extends3 = _interopRequireDefault(_extends2);
 
-	var _objectWithoutProperties2 = __webpack_require__(451);
+	var _objectWithoutProperties2 = __webpack_require__(455);
 
 	var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -44441,7 +44642,7 @@
 
 	var _typeof3 = _interopRequireDefault(_typeof2);
 
-	var _simpleAssign = __webpack_require__(452);
+	var _simpleAssign = __webpack_require__(456);
 
 	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -44453,11 +44654,11 @@
 
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 
-	var _checkCircle = __webpack_require__(489);
+	var _checkCircle = __webpack_require__(493);
 
 	var _checkCircle2 = _interopRequireDefault(_checkCircle);
 
-	var _SvgIcon = __webpack_require__(480);
+	var _SvgIcon = __webpack_require__(484);
 
 	var _SvgIcon2 = _interopRequireDefault(_SvgIcon);
 
@@ -44622,7 +44823,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ }),
-/* 489 */
+/* 493 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -44635,11 +44836,11 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _pure = __webpack_require__(474);
+	var _pure = __webpack_require__(478);
 
 	var _pure2 = _interopRequireDefault(_pure);
 
-	var _SvgIcon = __webpack_require__(480);
+	var _SvgIcon = __webpack_require__(484);
 
 	var _SvgIcon2 = _interopRequireDefault(_SvgIcon);
 
@@ -44659,7 +44860,7 @@
 	exports.default = ActionCheckCircle;
 
 /***/ }),
-/* 490 */
+/* 494 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -44668,11 +44869,11 @@
 	  value: true
 	});
 
-	var _extends2 = __webpack_require__(446);
+	var _extends2 = __webpack_require__(450);
 
 	var _extends3 = _interopRequireDefault(_extends2);
 
-	var _objectWithoutProperties2 = __webpack_require__(451);
+	var _objectWithoutProperties2 = __webpack_require__(455);
 
 	var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -44696,7 +44897,7 @@
 
 	var _inherits3 = _interopRequireDefault(_inherits2);
 
-	var _simpleAssign = __webpack_require__(452);
+	var _simpleAssign = __webpack_require__(456);
 
 	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -44708,7 +44909,7 @@
 
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 
-	var _ExpandTransition = __webpack_require__(491);
+	var _ExpandTransition = __webpack_require__(495);
 
 	var _ExpandTransition2 = _interopRequireDefault(_ExpandTransition);
 
@@ -44833,7 +45034,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ }),
-/* 491 */
+/* 495 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -44842,11 +45043,11 @@
 	  value: true
 	});
 
-	var _extends2 = __webpack_require__(446);
+	var _extends2 = __webpack_require__(450);
 
 	var _extends3 = _interopRequireDefault(_extends2);
 
-	var _objectWithoutProperties2 = __webpack_require__(451);
+	var _objectWithoutProperties2 = __webpack_require__(455);
 
 	var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -44870,7 +45071,7 @@
 
 	var _inherits3 = _interopRequireDefault(_inherits2);
 
-	var _simpleAssign = __webpack_require__(452);
+	var _simpleAssign = __webpack_require__(456);
 
 	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -44882,11 +45083,11 @@
 
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 
-	var _TransitionGroup = __webpack_require__(462);
+	var _TransitionGroup = __webpack_require__(466);
 
 	var _TransitionGroup2 = _interopRequireDefault(_TransitionGroup);
 
-	var _ExpandTransitionChild = __webpack_require__(492);
+	var _ExpandTransitionChild = __webpack_require__(496);
 
 	var _ExpandTransitionChild2 = _interopRequireDefault(_ExpandTransitionChild);
 
@@ -44984,7 +45185,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ }),
-/* 492 */
+/* 496 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -44993,11 +45194,11 @@
 	  value: true
 	});
 
-	var _extends2 = __webpack_require__(446);
+	var _extends2 = __webpack_require__(450);
 
 	var _extends3 = _interopRequireDefault(_extends2);
 
-	var _objectWithoutProperties2 = __webpack_require__(451);
+	var _objectWithoutProperties2 = __webpack_require__(455);
 
 	var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -45021,7 +45222,7 @@
 
 	var _inherits3 = _interopRequireDefault(_inherits2);
 
-	var _simpleAssign = __webpack_require__(452);
+	var _simpleAssign = __webpack_require__(456);
 
 	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -45037,7 +45238,7 @@
 
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 
-	var _transitions = __webpack_require__(457);
+	var _transitions = __webpack_require__(461);
 
 	var _transitions2 = _interopRequireDefault(_transitions);
 
@@ -45185,7 +45386,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ }),
-/* 493 */
+/* 497 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -45214,7 +45415,7 @@
 
 	var _inherits3 = _interopRequireDefault(_inherits2);
 
-	var _simpleAssign = __webpack_require__(452);
+	var _simpleAssign = __webpack_require__(456);
 
 	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -45226,7 +45427,7 @@
 
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 
-	var _StepConnector = __webpack_require__(494);
+	var _StepConnector = __webpack_require__(498);
 
 	var _StepConnector2 = _interopRequireDefault(_StepConnector);
 
@@ -45349,7 +45550,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ }),
-/* 494 */
+/* 498 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -45367,7 +45568,7 @@
 
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 
-	var _pure = __webpack_require__(474);
+	var _pure = __webpack_require__(478);
 
 	var _pure2 = _interopRequireDefault(_pure);
 
@@ -45432,7 +45633,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ }),
-/* 495 */
+/* 499 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -45442,7 +45643,7 @@
 	});
 	exports.default = undefined;
 
-	var _RaisedButton = __webpack_require__(496);
+	var _RaisedButton = __webpack_require__(500);
 
 	var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
 
@@ -45451,7 +45652,7 @@
 	exports.default = _RaisedButton2.default;
 
 /***/ }),
-/* 496 */
+/* 500 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -45460,11 +45661,11 @@
 	  value: true
 	});
 
-	var _extends2 = __webpack_require__(446);
+	var _extends2 = __webpack_require__(450);
 
 	var _extends3 = _interopRequireDefault(_extends2);
 
-	var _objectWithoutProperties2 = __webpack_require__(451);
+	var _objectWithoutProperties2 = __webpack_require__(455);
 
 	var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -45488,7 +45689,7 @@
 
 	var _inherits3 = _interopRequireDefault(_inherits2);
 
-	var _simpleAssign = __webpack_require__(452);
+	var _simpleAssign = __webpack_require__(456);
 
 	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -45500,17 +45701,17 @@
 
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 
-	var _transitions = __webpack_require__(457);
+	var _transitions = __webpack_require__(461);
 
 	var _transitions2 = _interopRequireDefault(_transitions);
 
 	var _colorManipulator = __webpack_require__(352);
 
-	var _EnhancedButton = __webpack_require__(486);
+	var _EnhancedButton = __webpack_require__(490);
 
 	var _EnhancedButton2 = _interopRequireDefault(_EnhancedButton);
 
-	var _Paper = __webpack_require__(470);
+	var _Paper = __webpack_require__(474);
 
 	var _Paper2 = _interopRequireDefault(_Paper);
 
@@ -45942,7 +46143,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ }),
-/* 497 */
+/* 501 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -45952,7 +46153,7 @@
 	});
 	exports.default = undefined;
 
-	var _FlatButton = __webpack_require__(498);
+	var _FlatButton = __webpack_require__(502);
 
 	var _FlatButton2 = _interopRequireDefault(_FlatButton);
 
@@ -45961,7 +46162,7 @@
 	exports.default = _FlatButton2.default;
 
 /***/ }),
-/* 498 */
+/* 502 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -45970,11 +46171,11 @@
 	  value: true
 	});
 
-	var _extends2 = __webpack_require__(446);
+	var _extends2 = __webpack_require__(450);
 
 	var _extends3 = _interopRequireDefault(_extends2);
 
-	var _objectWithoutProperties2 = __webpack_require__(451);
+	var _objectWithoutProperties2 = __webpack_require__(455);
 
 	var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -45998,7 +46199,7 @@
 
 	var _inherits3 = _interopRequireDefault(_inherits2);
 
-	var _simpleAssign = __webpack_require__(452);
+	var _simpleAssign = __webpack_require__(456);
 
 	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -46010,17 +46211,17 @@
 
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 
-	var _transitions = __webpack_require__(457);
+	var _transitions = __webpack_require__(461);
 
 	var _transitions2 = _interopRequireDefault(_transitions);
 
 	var _colorManipulator = __webpack_require__(352);
 
-	var _EnhancedButton = __webpack_require__(486);
+	var _EnhancedButton = __webpack_require__(490);
 
 	var _EnhancedButton2 = _interopRequireDefault(_EnhancedButton);
 
-	var _FlatButtonLabel = __webpack_require__(499);
+	var _FlatButtonLabel = __webpack_require__(503);
 
 	var _FlatButtonLabel2 = _interopRequireDefault(_FlatButtonLabel);
 
@@ -46313,7 +46514,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ }),
-/* 499 */
+/* 503 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -46342,7 +46543,7 @@
 
 	var _inherits3 = _interopRequireDefault(_inherits2);
 
-	var _simpleAssign = __webpack_require__(452);
+	var _simpleAssign = __webpack_require__(456);
 
 	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -46409,7 +46610,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ }),
-/* 500 */
+/* 504 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/home/volodymyr/Стільниця/Medical/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/home/volodymyr/Стільниця/Medical/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -46438,11 +46639,15 @@
 
 	var _reactRouter = __webpack_require__(184);
 
-	__webpack_require__(501);
+	__webpack_require__(505);
 
-	var _reactCollapsible = __webpack_require__(503);
+	var _reactCollapsible = __webpack_require__(507);
 
 	var _reactCollapsible2 = _interopRequireDefault(_reactCollapsible);
+
+	var _SmartUserInfoJsx = __webpack_require__(445);
+
+	var _SmartUserInfoJsx2 = _interopRequireDefault(_SmartUserInfoJsx);
 
 	var SmartTestsResult = (function (_React$Component) {
 	    _inherits(SmartTestsResult, _React$Component);
@@ -46660,115 +46865,15 @@
 	                    { className: 'smarttestresult' },
 	                    _react2['default'].createElement(
 	                        'div',
-	                        { className: 'smartTestTop' },
+	                        { className: 'smart-result-page' },
 	                        _react2['default'].createElement(
 	                            'div',
-	                            { className: 'column column1' },
-	                            _react2['default'].createElement(
-	                                'table',
-	                                { className: 'contacts' },
-	                                _react2['default'].createElement(
-	                                    'tbody',
-	                                    null,
-	                                    _react2['default'].createElement(
-	                                        'tr',
-	                                        null,
-	                                        _react2['default'].createElement(
-	                                            'td',
-	                                            null,
-	                                            'Disease : '
-	                                        ),
-	                                        _react2['default'].createElement(
-	                                            'td',
-	                                            null,
-	                                            'Breast Cancer'
-	                                        )
-	                                    ),
-	                                    _react2['default'].createElement(
-	                                        'tr',
-	                                        null,
-	                                        _react2['default'].createElement(
-	                                            'td',
-	                                            null,
-	                                            'Test : '
-	                                        ),
-	                                        _react2['default'].createElement(
-	                                            'td',
-	                                            null,
-	                                            'Treatment'
-	                                        )
-	                                    ),
-	                                    _react2['default'].createElement(
-	                                        'tr',
-	                                        null,
-	                                        _react2['default'].createElement(
-	                                            'td',
-	                                            null,
-	                                            'Date : '
-	                                        ),
-	                                        _react2['default'].createElement(
-	                                            'td',
-	                                            null,
-	                                            this.state.date
-	                                        )
-	                                    ),
-	                                    _react2['default'].createElement(
-	                                        'tr',
-	                                        null,
-	                                        _react2['default'].createElement(
-	                                            'td',
-	                                            null,
-	                                            'Test ID : '
-	                                        ),
-	                                        _react2['default'].createElement(
-	                                            'td',
-	                                            null,
-	                                            '5289654'
-	                                        )
-	                                    )
-	                                )
-	                            )
+	                            { className: 'left-side-result-page' },
+	                            _react2['default'].createElement(_SmartUserInfoJsx2['default'], null)
 	                        ),
 	                        _react2['default'].createElement(
 	                            'div',
-	                            { className: 'column column2' },
-	                            _react2['default'].createElement(
-	                                'h1',
-	                                { className: 'resulttest' },
-	                                'You result: ',
-	                                this.state.result
-	                            )
-	                        )
-	                    ),
-	                    _react2['default'].createElement(
-	                        'div',
-	                        { className: 'smartTestBottom' },
-	                        _react2['default'].createElement(
-	                            'div',
-	                            { className: 'column column1' },
-	                            _react2['default'].createElement(
-	                                'div',
-	                                { className: 'wraper-text' },
-	                                _react2['default'].createElement(
-	                                    'h2',
-	                                    null,
-	                                    'Lorem ipsum dolor'
-	                                ),
-	                                _react2['default'].createElement(
-	                                    'p',
-	                                    null,
-	                                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
-	                                ),
-	                                _react2['default'].createElement(
-	                                    'p',
-	                                    null,
-	                                    'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum'
-	                                )
-	                            )
-	                        ),
-	                        _react2['default'].createElement(
-	                            'div',
-	                            { className: 'column column2' },
+	                            { className: 'right-side-result-page' },
 	                            this.props.answer.map(function (item, index) {
 	                                return _react2['default'].createElement(
 	                                    'ul',
@@ -46781,40 +46886,7 @@
 	                                    )
 	                                );
 	                            }),
-	                            _react2['default'].createElement(
-	                                'div',
-	                                { className: 'line' },
-	                                _react2['default'].createElement('div', { className: 'circle' }),
-	                                _react2['default'].createElement('div', { className: 'fill-circle' })
-	                            )
-	                        )
-	                    ),
-	                    _react2['default'].createElement(
-	                        'div',
-	                        { className: 'resultText' },
-	                        _react2['default'].createElement(
-	                            'div',
-	                            { className: 'wraperForH1' },
 	                            this.state.resultText
-	                        ),
-	                        _react2['default'].createElement(
-	                            'div',
-	                            { className: 'button-pdf' },
-	                            'Export to pdf'
-	                        ),
-	                        _react2['default'].createElement(
-	                            'h2',
-	                            null,
-	                            ' Вы заинтересованны узнать больше и получить мнение специалистов из-за границы ?'
-	                        ),
-	                        _react2['default'].createElement(
-	                            _reactRouter.Link,
-	                            { to: '/smarttestresult/result-agree' },
-	                            _react2['default'].createElement(
-	                                'div',
-	                                { className: 'button-agree' },
-	                                'Узнать больше'
-	                            )
 	                        )
 	                    )
 	                ),
@@ -46876,18 +46948,18 @@
 	*
 	* */
 	module.exports = exports['default'];
-	/*<h4>Онкомаркери:</h4>*/ /*<h4>Опциональные виды лечения: </h4>*/ /*<img src="images/logo/Logobig.png" width="150" height="150"/>*/ /*<a href="#"> узнать больше...</a>*/
+	/*<h4>Онкомаркери:</h4>*/ /*<h4>Опциональные виды лечения: </h4>*/ /*<h1 className="resulttest">You result: {this.state.result}</h1>*/
 
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/volodymyr/Стільниця/Medical/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "SmartTestResult.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ }),
-/* 501 */
+/* 505 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(502);
+	var content = __webpack_require__(506);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(246)(content, {});
@@ -46907,7 +46979,7 @@
 	}
 
 /***/ }),
-/* 502 */
+/* 506 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(245)();
@@ -46915,13 +46987,13 @@
 
 
 	// module
-	exports.push([module.id, ".test {\n  -moz-transform: skew(25deg, 10deg);\n  -o-transform: skew(25deg, 10deg);\n  -ms-transform: skew(25deg, 10deg);\n  -webkit-transform: skew(25deg, 10deg);\n  transform: skew(25deg, 10deg);\n  moz-transform-origin: top left;\n  -o-transform-origin: top left;\n  -ms-transform-origin: top left;\n  -webkit-transform-origin: top left;\n  transform-origin: top left;\n  position: absolute;\n  top: 25%;\n  bottom: 25%;\n  left: 25%;\n  right: 25%;\n  background-color: rgba(20, 20, 20, 0.5); }\n\n.smarttestresult .smartTestTop {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -moz-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-pack: distribute;\n  -webkit-justify-content: space-around;\n  -moz-justify-content: space-around;\n  justify-content: space-around;\n  -webkit-flex-wrap: wrap;\n  -moz-flex-wrap: wrap;\n  -ms-flex-wrap: wrap;\n  flex-wrap: wrap;\n  padding-top: 20px;\n  min-height: 200px; }\n  .smarttestresult .smartTestTop .column1 {\n    -webkit-box-flex: 0;\n    -webkit-flex-grow: 0;\n    -moz-flex-grow: 0;\n    -ms-flex-positive: 0;\n    flex-grow: 0;\n    -webkit-flex-basis: 300px;\n    -moz-flex-basis: 300px;\n    -ms-flex-preferred-size: 300px;\n    flex-basis: 300px;\n    text-align: left; }\n    .smarttestresult .smartTestTop .column1 table {\n      margin-bottom: 30px;\n      margin-left: 30px; }\n      @media (max-width: 500px) {\n        .smarttestresult .smartTestTop .column1 table {\n          margin-left: 0; } }\n      .smarttestresult .smartTestTop .column1 table td:nth-child(even) {\n        color: #00bcd4; }\n  .smarttestresult .smartTestTop .column2 {\n    -webkit-box-flex: 2;\n    -webkit-flex-grow: 2;\n    -moz-flex-grow: 2;\n    -ms-flex-positive: 2;\n    flex-grow: 2;\n    -webkit-flex-basis: 300px;\n    -moz-flex-basis: 300px;\n    -ms-flex-preferred-size: 300px;\n    flex-basis: 300px;\n    text-align: center; }\n    .smarttestresult .smartTestTop .column2 h1 {\n      font-family: 'MuseoSans-Light';\n      color: #0099ff;\n      font-size: 30px;\n      margin-top: 80px; }\n      @media (max-width: 500px) {\n        .smarttestresult .smartTestTop .column2 h1 {\n          margin-top: 20px; } }\n\n.smarttestresult .smartTestBottom {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -moz-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-pack: distribute;\n  -webkit-justify-content: space-around;\n  -moz-justify-content: space-around;\n  justify-content: space-around;\n  -webkit-flex-wrap: wrap;\n  -moz-flex-wrap: wrap;\n  -ms-flex-wrap: wrap;\n  flex-wrap: wrap;\n  width: 100%;\n  min-height: 100%; }\n  .smarttestresult .smartTestBottom .column1 {\n    -webkit-box-flex: 0;\n    -webkit-flex-grow: 0;\n    -moz-flex-grow: 0;\n    -ms-flex-positive: 0;\n    flex-grow: 0;\n    -webkit-flex-basis: 300px;\n    -moz-flex-basis: 300px;\n    -ms-flex-preferred-size: 300px;\n    flex-basis: 300px;\n    text-align: left;\n    padding: 20px; }\n    @media (max-width: 500px) {\n      .smarttestresult .smartTestBottom .column1 {\n        padding-left: 0; } }\n    .smarttestresult .smartTestBottom .column1 .wraper-text {\n      background-color: rgba(255, 255, 0, 0.3);\n      padding: 10px;\n      border-radius: 5px; }\n      .smarttestresult .smartTestBottom .column1 .wraper-text h2 {\n        text-align: center;\n        margin-bottom: 20px;\n        font-size: 20px; }\n  .smarttestresult .smartTestBottom .column2 {\n    -webkit-box-flex: 2;\n    -webkit-flex-grow: 2;\n    -moz-flex-grow: 2;\n    -ms-flex-positive: 2;\n    flex-grow: 2;\n    -webkit-flex-basis: 300px;\n    -moz-flex-basis: 300px;\n    -ms-flex-preferred-size: 300px;\n    flex-basis: 300px;\n    position: relative;\n    padding-left: 50px; }\n    .smarttestresult .smartTestBottom .column2 ul {\n      list-style: none; }\n      .smarttestresult .smartTestBottom .column2 ul li {\n        position: relative;\n        font-family: 'MuseoSans-Normal';\n        margin-top: 20px;\n        font-size: 20px; }\n        .smarttestresult .smartTestBottom .column2 ul li .blueMarker {\n          position: absolute;\n          z-index: 2;\n          left: -40px;\n          top: 5px;\n          width: 20px;\n          height: 20px;\n          border-radius: 50%;\n          background-color: white;\n          border: 1px solid #0099ff; }\n        .smarttestresult .smartTestBottom .column2 ul li div {\n          font-family: 'MuseoSans-Light';\n          font-size: 16px; }\n    .smarttestresult .smartTestBottom .column2 .line {\n      position: absolute;\n      top: 0;\n      left: 20px;\n      height: 100%;\n      width: 1px;\n      margin-top: 28px;\n      background-color: #0099ff; }\n      .smarttestresult .smartTestBottom .column2 .line .circle {\n        position: sticky;\n        top: 150px;\n        margin-left: -7px;\n        background-color: #0099ff;\n        width: 14px;\n        height: 14px;\n        border-radius: 50%;\n        z-index: 3; }\n      .smarttestresult .smartTestBottom .column2 .line .fill-circle {\n        position: absolute;\n        bottom: -3px;\n        left: -10px;\n        width: 20px;\n        height: 20px;\n        border-radius: 50%;\n        background-color: white;\n        border: 1px solid #0099ff;\n        z-index: 2; }\n\n.smarttestresult .resultText {\n  max-width: 700px;\n  text-align: left;\n  margin: 60px auto;\n  color: black; }\n  @media (max-width: 500px) {\n    .smarttestresult .resultText {\n      margin-bottom: 0px; } }\n  .smarttestresult .resultText .wraperForH1 {\n    font-family: 'MuseoSans-Light';\n    padding: 30px;\n    position: relative; }\n    .smarttestresult .resultText .wraperForH1 .Collapsible__trigger {\n      font-size: 24px; }\n    .smarttestresult .resultText .wraperForH1 li {\n      margin-top: 10px;\n      margin-left: 20px;\n      list-style: none; }\n      .smarttestresult .resultText .wraperForH1 li div {\n        display: inline-block;\n        text-align: center;\n        color: #0099ff;\n        width: 30px;\n        padding: 3px;\n        border: 1px solid #0099ff;\n        border-radius: 50%;\n        margin-right: 10px; }\n    .smarttestresult .resultText .wraperForH1 h1 {\n      border-bottom: 1px solid #ffffff;\n      border-top: 1px solid #ffffff;\n      padding: 5px;\n      font-size: 26px;\n      color: #ffffff; }\n      @media (max-width: 500px) {\n        .smarttestresult .resultText .wraperForH1 h1 {\n          font-size: 19px; } }\n  .smarttestresult .resultText h2 {\n    background-color: rgba(0, 146, 0, 0.6);\n    padding: 30px;\n    font-family: 'MuseoSans-Light';\n    font-size: 20px;\n    color: #ffffff; }\n    @media (max-width: 500px) {\n      .smarttestresult .resultText h2 {\n        font-size: 17px; } }\n    .smarttestresult .resultText h2 a {\n      display: block;\n      font-size: 14px;\n      font-weight: 300; }\n  .smarttestresult .resultText .button-agree, .smarttestresult .resultText .button-pdf {\n    margin: 20px auto;\n    width: 200px;\n    padding: 5px;\n    color: #ffffff;\n    text-align: center;\n    transition: 1s all;\n    cursor: pointer;\n    box-shadow: 0 8px 6px -6px black;\n    border-radius: 15px; }\n  .smarttestresult .resultText a {\n    text-decoration: none; }\n  .smarttestresult .resultText .button-pdf {\n    background-color: #0099ff;\n    border: 1px solid #0099ff; }\n    .smarttestresult .resultText .button-pdf:hover {\n      background-color: #ffffff;\n      color: #0099ff; }\n  .smarttestresult .resultText .button-agree {\n    background-color: #009200;\n    border: 1px solid #009200; }\n    .smarttestresult .resultText .button-agree:hover {\n      background-color: #ffffff;\n      color: #009200; }\n", ""]);
+	exports.push([module.id, ".test {\n  -moz-transform: skew(25deg, 10deg);\n  -o-transform: skew(25deg, 10deg);\n  -ms-transform: skew(25deg, 10deg);\n  -webkit-transform: skew(25deg, 10deg);\n  transform: skew(25deg, 10deg);\n  moz-transform-origin: top left;\n  -o-transform-origin: top left;\n  -ms-transform-origin: top left;\n  -webkit-transform-origin: top left;\n  transform-origin: top left;\n  position: absolute;\n  top: 25%;\n  bottom: 25%;\n  left: 25%;\n  right: 25%;\n  background-color: rgba(20, 20, 20, 0.5); }\n\n.smarttestresult .smart-result-page {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -moz-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: space-bettwen;\n  -ms-flex-pack: space-bettwen;\n  -webkit-justify-content: space-bettwen;\n  -moz-justify-content: space-bettwen;\n  justify-content: space-bettwen;\n  -webkit-flex-wrap: wrap;\n  -moz-flex-wrap: wrap;\n  -ms-flex-wrap: wrap;\n  flex-wrap: wrap;\n  width: 100%;\n  min-height: 100%; }\n  .smarttestresult .smart-result-page .left-side-result-page {\n    background-color: #e5e5e5;\n    padding: 30px;\n    text-align: left;\n    flex: 0 0 30%; }\n  .smarttestresult .smart-result-page .right-side-result-page {\n    flex: 0 0 70%;\n    position: relative;\n    padding-left: 50px; }\n", ""]);
 
 	// exports
 
 
 /***/ }),
-/* 503 */
+/* 507 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -47205,7 +47277,7 @@
 
 
 /***/ }),
-/* 504 */
+/* 508 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/home/volodymyr/Стільниця/Medical/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/home/volodymyr/Стільниця/Medical/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -47230,7 +47302,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	__webpack_require__(505);
+	__webpack_require__(509);
 
 	var AuthForm = (function (_React$Component) {
 	    _inherits(AuthForm, _React$Component);
@@ -47321,13 +47393,13 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/volodymyr/Стільниця/Medical/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "AuthForm.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ }),
-/* 505 */
+/* 509 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(506);
+	var content = __webpack_require__(510);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(246)(content, {});
@@ -47347,7 +47419,7 @@
 	}
 
 /***/ }),
-/* 506 */
+/* 510 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(245)();
@@ -47361,7 +47433,7 @@
 
 
 /***/ }),
-/* 507 */
+/* 511 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/home/volodymyr/Стільниця/Medical/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/home/volodymyr/Стільниця/Medical/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -47386,7 +47458,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	__webpack_require__(508);
+	__webpack_require__(512);
 
 	// array with questions
 	var arrayOfQuestions = [{
@@ -47661,13 +47733,13 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/volodymyr/Стільниця/Medical/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "Smarttest2.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ }),
-/* 508 */
+/* 512 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(509);
+	var content = __webpack_require__(513);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(246)(content, {});
@@ -47687,7 +47759,7 @@
 	}
 
 /***/ }),
-/* 509 */
+/* 513 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(245)();
@@ -47695,19 +47767,19 @@
 
 
 	// module
-	exports.push([module.id, ".test {\n  -moz-transform: skew(25deg, 10deg);\n  -o-transform: skew(25deg, 10deg);\n  -ms-transform: skew(25deg, 10deg);\n  -webkit-transform: skew(25deg, 10deg);\n  transform: skew(25deg, 10deg);\n  moz-transform-origin: top left;\n  -o-transform-origin: top left;\n  -ms-transform-origin: top left;\n  -webkit-transform-origin: top left;\n  transform-origin: top left;\n  position: absolute;\n  top: 25%;\n  bottom: 25%;\n  left: 25%;\n  right: 25%;\n  background-color: rgba(20, 20, 20, 0.5); }\n\n* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0; }\n\n.hidden {\n  display: none; }\n\n.smarttests2 {\n  padding: 10px;\n  height: 100%;\n  width: 100%;\n  background: url(" + __webpack_require__(510) + ");\n  background-size: cover;\n  background-position: center; }\n  .smarttests2 .flex-container {\n    display: -webkit-box;\n    display: -webkit-flex;\n    display: -moz-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: start;\n    -ms-flex-pack: start;\n    -webkit-justify-content: flex-start;\n    -moz-justify-content: flex-start;\n    justify-content: flex-start;\n    -webkit-box-direction: normal;\n    -webkit-box-orient: vertical;\n    -webkit-flex-direction: column;\n    -moz-flex-direction: column;\n    -ms-flex-direction: column;\n    flex-direction: column;\n    -webkit-align-self: felx-end;\n    -moz-align-self: felx-end;\n    -ms-flex-item-align: felx-end;\n    align-self: felx-end;\n    position: relative;\n    width: 100%;\n    height: 100%;\n    text-align: center;\n    padding-top: 20px;\n    /**\n      * style for logic\n      */\n    /*all blocks animate with rotate when click no*/\n    /*all blocks animate with up when click yes*/\n    /*animate agree-animation all block*/ }\n    .smarttests2 .flex-container .main-text h1 {\n      font-size: calc(38px + 20 * (100vw - 320px) / 1600);\n      color: #ffffff; }\n    .smarttests2 .flex-container .main-text h2 {\n      font-size: 20px;\n      font-weight: 500;\n      color: black; }\n    .smarttests2 .flex-container .logic {\n      display: -webkit-box;\n      display: -webkit-flex;\n      display: -moz-flex;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-pack: center;\n      -ms-flex-pack: center;\n      -webkit-justify-content: center;\n      -moz-justify-content: center;\n      justify-content: center;\n      -webkit-box-direction: normal;\n      -webkit-box-orient: vertical;\n      -webkit-flex-direction: column;\n      -moz-flex-direction: column;\n      -ms-flex-direction: column;\n      flex-direction: column;\n      max-width: 800px;\n      min-width: 200px;\n      margin: 0 auto; }\n      .smarttests2 .flex-container .logic .question {\n        display: -webkit-box;\n        display: -webkit-flex;\n        display: -moz-flex;\n        display: -ms-flexbox;\n        display: flex;\n        -webkit-box-pack: center;\n        -ms-flex-pack: center;\n        -webkit-justify-content: center;\n        -moz-justify-content: center;\n        justify-content: center;\n        -webkit-box-align: center;\n        -ms-flex-align: center;\n        -webkit-align-items: center;\n        -moz-align-items: center;\n        align-items: center;\n        -webkit-box-flex: 1;\n        -webkit-flex: 1;\n        -moz-box-flex: 1;\n        -moz-flex: 1;\n        -ms-flex: 1;\n        flex: 1;\n        -webkit-box-flex: 2;\n        -webkit-flex-grow: 2;\n        -moz-flex-grow: 2;\n        -ms-flex-positive: 2;\n        flex-grow: 2;\n        padding: 25px;\n        font-size: 35px;\n        -moz-box-shadow: inset 0 0 10px #000000;\n        -webkit-box-shadow: inset 0 0 10px #000000;\n        box-shadow: inset 0 0 10px #000000;\n        width: 100%;\n        border-radius: 20px;\n        margin: auto;\n        background-color: #ffffff;\n        text-align: center;\n        font-weight: 500;\n        color: black; }\n      .smarttests2 .flex-container .logic .answer {\n        display: -webkit-box;\n        display: -webkit-flex;\n        display: -moz-flex;\n        display: -ms-flexbox;\n        display: flex;\n        -webkit-box-pack: center;\n        -ms-flex-pack: center;\n        -webkit-justify-content: center;\n        -moz-justify-content: center;\n        justify-content: center;\n        -webkit-box-align: center;\n        -ms-flex-align: center;\n        -webkit-align-items: center;\n        -moz-align-items: center;\n        align-items: center;\n        -webkit-box-flex: 1;\n        -webkit-flex: 1;\n        -moz-box-flex: 1;\n        -moz-flex: 1;\n        -ms-flex: 1;\n        flex: 1;\n        -webkit-box-flex: 1;\n        -webkit-flex-grow: 1;\n        -moz-flex-grow: 1;\n        -ms-flex-positive: 1;\n        flex-grow: 1;\n        -moz-box-shadow: inset 0 0 10px #000000;\n        -webkit-box-shadow: inset 0 0 10px #000000;\n        box-shadow: inset 0 0 10px #000000;\n        margin: auto;\n        background-color: #ffffff;\n        font-size: 25px;\n        margin-top: 10px;\n        border-radius: 20px;\n        min-width: 300px;\n        height: 80px;\n        padding: 15px; }\n        .smarttests2 .flex-container .logic .answer:hover {\n          cursor: pointer;\n          -webkit-box-shadow: 0 8px 6px -6px black;\n          -moz-box-shadow: 0 8px 6px -6px black;\n          box-shadow: 0 8px 6px -6px black; }\n      .smarttests2 .flex-container .logic .activeCheck {\n        background-color: #47afff; }\n    .smarttests2 .flex-container .hide {\n      display: none !important; }\n\n@keyframes forArrowBottom {\n  from, 20%, 49%, 50%, 70%, 85%, to {\n    animation-timing-function: linear; }\n  from {\n    transform: translate(0, 0); }\n  49% {\n    transform: translate(0, 0); }\n  50% {\n    transform: translate(0, -55px); }\n  70% {\n    transform: translate(0, -55px); }\n  85% {\n    transform: translate(0, 0); } }\n\n@keyframes forArrowRight {\n  from, 20%, 49%, 50%, 70%, 85%, to {\n    animation-timing-function: linear; }\n  from {\n    transform: translate(0, 0) rotate(-90deg); }\n  49% {\n    transform: translate(0, 0) rotate(-90deg); }\n  50% {\n    transform: translate(-55px, 0) rotate(-90deg); }\n  75% {\n    transform: translate(-55px, 0) rotate(-90deg); }\n  85% {\n    transform: translate(0, 0) rotate(-90deg); } }\n\n@keyframes forArrowLeft {\n  from, 20%, 49%, 50%, 70%, 85%, to {\n    animation-timing-function: linear; }\n  from {\n    transform: translate(0, 0) rotate(90deg);\n    opacity: 0; }\n  49% {\n    transform: translate(0, 0) rotate(90deg);\n    opacity: 0; }\n  50% {\n    transform: translate(55px, 0) rotate(90deg);\n    opacity: 1; }\n  75% {\n    transform: translate(55px, 0) rotate(90deg); }\n  85% {\n    transform: translate(0, 0) rotate(90deg); } }\n    .smarttests2 .flex-container .forArrowLeft {\n      animation-duration: 2s;\n      animation-fill-mode: both;\n      animation-name: forArrowLeft; }\n    .smarttests2 .flex-container .forArrowRight {\n      animation-duration: 2s;\n      animation-fill-mode: both;\n      animation-name: forArrowRight; }\n    .smarttests2 .flex-container .forArrowBottom {\n      animation-duration: 2s;\n      animation-fill-mode: both;\n      animation-name: forArrowBottom; }\n\n@keyframes rotate {\n  from, 20%, 45%, 50%, 70%, 90%, to {\n    animation-timing-function: linear; }\n  from {\n    transform: rotate(0deg); }\n  20% {\n    transform: rotate(90deg); }\n  45% {\n    transform: rotate(90deg) translate3d(-700px, 0, 0); }\n  50% {\n    opacity: 0; }\n  51% {\n    transform: translate3d(0, 0, 0);\n    opacity: 1;\n    transform: scale(0.1, 0.1); }\n  70% {\n    transform: scale(1, 1) rotate3d(1, 0, 0, 30deg); } }\n\n@keyframes upAnswer {\n  from, 20%, 49%, 50%, 70%, to {\n    animation-timing-function: linear; }\n  from {\n    transform: rotate(0deg);\n    opacity: 1; }\n  49% {\n    transform: translate3d(0, -700px, 0);\n    opacity: 0; }\n  50% {\n    transform: translate3d(0, 0, 0);\n    opacity: 1;\n    transform: scale(0.1, 0.1); }\n  70% {\n    transform: scale(1, 1) rotate3d(1, 0, 0, 30deg); } }\n\n@keyframes agree-animation {\n  from, 20%, 49%, 50%, 70%, to {\n    animation-timing-function: linear; }\n  from {\n    opacity: 1;\n    transform: scale(0.1, 0.1); }\n  to {\n    opacity: 1;\n    transform: scale(1, 1); } }\n    .smarttests2 .flex-container .agree-animation {\n      transform-origin: 50% 0%;\n      animation-duration: 0.5s;\n      animation-fill-mode: both;\n      animation-name: agree-animation; }\n\n@keyframes agree-animation-hidden {\n  from, 20%, 49%, 50%, 70%, to {\n    animation-timing-function: linear; }\n  from {\n    opacity: 1;\n    transform: translate3d(0, 0, 0); }\n  to {\n    transform: translate3d(0, -700px, 0);\n    opacity: 1; } }\n    .smarttests2 .flex-container .agree-animation-hidden {\n      transform-origin: 50% 0%;\n      animation-duration: 1s;\n      animation-fill-mode: both;\n      animation-name: agree-animation-hidden; }\n    .smarttests2 .flex-container .rotate {\n      animation-duration: 2s;\n      animation-fill-mode: both;\n      animation-name: rotate;\n      transform-origin: 50% 50%; }\n    .smarttests2 .flex-container .upAnswer {\n      transform-origin: 50% 0%;\n      animation-duration: 2s;\n      animation-fill-mode: both;\n      animation-name: upAnswer; }\n\n@keyframes forButtonNo {\n  from, 20%, 49%, 50%, 69%, 70%, to {\n    animation-timing-function: linear; }\n  from {\n    transform: scale(1, 1); }\n  50% {\n    transform: scale(1, 1); }\n  51% {\n    transform: scale(0, 0); }\n  85% {\n    transform: scale(0, 0); }\n  to {\n    transform: scale(1, 1); } }\n\n@keyframes forButtonBottom {\n  from, 20%, 49%, 50%, 69%, 70%, to {\n    animation-timing-function: linear; }\n  from {\n    transform: scale(1, 1); }\n  50% {\n    transform: scale(1, 1); }\n  51% {\n    transform: scale(0, 0); }\n  85% {\n    transform: scale(0, 0); }\n  to {\n    transform: scale(1, 1); } }\n\n@keyframes forButtonAdditional {\n  from, 50%, 51%, 85%, to {\n    animation-timing-function: linear; }\n  from {\n    transform: scale(1, 1);\n    opacity: 0; }\n  50% {\n    transform: scale(1, 1);\n    opacity: 0; }\n  51% {\n    transform: scale(0, 0);\n    opacity: 1; }\n  85% {\n    transform: scale(0, 0); }\n  to {\n    transform: scale(1, 1); } }\n    .smarttests2 .flex-container .forButtonAdditional {\n      transform-origin: right center;\n      animation-duration: 2s;\n      animation-fill-mode: both;\n      animation-name: forButtonAdditional; }\n    .smarttests2 .flex-container .forButtonBottom {\n      transform-origin: 50% 0;\n      animation-duration: 2s;\n      animation-fill-mode: both;\n      animation-name: forButtonBottom; }\n    .smarttests2 .flex-container .forButtonNo {\n      transform-origin: 0 50%;\n      animation-duration: 2s;\n      animation-fill-mode: both;\n      animation-name: forButtonNo; }\n\n::-webkit-scrollbar-track {\n  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);\n  border-radius: 10px;\n  background-color: #F5F5F5; }\n\n::-webkit-scrollbar {\n  width: 8px;\n  background-color: #F5F5F5; }\n\n::-webkit-scrollbar-thumb {\n  border-radius: 10px;\n  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);\n  background-color: #bdbdbd; }\n", ""]);
+	exports.push([module.id, ".test {\n  -moz-transform: skew(25deg, 10deg);\n  -o-transform: skew(25deg, 10deg);\n  -ms-transform: skew(25deg, 10deg);\n  -webkit-transform: skew(25deg, 10deg);\n  transform: skew(25deg, 10deg);\n  moz-transform-origin: top left;\n  -o-transform-origin: top left;\n  -ms-transform-origin: top left;\n  -webkit-transform-origin: top left;\n  transform-origin: top left;\n  position: absolute;\n  top: 25%;\n  bottom: 25%;\n  left: 25%;\n  right: 25%;\n  background-color: rgba(20, 20, 20, 0.5); }\n\n* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0; }\n\n.hidden {\n  display: none; }\n\n.smarttests2 {\n  padding: 10px;\n  height: 100%;\n  width: 100%;\n  background: url(" + __webpack_require__(514) + ");\n  background-size: cover;\n  background-position: center; }\n  .smarttests2 .flex-container {\n    display: -webkit-box;\n    display: -webkit-flex;\n    display: -moz-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: start;\n    -ms-flex-pack: start;\n    -webkit-justify-content: flex-start;\n    -moz-justify-content: flex-start;\n    justify-content: flex-start;\n    -webkit-box-direction: normal;\n    -webkit-box-orient: vertical;\n    -webkit-flex-direction: column;\n    -moz-flex-direction: column;\n    -ms-flex-direction: column;\n    flex-direction: column;\n    -webkit-align-self: felx-end;\n    -moz-align-self: felx-end;\n    -ms-flex-item-align: felx-end;\n    align-self: felx-end;\n    position: relative;\n    width: 100%;\n    height: 100%;\n    text-align: center;\n    padding-top: 20px;\n    /**\n      * style for logic\n      */\n    /*all blocks animate with rotate when click no*/\n    /*all blocks animate with up when click yes*/\n    /*animate agree-animation all block*/ }\n    .smarttests2 .flex-container .main-text h1 {\n      font-size: calc(38px + 20 * (100vw - 320px) / 1600);\n      color: #ffffff; }\n    .smarttests2 .flex-container .main-text h2 {\n      font-size: 20px;\n      font-weight: 500;\n      color: black; }\n    .smarttests2 .flex-container .logic {\n      display: -webkit-box;\n      display: -webkit-flex;\n      display: -moz-flex;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-pack: center;\n      -ms-flex-pack: center;\n      -webkit-justify-content: center;\n      -moz-justify-content: center;\n      justify-content: center;\n      -webkit-box-direction: normal;\n      -webkit-box-orient: vertical;\n      -webkit-flex-direction: column;\n      -moz-flex-direction: column;\n      -ms-flex-direction: column;\n      flex-direction: column;\n      max-width: 800px;\n      min-width: 200px;\n      margin: 0 auto; }\n      .smarttests2 .flex-container .logic .question {\n        display: -webkit-box;\n        display: -webkit-flex;\n        display: -moz-flex;\n        display: -ms-flexbox;\n        display: flex;\n        -webkit-box-pack: center;\n        -ms-flex-pack: center;\n        -webkit-justify-content: center;\n        -moz-justify-content: center;\n        justify-content: center;\n        -webkit-box-align: center;\n        -ms-flex-align: center;\n        -webkit-align-items: center;\n        -moz-align-items: center;\n        align-items: center;\n        -webkit-box-flex: 1;\n        -webkit-flex: 1;\n        -moz-box-flex: 1;\n        -moz-flex: 1;\n        -ms-flex: 1;\n        flex: 1;\n        -webkit-box-flex: 2;\n        -webkit-flex-grow: 2;\n        -moz-flex-grow: 2;\n        -ms-flex-positive: 2;\n        flex-grow: 2;\n        padding: 25px;\n        font-size: 35px;\n        -moz-box-shadow: inset 0 0 10px #000000;\n        -webkit-box-shadow: inset 0 0 10px #000000;\n        box-shadow: inset 0 0 10px #000000;\n        width: 100%;\n        border-radius: 20px;\n        margin: auto;\n        background-color: #ffffff;\n        text-align: center;\n        font-weight: 500;\n        color: black; }\n      .smarttests2 .flex-container .logic .answer {\n        display: -webkit-box;\n        display: -webkit-flex;\n        display: -moz-flex;\n        display: -ms-flexbox;\n        display: flex;\n        -webkit-box-pack: center;\n        -ms-flex-pack: center;\n        -webkit-justify-content: center;\n        -moz-justify-content: center;\n        justify-content: center;\n        -webkit-box-align: center;\n        -ms-flex-align: center;\n        -webkit-align-items: center;\n        -moz-align-items: center;\n        align-items: center;\n        -webkit-box-flex: 1;\n        -webkit-flex: 1;\n        -moz-box-flex: 1;\n        -moz-flex: 1;\n        -ms-flex: 1;\n        flex: 1;\n        -webkit-box-flex: 1;\n        -webkit-flex-grow: 1;\n        -moz-flex-grow: 1;\n        -ms-flex-positive: 1;\n        flex-grow: 1;\n        -moz-box-shadow: inset 0 0 10px #000000;\n        -webkit-box-shadow: inset 0 0 10px #000000;\n        box-shadow: inset 0 0 10px #000000;\n        margin: auto;\n        background-color: #ffffff;\n        font-size: 25px;\n        margin-top: 10px;\n        border-radius: 20px;\n        min-width: 300px;\n        height: 80px;\n        padding: 15px; }\n        .smarttests2 .flex-container .logic .answer:hover {\n          cursor: pointer;\n          -webkit-box-shadow: 0 8px 6px -6px black;\n          -moz-box-shadow: 0 8px 6px -6px black;\n          box-shadow: 0 8px 6px -6px black; }\n      .smarttests2 .flex-container .logic .activeCheck {\n        background-color: #47afff; }\n    .smarttests2 .flex-container .hide {\n      display: none !important; }\n\n@keyframes forArrowBottom {\n  from, 20%, 49%, 50%, 70%, 85%, to {\n    animation-timing-function: linear; }\n  from {\n    transform: translate(0, 0); }\n  49% {\n    transform: translate(0, 0); }\n  50% {\n    transform: translate(0, -55px); }\n  70% {\n    transform: translate(0, -55px); }\n  85% {\n    transform: translate(0, 0); } }\n\n@keyframes forArrowRight {\n  from, 20%, 49%, 50%, 70%, 85%, to {\n    animation-timing-function: linear; }\n  from {\n    transform: translate(0, 0) rotate(-90deg); }\n  49% {\n    transform: translate(0, 0) rotate(-90deg); }\n  50% {\n    transform: translate(-55px, 0) rotate(-90deg); }\n  75% {\n    transform: translate(-55px, 0) rotate(-90deg); }\n  85% {\n    transform: translate(0, 0) rotate(-90deg); } }\n\n@keyframes forArrowLeft {\n  from, 20%, 49%, 50%, 70%, 85%, to {\n    animation-timing-function: linear; }\n  from {\n    transform: translate(0, 0) rotate(90deg);\n    opacity: 0; }\n  49% {\n    transform: translate(0, 0) rotate(90deg);\n    opacity: 0; }\n  50% {\n    transform: translate(55px, 0) rotate(90deg);\n    opacity: 1; }\n  75% {\n    transform: translate(55px, 0) rotate(90deg); }\n  85% {\n    transform: translate(0, 0) rotate(90deg); } }\n    .smarttests2 .flex-container .forArrowLeft {\n      animation-duration: 2s;\n      animation-fill-mode: both;\n      animation-name: forArrowLeft; }\n    .smarttests2 .flex-container .forArrowRight {\n      animation-duration: 2s;\n      animation-fill-mode: both;\n      animation-name: forArrowRight; }\n    .smarttests2 .flex-container .forArrowBottom {\n      animation-duration: 2s;\n      animation-fill-mode: both;\n      animation-name: forArrowBottom; }\n\n@keyframes rotate {\n  from, 20%, 45%, 50%, 70%, 90%, to {\n    animation-timing-function: linear; }\n  from {\n    transform: rotate(0deg); }\n  20% {\n    transform: rotate(90deg); }\n  45% {\n    transform: rotate(90deg) translate3d(-700px, 0, 0); }\n  50% {\n    opacity: 0; }\n  51% {\n    transform: translate3d(0, 0, 0);\n    opacity: 1;\n    transform: scale(0.1, 0.1); }\n  70% {\n    transform: scale(1, 1) rotate3d(1, 0, 0, 30deg); } }\n\n@keyframes upAnswer {\n  from, 20%, 49%, 50%, 70%, to {\n    animation-timing-function: linear; }\n  from {\n    transform: rotate(0deg);\n    opacity: 1; }\n  49% {\n    transform: translate3d(0, -700px, 0);\n    opacity: 0; }\n  50% {\n    transform: translate3d(0, 0, 0);\n    opacity: 1;\n    transform: scale(0.1, 0.1); }\n  70% {\n    transform: scale(1, 1) rotate3d(1, 0, 0, 30deg); } }\n\n@keyframes agree-animation {\n  from, 20%, 49%, 50%, 70%, to {\n    animation-timing-function: linear; }\n  from {\n    opacity: 1;\n    transform: scale(0.1, 0.1); }\n  to {\n    opacity: 1;\n    transform: scale(1, 1); } }\n    .smarttests2 .flex-container .agree-animation {\n      transform-origin: 50% 0%;\n      animation-duration: 0.5s;\n      animation-fill-mode: both;\n      animation-name: agree-animation; }\n\n@keyframes agree-animation-hidden {\n  from, 20%, 49%, 50%, 70%, to {\n    animation-timing-function: linear; }\n  from {\n    opacity: 1;\n    transform: translate3d(0, 0, 0); }\n  to {\n    transform: translate3d(0, -700px, 0);\n    opacity: 1; } }\n    .smarttests2 .flex-container .agree-animation-hidden {\n      transform-origin: 50% 0%;\n      animation-duration: 1s;\n      animation-fill-mode: both;\n      animation-name: agree-animation-hidden; }\n    .smarttests2 .flex-container .rotate {\n      animation-duration: 2s;\n      animation-fill-mode: both;\n      animation-name: rotate;\n      transform-origin: 50% 50%; }\n    .smarttests2 .flex-container .upAnswer {\n      transform-origin: 50% 0%;\n      animation-duration: 2s;\n      animation-fill-mode: both;\n      animation-name: upAnswer; }\n\n@keyframes forButtonNo {\n  from, 20%, 49%, 50%, 69%, 70%, to {\n    animation-timing-function: linear; }\n  from {\n    transform: scale(1, 1); }\n  50% {\n    transform: scale(1, 1); }\n  51% {\n    transform: scale(0, 0); }\n  85% {\n    transform: scale(0, 0); }\n  to {\n    transform: scale(1, 1); } }\n\n@keyframes forButtonBottom {\n  from, 20%, 49%, 50%, 69%, 70%, to {\n    animation-timing-function: linear; }\n  from {\n    transform: scale(1, 1); }\n  50% {\n    transform: scale(1, 1); }\n  51% {\n    transform: scale(0, 0); }\n  85% {\n    transform: scale(0, 0); }\n  to {\n    transform: scale(1, 1); } }\n\n@keyframes forButtonAdditional {\n  from, 50%, 51%, 85%, to {\n    animation-timing-function: linear; }\n  from {\n    transform: scale(1, 1);\n    opacity: 0; }\n  50% {\n    transform: scale(1, 1);\n    opacity: 0; }\n  51% {\n    transform: scale(0, 0);\n    opacity: 1; }\n  85% {\n    transform: scale(0, 0); }\n  to {\n    transform: scale(1, 1); } }\n    .smarttests2 .flex-container .forButtonAdditional {\n      transform-origin: right center;\n      animation-duration: 2s;\n      animation-fill-mode: both;\n      animation-name: forButtonAdditional; }\n    .smarttests2 .flex-container .forButtonBottom {\n      transform-origin: 50% 0;\n      animation-duration: 2s;\n      animation-fill-mode: both;\n      animation-name: forButtonBottom; }\n    .smarttests2 .flex-container .forButtonNo {\n      transform-origin: 0 50%;\n      animation-duration: 2s;\n      animation-fill-mode: both;\n      animation-name: forButtonNo; }\n\n::-webkit-scrollbar-track {\n  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);\n  border-radius: 10px;\n  background-color: #F5F5F5; }\n\n::-webkit-scrollbar {\n  width: 8px;\n  background-color: #F5F5F5; }\n\n::-webkit-scrollbar-thumb {\n  border-radius: 10px;\n  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);\n  background-color: #bdbdbd; }\n", ""]);
 
 	// exports
 
 
 /***/ }),
-/* 510 */
+/* 514 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "9bfb2f9cfd260afb0015c3166d19f55f.jpg";
 
 /***/ }),
-/* 511 */
+/* 515 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/home/volodymyr/Стільниця/Medical/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/home/volodymyr/Стільниця/Medical/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -47732,7 +47804,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	__webpack_require__(512);
+	__webpack_require__(516);
 
 	var arrayOfQuestions = [{
 	    key: 2,
@@ -48195,13 +48267,13 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/volodymyr/Стільниця/Medical/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "Smarttest3.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ }),
-/* 512 */
+/* 516 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(513);
+	var content = __webpack_require__(517);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(246)(content, {});
@@ -48221,7 +48293,7 @@
 	}
 
 /***/ }),
-/* 513 */
+/* 517 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(245)();
@@ -48235,7 +48307,7 @@
 
 
 /***/ }),
-/* 514 */
+/* 518 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/home/volodymyr/Стільниця/Medical/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/home/volodymyr/Стільниця/Medical/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -48262,13 +48334,13 @@
 
 	var _reactRedux = __webpack_require__(402);
 
-	__webpack_require__(515);
+	__webpack_require__(519);
 
 	var _answerAnswerJs = __webpack_require__(440);
 
 	var _answerAnswerJs2 = _interopRequireDefault(_answerAnswerJs);
 
-	var _materialUiCheckbox = __webpack_require__(444);
+	var _materialUiCheckbox = __webpack_require__(448);
 
 	var _materialUiCheckbox2 = _interopRequireDefault(_materialUiCheckbox);
 
@@ -48521,13 +48593,13 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/volodymyr/Стільниця/Medical/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "Smarttest4.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ }),
-/* 515 */
+/* 519 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(516);
+	var content = __webpack_require__(520);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(246)(content, {});
@@ -48547,7 +48619,7 @@
 	}
 
 /***/ }),
-/* 516 */
+/* 520 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(245)();
@@ -48561,7 +48633,7 @@
 
 
 /***/ }),
-/* 517 */
+/* 521 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/home/volodymyr/Стільниця/Medical/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/home/volodymyr/Стільниця/Medical/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -48584,7 +48656,7 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	__webpack_require__(518);
+	__webpack_require__(522);
 
 	//
 	// class Social extends React.Component {
@@ -48609,7 +48681,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _svgComponentsArrowJsx = __webpack_require__(521);
+	var _svgComponentsArrowJsx = __webpack_require__(525);
 
 	var _reactRedux = __webpack_require__(402);
 
@@ -48874,13 +48946,13 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/volodymyr/Стільниця/Medical/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "Social.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ }),
-/* 518 */
+/* 522 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(519);
+	var content = __webpack_require__(523);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(246)(content, {});
@@ -48900,7 +48972,7 @@
 	}
 
 /***/ }),
-/* 519 */
+/* 523 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(245)();
@@ -48908,19 +48980,19 @@
 
 
 	// module
-	exports.push([module.id, ".test {\n  -moz-transform: skew(25deg, 10deg);\n  -o-transform: skew(25deg, 10deg);\n  -ms-transform: skew(25deg, 10deg);\n  -webkit-transform: skew(25deg, 10deg);\n  transform: skew(25deg, 10deg);\n  moz-transform-origin: top left;\n  -o-transform-origin: top left;\n  -ms-transform-origin: top left;\n  -webkit-transform-origin: top left;\n  transform-origin: top left;\n  position: absolute;\n  top: 25%;\n  bottom: 25%;\n  left: 25%;\n  right: 25%;\n  background-color: rgba(20, 20, 20, 0.5); }\n\n* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0; }\n\n.hidden {\n  display: none; }\n\n.smarttests1 {\n  padding: 10px;\n  height: 100%;\n  width: 100%;\n  background: url(" + __webpack_require__(520) + ");\n  background-size: cover;\n  background-position: center; }\n  .smarttests1 .flex-container {\n    position: relative;\n    width: 100%;\n    height: 100%;\n    text-align: center;\n    padding-top: 20px;\n    /**\n      * style for logic\n      */\n    /**\n    * style for squire figure\n    */\n    /*all blocks animate with rotate when click no*/\n    /*all blocks animate with up when click yes*/\n    /*animate agree-animation all block*/ }\n    .smarttests1 .flex-container .main-text h1 {\n      font-size: calc(38px + 20 * (100vw - 320px) / 1600);\n      color: #ffffff; }\n    .smarttests1 .flex-container .main-text h2 {\n      font-size: 20px;\n      font-weight: 500;\n      color: black; }\n    .smarttests1 .flex-container .logic {\n      display: -webkit-box;\n      display: -webkit-flex;\n      display: -moz-flex;\n      display: -ms-flexbox;\n      display: flex;\n      -moz-transform: rotate3d(1, 0, 0, 30deg);\n      -o-transform: rotate3d(1, 0, 0, 30deg);\n      -ms-transform: rotate3d(1, 0, 0, 30deg);\n      -webkit-transform: rotate3d(1, 0, 0, 30deg);\n      transform: rotate3d(1, 0, 0, 30deg);\n      -webkit-box-pack: center;\n      -ms-flex-pack: center;\n      -webkit-justify-content: center;\n      -moz-justify-content: center;\n      justify-content: center;\n      width: 200px;\n      height: 200px;\n      margin: 0 auto;\n      top: calc(50% - 200px);\n      transition: transform 1s;\n      margin-top: 20px; }\n      @media (max-width: 768px) {\n        .smarttests1 .flex-container .logic {\n          -moz-transform: scale(0.7, 0.7);\n          -o-transform: scale(0.7, 0.7);\n          -ms-transform: scale(0.7, 0.7);\n          -webkit-transform: scale(0.7, 0.7);\n          transform: scale(0.7, 0.7);\n          transition: transform 1s; } }\n      @media (max-width: 500px) {\n        .smarttests1 .flex-container .logic {\n          -moz-transform: scale(0.5, 0.5);\n          -o-transform: scale(0.5, 0.5);\n          -ms-transform: scale(0.5, 0.5);\n          -webkit-transform: scale(0.5, 0.5);\n          transform: scale(0.5, 0.5);\n          transition: transform 1s; } }\n      .smarttests1 .flex-container .logic .helper {\n        -moz-transform: rotate3d(0, 0, 1, 45deg);\n        -o-transform: rotate3d(0, 0, 1, 45deg);\n        -ms-transform: rotate3d(0, 0, 1, 45deg);\n        -webkit-transform: rotate3d(0, 0, 1, 45deg);\n        transform: rotate3d(0, 0, 1, 45deg);\n        position: absolute;\n        width: 200px;\n        height: 200px;\n        border: 2px solid #ffffff;\n        background-color: #ffffff;\n        border-radius: 3px;\n        z-index: 4; }\n      .smarttests1 .flex-container .logic .question {\n        margin: auto;\n        text-align: center;\n        font-size: 25px;\n        font-weight: 700;\n        color: black;\n        z-index: 5; }\n      .smarttests1 .flex-container .logic .yes, .smarttests1 .flex-container .logic .no, .smarttests1 .flex-container .logic .additional {\n        display: block;\n        position: absolute;\n        cursor: pointer;\n        padding-top: 17px;\n        width: 60px;\n        height: 60px;\n        background-color: #ffffff;\n        border: 2px solid #ffffff;\n        border-radius: 50%;\n        color: black;\n        font-weight: 700;\n        word-break: word-break;\n        text-align: center; }\n      .smarttests1 .flex-container .logic .yes {\n        margin-top: 110%;\n        align-self: center;\n        z-index: 4; }\n        .smarttests1 .flex-container .logic .yes:hover {\n          transition: all 1s;\n          transform: rotate3d(0, 1, 0, 360deg); }\n      .smarttests1 .flex-container .logic .no {\n        align-self: center;\n        margin-left: 110%;\n        z-index: 5; }\n        .smarttests1 .flex-container .logic .no:hover {\n          transition: all 1s;\n          transform: rotate3d(0, 1, 0, 360deg); }\n      .smarttests1 .flex-container .logic .additional {\n        align-self: center;\n        margin-left: -111%;\n        z-index: 7; }\n        .smarttests1 .flex-container .logic .additional:hover {\n          transition: all 1s;\n          transform: rotate3d(0, 1, 0, 360deg); }\n      .smarttests1 .flex-container .logic .hide {\n        display: none; }\n    .smarttests1 .flex-container .main-squire {\n      position: relative;\n      display: -webkit-box;\n      display: -webkit-flex;\n      display: -moz-flex;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-pack: center;\n      -ms-flex-pack: center;\n      -webkit-justify-content: center;\n      -moz-justify-content: center;\n      justify-content: center; }\n      .smarttests1 .flex-container .main-squire .squire {\n        position: absolute;\n        max-width: 400px !important;\n        margin: 0 auto;\n        margin-top: 20px;\n        padding: 15px;\n        background-color: #ffffff;\n        z-index: 2; }\n        .smarttests1 .flex-container .main-squire .squire .innerBlock {\n          position: relative;\n          border-radius: 4px;\n          height: 200px;\n          overflow-y: scroll;\n          overflow-x: hidden; }\n          .smarttests1 .flex-container .main-squire .squire .innerBlock .agree-text {\n            display: block;\n            margin: 10px 0;\n            line-height: 1.7;\n            list-style-type: none;\n            text-align: left; }\n      .smarttests1 .flex-container .main-squire .svg-line-down-for-squire {\n        margin-top: 20%; }\n\n@keyframes forArrowBottom {\n  from, 20%, 49%, 50%, 70%, 85%, to {\n    animation-timing-function: linear; }\n  from {\n    transform: translate(0, 0); }\n  49% {\n    transform: translate(0, 0); }\n  50% {\n    transform: translate(0, -55px); }\n  70% {\n    transform: translate(0, -55px); }\n  85% {\n    transform: translate(0, 0); } }\n\n@keyframes forArrowRight {\n  from, 20%, 49%, 50%, 70%, 85%, to {\n    animation-timing-function: linear; }\n  from {\n    transform: translate(0, 0) rotate(-90deg); }\n  49% {\n    transform: translate(0, 0) rotate(-90deg); }\n  50% {\n    transform: translate(-55px, 0) rotate(-90deg); }\n  75% {\n    transform: translate(-55px, 0) rotate(-90deg); }\n  85% {\n    transform: translate(0, 0) rotate(-90deg); } }\n\n@keyframes forArrowLeft {\n  from, 20%, 49%, 50%, 70%, 85%, to {\n    animation-timing-function: linear; }\n  from {\n    transform: translate(0, 0) rotate(90deg);\n    opacity: 0; }\n  49% {\n    transform: translate(0, 0) rotate(90deg);\n    opacity: 0; }\n  50% {\n    transform: translate(55px, 0) rotate(90deg);\n    opacity: 1; }\n  75% {\n    transform: translate(55px, 0) rotate(90deg); }\n  85% {\n    transform: translate(0, 0) rotate(90deg); } }\n    .smarttests1 .flex-container .forArrowLeft {\n      animation-duration: 2s;\n      animation-fill-mode: both;\n      animation-name: forArrowLeft; }\n    .smarttests1 .flex-container .forArrowRight {\n      animation-duration: 2s;\n      animation-fill-mode: both;\n      animation-name: forArrowRight; }\n    .smarttests1 .flex-container .forArrowBottom {\n      animation-duration: 2s;\n      animation-fill-mode: both;\n      animation-name: forArrowBottom; }\n\n@keyframes rotate {\n  from, 20%, 45%, 50%, 70%, 90%, to {\n    animation-timing-function: linear; }\n  from {\n    transform: rotate(0deg); }\n  20% {\n    transform: rotate(90deg); }\n  45% {\n    transform: rotate(90deg) translate3d(-700px, 0, 0); }\n  50% {\n    opacity: 0; }\n  51% {\n    transform: translate3d(0, 0, 0);\n    opacity: 1;\n    transform: scale(0.1, 0.1); }\n  70% {\n    transform: scale(1, 1) rotate3d(1, 0, 0, 30deg); } }\n\n@keyframes upAnswer {\n  from, 20%, 49%, 50%, 70%, to {\n    animation-timing-function: linear; }\n  from {\n    transform: rotate(0deg);\n    opacity: 1; }\n  49% {\n    transform: translate3d(0, -700px, 0);\n    opacity: 0; }\n  50% {\n    transform: translate3d(0, 0, 0);\n    opacity: 1;\n    transform: scale(0.1, 0.1); }\n  70% {\n    transform: scale(1, 1) rotate3d(1, 0, 0, 30deg); } }\n\n@keyframes agree-animation {\n  from, 20%, 49%, 50%, 70%, to {\n    animation-timing-function: linear; }\n  from {\n    opacity: 1;\n    transform: scale(0.1, 0.1); }\n  to {\n    opacity: 1;\n    transform: scale(1, 1); } }\n    .smarttests1 .flex-container .agree-animation {\n      transform-origin: 50% 0%;\n      animation-duration: 0.5s;\n      animation-fill-mode: both;\n      animation-name: agree-animation; }\n\n@keyframes agree-animation-hidden {\n  from, 20%, 49%, 50%, 70%, to {\n    animation-timing-function: linear; }\n  from {\n    opacity: 1;\n    transform: translate3d(0, 0, 0); }\n  to {\n    transform: translate3d(0, -700px, 0);\n    opacity: 1; } }\n    .smarttests1 .flex-container .agree-animation-hidden {\n      transform-origin: 50% 0%;\n      animation-duration: 1s;\n      animation-fill-mode: both;\n      animation-name: agree-animation-hidden; }\n    .smarttests1 .flex-container .rotate {\n      animation-duration: 2s;\n      animation-fill-mode: both;\n      animation-name: rotate;\n      transform-origin: 50% 50%; }\n    .smarttests1 .flex-container .upAnswer {\n      transform-origin: 50% 0%;\n      animation-duration: 2s;\n      animation-fill-mode: both;\n      animation-name: upAnswer; }\n\n@keyframes forButtonNo {\n  from, 20%, 49%, 50%, 69%, 70%, to {\n    animation-timing-function: linear; }\n  from {\n    transform: scale(1, 1); }\n  50% {\n    transform: scale(1, 1); }\n  51% {\n    transform: scale(0, 0); }\n  85% {\n    transform: scale(0, 0); }\n  to {\n    transform: scale(1, 1); } }\n\n@keyframes forButtonBottom {\n  from, 20%, 49%, 50%, 69%, 70%, to {\n    animation-timing-function: linear; }\n  from {\n    transform: scale(1, 1); }\n  50% {\n    transform: scale(1, 1); }\n  51% {\n    transform: scale(0, 0); }\n  85% {\n    transform: scale(0, 0); }\n  to {\n    transform: scale(1, 1); } }\n\n@keyframes forButtonAdditional {\n  from, 50%, 51%, 85%, to {\n    animation-timing-function: linear; }\n  from {\n    transform: scale(1, 1);\n    opacity: 0; }\n  50% {\n    transform: scale(1, 1);\n    opacity: 0; }\n  51% {\n    transform: scale(0, 0);\n    opacity: 1; }\n  85% {\n    transform: scale(0, 0); }\n  to {\n    transform: scale(1, 1); } }\n    .smarttests1 .flex-container .forButtonAdditional {\n      transform-origin: right center;\n      animation-duration: 2s;\n      animation-fill-mode: both;\n      animation-name: forButtonAdditional; }\n    .smarttests1 .flex-container .forButtonBottom {\n      transform-origin: 50% 0;\n      animation-duration: 2s;\n      animation-fill-mode: both;\n      animation-name: forButtonBottom; }\n    .smarttests1 .flex-container .forButtonNo {\n      transform-origin: 0 50%;\n      animation-duration: 2s;\n      animation-fill-mode: both;\n      animation-name: forButtonNo; }\n\n::-webkit-scrollbar-track {\n  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);\n  border-radius: 10px;\n  background-color: #F5F5F5; }\n\n::-webkit-scrollbar {\n  width: 8px;\n  background-color: #F5F5F5; }\n\n::-webkit-scrollbar-thumb {\n  border-radius: 10px;\n  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);\n  background-color: #bdbdbd; }\n", ""]);
+	exports.push([module.id, ".test {\n  -moz-transform: skew(25deg, 10deg);\n  -o-transform: skew(25deg, 10deg);\n  -ms-transform: skew(25deg, 10deg);\n  -webkit-transform: skew(25deg, 10deg);\n  transform: skew(25deg, 10deg);\n  moz-transform-origin: top left;\n  -o-transform-origin: top left;\n  -ms-transform-origin: top left;\n  -webkit-transform-origin: top left;\n  transform-origin: top left;\n  position: absolute;\n  top: 25%;\n  bottom: 25%;\n  left: 25%;\n  right: 25%;\n  background-color: rgba(20, 20, 20, 0.5); }\n\n* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0; }\n\n.hidden {\n  display: none; }\n\n.smarttests1 {\n  padding: 10px;\n  height: 100%;\n  width: 100%;\n  background: url(" + __webpack_require__(524) + ");\n  background-size: cover;\n  background-position: center; }\n  .smarttests1 .flex-container {\n    position: relative;\n    width: 100%;\n    height: 100%;\n    text-align: center;\n    padding-top: 20px;\n    /**\n      * style for logic\n      */\n    /**\n    * style for squire figure\n    */\n    /*all blocks animate with rotate when click no*/\n    /*all blocks animate with up when click yes*/\n    /*animate agree-animation all block*/ }\n    .smarttests1 .flex-container .main-text h1 {\n      font-size: calc(38px + 20 * (100vw - 320px) / 1600);\n      color: #ffffff; }\n    .smarttests1 .flex-container .main-text h2 {\n      font-size: 20px;\n      font-weight: 500;\n      color: black; }\n    .smarttests1 .flex-container .logic {\n      display: -webkit-box;\n      display: -webkit-flex;\n      display: -moz-flex;\n      display: -ms-flexbox;\n      display: flex;\n      -moz-transform: rotate3d(1, 0, 0, 30deg);\n      -o-transform: rotate3d(1, 0, 0, 30deg);\n      -ms-transform: rotate3d(1, 0, 0, 30deg);\n      -webkit-transform: rotate3d(1, 0, 0, 30deg);\n      transform: rotate3d(1, 0, 0, 30deg);\n      -webkit-box-pack: center;\n      -ms-flex-pack: center;\n      -webkit-justify-content: center;\n      -moz-justify-content: center;\n      justify-content: center;\n      width: 200px;\n      height: 200px;\n      margin: 0 auto;\n      top: calc(50% - 200px);\n      transition: transform 1s;\n      margin-top: 20px; }\n      @media (max-width: 768px) {\n        .smarttests1 .flex-container .logic {\n          -moz-transform: scale(0.7, 0.7);\n          -o-transform: scale(0.7, 0.7);\n          -ms-transform: scale(0.7, 0.7);\n          -webkit-transform: scale(0.7, 0.7);\n          transform: scale(0.7, 0.7);\n          transition: transform 1s; } }\n      @media (max-width: 500px) {\n        .smarttests1 .flex-container .logic {\n          -moz-transform: scale(0.5, 0.5);\n          -o-transform: scale(0.5, 0.5);\n          -ms-transform: scale(0.5, 0.5);\n          -webkit-transform: scale(0.5, 0.5);\n          transform: scale(0.5, 0.5);\n          transition: transform 1s; } }\n      .smarttests1 .flex-container .logic .helper {\n        -moz-transform: rotate3d(0, 0, 1, 45deg);\n        -o-transform: rotate3d(0, 0, 1, 45deg);\n        -ms-transform: rotate3d(0, 0, 1, 45deg);\n        -webkit-transform: rotate3d(0, 0, 1, 45deg);\n        transform: rotate3d(0, 0, 1, 45deg);\n        position: absolute;\n        width: 200px;\n        height: 200px;\n        border: 2px solid #ffffff;\n        background-color: #ffffff;\n        border-radius: 3px;\n        z-index: 4; }\n      .smarttests1 .flex-container .logic .question {\n        margin: auto;\n        text-align: center;\n        font-size: 25px;\n        font-weight: 700;\n        color: black;\n        z-index: 5; }\n      .smarttests1 .flex-container .logic .yes, .smarttests1 .flex-container .logic .no, .smarttests1 .flex-container .logic .additional {\n        display: block;\n        position: absolute;\n        cursor: pointer;\n        padding-top: 17px;\n        width: 60px;\n        height: 60px;\n        background-color: #ffffff;\n        border: 2px solid #ffffff;\n        border-radius: 50%;\n        color: black;\n        font-weight: 700;\n        word-break: word-break;\n        text-align: center; }\n      .smarttests1 .flex-container .logic .yes {\n        margin-top: 110%;\n        align-self: center;\n        z-index: 4; }\n        .smarttests1 .flex-container .logic .yes:hover {\n          transition: all 1s;\n          transform: rotate3d(0, 1, 0, 360deg); }\n      .smarttests1 .flex-container .logic .no {\n        align-self: center;\n        margin-left: 110%;\n        z-index: 5; }\n        .smarttests1 .flex-container .logic .no:hover {\n          transition: all 1s;\n          transform: rotate3d(0, 1, 0, 360deg); }\n      .smarttests1 .flex-container .logic .additional {\n        align-self: center;\n        margin-left: -111%;\n        z-index: 7; }\n        .smarttests1 .flex-container .logic .additional:hover {\n          transition: all 1s;\n          transform: rotate3d(0, 1, 0, 360deg); }\n      .smarttests1 .flex-container .logic .hide {\n        display: none; }\n    .smarttests1 .flex-container .main-squire {\n      position: relative;\n      display: -webkit-box;\n      display: -webkit-flex;\n      display: -moz-flex;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-pack: center;\n      -ms-flex-pack: center;\n      -webkit-justify-content: center;\n      -moz-justify-content: center;\n      justify-content: center; }\n      .smarttests1 .flex-container .main-squire .squire {\n        position: absolute;\n        max-width: 400px !important;\n        margin: 0 auto;\n        margin-top: 20px;\n        padding: 15px;\n        background-color: #ffffff;\n        z-index: 2; }\n        .smarttests1 .flex-container .main-squire .squire .innerBlock {\n          position: relative;\n          border-radius: 4px;\n          height: 200px;\n          overflow-y: scroll;\n          overflow-x: hidden; }\n          .smarttests1 .flex-container .main-squire .squire .innerBlock .agree-text {\n            display: block;\n            margin: 10px 0;\n            line-height: 1.7;\n            list-style-type: none;\n            text-align: left; }\n      .smarttests1 .flex-container .main-squire .svg-line-down-for-squire {\n        margin-top: 20%; }\n\n@keyframes forArrowBottom {\n  from, 20%, 49%, 50%, 70%, 85%, to {\n    animation-timing-function: linear; }\n  from {\n    transform: translate(0, 0); }\n  49% {\n    transform: translate(0, 0); }\n  50% {\n    transform: translate(0, -55px); }\n  70% {\n    transform: translate(0, -55px); }\n  85% {\n    transform: translate(0, 0); } }\n\n@keyframes forArrowRight {\n  from, 20%, 49%, 50%, 70%, 85%, to {\n    animation-timing-function: linear; }\n  from {\n    transform: translate(0, 0) rotate(-90deg); }\n  49% {\n    transform: translate(0, 0) rotate(-90deg); }\n  50% {\n    transform: translate(-55px, 0) rotate(-90deg); }\n  75% {\n    transform: translate(-55px, 0) rotate(-90deg); }\n  85% {\n    transform: translate(0, 0) rotate(-90deg); } }\n\n@keyframes forArrowLeft {\n  from, 20%, 49%, 50%, 70%, 85%, to {\n    animation-timing-function: linear; }\n  from {\n    transform: translate(0, 0) rotate(90deg);\n    opacity: 0; }\n  49% {\n    transform: translate(0, 0) rotate(90deg);\n    opacity: 0; }\n  50% {\n    transform: translate(55px, 0) rotate(90deg);\n    opacity: 1; }\n  75% {\n    transform: translate(55px, 0) rotate(90deg); }\n  85% {\n    transform: translate(0, 0) rotate(90deg); } }\n    .smarttests1 .flex-container .forArrowLeft {\n      animation-duration: 2s;\n      animation-fill-mode: both;\n      animation-name: forArrowLeft; }\n    .smarttests1 .flex-container .forArrowRight {\n      animation-duration: 2s;\n      animation-fill-mode: both;\n      animation-name: forArrowRight; }\n    .smarttests1 .flex-container .forArrowBottom {\n      animation-duration: 2s;\n      animation-fill-mode: both;\n      animation-name: forArrowBottom; }\n\n@keyframes rotate {\n  from, 20%, 45%, 50%, 70%, 90%, to {\n    animation-timing-function: linear; }\n  from {\n    transform: rotate(0deg); }\n  20% {\n    transform: rotate(90deg); }\n  45% {\n    transform: rotate(90deg) translate3d(-700px, 0, 0); }\n  50% {\n    opacity: 0; }\n  51% {\n    transform: translate3d(0, 0, 0);\n    opacity: 1;\n    transform: scale(0.1, 0.1); }\n  70% {\n    transform: scale(1, 1) rotate3d(1, 0, 0, 30deg); } }\n\n@keyframes upAnswer {\n  from, 20%, 49%, 50%, 70%, to {\n    animation-timing-function: linear; }\n  from {\n    transform: rotate(0deg);\n    opacity: 1; }\n  49% {\n    transform: translate3d(0, -700px, 0);\n    opacity: 0; }\n  50% {\n    transform: translate3d(0, 0, 0);\n    opacity: 1;\n    transform: scale(0.1, 0.1); }\n  70% {\n    transform: scale(1, 1) rotate3d(1, 0, 0, 30deg); } }\n\n@keyframes agree-animation {\n  from, 20%, 49%, 50%, 70%, to {\n    animation-timing-function: linear; }\n  from {\n    opacity: 1;\n    transform: scale(0.1, 0.1); }\n  to {\n    opacity: 1;\n    transform: scale(1, 1); } }\n    .smarttests1 .flex-container .agree-animation {\n      transform-origin: 50% 0%;\n      animation-duration: 0.5s;\n      animation-fill-mode: both;\n      animation-name: agree-animation; }\n\n@keyframes agree-animation-hidden {\n  from, 20%, 49%, 50%, 70%, to {\n    animation-timing-function: linear; }\n  from {\n    opacity: 1;\n    transform: translate3d(0, 0, 0); }\n  to {\n    transform: translate3d(0, -700px, 0);\n    opacity: 1; } }\n    .smarttests1 .flex-container .agree-animation-hidden {\n      transform-origin: 50% 0%;\n      animation-duration: 1s;\n      animation-fill-mode: both;\n      animation-name: agree-animation-hidden; }\n    .smarttests1 .flex-container .rotate {\n      animation-duration: 2s;\n      animation-fill-mode: both;\n      animation-name: rotate;\n      transform-origin: 50% 50%; }\n    .smarttests1 .flex-container .upAnswer {\n      transform-origin: 50% 0%;\n      animation-duration: 2s;\n      animation-fill-mode: both;\n      animation-name: upAnswer; }\n\n@keyframes forButtonNo {\n  from, 20%, 49%, 50%, 69%, 70%, to {\n    animation-timing-function: linear; }\n  from {\n    transform: scale(1, 1); }\n  50% {\n    transform: scale(1, 1); }\n  51% {\n    transform: scale(0, 0); }\n  85% {\n    transform: scale(0, 0); }\n  to {\n    transform: scale(1, 1); } }\n\n@keyframes forButtonBottom {\n  from, 20%, 49%, 50%, 69%, 70%, to {\n    animation-timing-function: linear; }\n  from {\n    transform: scale(1, 1); }\n  50% {\n    transform: scale(1, 1); }\n  51% {\n    transform: scale(0, 0); }\n  85% {\n    transform: scale(0, 0); }\n  to {\n    transform: scale(1, 1); } }\n\n@keyframes forButtonAdditional {\n  from, 50%, 51%, 85%, to {\n    animation-timing-function: linear; }\n  from {\n    transform: scale(1, 1);\n    opacity: 0; }\n  50% {\n    transform: scale(1, 1);\n    opacity: 0; }\n  51% {\n    transform: scale(0, 0);\n    opacity: 1; }\n  85% {\n    transform: scale(0, 0); }\n  to {\n    transform: scale(1, 1); } }\n    .smarttests1 .flex-container .forButtonAdditional {\n      transform-origin: right center;\n      animation-duration: 2s;\n      animation-fill-mode: both;\n      animation-name: forButtonAdditional; }\n    .smarttests1 .flex-container .forButtonBottom {\n      transform-origin: 50% 0;\n      animation-duration: 2s;\n      animation-fill-mode: both;\n      animation-name: forButtonBottom; }\n    .smarttests1 .flex-container .forButtonNo {\n      transform-origin: 0 50%;\n      animation-duration: 2s;\n      animation-fill-mode: both;\n      animation-name: forButtonNo; }\n\n::-webkit-scrollbar-track {\n  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);\n  border-radius: 10px;\n  background-color: #F5F5F5; }\n\n::-webkit-scrollbar {\n  width: 8px;\n  background-color: #F5F5F5; }\n\n::-webkit-scrollbar-thumb {\n  border-radius: 10px;\n  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);\n  background-color: #bdbdbd; }\n", ""]);
 
 	// exports
 
 
 /***/ }),
-/* 520 */
+/* 524 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "9daf560b1c7f587181798bbe0217af49.jpg";
 
 /***/ }),
-/* 521 */
+/* 525 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/home/volodymyr/Стільниця/Medical/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/home/volodymyr/Стільниця/Medical/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -48937,7 +49009,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	__webpack_require__(522);
+	__webpack_require__(526);
 
 	var Arrow = function Arrow(_ref) {
 	    var arrowStyle = _ref.arrowStyle;
@@ -48980,13 +49052,13 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/volodymyr/Стільниця/Medical/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "arrow.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ }),
-/* 522 */
+/* 526 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(523);
+	var content = __webpack_require__(527);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(246)(content, {});
@@ -49006,7 +49078,7 @@
 	}
 
 /***/ }),
-/* 523 */
+/* 527 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(245)();
@@ -49020,7 +49092,7 @@
 
 
 /***/ }),
-/* 524 */
+/* 528 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/home/volodymyr/Стільниця/Medical/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/home/volodymyr/Стільниця/Medical/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -49047,7 +49119,7 @@
 
 	var _reactRouter = __webpack_require__(184);
 
-	__webpack_require__(525);
+	__webpack_require__(529);
 
 	var Contacts = (function (_React$Component) {
 	    _inherits(Contacts, _React$Component);
@@ -49083,13 +49155,13 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/volodymyr/Стільниця/Medical/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "Contacts.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ }),
-/* 525 */
+/* 529 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(526);
+	var content = __webpack_require__(530);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(246)(content, {});
@@ -49109,7 +49181,7 @@
 	}
 
 /***/ }),
-/* 526 */
+/* 530 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(245)();
@@ -49123,7 +49195,7 @@
 
 
 /***/ }),
-/* 527 */
+/* 531 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -49134,9 +49206,9 @@
 
 	var _redux = __webpack_require__(412);
 
-	var _reactRouterRedux = __webpack_require__(528);
+	var _reactRouterRedux = __webpack_require__(532);
 
-	var _smartTestReduserJs = __webpack_require__(533);
+	var _smartTestReduserJs = __webpack_require__(537);
 
 	exports["default"] = (0, _redux.combineReducers)({
 	    // routing: routerReducer,
@@ -49145,7 +49217,7 @@
 	module.exports = exports["default"];
 
 /***/ }),
-/* 528 */
+/* 532 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -49155,7 +49227,7 @@
 	});
 	exports.routerMiddleware = exports.routerActions = exports.goForward = exports.goBack = exports.go = exports.replace = exports.push = exports.CALL_HISTORY_METHOD = exports.routerReducer = exports.LOCATION_CHANGE = exports.syncHistoryWithStore = undefined;
 
-	var _reducer = __webpack_require__(529);
+	var _reducer = __webpack_require__(533);
 
 	Object.defineProperty(exports, 'LOCATION_CHANGE', {
 	  enumerable: true,
@@ -49170,7 +49242,7 @@
 	  }
 	});
 
-	var _actions = __webpack_require__(530);
+	var _actions = __webpack_require__(534);
 
 	Object.defineProperty(exports, 'CALL_HISTORY_METHOD', {
 	  enumerable: true,
@@ -49215,11 +49287,11 @@
 	  }
 	});
 
-	var _sync = __webpack_require__(531);
+	var _sync = __webpack_require__(535);
 
 	var _sync2 = _interopRequireDefault(_sync);
 
-	var _middleware = __webpack_require__(532);
+	var _middleware = __webpack_require__(536);
 
 	var _middleware2 = _interopRequireDefault(_middleware);
 
@@ -49229,7 +49301,7 @@
 	exports.routerMiddleware = _middleware2['default'];
 
 /***/ }),
-/* 529 */
+/* 533 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -49272,7 +49344,7 @@
 	}
 
 /***/ }),
-/* 530 */
+/* 534 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -49314,7 +49386,7 @@
 	var routerActions = exports.routerActions = { push: push, replace: replace, go: go, goBack: goBack, goForward: goForward };
 
 /***/ }),
-/* 531 */
+/* 535 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -49327,7 +49399,7 @@
 
 	exports['default'] = syncHistoryWithStore;
 
-	var _reducer = __webpack_require__(529);
+	var _reducer = __webpack_require__(533);
 
 	var defaultSelectLocationState = function defaultSelectLocationState(state) {
 	  return state.routing;
@@ -49474,7 +49546,7 @@
 	}
 
 /***/ }),
-/* 532 */
+/* 536 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -49484,7 +49556,7 @@
 	});
 	exports['default'] = routerMiddleware;
 
-	var _actions = __webpack_require__(530);
+	var _actions = __webpack_require__(534);
 
 	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 
@@ -49512,7 +49584,7 @@
 	}
 
 /***/ }),
-/* 533 */
+/* 537 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -49576,7 +49648,7 @@
 	}
 
 /***/ }),
-/* 534 */
+/* 538 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -49604,7 +49676,7 @@
 	exports['default'] = thunk;
 
 /***/ }),
-/* 535 */
+/* 539 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
