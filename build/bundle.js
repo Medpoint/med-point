@@ -39159,7 +39159,7 @@
 
 
 	// module
-	exports.push([module.id, ".test {\n  -moz-transform: skew(25deg, 10deg);\n  -o-transform: skew(25deg, 10deg);\n  -ms-transform: skew(25deg, 10deg);\n  -webkit-transform: skew(25deg, 10deg);\n  transform: skew(25deg, 10deg);\n  moz-transform-origin: top left;\n  -o-transform-origin: top left;\n  -ms-transform-origin: top left;\n  -webkit-transform-origin: top left;\n  transform-origin: top left;\n  position: absolute;\n  top: 25%;\n  bottom: 25%;\n  left: 25%;\n  right: 25%;\n  background-color: rgba(20, 20, 20, 0.5); }\n\n* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0; }\n\n.smartest-wrapper {\n  height: 100%; }\n  .smartest-wrapper .smarttests {\n    display: -webkit-box;\n    display: -webkit-flex;\n    display: -moz-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: justify;\n    -ms-flex-pack: justify;\n    -webkit-justify-content: space-between;\n    -moz-justify-content: space-between;\n    justify-content: space-between;\n    height: 100%; }\n    @media (max-width: 770px) {\n      .smartest-wrapper .smarttests {\n        flex-direction: column; } }\n    .smartest-wrapper .smarttests .logic {\n      flex: 0 0 70%;\n      padding: 5%; }\n      @media (max-width: 770px) {\n        .smartest-wrapper .smarttests .logic {\n          flex: 0 0 85%;\n          margin-top: -80px; } }\n      .smartest-wrapper .smarttests .logic .logic-block {\n        height: 100%;\n        width: 100%;\n        position: relative;\n        overflow-x: hidden; }\n        @media (max-width: 770px) {\n          .smartest-wrapper .smarttests .logic .logic-block {\n            overflow-x: visible; } }\n        .smartest-wrapper .smarttests .logic .logic-block .logic-container {\n          transition: all 1s;\n          width: 500px;\n          height: 500px;\n          margin: auto;\n          position: absolute;\n          transform: rotate(90deg); }\n          @media (max-width: 770px) {\n            .smartest-wrapper .smarttests .logic .logic-block .logic-container {\n              left: 0;\n              right: 0;\n              transform: rotate(0deg);\n              width: 100%;\n              height: auto; } }\n        .smartest-wrapper .smarttests .logic .logic-block .SteperContent {\n          transform: rotate(-90deg);\n          padding-left: 60px; }\n          @media (max-width: 770px) {\n            .smartest-wrapper .smarttests .logic .logic-block .SteperContent {\n              transform: rotate(0deg);\n              padding-left: 20px; } }\n        .smartest-wrapper .smarttests .logic .logic-block .step-label svg {\n          fill: #43afb3 !important; }\n        .smartest-wrapper .smarttests .logic .logic-block .button {\n          display: flex;\n          align-items: center;\n          margin-top: 20px; }\n          @media (max-width: 770px) {\n            .smartest-wrapper .smarttests .logic .logic-block .button {\n              margin-top: 10px; } }\n          .smartest-wrapper .smarttests .logic .logic-block .button .icon-what {\n            display: inline-block;\n            margin-left: 20px; }\n            .smartest-wrapper .smarttests .logic .logic-block .button .icon-what svg {\n              fill: #6d6d6d; }\n          .smartest-wrapper .smarttests .logic .logic-block .button .btn {\n            position: relative;\n            display: inline-block;\n            cursor: pointer;\n            overflow: hidden;\n            width: 190px;\n            padding: 4px;\n            text-align: center;\n            border: 1px solid #43afb3;\n            color: #43afb3;\n            border-radius: 20px; }\n            .smartest-wrapper .smarttests .logic .logic-block .button .btn:after {\n              content: \"\";\n              display: block;\n              position: absolute;\n              height: 0%;\n              left: 50%;\n              top: 50%;\n              width: 150%;\n              z-index: -1;\n              -webkit-transition: all 1s ease 0s;\n              -moz-transition: all 1s ease 0s;\n              -o-transition: all 1s ease 0s;\n              transition: all 1s ease 0s;\n              background: #43afb3;\n              -moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);\n              -ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);\n              -webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);\n              transform: translateX(-50%) translateY(-50%) rotate(-25deg); }\n            .smartest-wrapper .smarttests .logic .logic-block .button .btn:hover:after {\n              height: 480%; }\n            .smartest-wrapper .smarttests .logic .logic-block .button .btn:hover {\n              color: #ffffff; }\n        .smartest-wrapper .smarttests .logic .logic-block .button-back {\n          margin-top: 30px;\n          margin-bottom: 50px; }\n          .smartest-wrapper .smarttests .logic .logic-block .button-back .back-icon {\n            display: flex;\n            align-items: center; }\n            .smartest-wrapper .smarttests .logic .logic-block .button-back .back-icon svg {\n              margin-right: -10px; }\n    .smartest-wrapper .smarttests .askQuestion {\n      font-size: 24px;\n      font-family: 'MuseoSans-Light';\n      margin-bottom: 35px; }\n      @media (max-width: 770px) {\n        .smartest-wrapper .smarttests .askQuestion {\n          font-size: 14px;\n          margin-bottom: 15px; } }\n    .smartest-wrapper .smarttests .description {\n      color: #464646;\n      font-size: 16px;\n      margin-bottom: 20px; }\n\n::-webkit-scrollbar-track {\n  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);\n  border-radius: 10px;\n  background-color: #F5F5F5; }\n\n::-webkit-scrollbar {\n  width: 8px;\n  background-color: #F5F5F5; }\n\n::-webkit-scrollbar-thumb {\n  border-radius: 10px;\n  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);\n  background-color: #bdbdbd; }\n", ""]);
+	exports.push([module.id, ".test {\n  -moz-transform: skew(25deg, 10deg);\n  -o-transform: skew(25deg, 10deg);\n  -ms-transform: skew(25deg, 10deg);\n  -webkit-transform: skew(25deg, 10deg);\n  transform: skew(25deg, 10deg);\n  moz-transform-origin: top left;\n  -o-transform-origin: top left;\n  -ms-transform-origin: top left;\n  -webkit-transform-origin: top left;\n  transform-origin: top left;\n  position: absolute;\n  top: 25%;\n  bottom: 25%;\n  left: 25%;\n  right: 25%;\n  background-color: rgba(20, 20, 20, 0.5); }\n\n* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0; }\n\n.smartest-wrapper {\n  height: 100%; }\n  .smartest-wrapper .smarttests {\n    display: -webkit-box;\n    display: -webkit-flex;\n    display: -moz-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: justify;\n    -ms-flex-pack: justify;\n    -webkit-justify-content: space-between;\n    -moz-justify-content: space-between;\n    justify-content: space-between;\n    height: 100%; }\n    @media (max-width: 770px) {\n      .smartest-wrapper .smarttests {\n        flex-direction: column; } }\n    .smartest-wrapper .smarttests .logic {\n      flex: 0 0 70%;\n      padding: 5%; }\n      @media (max-width: 770px) {\n        .smartest-wrapper .smarttests .logic {\n          flex: 0 0 85%;\n          margin-top: -80px; } }\n      .smartest-wrapper .smarttests .logic .logic-block {\n        height: 100%;\n        width: 100%;\n        position: relative;\n        overflow-x: hidden; }\n        @media (max-width: 770px) {\n          .smartest-wrapper .smarttests .logic .logic-block {\n            overflow-x: visible; } }\n        .smartest-wrapper .smarttests .logic .logic-block .logic-container {\n          transition: all 1s;\n          width: 500px;\n          height: 500px;\n          margin: auto;\n          position: absolute;\n          transform: rotate(90deg); }\n          @media (max-width: 770px) {\n            .smartest-wrapper .smarttests .logic .logic-block .logic-container {\n              left: 0;\n              right: 0;\n              transform: rotate(0deg);\n              width: 100%;\n              height: auto; } }\n        .smartest-wrapper .smarttests .logic .logic-block .SteperContent {\n          transform: rotate(-90deg);\n          padding-left: 60px; }\n          @media (max-width: 770px) {\n            .smartest-wrapper .smarttests .logic .logic-block .SteperContent {\n              transform: rotate(0deg);\n              padding-left: 20px; } }\n        .smartest-wrapper .smarttests .logic .logic-block .step-label svg {\n          fill: #43afb3 !important; }\n        .smartest-wrapper .smarttests .logic .logic-block .button {\n          display: flex;\n          align-items: center;\n          margin-top: 20px; }\n          @media (max-width: 770px) {\n            .smartest-wrapper .smarttests .logic .logic-block .button {\n              margin-top: 10px; } }\n          .smartest-wrapper .smarttests .logic .logic-block .button .icon-what {\n            display: inline-block;\n            margin-left: 20px; }\n            .smartest-wrapper .smarttests .logic .logic-block .button .icon-what svg {\n              fill: #6d6d6d; }\n          .smartest-wrapper .smarttests .logic .logic-block .button .btn {\n            position: relative;\n            display: inline-block;\n            cursor: pointer;\n            overflow: hidden;\n            width: 200px;\n            padding: 4px;\n            text-align: center;\n            border: 1px solid #43afb3;\n            color: #43afb3;\n            border-radius: 20px; }\n            .smartest-wrapper .smarttests .logic .logic-block .button .btn:after {\n              content: \"\";\n              display: block;\n              position: absolute;\n              height: 0%;\n              left: 50%;\n              top: 50%;\n              width: 150%;\n              z-index: -1;\n              -webkit-transition: all 1s ease 0s;\n              -moz-transition: all 1s ease 0s;\n              -o-transition: all 1s ease 0s;\n              transition: all 1s ease 0s;\n              background: #43afb3;\n              -moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);\n              -ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);\n              -webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);\n              transform: translateX(-50%) translateY(-50%) rotate(-25deg); }\n            .smartest-wrapper .smarttests .logic .logic-block .button .btn:hover:after {\n              height: 480%; }\n            .smartest-wrapper .smarttests .logic .logic-block .button .btn:hover {\n              color: #ffffff; }\n        .smartest-wrapper .smarttests .logic .logic-block .button-back {\n          margin-top: 30px;\n          margin-bottom: 50px; }\n          .smartest-wrapper .smarttests .logic .logic-block .button-back .back-icon {\n            display: flex;\n            align-items: center; }\n            .smartest-wrapper .smarttests .logic .logic-block .button-back .back-icon svg {\n              margin-right: -10px; }\n    .smartest-wrapper .smarttests .askQuestion {\n      font-size: 24px;\n      font-family: 'MuseoSans-Light';\n      margin-bottom: 35px; }\n      @media (max-width: 770px) {\n        .smartest-wrapper .smarttests .askQuestion {\n          font-size: 14px;\n          margin-bottom: 15px; } }\n    .smartest-wrapper .smarttests .description {\n      color: #464646;\n      font-size: 16px;\n      margin-bottom: 20px; }\n\n::-webkit-scrollbar-track {\n  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);\n  border-radius: 10px;\n  background-color: #F5F5F5; }\n\n::-webkit-scrollbar {\n  width: 8px;\n  background-color: #F5F5F5; }\n\n::-webkit-scrollbar-thumb {\n  border-radius: 10px;\n  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);\n  background-color: #bdbdbd; }\n", ""]);
 
 	// exports
 
@@ -46715,141 +46715,317 @@
 	                if (item.question == "Была Взята биопсия ?") {
 	                    _this.setState({ resultText: _react2['default'].createElement(
 	                            'div',
-	                            null,
+	                            { className: 'accordion-result' },
 	                            _react2['default'].createElement(
-	                                _reactCollapsible2['default'],
-	                                { trigger: 'pene 1' },
+	                                'i',
+	                                null,
 	                                _react2['default'].createElement(
-	                                    'ul',
-	                                    null,
+	                                    'svg',
+	                                    { width: '32', height: '33', viewBox: '0 0 32 33' },
 	                                    _react2['default'].createElement(
-	                                        'li',
+	                                        'defs',
 	                                        null,
-	                                        _react2['default'].createElement(
-	                                            'div',
-	                                            null,
-	                                            '1'
-	                                        ),
-	                                        'Биопсия под контролем Маммографии и УЗИ '
+	                                        _react2['default'].createElement('path', { id: 'tmnoa', d: 'M624.99 377.35v.39c0 1.8-1.45 3.26-3.23 3.26h-25.54a3.25 3.25 0 0 1-3.23-3.26v-18.95c0-1.8 1.45-3.26 3.23-3.26h5.12v-3.34a4.18 4.18 0 0 1 4.16-4.19h6.98a4.18 4.18 0 0 1 4.15 4.19v3.34h5.13a3.25 3.25 0 0 1 3.23 3.26v18.56zm-22.22-25.16v3.34h1.42v-3.34c0-.73.59-1.32 1.3-1.32h6.99c.72 0 1.3.6 1.3 1.32v3.34h1.43v-3.34a2.75 2.75 0 0 0-2.73-2.76h-6.98a2.75 2.75 0 0 0-2.73 2.76zm2.84.11v3.23h6.76v-3.23zm-11.16 6.1h29.07a1.82 1.82 0 0 0-1.76-1.43h-25.54c-.86 0-1.59.61-1.77 1.43zm29.12 18.23v-9.59h-4.1v1.94c0 .4-.31.72-.7.72h-3.2a.71.71 0 0 1-.71-.72v-1.94h-11.74v1.94c0 .4-.32.72-.7.72h-3.2a.71.71 0 0 1-.72-.72v-1.94h-4.09v9.6h7.72c.4 0 .7.32.7.71 0 .4-.3.72-.7.72h-7.69c.16.85.9 1.5 1.78 1.5h25.54c.88 0 1.62-.65 1.78-1.5h-3.68a.71.71 0 0 1-.71-.72c0-.4.32-.72.7-.72zm-21.87-8.37v-2.87h-1.78v2.87zm16.36 0v-2.87h-1.78v2.87zm5.5-8.42h-29.15v5.77h4.09v-.93c0-.4.32-.72.71-.72h3.2c.4 0 .71.32.71.72v.93h11.74v-.93c0-.4.31-.72.7-.72h3.2c.4 0 .72.32.72.72v.93h4.09zm-9.77 11.6v3.58c0 .4-.32.72-.71.72h-1.6v1.61c0 .4-.32.72-.71.72h-3.56a.71.71 0 0 1-.71-.72v-1.61h-1.6a.71.71 0 0 1-.71-.72v-3.59c0-.4.32-.71.71-.71h1.6v-1.62c0-.4.32-.72.71-.72h3.56c.39 0 .7.33.7.72v1.62h1.6c.4 0 .72.32.72.71zm-1.42.71h-1.6a.71.71 0 0 1-.71-.72v-1.61h-2.14v1.61c0 .4-.32.72-.7.72h-1.6v2.15h1.6c.38 0 .7.32.7.72v1.61h2.14v-1.61c0-.4.31-.72.7-.72h1.6zm4.73 5.2c0 .4-.32.72-.71.72h-.08a.71.71 0 0 1-.7-.72c0-.4.31-.72.7-.72h.08c.39 0 .7.33.7.72z' })
 	                                    ),
 	                                    _react2['default'].createElement(
-	                                        'li',
+	                                        'g',
 	                                        null,
 	                                        _react2['default'].createElement(
-	                                            'div',
-	                                            null,
-	                                            '2'
-	                                        ),
-	                                        'Гормональный анализ взятых тканей '
-	                                    ),
-	                                    _react2['default'].createElement(
-	                                        'li',
-	                                        null,
-	                                        _react2['default'].createElement(
-	                                            'div',
-	                                            null,
-	                                            '3'
-	                                        ),
-	                                        'Генетический тест BRCA '
-	                                    ),
-	                                    _react2['default'].createElement(
-	                                        'li',
-	                                        null,
-	                                        _react2['default'].createElement(
-	                                            'div',
-	                                            null,
-	                                            '4'
-	                                        ),
-	                                        'Биопсия пограничных узлов '
-	                                    ),
-	                                    _react2['default'].createElement(
-	                                        'li',
-	                                        null,
-	                                        _react2['default'].createElement(
-	                                            'div',
-	                                            null,
-	                                            '5'
-	                                        ),
-	                                        'ПЭТ-КТ'
-	                                    ),
-	                                    _react2['default'].createElement(
-	                                        'li',
-	                                        null,
-	                                        _react2['default'].createElement(
-	                                            'div',
-	                                            null,
-	                                            '6'
-	                                        ),
-	                                        'МРТ'
+	                                            'g',
+	                                            { transform: 'translate(-593 -348)' },
+	                                            _react2['default'].createElement('use', { href: '#tmnoa' }),
+	                                            _react2['default'].createElement('use', { fill: '#43afb3', href: '#tmnoa' })
+	                                        )
 	                                    )
-	                                ),
-	                                _react2['default'].createElement('br', null)
+	                                )
 	                            ),
 	                            _react2['default'].createElement(
-	                                _reactCollapsible2['default'],
-	                                { trigger: 'Онкомаркери' },
+	                                'div',
+	                                { className: 'result-top' },
 	                                _react2['default'].createElement(
-	                                    'ul',
-	                                    null,
+	                                    _reactCollapsible2['default'],
+	                                    { trigger: 'Диагностика' },
 	                                    _react2['default'].createElement(
-	                                        'li',
+	                                        'ul',
 	                                        null,
 	                                        _react2['default'].createElement(
-	                                            'div',
-	                                            null,
-	                                            '1'
-	                                        ),
-	                                        'Са-125'
+	                                            'ul',
+	                                            { className: 'accordion-pen' },
+	                                            _react2['default'].createElement(
+	                                                'li',
+	                                                null,
+	                                                _react2['default'].createElement(
+	                                                    'div',
+	                                                    { className: 'number-icon' },
+	                                                    '1'
+	                                                ),
+	                                                _react2['default'].createElement(
+	                                                    'div',
+	                                                    { className: 'description-d' },
+	                                                    _react2['default'].createElement(
+	                                                        'p',
+	                                                        null,
+	                                                        'Биопсия под контролем Маммографии и УЗИ'
+	                                                    )
+	                                                )
+	                                            ),
+	                                            _react2['default'].createElement(
+	                                                'li',
+	                                                null,
+	                                                _react2['default'].createElement(
+	                                                    'div',
+	                                                    { className: 'number-icon' },
+	                                                    '2'
+	                                                ),
+	                                                _react2['default'].createElement(
+	                                                    'div',
+	                                                    { className: 'description-d' },
+	                                                    'Гормональный анализ взятых тканей '
+	                                                )
+	                                            ),
+	                                            _react2['default'].createElement(
+	                                                'li',
+	                                                null,
+	                                                _react2['default'].createElement(
+	                                                    'div',
+	                                                    { className: 'number-icon' },
+	                                                    '3'
+	                                                ),
+	                                                _react2['default'].createElement(
+	                                                    'div',
+	                                                    { className: 'description-d' },
+	                                                    'Генетический тест BRCA '
+	                                                )
+	                                            ),
+	                                            _react2['default'].createElement(
+	                                                'li',
+	                                                null,
+	                                                _react2['default'].createElement(
+	                                                    'div',
+	                                                    { className: 'number-icon' },
+	                                                    '4'
+	                                                ),
+	                                                _react2['default'].createElement(
+	                                                    'div',
+	                                                    { className: 'description-d' },
+	                                                    'Биопсия пограничных узлов '
+	                                                )
+	                                            ),
+	                                            _react2['default'].createElement(
+	                                                'li',
+	                                                null,
+	                                                _react2['default'].createElement(
+	                                                    'div',
+	                                                    { className: 'number-icon' },
+	                                                    '5'
+	                                                ),
+	                                                _react2['default'].createElement(
+	                                                    'div',
+	                                                    { className: 'description-d' },
+	                                                    'ПЭТ-КТ'
+	                                                )
+	                                            ),
+	                                            _react2['default'].createElement(
+	                                                'li',
+	                                                null,
+	                                                _react2['default'].createElement(
+	                                                    'div',
+	                                                    { className: 'number-icon' },
+	                                                    '6'
+	                                                ),
+	                                                _react2['default'].createElement(
+	                                                    'div',
+	                                                    { className: 'description-d' },
+	                                                    'МРТ'
+	                                                )
+	                                            )
+	                                        )
 	                                    ),
+	                                    _react2['default'].createElement('br', null)
+	                                ),
+	                                _react2['default'].createElement(
+	                                    _reactCollapsible2['default'],
+	                                    { trigger: 'Риски' },
 	                                    _react2['default'].createElement(
-	                                        'li',
-	                                        null,
+	                                        'ul',
+	                                        { className: 'accordion-pen' },
 	                                        _react2['default'].createElement(
-	                                            'div',
+	                                            'li',
 	                                            null,
-	                                            '2'
+	                                            _react2['default'].createElement(
+	                                                'div',
+	                                                { className: 'number-icon' },
+	                                                '1'
+	                                            ),
+	                                            _react2['default'].createElement(
+	                                                'div',
+	                                                { className: 'description-d' },
+	                                                'Са-125'
+	                                            )
 	                                        ),
-	                                        'Са 15-3'
+	                                        _react2['default'].createElement(
+	                                            'li',
+	                                            null,
+	                                            _react2['default'].createElement(
+	                                                'div',
+	                                                { className: 'number-icon' },
+	                                                '2'
+	                                            ),
+	                                            _react2['default'].createElement(
+	                                                'div',
+	                                                { className: 'description-d' },
+	                                                'Са 15-3'
+	                                            )
+	                                        ),
+	                                        _react2['default'].createElement(
+	                                            'li',
+	                                            null,
+	                                            _react2['default'].createElement(
+	                                                'div',
+	                                                { className: 'number-icon' },
+	                                                '3'
+	                                            ),
+	                                            _react2['default'].createElement(
+	                                                'div',
+	                                                { className: 'description-d' },
+	                                                'РЭА'
+	                                            )
+	                                        )
 	                                    ),
+	                                    _react2['default'].createElement('br', null)
+	                                ),
+	                                _react2['default'].createElement(
+	                                    _reactCollapsible2['default'],
+	                                    { trigger: 'Опциональные виды лечения' },
 	                                    _react2['default'].createElement(
-	                                        'li',
-	                                        null,
+	                                        'ul',
+	                                        { className: 'accordion-pen' },
 	                                        _react2['default'].createElement(
-	                                            'div',
+	                                            'li',
 	                                            null,
-	                                            '3'
+	                                            _react2['default'].createElement(
+	                                                'div',
+	                                                { className: 'number-icon' },
+	                                                '1'
+	                                            ),
+	                                            _react2['default'].createElement(
+	                                                'div',
+	                                                { className: 'description-d' },
+	                                                'Операция'
+	                                            )
 	                                        ),
-	                                        'РЭА'
+	                                        _react2['default'].createElement(
+	                                            'li',
+	                                            null,
+	                                            _react2['default'].createElement(
+	                                                'div',
+	                                                { className: 'number-icon' },
+	                                                '2'
+	                                            ),
+	                                            _react2['default'].createElement(
+	                                                'div',
+	                                                { className: 'description-d' },
+	                                                ' Лучевая  терапия (в зависимости от результатов Гистопатологии)'
+	                                            )
+	                                        )
 	                                    )
 	                                ),
-	                                _react2['default'].createElement('br', null)
-	                            ),
-	                            _react2['default'].createElement(
-	                                _reactCollapsible2['default'],
-	                                { trigger: 'Опциональные виды лечения:' },
 	                                _react2['default'].createElement(
-	                                    'ul',
-	                                    null,
+	                                    _reactCollapsible2['default'],
+	                                    { trigger: 'Наблюдения' },
 	                                    _react2['default'].createElement(
-	                                        'li',
-	                                        null,
+	                                        'ul',
+	                                        { className: 'accordion-pen' },
 	                                        _react2['default'].createElement(
-	                                            'div',
+	                                            'li',
 	                                            null,
-	                                            '1'
+	                                            _react2['default'].createElement(
+	                                                'div',
+	                                                { className: 'number-icon' },
+	                                                '1'
+	                                            ),
+	                                            _react2['default'].createElement(
+	                                                'div',
+	                                                { className: 'description-d' },
+	                                                'Биопсия под контролем Маммографии и УЗИ '
+	                                            )
 	                                        ),
-	                                        'Операция'
-	                                    ),
-	                                    _react2['default'].createElement(
-	                                        'li',
-	                                        null,
 	                                        _react2['default'].createElement(
-	                                            'div',
+	                                            'li',
 	                                            null,
-	                                            '2'
+	                                            _react2['default'].createElement(
+	                                                'div',
+	                                                { className: 'number-icon' },
+	                                                '2'
+	                                            ),
+	                                            _react2['default'].createElement(
+	                                                'div',
+	                                                { className: 'description-d' },
+	                                                'Гормональный анализ взятых тканей '
+	                                            )
 	                                        ),
-	                                        'Лучевая  терапия (в зависимости от результатов Гистопатологии)'
+	                                        _react2['default'].createElement(
+	                                            'li',
+	                                            null,
+	                                            _react2['default'].createElement(
+	                                                'div',
+	                                                { className: 'number-icon' },
+	                                                '3'
+	                                            ),
+	                                            _react2['default'].createElement(
+	                                                'div',
+	                                                { className: 'description-d' },
+	                                                'Генетический тест BRCA '
+	                                            )
+	                                        ),
+	                                        _react2['default'].createElement(
+	                                            'li',
+	                                            null,
+	                                            _react2['default'].createElement(
+	                                                'div',
+	                                                { className: 'number-icon' },
+	                                                '4'
+	                                            ),
+	                                            _react2['default'].createElement(
+	                                                'div',
+	                                                { className: 'description-d' },
+	                                                'Биопсия пограничных узлов '
+	                                            )
+	                                        ),
+	                                        _react2['default'].createElement(
+	                                            'li',
+	                                            null,
+	                                            _react2['default'].createElement(
+	                                                'div',
+	                                                { className: 'number-icon' },
+	                                                '5'
+	                                            ),
+	                                            _react2['default'].createElement(
+	                                                'div',
+	                                                { className: 'description-d' },
+	                                                'ПЭТ-КТ'
+	                                            )
+	                                        ),
+	                                        _react2['default'].createElement(
+	                                            'li',
+	                                            null,
+	                                            _react2['default'].createElement(
+	                                                'div',
+	                                                { className: 'number-icon' },
+	                                                '6'
+	                                            ),
+	                                            _react2['default'].createElement(
+	                                                'div',
+	                                                { className: 'description-d' },
+	                                                'МРТ'
+	                                            )
+	                                        )
 	                                    )
+	                                ),
+	                                _react2['default'].createElement(
+	                                    'a',
+	                                    { href: '#', className: 'export-to-pdf' },
+	                                    'Export to PDF'
 	                                )
 	                            )
 	                        )
@@ -46880,22 +47056,99 @@
 	                            _react2['default'].createElement(
 	                                'div',
 	                                { className: 'answers' },
-	                                this.props.answer.map(function (item, index) {
-	                                    return _react2['default'].createElement(
-	                                        'ul',
-	                                        { key: index + 2000 },
+	                                _react2['default'].createElement(
+	                                    'div',
+	                                    { className: 'image-and-title' },
+	                                    _react2['default'].createElement(
+	                                        'i',
+	                                        null,
 	                                        _react2['default'].createElement(
-	                                            'li',
-	                                            null,
-	                                            item.answerForView
+	                                            'svg',
+	                                            { width: '30', height: '34', viewBox: '0 0 30 34' },
+	                                            _react2['default'].createElement(
+	                                                'defs',
+	                                                null,
+	                                                _react2['default'].createElement('path', { id: 'wakya', d: 'M624 93.19v29.75c0 .58-.48 1.06-1.07 1.06h-27.86c-.59 0-1.07-.48-1.07-1.06V93.19c0-.59.48-1.07 1.07-1.07h7.5v-1.06c0-.58.48-1.06 1.07-1.06h10.72c.59 0 1.07.48 1.07 1.06v1.06h7.5c.6 0 1.07.48 1.07 1.07zm-19.29 1.06h8.58v-2.13h-8.58zm-4.28 23.37h17.14V94.25h-2.14v1.06c0 .59-.48 1.06-1.07 1.06h-10.72c-.59 0-1.07-.47-1.07-1.06v-1.06h-2.14zm21.43-23.37h-2.15v24.44c0 .58-.47 1.06-1.07 1.06h-19.28c-.6 0-1.07-.48-1.07-1.06V94.25h-2.15v27.62h25.72zm-9.65 7.44v2.12h-2.14v2.13h-2.14v-2.13h-2.14v-2.12h2.14v-2.13h2.14v2.13zm-9.64 7.43h12.86v2.13h-12.86zm0 4.25h12.86v2.13h-12.86z' })
+	                                            ),
+	                                            _react2['default'].createElement(
+	                                                'g',
+	                                                null,
+	                                                _react2['default'].createElement(
+	                                                    'g',
+	                                                    { transform: 'translate(-594 -90)' },
+	                                                    _react2['default'].createElement('use', { href: '#wakya' }),
+	                                                    _react2['default'].createElement('use', { fill: '#464646', href: '#wakya' })
+	                                                )
+	                                            )
 	                                        )
-	                                    );
-	                                })
+	                                    ),
+	                                    _react2['default'].createElement(
+	                                        'h4',
+	                                        { className: 'you-result-title' },
+	                                        'Ваши результаты:'
+	                                    )
+	                                ),
+	                                _react2['default'].createElement(
+	                                    'ul',
+	                                    null,
+	                                    this.props.answer.map(function (item, index) {
+	                                        return _react2['default'].createElement(
+	                                            'li',
+	                                            { key: index + 2000 },
+	                                            item.answerForView
+	                                        );
+	                                    })
+	                                )
 	                            ),
 	                            _react2['default'].createElement(
 	                                'div',
 	                                { className: 'result' },
 	                                this.state.resultText
+	                            ),
+	                            _react2['default'].createElement(
+	                                'div',
+	                                { className: 'result-bottom' },
+	                                _react2['default'].createElement(
+	                                    'i',
+	                                    null,
+	                                    _react2['default'].createElement(
+	                                        'svg',
+	                                        { xmlns: 'http://www.w3.org/2000/svg', xlink: 'http://www.w3.org/1999/xlink', width: '31', height: '33', viewBox: '0 0 31 33' },
+	                                        _react2['default'].createElement(
+	                                            'defs',
+	                                            null,
+	                                            _react2['default'].createElement('path', { id: 'ps6ia', d: 'M624.92 711.64c.1.42.05.87-.16 1.25l-3.16 5.72a1.6 1.6 0 0 1-1.37.82c-.28 0-.55-.07-.8-.22l-5.2-3.14v6.28c0 .91-.7 1.65-1.58 1.65h-6.33c-.87 0-1.58-.74-1.58-1.65v-6.28l-5.21 3.14a1.53 1.53 0 0 1-1.2.17 1.6 1.6 0 0 1-.96-.77l-3.17-5.72a1.71 1.71 0 0 1-.15-1.25c.1-.42.37-.78.73-1l5.21-3.14-5.2-3.14a1.65 1.65 0 0 1-.74-1c-.11-.42-.05-.87.15-1.25l3.17-5.72a1.6 1.6 0 0 1 1.37-.82c.27 0 .55.07.79.22l5.2 3.14v-6.28c0-.91.72-1.65 1.6-1.65h6.32c.87 0 1.58.74 1.58 1.65v6.28l5.2-3.14a1.53 1.53 0 0 1 1.2-.17c.41.12.76.4.97.77l3.16 5.72c.21.38.27.83.16 1.25-.1.42-.37.78-.74 1l-5.2 3.14 5.2 3.14c.37.22.63.58.74 1zm-1.53.43l-7.58-4.57 7.58-4.57-3.16-5.71-7.58 4.56v-9.13h-6.33v9.13l-7.58-4.56-3.17 5.71 7.59 4.57-7.59 4.57 3.17 5.71 7.58-4.56v9.13h6.33v-9.13l7.58 4.56z' })
+	                                        ),
+	                                        _react2['default'].createElement(
+	                                            'g',
+	                                            null,
+	                                            _react2['default'].createElement(
+	                                                'g',
+	                                                { transform: 'translate(-594 -691)' },
+	                                                _react2['default'].createElement('use', { href: '#ps6ia' }),
+	                                                _react2['default'].createElement('use', { fill: '#43afb3', href: '#ps6ia' })
+	                                            )
+	                                        )
+	                                    )
+	                                ),
+	                                _react2['default'].createElement(
+	                                    'div',
+	                                    { className: 'ask-after-result' },
+	                                    _react2['default'].createElement(
+	                                        'h3',
+	                                        { className: 'know-more' },
+	                                        'Вы заинтересованны узнать больше и получить мнение специалистов из-за границы ?'
+	                                    ),
+	                                    _react2['default'].createElement(
+	                                        'a',
+	                                        { className: 'know-more-button' },
+	                                        _react2['default'].createElement(
+	                                            'span',
+	                                            null,
+	                                            'Узнать больше'
+	                                        )
+	                                    )
+	                                )
 	                            )
 	                        )
 	                    )
@@ -46958,7 +47211,7 @@
 	*
 	* */
 	module.exports = exports['default'];
-	/*<h4>Онкомаркери:</h4>*/ /*<h4>Опциональные виды лечения: </h4>*/ /*<h1 className="resulttest">You result: {this.state.result}</h1>*/
+	/*<div className="green-text">some text</div>*/ /*<p className="description-small">*/ /*Вы заинтересованны узнать больше*/ /*и получить мнение специалистов*/ /*из-за границы ?</p>*/ /*<h1 className="resulttest">You result: {this.state.result}</h1>*/
 
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/volodymyr/Стільниця/Medical/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "SmartTestResult.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
@@ -46997,7 +47250,7 @@
 
 
 	// module
-	exports.push([module.id, ".test {\n  -moz-transform: skew(25deg, 10deg);\n  -o-transform: skew(25deg, 10deg);\n  -ms-transform: skew(25deg, 10deg);\n  -webkit-transform: skew(25deg, 10deg);\n  transform: skew(25deg, 10deg);\n  moz-transform-origin: top left;\n  -o-transform-origin: top left;\n  -ms-transform-origin: top left;\n  -webkit-transform-origin: top left;\n  transform-origin: top left;\n  position: absolute;\n  top: 25%;\n  bottom: 25%;\n  left: 25%;\n  right: 25%;\n  background-color: rgba(20, 20, 20, 0.5); }\n\n.smarttestresult .smart-result-page {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -moz-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: space-bettwen;\n  -ms-flex-pack: space-bettwen;\n  -webkit-justify-content: space-bettwen;\n  -moz-justify-content: space-bettwen;\n  justify-content: space-bettwen;\n  -webkit-flex-wrap: wrap;\n  -moz-flex-wrap: wrap;\n  -ms-flex-wrap: wrap;\n  flex-wrap: wrap;\n  width: 100%;\n  min-height: 100%; }\n  .smarttestresult .smart-result-page .left-side-result-page {\n    background-color: #e5e5e5;\n    padding: 30px;\n    text-align: left;\n    flex: 0 0 30%; }\n  .smarttestresult .smart-result-page .right-side-result-page {\n    display: -webkit-box;\n    display: -webkit-flex;\n    display: -moz-flex;\n    display: -ms-flexbox;\n    display: flex;\n    flex-direction: column;\n    -webkit-box-pack: space-bettwen;\n    -ms-flex-pack: space-bettwen;\n    -webkit-justify-content: space-bettwen;\n    -moz-justify-content: space-bettwen;\n    justify-content: space-bettwen;\n    flex: 0 0 70%;\n    position: relative; }\n    .smarttestresult .smart-result-page .right-side-result-page .answers {\n      background-color: #43afb3;\n      padding: 25px;\n      padding-left: 50px; }\n      .smarttestresult .smart-result-page .right-side-result-page .answers ul {\n        color: #ffffff;\n        list-style: none; }\n        .smarttestresult .smart-result-page .right-side-result-page .answers ul li {\n          margin-bottom: 5px; }\n        .smarttestresult .smart-result-page .right-side-result-page .answers ul:nth-child(+n+3) {\n          list-style-image: url(" + __webpack_require__(507) + "); }\n", ""]);
+	exports.push([module.id, ".test {\n  -moz-transform: skew(25deg, 10deg);\n  -o-transform: skew(25deg, 10deg);\n  -ms-transform: skew(25deg, 10deg);\n  -webkit-transform: skew(25deg, 10deg);\n  transform: skew(25deg, 10deg);\n  moz-transform-origin: top left;\n  -o-transform-origin: top left;\n  -ms-transform-origin: top left;\n  -webkit-transform-origin: top left;\n  transform-origin: top left;\n  position: absolute;\n  top: 25%;\n  bottom: 25%;\n  left: 25%;\n  right: 25%;\n  background-color: rgba(20, 20, 20, 0.5); }\n\n.smarttestresult .smart-result-page {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -moz-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: space-bettwen;\n  -ms-flex-pack: space-bettwen;\n  -webkit-justify-content: space-bettwen;\n  -moz-justify-content: space-bettwen;\n  justify-content: space-bettwen;\n  -webkit-flex-wrap: wrap;\n  -moz-flex-wrap: wrap;\n  -ms-flex-wrap: wrap;\n  flex-wrap: wrap;\n  width: 100%;\n  min-height: 100%; }\n  .smarttestresult .smart-result-page .left-side-result-page {\n    background-color: #e5e5e5;\n    padding: 30px;\n    text-align: left;\n    flex: 0 0 30%; }\n    @media (max-width: 768px) {\n      .smarttestresult .smart-result-page .left-side-result-page {\n        flex: 1 0 30%; } }\n  .smarttestresult .smart-result-page .right-side-result-page {\n    display: -webkit-box;\n    display: -webkit-flex;\n    display: -moz-flex;\n    display: -ms-flexbox;\n    display: flex;\n    flex-direction: column;\n    -webkit-box-pack: space-bettwen;\n    -ms-flex-pack: space-bettwen;\n    -webkit-justify-content: space-bettwen;\n    -moz-justify-content: space-bettwen;\n    justify-content: space-bettwen;\n    flex: 0 0 70%;\n    position: relative; }\n    @media (max-width: 768px) {\n      .smarttestresult .smart-result-page .right-side-result-page {\n        flex: 0 0 100%; } }\n    .smarttestresult .smart-result-page .right-side-result-page .answers {\n      background-color: #43afb3;\n      padding: 90px 18% 90px 20px; }\n      @media (max-width: 768px) {\n        .smarttestresult .smart-result-page .right-side-result-page .answers {\n          padding-left: 20px;\n          padding-right: 0px; } }\n      .smarttestresult .smart-result-page .right-side-result-page .answers .image-and-title {\n        display: -webkit-box;\n        display: -webkit-flex;\n        display: -moz-flex;\n        display: -ms-flexbox;\n        display: flex;\n        -webkit-box-pack: start;\n        -ms-flex-pack: start;\n        -webkit-justify-content: flex-start;\n        -moz-justify-content: flex-start;\n        justify-content: flex-start;\n        align-items: flex-end;\n        margin-bottom: 42px; }\n        .smarttestresult .smart-result-page .right-side-result-page .answers .image-and-title .you-result-title {\n          color: #ffffff;\n          font-size: 24px;\n          font-weight: 700; }\n        .smarttestresult .smart-result-page .right-side-result-page .answers .image-and-title i {\n          margin-right: 20px;\n          fill: #464646; }\n      .smarttestresult .smart-result-page .right-side-result-page .answers ul {\n        color: #ffffff;\n        margin-left: 50px; }\n        .smarttestresult .smart-result-page .right-side-result-page .answers ul li {\n          list-style: none;\n          list-style-position: inside;\n          margin-bottom: 5px;\n          font-size: 16px;\n          font-weight: 600; }\n          @media (max-width: 768px) {\n            .smarttestresult .smart-result-page .right-side-result-page .answers ul li {\n              font-size: 14px; } }\n          .smarttestresult .smart-result-page .right-side-result-page .answers ul li:nth-child(+n+3) {\n            list-style-image: url(" + __webpack_require__(507) + "); }\n    .smarttestresult .smart-result-page .right-side-result-page .result {\n      padding: 30px 0; }\n      .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result {\n        display: flex;\n        justify-content: flex-start;\n        margin-left: 18%; }\n        @media (max-width: 768px) {\n          .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result {\n            margin-left: 5%; } }\n        .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top {\n          margin-left: 20px;\n          padding-right: 20px; }\n          .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top .Collapsible {\n            cursor: pointer;\n            border-bottom: 1px solid #43afb3;\n            margin-bottom: 20px;\n            max-width: 330px;\n            color: #464646; }\n            .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top .Collapsible span {\n              display: block;\n              margin-bottom: 10px; }\n              .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top .Collapsible span:after {\n                content: \"\";\n                display: inline-block;\n                margin-left: 10px;\n                border: solid #43afb3;\n                border-width: 0 2px 2px 0;\n                display: inline-block;\n                padding: 3px;\n                transform: rotate(45deg);\n                -webkit-transform: rotate(45deg); }\n          .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top .accordion-pen li {\n            display: -webkit-box;\n            display: -webkit-flex;\n            display: -moz-flex;\n            display: -ms-flexbox;\n            display: flex;\n            -webkit-box-pack: start;\n            -ms-flex-pack: start;\n            -webkit-justify-content: flex-start;\n            -moz-justify-content: flex-start;\n            justify-content: flex-start;\n            align-items: center;\n            margin-bottom: 10px; }\n            .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top .accordion-pen li .number-icon {\n              margin-right: 10px;\n              padding-top: 3px;\n              text-align: center;\n              width: 30px;\n              height: 30px;\n              border-radius: 50%;\n              border: 1px solid #43afb3; }\n            .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top .accordion-pen li .description-d {\n              flex: 0 0 70%;\n              color: black;\n              font-weight: 700; }\n          .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top .export-to-pdf {\n            cursor: pointer;\n            text-decoration: none;\n            padding: 8px 35px;\n            color: #43afb3;\n            border: 1px solid #43afb3;\n            border-radius: 20px;\n            line-height: 3; }\n    .smarttestresult .smart-result-page .right-side-result-page .result-bottom {\n      display: -webkit-box;\n      display: -webkit-flex;\n      display: -moz-flex;\n      display: -ms-flexbox;\n      display: flex;\n      justify-content: flex-start;\n      margin-left: 18%; }\n      @media (max-width: 768px) {\n        .smarttestresult .smart-result-page .right-side-result-page .result-bottom {\n          margin-left: 5%; } }\n      .smarttestresult .smart-result-page .right-side-result-page .result-bottom .ask-after-result {\n        margin-left: 20px;\n        margin-bottom: 50px; }\n        .smarttestresult .smart-result-page .right-side-result-page .result-bottom .ask-after-result .know-more {\n          max-width: 283px;\n          font-size: 16px;\n          font-weight: 600;\n          color: #696969;\n          margin-bottom: 29px; }\n        .smarttestresult .smart-result-page .right-side-result-page .result-bottom .ask-after-result .know-more-button {\n          cursor: pointer;\n          text-decoration: none;\n          padding: 8px 35px;\n          color: #ffffff;\n          background-color: #43afb3;\n          border-radius: 20px;\n          line-height: 3; }\n", ""]);
 
 	// exports
 
@@ -47006,7 +47259,7 @@
 /* 507 */
 /***/ (function(module, exports) {
 
-	module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTYiIGhlaWdodD0iMTMiIHZpZXdCb3g9IjAgMCAxNiAxMyI+PGRlZnM+PHBhdGggaWQ9ImdvcGJhIiBkPSJNMTUyIDQ4NWwtNiA2LTMtMy0yIDIgNSA1IDgtOHoiLz48L2RlZnM+PGc+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEzOSAtNDgzKSI+PHVzZSB4bGluazpocmVmPSIjZ29wYmEiLz48dXNlIGZpbGw9IndoaXRlIiB4bGluazpocmVmPSIjZ29wYmEiLz48L2c+PC9nPjwvc3ZnPg=="
+	module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiI+PGRlZnM+PHBhdGggaWQ9ImN6NTlhIiBkPSJNNjUxIDE4NXYtMTZoMTZ2MTZ6bTEtOGE3IDcgMCAxIDAgMTQgMCA3IDcgMCAwIDAtMTQgMHoiLz48cGF0aCBpZD0iY3o1OWIiIGQ9Ik02NTkgMTcwYTcgNyAwIDEgMSAwIDE0IDcgNyAwIDAgMSAwLTE0eiIvPjxwYXRoIGlkPSJjejU5ZCIgZD0iTTY2MS43NyAxNzRsLTMuNyAzLjYtMS44NC0xLjhMNjU1IDE3N2wzLjA4IDMgNC45Mi00Ljh6Ii8+PGNsaXBQYXRoIGlkPSJjejU5YyI+PHVzZSBmaWxsPSIjZmZmIiB4bGluazpocmVmPSIjY3o1OWEiLz48L2NsaXBQYXRoPjwvZGVmcz48Zz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjUxIC0xNjkpIj48Zz48dXNlIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMCIgc3Ryb2tlPSIjNDY0NjQ2IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSI1MCIgc3Ryb2tlLXdpZHRoPSIyIiBjbGlwLXBhdGg9InVybCgmcXVvdDsjY3o1OWMmcXVvdDspIiB4bGluazpocmVmPSIjY3o1OWIiLz48L2c+PGc+PHVzZSB4bGluazpocmVmPSIjY3o1OWQiLz48dXNlIGZpbGw9IiM0NjQ2NDYiIHhsaW5rOmhyZWY9IiNjejU5ZCIvPjwvZz48L2c+PC9nPjwvc3ZnPg=="
 
 /***/ }),
 /* 508 */
