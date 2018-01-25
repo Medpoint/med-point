@@ -36744,6 +36744,8 @@
 
 	            var stepIndex = this.state.stepIndex;
 
+	            var length = this.props.answer.length - 1;
+
 	            return _react2['default'].createElement(
 	                'div',
 	                { className: 'smartest-wrapper' },
@@ -36759,123 +36761,242 @@
 	                            { className: 'logic-block' },
 	                            _react2['default'].createElement(
 	                                'div',
-	                                {
-	                                    className: 'logic-container',
-	                                    style: mquery ? { top: this.state.PositionStyle + 'px' } : { right: this.state.PositionStyle + 'px' } },
+	                                { className: 'stepper' },
 	                                _react2['default'].createElement(
-	                                    _materialUiStepper.Stepper,
-	                                    { activeStep: stepIndex, orientation: 'vertical' },
-	                                    this.props.answer.map(function (item, index) {
+	                                    'span',
+	                                    { className: 'previous-step' },
+	                                    this.props.answer.length - 1
+	                                ),
+	                                _react2['default'].createElement(
+	                                    'span',
+	                                    { className: 'current-step' },
+	                                    this.props.answer.length
+	                                ),
+	                                _react2['default'].createElement(
+	                                    'svg',
+	                                    { width: '319', height: '38', viewBox: '0 0 319 38' },
+	                                    _react2['default'].createElement(
+	                                        'defs',
+	                                        null,
+	                                        _react2['default'].createElement('path', { id: 'w45za', d: 'M686.27 213v-1.67h84.53V213z' }),
+	                                        _react2['default'].createElement('path', { id: 'w45zb', d: 'M827.27 213v-1.67h84.53V213z' }),
+	                                        _react2['default'].createElement('path', { id: 'w45zc', d: 'M659 193a19 19 0 1 1 0 38 19 19 0 0 1 0-38z' }),
+	                                        _react2['default'].createElement('path', { id: 'w45zd', d: 'M799 193a19 19 0 1 1 0 38 19 19 0 0 1 0-38z' }),
+	                                        _react2['default'].createElement('path', { id: 'w45ze', d: 'M940 193a19 19 0 1 1 0 38 19 19 0 0 1 0-38z' }),
+	                                        _react2['default'].createElement('path', { id: 'w45zf', d: 'M666.86 220.42a1.1 1.1 0 0 1-.98.58h-11.23c-.9 0-1.65-.76-1.65-1.69v-9.57c0-.68.4-1.27.97-1.54v-4c0-.67.52-1.2 1.16-1.2H665c.65 0 1.17.53 1.17 1.2v14.01l.7 1.06.02.03c.17.35.17.77-.02 1.12zm-11.6-12.37h3.6c.66 0 1 .59 1.16.83l.01.03 4.83 7.34v-11.93h-9.6zm10.3 11.63l-.58-.9-6.06-9.18-.01-.03-.13-.2h-4.13c-.2 0-.36.17-.36.37v9.57c0 .2.17.37.36.37zm-5.85-5.27c0 .37-.29.67-.64.67h-.85v.86c0 .36-.29.66-.64.66a.65.65 0 0 1-.65-.66v-.86h-.85a.65.65 0 0 1-.64-.67c0-.36.29-.66.64-.66h.85v-.86c0-.37.29-.66.65-.66.35 0 .64.3.64.66v.86h.85c.35 0 .64.3.64.66zm4.29-8.28c0 .37-.3.66-.65.66h-6.56a.65.65 0 0 1-.65-.66c0-.37.3-.66.65-.66h6.56c.36 0 .65.3.65.66zm0 2.6c0 .37-.3.67-.65.67h-1.91a.65.65 0 0 1-.65-.67c0-.36.3-.66.65-.66h1.91c.36 0 .65.3.65.66z' })
+	                                    ),
+	                                    _react2['default'].createElement(
+	                                        'g',
+	                                        null,
+	                                        _react2['default'].createElement(
+	                                            'g',
+	                                            { transform: 'translate(-640 -193)' },
+	                                            _react2['default'].createElement('use', { fill: '#e6e6e6', href: '#w45za' }),
+	                                            _react2['default'].createElement('use', { fill: '#43afb3', href: '#w45za' })
+	                                        ),
+	                                        _react2['default'].createElement(
+	                                            'g',
+	                                            { transform: 'translate(-640 -193)' },
+	                                            _react2['default'].createElement('use', { fill: '#e6e6e6', href: '#w45zb' }),
+	                                            _react2['default'].createElement('use', { fill: '#b4b4b4', href: '#w45zb' })
+	                                        ),
+	                                        _react2['default'].createElement(
+	                                            'g',
+	                                            { transform: 'translate(-640 -193)' },
+	                                            _react2['default'].createElement('use', { fill: '#43afb3', href: '#w45zc' })
+	                                        ),
+	                                        _react2['default'].createElement(
+	                                            'g',
+	                                            { transform: 'translate(-640 -193)' },
+	                                            _react2['default'].createElement('use', { fill: '#43afb3', href: '#w45zd' })
+	                                        ),
+	                                        _react2['default'].createElement(
+	                                            'g',
+	                                            { transform: 'translate(-640 -193)' },
+	                                            _react2['default'].createElement('use', { fill: '#43afb3', href: '#w45ze' }),
+	                                            _react2['default'].createElement('use', { fill: '#b4b4b4', href: '#w45ze' })
+	                                        ),
+	                                        _react2['default'].createElement(
+	                                            'g',
+	                                            { transform: 'translate(-640 -193)' },
+	                                            _react2['default'].createElement('use', { href: '#w45zf' }),
+	                                            _react2['default'].createElement('use', { fill: '#fff', href: '#w45zf' })
+	                                        )
+	                                    )
+	                                )
+	                            ),
+	                            _react2['default'].createElement(
+	                                'div',
+	                                { className: 'stepper-v' },
+	                                _react2['default'].createElement(
+	                                    'span',
+	                                    { className: 'previous-step' },
+	                                    this.props.answer.length - 1
+	                                ),
+	                                _react2['default'].createElement(
+	                                    'span',
+	                                    { className: 'current-step' },
+	                                    this.props.answer.length
+	                                ),
+	                                _react2['default'].createElement(
+	                                    'svg',
+	                                    { width: '38', height: '319', viewBox: '0 0 60 470' },
+	                                    _react2['default'].createElement(
+	                                        'defs',
+	                                        null,
+	                                        _react2['default'].createElement('path', { id: '44qba', d: 'M71 454.99h2.98V584h-2.97z' }),
+	                                        _react2['default'].createElement('path', { id: '44qbb', d: 'M70 662h2.98v129h-2.97z' }),
+	                                        _react2['default'].createElement('path', { id: '44qbc', d: 'M73.24 594a28.97 28.97 0 0 1 28.94 29c0 16.02-12.95 29-28.94 29a28.97 28.97 0 0 1-28.95-29c0-16.02 12.96-29 28.95-29z' }),
+	                                        _react2['default'].createElement('path', { id: '44qbd', d: 'M72.05 799A28.97 28.97 0 0 1 101 828c0 16.02-12.96 29-28.95 29a28.97 28.97 0 0 1-28.94-29c0-16.02 12.96-29 28.94-29z' }),
+	                                        _react2['default'].createElement('path', { id: '44qbe', d: 'M72.95 387a28.97 28.97 0 0 1 28.94 29c0 16.02-12.96 29-28.94 29A28.97 28.97 0 0 1 44 416c0-16.02 12.96-29 28.95-29z' }),
+	                                        _react2['default'].createElement('path', { id: '44qbf', d: 'M84.92 428.84a1.69 1.69 0 0 1-1.48.9H66.32a2.55 2.55 0 0 1-2.51-2.58v-14.61c0-1.04.6-1.94 1.47-2.35v-6.12c0-1 .8-1.82 1.77-1.82h15.03c.98 0 1.77.82 1.77 1.82v21.4l1.07 1.62.02.05c.28.53.27 1.17-.02 1.7zm-17.67-18.87h5.48c1.01 0 1.54.9 1.76 1.28l.03.03 7.36 11.2v-18.2H67.25zm15.7 17.75l-.9-1.36-9.22-14.03-.03-.04c-.09-.16-.15-.25-.2-.3h-6.28c-.3 0-.54.26-.54.56v14.6c0 .31.25.57.54.57zm-8.92-8.03a1 1 0 0 1-.98 1h-1.29v1.32a1 1 0 0 1-.98 1.01 1 1 0 0 1-.99-1v-1.32H68.5a1 1 0 0 1-.98-1.01 1 1 0 0 1 .98-1.02h1.29v-1.31a1 1 0 0 1 .99-1.01 1 1 0 0 1 .98 1v1.32h1.29a1 1 0 0 1 .98 1.02zm6.53-12.65a1 1 0 0 1-.99 1.01h-10a1 1 0 0 1-.98-1.01 1 1 0 0 1 .99-1.01h10a1 1 0 0 1 .98 1.01zm0 3.97a1 1 0 0 1-.99 1.01h-2.9a1 1 0 0 1-1-1 1 1 0 0 1 1-1.02h2.9a1 1 0 0 1 .99 1.01z' })
+	                                    ),
+	                                    _react2['default'].createElement(
+	                                        'g',
+	                                        null,
+	                                        _react2['default'].createElement(
+	                                            'g',
+	                                            { transform: 'translate(-43 -387)' },
+	                                            _react2['default'].createElement('use', { fill: '#e6e6e6', href: '#44qba' }),
+	                                            _react2['default'].createElement('use', { fill: '#43afb3', href: '#44qba' })
+	                                        ),
+	                                        _react2['default'].createElement(
+	                                            'g',
+	                                            { transform: 'translate(-43 -387)' },
+	                                            _react2['default'].createElement('use', { fill: '#e6e6e6', href: '#44qbb' }),
+	                                            _react2['default'].createElement('use', { fill: '#b4b4b4', href: '#44qbb' })
+	                                        ),
+	                                        _react2['default'].createElement(
+	                                            'g',
+	                                            { transform: 'translate(-43 -387)' },
+	                                            _react2['default'].createElement('use', { fill: '#43afb3', href: '#44qbc' })
+	                                        ),
+	                                        _react2['default'].createElement(
+	                                            'g',
+	                                            { transform: 'translate(-43 -387)' },
+	                                            _react2['default'].createElement('use', { fill: '#43afb3', href: '#44qbd' }),
+	                                            _react2['default'].createElement('use', { fill: '#b4b4b4', href: '#44qbd' })
+	                                        ),
+	                                        _react2['default'].createElement(
+	                                            'g',
+	                                            { transform: 'translate(-43 -387)' },
+	                                            _react2['default'].createElement('use', { fill: '#43afb3', href: '#44qbe' })
+	                                        ),
+	                                        _react2['default'].createElement(
+	                                            'g',
+	                                            { transform: 'translate(-43 -387)' },
+	                                            _react2['default'].createElement('use', { href: '#44qbf' }),
+	                                            _react2['default'].createElement('use', { fill: '#fff', href: '#44qbf' })
+	                                        )
+	                                    )
+	                                )
+	                            ),
+	                            _react2['default'].createElement(
+	                                'div',
+	                                { className: 'logic-container' },
+	                                _react2['default'].createElement(
+	                                    'div',
+	                                    { className: 'current-length' },
+	                                    _react2['default'].createElement(
+	                                        'figure',
+	                                        null,
+	                                        this.props.answer.length
+	                                    )
+	                                ),
+	                                _react2['default'].createElement(
+	                                    'div',
+	                                    { className: 'stepper-main' },
+	                                    _react2['default'].createElement(
+	                                        'h2',
+	                                        { className: 'askQuestion' },
+	                                        this.props.answer[this.props.answer.length - 1].ask.question
+	                                    ),
+	                                    this.props.answer[length].ask.lotOf ? _react2['default'].createElement(
+	                                        'div',
+	                                        null,
+	                                        this.props.answer[length].ask.lotOf.map(function (item, index) {
+	                                            return _react2['default'].createElement(
+	                                                'div',
+	                                                { key: item + index },
+	                                                _react2['default'].createElement(_materialUiCheckbox2['default'], {
+	                                                    value: index,
+	                                                    onCheck: _this4.handleCheck.bind(_this4),
+	                                                    iconStyle: { fill: '#43afb3' },
+	                                                    label: item.item,
+	                                                    labelStyle: {
+	                                                        color: '#43afb3',
+	                                                        font: '14px',
+	                                                        fontWeight: '400',
+	                                                        fontFamily: 'Lato',
+	                                                        marginBottom: '10px'
+	                                                    }
+	                                                })
+	                                            );
+	                                        })
+	                                    ) : "",
+	                                    this.props.answer[length].ask.answers.map(function (currentAnswer, index) {
 	                                        return _react2['default'].createElement(
-	                                            _materialUiStepper.Step,
-	                                            { key: index },
-	                                            _react2['default'].createElement(_materialUiStepper.StepLabel, { iconContainerStyle: mquery ? { transform: 'scale(1.5) rotate(0deg)', padding: '0' } : { transform: 'scale(1.5) rotate(-90deg)', padding: '0' }, className: 'step-label' }),
+	                                            'div',
+	                                            { key: index + 500 },
 	                                            _react2['default'].createElement(
-	                                                _materialUiStepper.StepContent,
-	                                                { style: { padding: '20px' } },
+	                                                'div',
+	                                                { className: 'button' },
 	                                                _react2['default'].createElement(
 	                                                    'div',
-	                                                    { className: 'SteperContent' },
+	                                                    { className: 'btn', onClick: _this4.handleFindNextQuestion.bind(_this4, currentAnswer, _this4.props.answer[length].ask, index) },
+	                                                    currentAnswer.text
+	                                                ),
+	                                                _react2['default'].createElement(
+	                                                    'i',
+	                                                    { className: 'icon-what' },
 	                                                    _react2['default'].createElement(
-	                                                        'h2',
-	                                                        { className: 'askQuestion' },
-	                                                        item.ask.question
-	                                                    ),
-	                                                    item.ask.lotOf ? _react2['default'].createElement(
-	                                                        'div',
-	                                                        null,
-	                                                        item.ask.lotOf.map(function (item, index) {
-	                                                            return _react2['default'].createElement(
-	                                                                'div',
-	                                                                { key: item + index },
-	                                                                _react2['default'].createElement(_materialUiCheckbox2['default'], {
-	                                                                    value: index,
-	                                                                    onCheck: _this4.handleCheck.bind(_this4),
-	                                                                    iconStyle: { fill: '#43afb3' },
-	                                                                    label: item.item,
-	                                                                    labelStyle: {
-	                                                                        color: '#43afb3',
-	                                                                        font: '14px',
-	                                                                        fontWeight: '400',
-	                                                                        fontFamily: 'Lato',
-	                                                                        marginBottom: '10px'
-	                                                                    }
-	                                                                })
-	                                                            );
-	                                                        })
-	                                                    ) : "",
-	                                                    item.ask.answers.map(function (currentAnswer, index) {
-	                                                        return _react2['default'].createElement(
-	                                                            'div',
-	                                                            { key: index + 500 },
-	                                                            _react2['default'].createElement(
-	                                                                'div',
-	                                                                { className: 'button' },
-	                                                                _react2['default'].createElement(
-	                                                                    'div',
-	                                                                    { className: 'btn', onClick: _this4.handleFindNextQuestion.bind(_this4, currentAnswer, item.ask, index) },
-	                                                                    currentAnswer.text
-	                                                                ),
-	                                                                _react2['default'].createElement(
-	                                                                    'i',
-	                                                                    { className: 'icon-what' },
-	                                                                    _react2['default'].createElement(
-	                                                                        'svg',
-	                                                                        { width: '16', height: '16', version: '1.1', x: '0px', y: '0px', viewBox: '0 0 1000 1000', enableBackground: 'new 0 0 1000 1000' },
-	                                                                        _react2['default'].createElement(
-	                                                                            'g',
-	                                                                            null,
-	                                                                            _react2['default'].createElement('path', { d: 'M500,10C227,10,10,227,10,500s217,490,490,490s490-217,490-490S773,10,500,10z M500,920C269,920,80,731,80,500S269,80,500,80s420,189,420,420S731,920,500,920z' }),
-	                                                                            _react2['default'].createElement('path', { d: 'M542,633h-70c0-7,0-14,0-28c0-49,21-91,63-126c49-35,70-70,70-105c0-56-28-77-84-84c-56,0-91,35-112,105l-70-21c21-105,84-154,196-154c91,7,147,56,154,140c0,56-28,105-91,147c-42,28-63,63-56,98C542,619,542,626,542,633z M549,780h-84v-84h84V780z' })
-	                                                                        )
-	                                                                    )
-	                                                                )
-	                                                            )
-	                                                        );
-	                                                    }),
-	                                                    index > 0 && _react2['default'].createElement(
-	                                                        'div',
-	                                                        { className: 'button-back' },
+	                                                        'svg',
+	                                                        { width: '16', height: '16', version: '1.1', x: '0px', y: '0px', viewBox: '0 0 1000 1000', enableBackground: 'new 0 0 1000 1000' },
 	                                                        _react2['default'].createElement(
-	                                                            'i',
-	                                                            { className: 'back-icon' },
-	                                                            _react2['default'].createElement(
-	                                                                'svg',
-	                                                                { width: '10', height: '15', viewBox: '0 0 10 15' },
-	                                                                _react2['default'].createElement(
-	                                                                    'defs',
-	                                                                    null,
-	                                                                    _react2['default'].createElement('path', { id: '7dpia', d: 'M708.68 650l1.32 1.4-4.35 4.6 4.35 4.6-1.32 1.4-5.68-6z' })
-	                                                                ),
-	                                                                _react2['default'].createElement(
-	                                                                    'g',
-	                                                                    null,
-	                                                                    _react2['default'].createElement(
-	                                                                        'g',
-	                                                                        { transform: 'translate(-701 -648)' },
-	                                                                        _react2['default'].createElement('use', { href: '#7dpia' }),
-	                                                                        _react2['default'].createElement('use', { fill: '#43afb3', href: '#7dpia' })
-	                                                                    )
-	                                                                )
-	                                                            ),
-	                                                            _react2['default'].createElement(_materialUiFlatButton2['default'], {
-	                                                                label: 'Back',
-	                                                                disabled: _this4.state.stepIndex === 0,
-	                                                                disableTouchRipple: true,
-	                                                                disableFocusRipple: true,
-	                                                                onClick: _this4.handlePrev.bind(_this4, index),
-	                                                                className: 'flat-button'
-	                                                            })
+	                                                            'g',
+	                                                            null,
+	                                                            _react2['default'].createElement('path', { d: 'M500,10C227,10,10,227,10,500s217,490,490,490s490-217,490-490S773,10,500,10z M500,920C269,920,80,731,80,500S269,80,500,80s420,189,420,420S731,920,500,920z' }),
+	                                                            _react2['default'].createElement('path', { d: 'M542,633h-70c0-7,0-14,0-28c0-49,21-91,63-126c49-35,70-70,70-105c0-56-28-77-84-84c-56,0-91,35-112,105l-70-21c21-105,84-154,196-154c91,7,147,56,154,140c0,56-28,105-91,147c-42,28-63,63-56,98C542,619,542,626,542,633z M549,780h-84v-84h84V780z' })
 	                                                        )
 	                                                    )
 	                                                )
 	                                            )
 	                                        );
 	                                    }),
-	                                    _react2['default'].createElement(
-	                                        _materialUiStepper.Step,
-	                                        null,
-	                                        _react2['default'].createElement(_materialUiStepper.StepLabel, { iconContainerStyle: mquery ? { transform: 'scale(1.5) rotate(0deg)', padding: '0' } : { transform: 'scale(1.5) rotate(-90deg)', padding: '0' } })
+	                                    this.props.answer.length > 0 && _react2['default'].createElement(
+	                                        'div',
+	                                        { className: 'button-back' },
+	                                        _react2['default'].createElement(
+	                                            'i',
+	                                            { className: 'back-icon' },
+	                                            _react2['default'].createElement(
+	                                                'svg',
+	                                                { width: '10', height: '15', viewBox: '0 0 10 15' },
+	                                                _react2['default'].createElement(
+	                                                    'defs',
+	                                                    null,
+	                                                    _react2['default'].createElement('path', { id: '7dpia', d: 'M708.68 650l1.32 1.4-4.35 4.6 4.35 4.6-1.32 1.4-5.68-6z' })
+	                                                ),
+	                                                _react2['default'].createElement(
+	                                                    'g',
+	                                                    null,
+	                                                    _react2['default'].createElement(
+	                                                        'g',
+	                                                        { transform: 'translate(-701 -648)' },
+	                                                        _react2['default'].createElement('use', { href: '#7dpia' }),
+	                                                        _react2['default'].createElement('use', { fill: '#43afb3', href: '#7dpia' })
+	                                                    )
+	                                                )
+	                                            ),
+	                                            _react2['default'].createElement(_materialUiFlatButton2['default'], {
+	                                                label: 'Back',
+	                                                disabled: this.state.stepIndex === 0,
+	                                                disableTouchRipple: true,
+	                                                disableFocusRipple: true,
+	                                                onClick: this.handlePrev.bind(this, length),
+	                                                className: 'flat-button'
+	                                            })
+	                                        )
 	                                    )
 	                                )
 	                            )
@@ -36916,7 +37037,7 @@
 
 	exports['default'] = (0, _reactRedux.connect)(mapStateToProps, dispatchStateToProps)(Smarttests);
 	module.exports = exports['default'];
-	/*{item.answerForView}*/ /*<div className="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do*/ /*eiusmod tempor incididunt ut labore et dolore magna aliqua.*/ /*</div>*/
+	/*<div className="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do*/ /*eiusmod tempor incididunt ut labore et dolore magna aliqua.*/ /*</div>*/
 
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/volodymyr/Стільниця/Medical/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "Smarttests.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
@@ -39159,7 +39280,7 @@
 
 
 	// module
-	exports.push([module.id, ".test {\n  -moz-transform: skew(25deg, 10deg);\n  -o-transform: skew(25deg, 10deg);\n  -ms-transform: skew(25deg, 10deg);\n  -webkit-transform: skew(25deg, 10deg);\n  transform: skew(25deg, 10deg);\n  moz-transform-origin: top left;\n  -o-transform-origin: top left;\n  -ms-transform-origin: top left;\n  -webkit-transform-origin: top left;\n  transform-origin: top left;\n  position: absolute;\n  top: 25%;\n  bottom: 25%;\n  left: 25%;\n  right: 25%;\n  background-color: rgba(20, 20, 20, 0.5); }\n\n* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0; }\n\n.smartest-wrapper {\n  height: 100%; }\n  .smartest-wrapper .smarttests {\n    display: -webkit-box;\n    display: -webkit-flex;\n    display: -moz-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: justify;\n    -ms-flex-pack: justify;\n    -webkit-justify-content: space-between;\n    -moz-justify-content: space-between;\n    justify-content: space-between;\n    height: 100%; }\n    @media (max-width: 770px) {\n      .smartest-wrapper .smarttests {\n        flex-direction: column; } }\n    .smartest-wrapper .smarttests .logic {\n      flex: 0 0 70%;\n      padding: 5%; }\n      @media (max-width: 770px) {\n        .smartest-wrapper .smarttests .logic {\n          flex: 0 0 85%;\n          margin-top: -80px; } }\n      .smartest-wrapper .smarttests .logic .logic-block {\n        height: 100%;\n        width: 100%;\n        position: relative;\n        overflow-x: hidden; }\n        @media (max-width: 770px) {\n          .smartest-wrapper .smarttests .logic .logic-block {\n            overflow-x: visible; } }\n        .smartest-wrapper .smarttests .logic .logic-block .logic-container {\n          transition: all 1s;\n          width: 500px;\n          height: 500px;\n          margin: auto;\n          position: absolute;\n          transform: rotate(90deg); }\n          @media (max-width: 770px) {\n            .smartest-wrapper .smarttests .logic .logic-block .logic-container {\n              left: 0;\n              right: 0;\n              transform: rotate(0deg);\n              width: 100%;\n              height: auto; } }\n        .smartest-wrapper .smarttests .logic .logic-block .SteperContent {\n          transform: rotate(-90deg);\n          padding-left: 60px; }\n          @media (max-width: 770px) {\n            .smartest-wrapper .smarttests .logic .logic-block .SteperContent {\n              transform: rotate(0deg);\n              padding-left: 20px; } }\n        .smartest-wrapper .smarttests .logic .logic-block .step-label svg {\n          fill: #43afb3 !important; }\n        .smartest-wrapper .smarttests .logic .logic-block .button {\n          display: flex;\n          align-items: center;\n          margin-top: 20px; }\n          @media (max-width: 770px) {\n            .smartest-wrapper .smarttests .logic .logic-block .button {\n              margin-top: 10px; } }\n          .smartest-wrapper .smarttests .logic .logic-block .button .icon-what {\n            display: inline-block;\n            margin-left: 20px; }\n            .smartest-wrapper .smarttests .logic .logic-block .button .icon-what svg {\n              fill: #6d6d6d; }\n          .smartest-wrapper .smarttests .logic .logic-block .button .btn {\n            position: relative;\n            display: inline-block;\n            cursor: pointer;\n            overflow: hidden;\n            width: 200px;\n            padding: 4px;\n            text-align: center;\n            border: 1px solid #43afb3;\n            color: #43afb3;\n            border-radius: 20px; }\n            .smartest-wrapper .smarttests .logic .logic-block .button .btn:after {\n              content: \"\";\n              display: block;\n              position: absolute;\n              height: 0%;\n              left: 50%;\n              top: 50%;\n              width: 150%;\n              z-index: -1;\n              -webkit-transition: all 1s ease 0s;\n              -moz-transition: all 1s ease 0s;\n              -o-transition: all 1s ease 0s;\n              transition: all 1s ease 0s;\n              background: #43afb3;\n              -moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);\n              -ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);\n              -webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);\n              transform: translateX(-50%) translateY(-50%) rotate(-25deg); }\n            .smartest-wrapper .smarttests .logic .logic-block .button .btn:hover:after {\n              height: 480%; }\n            .smartest-wrapper .smarttests .logic .logic-block .button .btn:hover {\n              color: #ffffff; }\n        .smartest-wrapper .smarttests .logic .logic-block .button-back {\n          margin-top: 30px;\n          margin-bottom: 50px; }\n          .smartest-wrapper .smarttests .logic .logic-block .button-back .back-icon {\n            display: flex;\n            align-items: center; }\n            .smartest-wrapper .smarttests .logic .logic-block .button-back .back-icon svg {\n              margin-right: -10px; }\n    .smartest-wrapper .smarttests .askQuestion {\n      font-size: 24px;\n      font-family: 'MuseoSans-Light';\n      margin-bottom: 35px; }\n      @media (max-width: 770px) {\n        .smartest-wrapper .smarttests .askQuestion {\n          font-size: 14px;\n          margin-bottom: 15px; } }\n    .smartest-wrapper .smarttests .description {\n      color: #464646;\n      font-size: 16px;\n      margin-bottom: 20px; }\n\n::-webkit-scrollbar-track {\n  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);\n  border-radius: 10px;\n  background-color: #F5F5F5; }\n\n::-webkit-scrollbar {\n  width: 8px;\n  background-color: #F5F5F5; }\n\n::-webkit-scrollbar-thumb {\n  border-radius: 10px;\n  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);\n  background-color: #bdbdbd; }\n", ""]);
+	exports.push([module.id, ".test {\n  -moz-transform: skew(25deg, 10deg);\n  -o-transform: skew(25deg, 10deg);\n  -ms-transform: skew(25deg, 10deg);\n  -webkit-transform: skew(25deg, 10deg);\n  transform: skew(25deg, 10deg);\n  moz-transform-origin: top left;\n  -o-transform-origin: top left;\n  -ms-transform-origin: top left;\n  -webkit-transform-origin: top left;\n  transform-origin: top left;\n  position: absolute;\n  top: 25%;\n  bottom: 25%;\n  left: 25%;\n  right: 25%;\n  background-color: rgba(20, 20, 20, 0.5); }\n\n* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0; }\n\n.smartest-wrapper {\n  height: 100%; }\n  .smartest-wrapper .smarttests {\n    display: -webkit-box;\n    display: -webkit-flex;\n    display: -moz-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: justify;\n    -ms-flex-pack: justify;\n    -webkit-justify-content: space-between;\n    -moz-justify-content: space-between;\n    justify-content: space-between;\n    height: 100%; }\n    @media (max-width: 770px) {\n      .smartest-wrapper .smarttests {\n        flex-direction: column; } }\n    .smartest-wrapper .smarttests .logic {\n      flex: 0 0 70%;\n      padding: 5%; }\n      .smartest-wrapper .smarttests .logic .logic-block {\n        display: -webkit-box;\n        display: -webkit-flex;\n        display: -moz-flex;\n        display: -ms-flexbox;\n        display: flex;\n        -webkit-box-direction: normal;\n        -webkit-box-orient: vertical;\n        -webkit-flex-direction: column;\n        -moz-flex-direction: column;\n        -ms-flex-direction: column;\n        flex-direction: column;\n        -ms-flex-pack: distribute;\n        -webkit-justify-content: space-around;\n        -moz-justify-content: space-around;\n        justify-content: space-around;\n        margin-top: 10%;\n        margin-left: 10%; }\n        @media (max-width: 768px) {\n          .smartest-wrapper .smarttests .logic .logic-block {\n            -webkit-box-direction: normal;\n            -webkit-box-orient: horizontal;\n            -webkit-flex-direction: row;\n            -moz-flex-direction: row;\n            -ms-flex-direction: row;\n            flex-direction: row;\n            margin-top: 5%;\n            margin-left: 5%; } }\n        .smartest-wrapper .smarttests .logic .logic-block .logic-container {\n          width: 220px; }\n        .smartest-wrapper .smarttests .logic .logic-block .stepper {\n          position: relative;\n          font-size: 17px;\n          color: #ffffff; }\n          @media (max-width: 768px) {\n            .smartest-wrapper .smarttests .logic .logic-block .stepper {\n              display: none; } }\n          .smartest-wrapper .smarttests .logic .logic-block .stepper svg {\n            fill: #ffffff; }\n          .smartest-wrapper .smarttests .logic .logic-block .stepper .previous-step {\n            position: absolute;\n            top: 6px;\n            left: 294px; }\n          .smartest-wrapper .smarttests .logic .logic-block .stepper .current-step {\n            position: absolute;\n            top: 6px;\n            left: 152px; }\n        .smartest-wrapper .smarttests .logic .logic-block .stepper-v {\n          flex: 0 0 20%;\n          position: relative;\n          font-size: 17px;\n          color: #ffffff; }\n          @media (min-width: 768px) {\n            .smartest-wrapper .smarttests .logic .logic-block .stepper-v {\n              display: none; } }\n          .smartest-wrapper .smarttests .logic .logic-block .stepper-v svg {\n            fill: #ffffff; }\n          .smartest-wrapper .smarttests .logic .logic-block .stepper-v .previous-step {\n            position: absolute;\n            top: 279px;\n            left: 13px; }\n          .smartest-wrapper .smarttests .logic .logic-block .stepper-v .current-step {\n            position: absolute;\n            top: 148px;\n            left: 13px; }\n        .smartest-wrapper .smarttests .logic .logic-block .logic-container {\n          display: -webkit-box;\n          display: -webkit-flex;\n          display: -moz-flex;\n          display: -ms-flexbox;\n          display: flex;\n          -webkit-box-pack: start;\n          -ms-flex-pack: start;\n          -webkit-justify-content: flex-start;\n          -moz-justify-content: flex-start;\n          justify-content: flex-start;\n          margin-top: 40px; }\n          @media (max-width: 768px) {\n            .smartest-wrapper .smarttests .logic .logic-block .logic-container {\n              -webkit-box-direction: normal;\n              -webkit-box-orient: vertical;\n              -webkit-flex-direction: column;\n              -moz-flex-direction: column;\n              -ms-flex-direction: column;\n              flex-direction: column;\n              margin-top: 11px; } }\n          .smartest-wrapper .smarttests .logic .logic-block .logic-container .current-length {\n            flex: 0 0 10%;\n            color: #43afb3;\n            margin-bottom: 10px; }\n            .smartest-wrapper .smarttests .logic .logic-block .logic-container .current-length figure {\n              display: inline-block;\n              text-align: center;\n              width: 37px;\n              height: 37px;\n              border-radius: 50%;\n              padding-top: 6px;\n              border: 1px solid #43afb3; }\n          .smartest-wrapper .smarttests .logic .logic-block .logic-container .stepper-main {\n            flex: 0 0 90%;\n            margin-top: 5px; }\n        .smartest-wrapper .smarttests .logic .logic-block .step-label svg {\n          fill: #43afb3 !important; }\n        .smartest-wrapper .smarttests .logic .logic-block .button {\n          display: flex;\n          align-items: center;\n          margin-top: 20px; }\n          .smartest-wrapper .smarttests .logic .logic-block .button .icon-what {\n            display: inline-block;\n            margin-left: 20px; }\n            .smartest-wrapper .smarttests .logic .logic-block .button .icon-what svg {\n              fill: #6d6d6d; }\n          .smartest-wrapper .smarttests .logic .logic-block .button .btn {\n            position: relative;\n            display: inline-block;\n            cursor: pointer;\n            overflow: hidden;\n            width: 200px;\n            padding: 4px;\n            text-align: center;\n            border: 1px solid #43afb3;\n            color: #43afb3;\n            border-radius: 20px; }\n            .smartest-wrapper .smarttests .logic .logic-block .button .btn:after {\n              content: \"\";\n              display: block;\n              position: absolute;\n              height: 0%;\n              left: 50%;\n              top: 50%;\n              width: 150%;\n              z-index: -1;\n              -webkit-transition: all 1s ease 0s;\n              -moz-transition: all 1s ease 0s;\n              -o-transition: all 1s ease 0s;\n              transition: all 1s ease 0s;\n              background: #43afb3;\n              -moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);\n              -ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);\n              -webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);\n              transform: translateX(-50%) translateY(-50%) rotate(-25deg); }\n            .smartest-wrapper .smarttests .logic .logic-block .button .btn:hover:after {\n              height: 480%; }\n            .smartest-wrapper .smarttests .logic .logic-block .button .btn:hover {\n              color: #ffffff; }\n        .smartest-wrapper .smarttests .logic .logic-block .button-back {\n          margin-top: 30px;\n          margin-bottom: 50px; }\n          .smartest-wrapper .smarttests .logic .logic-block .button-back .back-icon {\n            display: flex;\n            align-items: center; }\n            .smartest-wrapper .smarttests .logic .logic-block .button-back .back-icon svg {\n              margin-right: -10px; }\n    .smartest-wrapper .smarttests .askQuestion {\n      font-size: 24px;\n      font-family: 'MuseoSans-Light';\n      margin-bottom: 35px; }\n      @media (max-width: 768px) {\n        .smartest-wrapper .smarttests .askQuestion {\n          font-size: 15px; } }\n    .smartest-wrapper .smarttests .description {\n      color: #464646;\n      font-size: 16px;\n      margin-bottom: 20px; }\n\n::-webkit-scrollbar-track {\n  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);\n  border-radius: 10px;\n  background-color: #F5F5F5; }\n\n::-webkit-scrollbar {\n  width: 8px;\n  background-color: #F5F5F5; }\n\n::-webkit-scrollbar-thumb {\n  border-radius: 10px;\n  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);\n  background-color: #bdbdbd; }\n", ""]);
 
 	// exports
 
