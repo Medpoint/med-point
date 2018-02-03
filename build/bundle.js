@@ -36591,7 +36591,9 @@
 	            checkboxes: [],
 	            finished: false,
 	            stepIndex: 0,
-	            date: new Date().toString().slice(0, 15)
+	            date: new Date().toString().slice(0, 15),
+	            openHint: true,
+	            hint: ''
 	        };
 	    }
 
@@ -36599,6 +36601,14 @@
 	        key: 'componentDidMount',
 	        value: function componentDidMount() {
 	            this.props.clearAnswer();
+	        }
+	    }, {
+	        key: '_hendleShowHins',
+	        value: function _hendleShowHins(hint) {
+	            this.setState({
+	                openHint: !this.state.openHint,
+	                hint: hint
+	            });
 	        }
 	    }, {
 	        key: 'handleFindNextQuestion',
@@ -36663,7 +36673,8 @@
 	            // clear list after previous checkboxes
 	            this.setState({
 	                options: [],
-	                checkboxes: []
+	                checkboxes: [],
+	                hint: ""
 	            });
 	        }
 	    }, {
@@ -36712,7 +36723,10 @@
 	            var stepIndex = this.state.stepIndex;
 
 	            if (stepIndex > 0) {
-	                this.setState({ stepIndex: stepIndex - 1 });
+	                this.setState({
+	                    stepIndex: stepIndex - 1,
+	                    hint: ""
+	                });
 	            }
 	        }
 	    }, {
@@ -36722,7 +36736,8 @@
 
 	            var stepIndex = this.state.stepIndex;
 
-	            var length = this.props.answer.length - 1;
+	            var length = this.props.answer.length - 1,
+	                oneOrZero = length <= 1 ? '!' : length;
 
 	            return _react2['default'].createElement(
 	                'div',
@@ -36743,7 +36758,7 @@
 	                                _react2['default'].createElement(
 	                                    'span',
 	                                    { className: 'previous-step' },
-	                                    this.props.answer.length - 1 == 0 ? '!' : this.props.answer.length - 1
+	                                    oneOrZero
 	                                ),
 	                                _react2['default'].createElement(
 	                                    'span',
@@ -36812,7 +36827,7 @@
 	                                    _react2['default'].createElement(
 	                                        'span',
 	                                        { className: 'previous-step' },
-	                                        this.props.answer.length - 1 == 0 ? '!' : this.props.answer.length - 1
+	                                        oneOrZero
 	                                    ),
 	                                    _react2['default'].createElement(
 	                                        'span',
@@ -36893,6 +36908,11 @@
 	                                        { className: 'askQuestion' },
 	                                        this.props.answer[this.props.answer.length - 1].ask.question
 	                                    ),
+	                                    _react2['default'].createElement(
+	                                        'div',
+	                                        { className: "description openAccordion" },
+	                                        this.state.hint
+	                                    ),
 	                                    this.props.answer[length].ask.lotOf ? _react2['default'].createElement(
 	                                        'div',
 	                                        null,
@@ -36928,20 +36948,24 @@
 	                                                    { className: 'btn', onClick: _this3.handleFindNextQuestion.bind(_this3, currentAnswer, _this3.props.answer[length].ask, index) },
 	                                                    currentAnswer.text
 	                                                ),
-	                                                _react2['default'].createElement(
+	                                                currentAnswer.hint ? _react2['default'].createElement(
 	                                                    'i',
-	                                                    { className: 'icon-what' },
+	                                                    { className: 'icon-what', onClick: _this3._hendleShowHins.bind(_this3, currentAnswer.hint) },
 	                                                    _react2['default'].createElement(
 	                                                        'svg',
-	                                                        { width: '16', height: '16', version: '1.1', x: '0px', y: '0px', viewBox: '0 0 1000 1000', enableBackground: 'new 0 0 1000 1000' },
+	                                                        { width: '16', height: '16', version: '1.1', x: '0px',
+	                                                            y: '0px', viewBox: '0 0 1000 1000',
+	                                                            enableBackground: 'new 0 0 1000 1000' },
 	                                                        _react2['default'].createElement(
 	                                                            'g',
 	                                                            null,
-	                                                            _react2['default'].createElement('path', { d: 'M500,10C227,10,10,227,10,500s217,490,490,490s490-217,490-490S773,10,500,10z M500,920C269,920,80,731,80,500S269,80,500,80s420,189,420,420S731,920,500,920z' }),
-	                                                            _react2['default'].createElement('path', { d: 'M542,633h-70c0-7,0-14,0-28c0-49,21-91,63-126c49-35,70-70,70-105c0-56-28-77-84-84c-56,0-91,35-112,105l-70-21c21-105,84-154,196-154c91,7,147,56,154,140c0,56-28,105-91,147c-42,28-63,63-56,98C542,619,542,626,542,633z M549,780h-84v-84h84V780z' })
+	                                                            _react2['default'].createElement('path', {
+	                                                                d: 'M500,10C227,10,10,227,10,500s217,490,490,490s490-217,490-490S773,10,500,10z M500,920C269,920,80,731,80,500S269,80,500,80s420,189,420,420S731,920,500,920z' }),
+	                                                            _react2['default'].createElement('path', {
+	                                                                d: 'M542,633h-70c0-7,0-14,0-28c0-49,21-91,63-126c49-35,70-70,70-105c0-56-28-77-84-84c-56,0-91,35-112,105l-70-21c21-105,84-154,196-154c91,7,147,56,154,140c0,56-28,105-91,147c-42,28-63,63-56,98C542,619,542,626,542,633z M549,780h-84v-84h84V780z' })
 	                                                        )
 	                                                    )
-	                                                )
+	                                                ) : ""
 	                                            )
 	                                        );
 	                                    }),
@@ -37019,7 +37043,7 @@
 
 	exports['default'] = (0, _reactRedux.connect)(mapStateToProps, dispatchStateToProps)(Smarttests);
 	module.exports = exports['default'];
-	/*<div className="img-question">{this.props.answer[this.props.answer.length - 1].ask.img }</div>*/ /*<div className="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do*/ /*eiusmod tempor incididunt ut labore et dolore magna aliqua.*/ /*</div>*/
+	/*<div className="img-question">{this.props.answer[this.props.answer.length - 1].ask.img }</div>*/
 
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/volodymyr/Стільниця/Medical/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "Smarttests.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
@@ -39262,7 +39286,7 @@
 
 
 	// module
-	exports.push([module.id, ".test {\n  -moz-transform: skew(25deg, 10deg);\n  -o-transform: skew(25deg, 10deg);\n  -ms-transform: skew(25deg, 10deg);\n  -webkit-transform: skew(25deg, 10deg);\n  transform: skew(25deg, 10deg);\n  moz-transform-origin: top left;\n  -o-transform-origin: top left;\n  -ms-transform-origin: top left;\n  -webkit-transform-origin: top left;\n  transform-origin: top left;\n  position: absolute;\n  top: 25%;\n  bottom: 25%;\n  left: 25%;\n  right: 25%;\n  background-color: rgba(20, 20, 20, 0.5); }\n\n* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0; }\n\n.smartest-wrapper {\n  height: 100%; }\n  .smartest-wrapper .smarttests {\n    display: -webkit-box;\n    display: -webkit-flex;\n    display: -moz-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: justify;\n    -ms-flex-pack: justify;\n    -webkit-justify-content: space-between;\n    -moz-justify-content: space-between;\n    justify-content: space-between;\n    height: 100%; }\n    @media (max-width: 770px) {\n      .smartest-wrapper .smarttests {\n        flex-direction: column; } }\n    .smartest-wrapper .smarttests .logic {\n      flex: 0 0 75%;\n      padding: 2%; }\n      .smartest-wrapper .smarttests .logic .logic-block {\n        display: -webkit-box;\n        display: -webkit-flex;\n        display: -moz-flex;\n        display: -ms-flexbox;\n        display: flex;\n        -webkit-box-direction: normal;\n        -webkit-box-orient: vertical;\n        -webkit-flex-direction: column;\n        -moz-flex-direction: column;\n        -ms-flex-direction: column;\n        flex-direction: column;\n        -ms-flex-pack: distribute;\n        -webkit-justify-content: space-around;\n        -moz-justify-content: space-around;\n        justify-content: space-around;\n        margin-top: 0;\n        margin-left: 10%; }\n        @media (max-width: 768px) {\n          .smartest-wrapper .smarttests .logic .logic-block {\n            -webkit-box-direction: normal;\n            -webkit-box-orient: horizontal;\n            -webkit-flex-direction: row;\n            -moz-flex-direction: row;\n            -ms-flex-direction: row;\n            flex-direction: row;\n            margin-top: 5%;\n            margin-left: 5%; } }\n        .smartest-wrapper .smarttests .logic .logic-block .stepper {\n          position: relative;\n          font-size: 17px;\n          color: #ffffff;\n          width: 319px; }\n          @media (max-width: 768px) {\n            .smartest-wrapper .smarttests .logic .logic-block .stepper {\n              display: none; } }\n          .smartest-wrapper .smarttests .logic .logic-block .stepper svg {\n            fill: #ffffff; }\n          .smartest-wrapper .smarttests .logic .logic-block .stepper .previous-step {\n            display: block;\n            width: 20px;\n            text-align: center;\n            position: absolute;\n            top: 9px;\n            right: 10px; }\n          .smartest-wrapper .smarttests .logic .logic-block .stepper .current-step {\n            display: block;\n            width: 20px;\n            text-align: center;\n            position: absolute;\n            top: 9px;\n            left: 148px; }\n        .smartest-wrapper .smarttests .logic .logic-block .stepper-v {\n          flex: 0 0 20%;\n          display: block; }\n          .smartest-wrapper .smarttests .logic .logic-block .stepper-v .stepper-v-wrapper {\n            display: block;\n            width: 20px;\n            text-align: center;\n            position: relative;\n            font-size: 17px;\n            color: #ffffff; }\n            @media (min-width: 768px) {\n              .smartest-wrapper .smarttests .logic .logic-block .stepper-v .stepper-v-wrapper {\n                display: none; } }\n            .smartest-wrapper .smarttests .logic .logic-block .stepper-v .stepper-v-wrapper svg {\n              fill: #ffffff; }\n            .smartest-wrapper .smarttests .logic .logic-block .stepper-v .stepper-v-wrapper .previous-step {\n              display: block;\n              width: 20px;\n              text-align: center;\n              position: absolute;\n              top: 280px;\n              left: 7px; }\n            .smartest-wrapper .smarttests .logic .logic-block .stepper-v .stepper-v-wrapper .current-step {\n              display: block;\n              width: 20px;\n              text-align: center;\n              position: absolute;\n              top: 151px;\n              left: 7px; }\n        .smartest-wrapper .smarttests .logic .logic-block .logic-container {\n          display: -webkit-box;\n          display: -webkit-flex;\n          display: -moz-flex;\n          display: -ms-flexbox;\n          display: flex;\n          -webkit-box-pack: start;\n          -ms-flex-pack: start;\n          -webkit-justify-content: flex-start;\n          -moz-justify-content: flex-start;\n          justify-content: flex-start;\n          margin-top: 40px;\n          flex: 0 0 80%; }\n          @media (max-width: 768px) {\n            .smartest-wrapper .smarttests .logic .logic-block .logic-container {\n              -webkit-box-direction: normal;\n              -webkit-box-orient: vertical;\n              -webkit-flex-direction: column;\n              -moz-flex-direction: column;\n              -ms-flex-direction: column;\n              flex-direction: column;\n              margin-top: 11px; } }\n          .smartest-wrapper .smarttests .logic .logic-block .logic-container .current-length {\n            flex: 0 0 10%;\n            color: #43afb3;\n            margin-bottom: 10px; }\n            .smartest-wrapper .smarttests .logic .logic-block .logic-container .current-length figure {\n              display: inline-block;\n              text-align: center;\n              width: 37px;\n              height: 37px;\n              border-radius: 50%;\n              padding-top: 9px;\n              border: 1px solid #43afb3; }\n          .smartest-wrapper .smarttests .logic .logic-block .logic-container .stepper-main {\n            flex: 0 0 90%;\n            margin-top: 5px;\n            max-width: 430px; }\n            .smartest-wrapper .smarttests .logic .logic-block .logic-container .stepper-main .img-question {\n              padding: 5px; }\n        .smartest-wrapper .smarttests .logic .logic-block .step-label svg {\n          fill: #43afb3 !important; }\n        .smartest-wrapper .smarttests .logic .logic-block .button {\n          display: flex;\n          align-items: center;\n          margin-top: 20px; }\n          .smartest-wrapper .smarttests .logic .logic-block .button .icon-what {\n            display: inline-block;\n            margin-left: 20px; }\n            .smartest-wrapper .smarttests .logic .logic-block .button .icon-what svg {\n              fill: #6d6d6d; }\n          .smartest-wrapper .smarttests .logic .logic-block .button .btn {\n            position: relative;\n            display: inline-block;\n            cursor: pointer;\n            overflow: hidden;\n            width: 200px;\n            padding: 4px;\n            text-align: center;\n            border: 1px solid #43afb3;\n            color: #43afb3;\n            border-radius: 20px; }\n            @media (min-width: 768px) {\n              .smartest-wrapper .smarttests .logic .logic-block .button .btn:hover:after {\n                height: 480%; }\n              .smartest-wrapper .smarttests .logic .logic-block .button .btn:hover {\n                color: #ffffff; } }\n            .smartest-wrapper .smarttests .logic .logic-block .button .btn:after {\n              content: \"\";\n              display: block;\n              position: absolute;\n              height: 0%;\n              left: 50%;\n              top: 50%;\n              width: 150%;\n              z-index: -1;\n              -webkit-transition: all 1s ease 0s;\n              -moz-transition: all 1s ease 0s;\n              -o-transition: all 1s ease 0s;\n              transition: all 1s ease 0s;\n              background: #43afb3;\n              -moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);\n              -ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);\n              -webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);\n              transform: translateX(-50%) translateY(-50%) rotate(-25deg); }\n        .smartest-wrapper .smarttests .logic .logic-block .button-back {\n          margin-top: 30px;\n          margin-bottom: 50px; }\n          .smartest-wrapper .smarttests .logic .logic-block .button-back .back-icon {\n            display: flex;\n            align-items: center; }\n            .smartest-wrapper .smarttests .logic .logic-block .button-back .back-icon svg {\n              margin-right: -10px; }\n    .smartest-wrapper .smarttests .askQuestion {\n      font-size: 24px;\n      margin-bottom: 10px; }\n      @media (max-width: 768px) {\n        .smartest-wrapper .smarttests .askQuestion {\n          font-size: 15px; } }\n    .smartest-wrapper .smarttests .description {\n      color: #464646;\n      font-size: 16px;\n      margin-bottom: 20px; }\n      @media (max-width: 768px) {\n        .smartest-wrapper .smarttests .description {\n          font-size: 12px; } }\n\n::-webkit-scrollbar-track {\n  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);\n  border-radius: 10px;\n  background-color: #F5F5F5; }\n\n::-webkit-scrollbar {\n  width: 8px;\n  background-color: #F5F5F5; }\n\n::-webkit-scrollbar-thumb {\n  border-radius: 10px;\n  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);\n  background-color: #bdbdbd; }\n", ""]);
+	exports.push([module.id, ".test {\n  -moz-transform: skew(25deg, 10deg);\n  -o-transform: skew(25deg, 10deg);\n  -ms-transform: skew(25deg, 10deg);\n  -webkit-transform: skew(25deg, 10deg);\n  transform: skew(25deg, 10deg);\n  moz-transform-origin: top left;\n  -o-transform-origin: top left;\n  -ms-transform-origin: top left;\n  -webkit-transform-origin: top left;\n  transform-origin: top left;\n  position: absolute;\n  top: 25%;\n  bottom: 25%;\n  left: 25%;\n  right: 25%;\n  background-color: rgba(20, 20, 20, 0.5); }\n\n* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0; }\n\n.smartest-wrapper {\n  height: 100%; }\n  .smartest-wrapper .smarttests {\n    display: -webkit-box;\n    display: -webkit-flex;\n    display: -moz-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: justify;\n    -ms-flex-pack: justify;\n    -webkit-justify-content: space-between;\n    -moz-justify-content: space-between;\n    justify-content: space-between;\n    height: 100%; }\n    @media (max-width: 770px) {\n      .smartest-wrapper .smarttests {\n        flex-direction: column; } }\n    .smartest-wrapper .smarttests .logic {\n      flex: 0 0 75%;\n      padding: 2%; }\n      .smartest-wrapper .smarttests .logic .logic-block {\n        display: -webkit-box;\n        display: -webkit-flex;\n        display: -moz-flex;\n        display: -ms-flexbox;\n        display: flex;\n        -webkit-box-direction: normal;\n        -webkit-box-orient: vertical;\n        -webkit-flex-direction: column;\n        -moz-flex-direction: column;\n        -ms-flex-direction: column;\n        flex-direction: column;\n        -ms-flex-pack: distribute;\n        -webkit-justify-content: space-around;\n        -moz-justify-content: space-around;\n        justify-content: space-around;\n        margin-top: 0;\n        margin-left: 10%; }\n        @media (max-width: 768px) {\n          .smartest-wrapper .smarttests .logic .logic-block {\n            -webkit-box-direction: normal;\n            -webkit-box-orient: horizontal;\n            -webkit-flex-direction: row;\n            -moz-flex-direction: row;\n            -ms-flex-direction: row;\n            flex-direction: row;\n            margin-top: 5%;\n            margin-left: 5%; } }\n        .smartest-wrapper .smarttests .logic .logic-block .stepper {\n          position: relative;\n          font-size: 17px;\n          color: #ffffff;\n          width: 319px; }\n          @media (max-width: 768px) {\n            .smartest-wrapper .smarttests .logic .logic-block .stepper {\n              display: none; } }\n          .smartest-wrapper .smarttests .logic .logic-block .stepper svg {\n            fill: #ffffff; }\n          .smartest-wrapper .smarttests .logic .logic-block .stepper .previous-step {\n            display: block;\n            width: 20px;\n            text-align: center;\n            position: absolute;\n            top: 9px;\n            right: 10px; }\n          .smartest-wrapper .smarttests .logic .logic-block .stepper .current-step {\n            display: block;\n            width: 20px;\n            text-align: center;\n            position: absolute;\n            top: 9px;\n            left: 148px; }\n        .smartest-wrapper .smarttests .logic .logic-block .stepper-v {\n          flex: 0 0 20%;\n          display: block; }\n          .smartest-wrapper .smarttests .logic .logic-block .stepper-v .stepper-v-wrapper {\n            display: block;\n            width: 20px;\n            text-align: center;\n            position: relative;\n            font-size: 17px;\n            color: #ffffff; }\n            @media (min-width: 768px) {\n              .smartest-wrapper .smarttests .logic .logic-block .stepper-v .stepper-v-wrapper {\n                display: none; } }\n            .smartest-wrapper .smarttests .logic .logic-block .stepper-v .stepper-v-wrapper svg {\n              fill: #ffffff; }\n            .smartest-wrapper .smarttests .logic .logic-block .stepper-v .stepper-v-wrapper .previous-step {\n              display: block;\n              width: 20px;\n              text-align: center;\n              position: absolute;\n              top: 280px;\n              left: 7px; }\n            .smartest-wrapper .smarttests .logic .logic-block .stepper-v .stepper-v-wrapper .current-step {\n              display: block;\n              width: 20px;\n              text-align: center;\n              position: absolute;\n              top: 151px;\n              left: 7px; }\n        .smartest-wrapper .smarttests .logic .logic-block .logic-container {\n          display: -webkit-box;\n          display: -webkit-flex;\n          display: -moz-flex;\n          display: -ms-flexbox;\n          display: flex;\n          -webkit-box-pack: start;\n          -ms-flex-pack: start;\n          -webkit-justify-content: flex-start;\n          -moz-justify-content: flex-start;\n          justify-content: flex-start;\n          margin-top: 40px;\n          flex: 0 0 80%; }\n          @media (max-width: 768px) {\n            .smartest-wrapper .smarttests .logic .logic-block .logic-container {\n              -webkit-box-direction: normal;\n              -webkit-box-orient: vertical;\n              -webkit-flex-direction: column;\n              -moz-flex-direction: column;\n              -ms-flex-direction: column;\n              flex-direction: column;\n              margin-top: 11px; } }\n          .smartest-wrapper .smarttests .logic .logic-block .logic-container .current-length {\n            flex: 0 0 10%;\n            color: #43afb3;\n            margin-bottom: 10px; }\n            .smartest-wrapper .smarttests .logic .logic-block .logic-container .current-length figure {\n              display: inline-block;\n              text-align: center;\n              width: 37px;\n              height: 37px;\n              border-radius: 50%;\n              padding-top: 9px;\n              border: 1px solid #43afb3; }\n          .smartest-wrapper .smarttests .logic .logic-block .logic-container .stepper-main {\n            flex: 0 0 90%;\n            margin-top: 5px;\n            max-width: 430px; }\n            .smartest-wrapper .smarttests .logic .logic-block .logic-container .stepper-main .img-question {\n              padding: 5px; }\n        .smartest-wrapper .smarttests .logic .logic-block .step-label svg {\n          fill: #43afb3 !important; }\n        .smartest-wrapper .smarttests .logic .logic-block .button {\n          display: flex;\n          align-items: center;\n          margin-top: 20px; }\n          .smartest-wrapper .smarttests .logic .logic-block .button .icon-what {\n            cursor: help;\n            display: inline-block;\n            margin-left: 20px; }\n            .smartest-wrapper .smarttests .logic .logic-block .button .icon-what svg {\n              fill: #6d6d6d; }\n          .smartest-wrapper .smarttests .logic .logic-block .button .btn {\n            position: relative;\n            display: inline-block;\n            cursor: pointer;\n            overflow: hidden;\n            width: 200px;\n            padding: 4px;\n            text-align: center;\n            border: 1px solid #43afb3;\n            color: #43afb3;\n            border-radius: 20px; }\n            @media (min-width: 768px) {\n              .smartest-wrapper .smarttests .logic .logic-block .button .btn:hover:after {\n                height: 480%; }\n              .smartest-wrapper .smarttests .logic .logic-block .button .btn:hover {\n                color: #ffffff; } }\n            .smartest-wrapper .smarttests .logic .logic-block .button .btn:after {\n              content: \"\";\n              display: block;\n              position: absolute;\n              height: 0%;\n              left: 50%;\n              top: 50%;\n              width: 150%;\n              z-index: -1;\n              -webkit-transition: all 1s ease 0s;\n              -moz-transition: all 1s ease 0s;\n              -o-transition: all 1s ease 0s;\n              transition: all 1s ease 0s;\n              background: #43afb3;\n              -moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);\n              -ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);\n              -webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);\n              transform: translateX(-50%) translateY(-50%) rotate(-25deg); }\n        .smartest-wrapper .smarttests .logic .logic-block .button-back {\n          margin-top: 30px;\n          margin-bottom: 50px; }\n          .smartest-wrapper .smarttests .logic .logic-block .button-back .back-icon {\n            display: flex;\n            align-items: center; }\n            .smartest-wrapper .smarttests .logic .logic-block .button-back .back-icon svg {\n              margin-right: -10px; }\n    .smartest-wrapper .smarttests .askQuestion {\n      font-size: 24px;\n      margin-bottom: 10px; }\n      @media (max-width: 768px) {\n        .smartest-wrapper .smarttests .askQuestion {\n          font-size: 15px; } }\n    .smartest-wrapper .smarttests .description {\n      overflow: hidden;\n      height: 0;\n      transform: scale(0);\n      color: #464646;\n      font-size: 16px;\n      margin-bottom: 20px;\n      transition: 1s all; }\n      @media (max-width: 768px) {\n        .smartest-wrapper .smarttests .description {\n          font-size: 12px; } }\n    .smartest-wrapper .smarttests .openAccordion {\n      transition: 1s all;\n      transform: scale(1);\n      height: auto !important; }\n\n::-webkit-scrollbar-track {\n  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);\n  border-radius: 10px;\n  background-color: #F5F5F5; }\n\n::-webkit-scrollbar {\n  width: 8px;\n  background-color: #F5F5F5; }\n\n::-webkit-scrollbar-thumb {\n  border-radius: 10px;\n  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);\n  background-color: #bdbdbd; }\n", ""]);
 
 	// exports
 
@@ -39298,11 +39322,13 @@
 	    }, {
 	        next: 5,
 	        text: "45-65",
-	        answerForView: "Ваш возраст 45-65"
+	        answerForView: "Ваш возраст 45-65",
+	        hint: "Quam purus vestibulum nostra mattis, vel vel vehicula ligula nibh quis. Laboriosam et leo cubilia nisl justo, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 	    }, {
 	        next: 3,
 	        text: "35-45",
 	        answerForView: "Ваш возраст 35-45"
+
 	    }]
 	}, {
 	    key: 3,
@@ -39314,16 +39340,20 @@
 	    answers: [{
 	        next: 170,
 	        text: "Лампэктомия",
-	        answerForView: 'Вы прошли лампэктомию'
+	        answerForView: 'Вы прошли лампэктомию',
+	        hint: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+
 	    }, {
 	        next: 170,
 	        text: "Мастэктомия",
-	        answerForView: 'Вы прошли мастэктомию'
+	        answerForView: 'Вы прошли мастэктомию',
+	        hint: _react2["default"].createElement("img", { src: "images/bg/medical-bg-2.jpg", width: "240" })
 
 	    }, {
 	        next: 6,
 	        text: "Не проходили",
-	        answerForView: 'Вы непрошли операцию'
+	        answerForView: 'Вы непрошли операцию',
+	        hint: " Proin taciti curabitur a, vehicula sit turpis hendrerit tortor metus erat. Metus morbi et lacinia sodales taciti, elementum mi tellus a wisi in vel. Vel nostra ac, arcu nibh, ullamcorper tellus bibendum duis arcu, scelerisque mauris tincidunt. Nunc pharetra faucibus, diam euismod eros luctus rutrum vel risus, ut rutrum vestibulum sed sed mauris ante."
 	    }]
 	}, {
 	    key: 170,
@@ -39339,7 +39369,8 @@
 	    }, {
 	        next: 7,
 	        text: "2 - 5 см",
-	        answerForView: 'Размер удаленной опухоли 2 - 5 см'
+	        answerForView: 'Размер удаленной опухоли 2 - 5 см',
+	        hint: "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 	    }, {
 	        next: 7,
 	        text: "5> см",
@@ -39576,26 +39607,20 @@
 	        text: "Next", // Next
 	        answerForView: 'Образования было oбнаружены в '
 	    }],
-	    lotOf: [
-	    // {
-	    //     id:1,
-	    //     item: "Прилегающие лимфоузлы"
-	    // },{
-	    {
+	    lotOf: [{
 	        id: 1,
-	        item: "Легкие"
+	        item: "Легких"
 	    }, {
 	        id: 2,
-	        item: "Яичники"
+	        item: "Яичниках"
 	    }, {
 	        id: 3,
 	        item: "Кости"
 	    }, {
 	        id: 4,
-	        item: "Мозг"
+	        item: "Мозгу"
 	    }]
 	},
-
 	// ДА  Удалены прилегающие Лимфоузлы ? /////
 
 	{
@@ -39884,7 +39909,7 @@
 	        next: 103,
 	        text: "2"
 	    }, {
-	        next: 102, //null
+	        next: null, //null
 	        text: "3"
 	    }]
 	}, {
@@ -39922,16 +39947,16 @@
 	        item: "Прилегающие лимфоузлы"
 	    }, {
 	        id: 2,
-	        item: "Легкие"
+	        item: "Легких"
 	    }, {
 	        id: 3,
-	        item: "Яичники"
+	        item: "Яичниках"
 	    }, {
 	        id: 4,
 	        item: "Кости"
 	    }, {
 	        id: 5,
-	        item: "Мозг"
+	        item: "Мозгу"
 	    }]
 	}, {
 	    key: 110,
@@ -45448,7 +45473,7 @@
 
 
 	// module
-	exports.push([module.id, ".test {\n  -moz-transform: skew(25deg, 10deg);\n  -o-transform: skew(25deg, 10deg);\n  -ms-transform: skew(25deg, 10deg);\n  -webkit-transform: skew(25deg, 10deg);\n  transform: skew(25deg, 10deg);\n  moz-transform-origin: top left;\n  -o-transform-origin: top left;\n  -ms-transform-origin: top left;\n  -webkit-transform-origin: top left;\n  transform-origin: top left;\n  position: absolute;\n  top: 25%;\n  bottom: 25%;\n  left: 25%;\n  right: 25%;\n  background-color: rgba(20, 20, 20, 0.5); }\n\n.smarttestresult .smart-result-page {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -moz-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: space-bettwen;\n  -ms-flex-pack: space-bettwen;\n  -webkit-justify-content: space-bettwen;\n  -moz-justify-content: space-bettwen;\n  justify-content: space-bettwen;\n  -webkit-flex-wrap: wrap;\n  -moz-flex-wrap: wrap;\n  -ms-flex-wrap: wrap;\n  flex-wrap: wrap;\n  width: 100%;\n  min-height: 100%; }\n  .smarttestresult .smart-result-page .left-side-result-page {\n    background-color: #e5e5e5;\n    padding: 30px;\n    text-align: left;\n    flex: 0 0 25%; }\n    @media (max-width: 768px) {\n      .smarttestresult .smart-result-page .left-side-result-page {\n        display: none; } }\n  .smarttestresult .smart-result-page .right-side-result-page {\n    display: -webkit-box;\n    display: -webkit-flex;\n    display: -moz-flex;\n    display: -ms-flexbox;\n    display: flex;\n    flex-direction: column;\n    -webkit-box-pack: space-bettwen;\n    -ms-flex-pack: space-bettwen;\n    -webkit-justify-content: space-bettwen;\n    -moz-justify-content: space-bettwen;\n    justify-content: space-bettwen;\n    flex: 0 0 75%;\n    position: relative; }\n    @media (max-width: 768px) {\n      .smarttestresult .smart-result-page .right-side-result-page {\n        flex: 0 0 100%; } }\n    .smarttestresult .smart-result-page .right-side-result-page .answers {\n      background-color: #43afb3;\n      padding: 20px 18% 20px 20px; }\n      @media (max-width: 768px) {\n        .smarttestresult .smart-result-page .right-side-result-page .answers {\n          padding-left: 20px;\n          padding-right: 0px; } }\n      .smarttestresult .smart-result-page .right-side-result-page .answers .image-and-title {\n        display: -webkit-box;\n        display: -webkit-flex;\n        display: -moz-flex;\n        display: -ms-flexbox;\n        display: flex;\n        -webkit-box-pack: start;\n        -ms-flex-pack: start;\n        -webkit-justify-content: flex-start;\n        -moz-justify-content: flex-start;\n        justify-content: flex-start;\n        align-items: flex-end;\n        margin-bottom: 42px; }\n        .smarttestresult .smart-result-page .right-side-result-page .answers .image-and-title .you-result-title {\n          color: #ffffff;\n          font-size: 24px;\n          font-weight: 700; }\n        .smarttestresult .smart-result-page .right-side-result-page .answers .image-and-title i {\n          margin-right: 20px;\n          fill: #464646; }\n      .smarttestresult .smart-result-page .right-side-result-page .answers ul {\n        color: #ffffff;\n        margin-left: 50px; }\n        .smarttestresult .smart-result-page .right-side-result-page .answers ul li {\n          list-style: none;\n          list-style-position: inside;\n          margin-bottom: 5px;\n          font-size: 16px;\n          font-weight: 600; }\n          @media (max-width: 768px) {\n            .smarttestresult .smart-result-page .right-side-result-page .answers ul li {\n              font-size: 14px; } }\n          .smarttestresult .smart-result-page .right-side-result-page .answers ul li:nth-child(+n+3) {\n            list-style-image: url(" + __webpack_require__(495) + "); }\n    .smarttestresult .smart-result-page .right-side-result-page .your-result {\n      font-size: 16px;\n      font-weight: 600;\n      color: #43afb3; }\n    .smarttestresult .smart-result-page .right-side-result-page .result {\n      padding: 30px 0; }\n      .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result {\n        display: flex;\n        justify-content: flex-start;\n        margin-left: 18%; }\n        @media (max-width: 768px) {\n          .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result {\n            margin-left: 5%; } }\n        .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top {\n          margin-left: 20px;\n          padding-right: 20px;\n          /* here */ }\n          .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top h1 {\n            max-width: 283px;\n            font-size: 16px;\n            font-weight: 600;\n            color: #696969;\n            margin-bottom: 29px; }\n          .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top .Collapsible {\n            cursor: pointer;\n            border-bottom: 1px solid #43afb3;\n            margin-bottom: 20px;\n            max-width: 330px;\n            color: #464646; }\n            .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top .Collapsible span {\n              display: block;\n              margin-bottom: 10px; }\n              .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top .Collapsible span:after {\n                content: \"\";\n                display: inline-block;\n                margin-left: 10px;\n                border: solid #43afb3;\n                border-width: 0 2px 2px 0;\n                display: inline-block;\n                padding: 3px;\n                transform: rotate(45deg);\n                -webkit-transform: rotate(45deg); }\n          .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top .accordion-pen li {\n            display: -webkit-box;\n            display: -webkit-flex;\n            display: -moz-flex;\n            display: -ms-flexbox;\n            display: flex;\n            -webkit-box-pack: start;\n            -ms-flex-pack: start;\n            -webkit-justify-content: flex-start;\n            -moz-justify-content: flex-start;\n            justify-content: flex-start;\n            align-items: center;\n            margin-bottom: 10px; }\n            .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top .accordion-pen li .number-icon {\n              margin-right: 10px;\n              padding-top: 3px;\n              text-align: center;\n              width: 30px;\n              height: 30px;\n              border-radius: 50%;\n              border: 1px solid #43afb3; }\n            .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top .accordion-pen li .description-d {\n              flex: 0 0 70%;\n              color: black;\n              font-weight: 700; }\n          .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top .export-to-pdf {\n            cursor: pointer;\n            text-decoration: none;\n            padding: 8px 35px;\n            color: #43afb3;\n            border: 1px solid #43afb3;\n            border-radius: 20px;\n            line-height: 3; }\n    .smarttestresult .smart-result-page .right-side-result-page .result-bottom {\n      display: -webkit-box;\n      display: -webkit-flex;\n      display: -moz-flex;\n      display: -ms-flexbox;\n      display: flex;\n      justify-content: flex-start;\n      margin-left: 18%; }\n      @media (max-width: 768px) {\n        .smarttestresult .smart-result-page .right-side-result-page .result-bottom {\n          margin-left: 5%; } }\n      .smarttestresult .smart-result-page .right-side-result-page .result-bottom .ask-after-result {\n        margin-left: 20px;\n        margin-bottom: 50px; }\n        .smarttestresult .smart-result-page .right-side-result-page .result-bottom .ask-after-result .know-more {\n          max-width: 283px;\n          font-size: 16px;\n          font-weight: 600;\n          color: #696969;\n          margin-bottom: 29px; }\n        .smarttestresult .smart-result-page .right-side-result-page .result-bottom .ask-after-result .know-more-button {\n          cursor: pointer;\n          text-decoration: none;\n          padding: 8px 35px;\n          color: #ffffff;\n          background-color: #43afb3;\n          border-radius: 20px;\n          line-height: 3; }\n", ""]);
+	exports.push([module.id, ".test {\n  -moz-transform: skew(25deg, 10deg);\n  -o-transform: skew(25deg, 10deg);\n  -ms-transform: skew(25deg, 10deg);\n  -webkit-transform: skew(25deg, 10deg);\n  transform: skew(25deg, 10deg);\n  moz-transform-origin: top left;\n  -o-transform-origin: top left;\n  -ms-transform-origin: top left;\n  -webkit-transform-origin: top left;\n  transform-origin: top left;\n  position: absolute;\n  top: 25%;\n  bottom: 25%;\n  left: 25%;\n  right: 25%;\n  background-color: rgba(20, 20, 20, 0.5); }\n\n.smarttestresult .smart-result-page {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -moz-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: space-bettwen;\n  -ms-flex-pack: space-bettwen;\n  -webkit-justify-content: space-bettwen;\n  -moz-justify-content: space-bettwen;\n  justify-content: space-bettwen;\n  -webkit-flex-wrap: wrap;\n  -moz-flex-wrap: wrap;\n  -ms-flex-wrap: wrap;\n  flex-wrap: wrap;\n  width: 100%;\n  min-height: 100%; }\n  .smarttestresult .smart-result-page .left-side-result-page {\n    background-color: #e5e5e5;\n    padding: 30px;\n    text-align: left;\n    flex: 0 0 25%; }\n    @media (max-width: 768px) {\n      .smarttestresult .smart-result-page .left-side-result-page {\n        display: none; } }\n  .smarttestresult .smart-result-page .right-side-result-page {\n    display: -webkit-box;\n    display: -webkit-flex;\n    display: -moz-flex;\n    display: -ms-flexbox;\n    display: flex;\n    flex-direction: column;\n    -webkit-box-pack: space-bettwen;\n    -ms-flex-pack: space-bettwen;\n    -webkit-justify-content: space-bettwen;\n    -moz-justify-content: space-bettwen;\n    justify-content: space-bettwen;\n    flex: 0 0 75%;\n    position: relative; }\n    @media (max-width: 768px) {\n      .smarttestresult .smart-result-page .right-side-result-page {\n        flex: 0 0 100%; } }\n    .smarttestresult .smart-result-page .right-side-result-page .answers {\n      background-color: #43afb3;\n      padding: 20px 20px; }\n      @media (max-width: 768px) {\n        .smarttestresult .smart-result-page .right-side-result-page .answers {\n          padding-left: 20px;\n          padding-right: 0px; } }\n      .smarttestresult .smart-result-page .right-side-result-page .answers .image-and-title {\n        display: -webkit-box;\n        display: -webkit-flex;\n        display: -moz-flex;\n        display: -ms-flexbox;\n        display: flex;\n        -webkit-box-pack: start;\n        -ms-flex-pack: start;\n        -webkit-justify-content: flex-start;\n        -moz-justify-content: flex-start;\n        justify-content: flex-start;\n        align-items: flex-end;\n        margin-bottom: 20px; }\n        .smarttestresult .smart-result-page .right-side-result-page .answers .image-and-title .you-result-title {\n          color: #ffffff;\n          font-size: 24px;\n          font-weight: 700; }\n        .smarttestresult .smart-result-page .right-side-result-page .answers .image-and-title i {\n          margin-right: 20px;\n          fill: #464646; }\n      .smarttestresult .smart-result-page .right-side-result-page .answers ul {\n        color: #ffffff;\n        margin-left: 50px; }\n        .smarttestresult .smart-result-page .right-side-result-page .answers ul li {\n          list-style: none;\n          list-style-position: inside;\n          margin-bottom: 5px;\n          font-size: 16px;\n          font-weight: 600; }\n          @media (max-width: 768px) {\n            .smarttestresult .smart-result-page .right-side-result-page .answers ul li {\n              font-size: 14px; } }\n          .smarttestresult .smart-result-page .right-side-result-page .answers ul li:nth-child(+n+3) {\n            list-style-image: url(" + __webpack_require__(495) + "); }\n    .smarttestresult .smart-result-page .right-side-result-page .your-result {\n      font-size: 16px;\n      font-weight: 600;\n      color: #43afb3; }\n    .smarttestresult .smart-result-page .right-side-result-page .result {\n      padding: 30px 20px; }\n      .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result {\n        display: flex;\n        justify-content: flex-start; }\n        @media (max-width: 768px) {\n          .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result {\n            margin-left: 5%; } }\n        .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top {\n          margin-left: 20px;\n          padding-right: 20px;\n          /* here */ }\n          .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top h1 {\n            max-width: 283px;\n            font-size: 16px;\n            font-weight: 600;\n            color: #696969;\n            margin-bottom: 29px; }\n          .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top .Collapsible {\n            cursor: pointer;\n            border-bottom: 1px solid #43afb3;\n            margin-bottom: 20px;\n            max-width: 330px;\n            color: #464646; }\n            .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top .Collapsible span {\n              display: block;\n              margin-bottom: 10px; }\n              .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top .Collapsible span:after {\n                content: \"\";\n                display: inline-block;\n                margin-left: 10px;\n                border: solid #43afb3;\n                border-width: 0 2px 2px 0;\n                display: inline-block;\n                padding: 3px;\n                transform: rotate(45deg);\n                -webkit-transform: rotate(45deg); }\n          .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top .accordion-pen li {\n            display: -webkit-box;\n            display: -webkit-flex;\n            display: -moz-flex;\n            display: -ms-flexbox;\n            display: flex;\n            -webkit-box-pack: start;\n            -ms-flex-pack: start;\n            -webkit-justify-content: flex-start;\n            -moz-justify-content: flex-start;\n            justify-content: flex-start;\n            align-items: center;\n            margin-bottom: 10px; }\n            .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top .accordion-pen li .number-icon {\n              margin-right: 10px;\n              padding-top: 3px;\n              text-align: center;\n              width: 30px;\n              height: 30px;\n              border-radius: 50%;\n              border: 1px solid #43afb3; }\n            .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top .accordion-pen li .description-d {\n              flex: 0 0 70%;\n              color: black;\n              font-weight: 700; }\n          .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top .export-to-pdf {\n            cursor: pointer;\n            text-decoration: none;\n            padding: 8px 35px;\n            color: #43afb3;\n            border: 1px solid #43afb3;\n            border-radius: 20px;\n            line-height: 3; }\n    .smarttestresult .smart-result-page .right-side-result-page .result-bottom {\n      display: -webkit-box;\n      display: -webkit-flex;\n      display: -moz-flex;\n      display: -ms-flexbox;\n      display: flex;\n      justify-content: flex-start;\n      padding: 20px; }\n      .smarttestresult .smart-result-page .right-side-result-page .result-bottom .ask-after-result {\n        margin-left: 20px;\n        margin-bottom: 50px; }\n        .smarttestresult .smart-result-page .right-side-result-page .result-bottom .ask-after-result .know-more {\n          max-width: 283px;\n          font-size: 16px;\n          font-weight: 600;\n          color: #696969;\n          margin-bottom: 29px; }\n        .smarttestresult .smart-result-page .right-side-result-page .result-bottom .ask-after-result .know-more-button {\n          cursor: pointer;\n          text-decoration: none;\n          padding: 8px 35px;\n          color: #ffffff;\n          background-color: #43afb3;\n          border-radius: 20px;\n          line-height: 3; }\n", ""]);
 
 	// exports
 
