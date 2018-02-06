@@ -47246,6 +47246,180 @@
 	            this.setState({ result: result });
 
 	            this.props.answer.map(function (item) {
+
+	                if (item.question == 'У Вас диагностирован :') {
+
+	                    _this.setState({ resultText: _react2['default'].createElement(
+	                            'div',
+	                            { className: 'accordion-result' },
+	                            _react2['default'].createElement(
+	                                'i',
+	                                null,
+	                                _react2['default'].createElement(
+	                                    'svg',
+	                                    { width: '32', height: '33', viewBox: '0 0 32 33' },
+	                                    _react2['default'].createElement(
+	                                        'defs',
+	                                        null,
+	                                        _react2['default'].createElement('path', { id: 'tmnoa', d: 'M624.99 377.35v.39c0 1.8-1.45 3.26-3.23 3.26h-25.54a3.25 3.25 0 0 1-3.23-3.26v-18.95c0-1.8 1.45-3.26 3.23-3.26h5.12v-3.34a4.18 4.18 0 0 1 4.16-4.19h6.98a4.18 4.18 0 0 1 4.15 4.19v3.34h5.13a3.25 3.25 0 0 1 3.23 3.26v18.56zm-22.22-25.16v3.34h1.42v-3.34c0-.73.59-1.32 1.3-1.32h6.99c.72 0 1.3.6 1.3 1.32v3.34h1.43v-3.34a2.75 2.75 0 0 0-2.73-2.76h-6.98a2.75 2.75 0 0 0-2.73 2.76zm2.84.11v3.23h6.76v-3.23zm-11.16 6.1h29.07a1.82 1.82 0 0 0-1.76-1.43h-25.54c-.86 0-1.59.61-1.77 1.43zm29.12 18.23v-9.59h-4.1v1.94c0 .4-.31.72-.7.72h-3.2a.71.71 0 0 1-.71-.72v-1.94h-11.74v1.94c0 .4-.32.72-.7.72h-3.2a.71.71 0 0 1-.72-.72v-1.94h-4.09v9.6h7.72c.4 0 .7.32.7.71 0 .4-.3.72-.7.72h-7.69c.16.85.9 1.5 1.78 1.5h25.54c.88 0 1.62-.65 1.78-1.5h-3.68a.71.71 0 0 1-.71-.72c0-.4.32-.72.7-.72zm-21.87-8.37v-2.87h-1.78v2.87zm16.36 0v-2.87h-1.78v2.87zm5.5-8.42h-29.15v5.77h4.09v-.93c0-.4.32-.72.71-.72h3.2c.4 0 .71.32.71.72v.93h11.74v-.93c0-.4.31-.72.7-.72h3.2c.4 0 .72.32.72.72v.93h4.09zm-9.77 11.6v3.58c0 .4-.32.72-.71.72h-1.6v1.61c0 .4-.32.72-.71.72h-3.56a.71.71 0 0 1-.71-.72v-1.61h-1.6a.71.71 0 0 1-.71-.72v-3.59c0-.4.32-.71.71-.71h1.6v-1.62c0-.4.32-.72.71-.72h3.56c.39 0 .7.33.7.72v1.62h1.6c.4 0 .72.32.72.71zm-1.42.71h-1.6a.71.71 0 0 1-.71-.72v-1.61h-2.14v1.61c0 .4-.32.72-.7.72h-1.6v2.15h1.6c.38 0 .7.32.7.72v1.61h2.14v-1.61c0-.4.31-.72.7-.72h1.6zm4.73 5.2c0 .4-.32.72-.71.72h-.08a.71.71 0 0 1-.7-.72c0-.4.31-.72.7-.72h.08c.39 0 .7.33.7.72z' })
+	                                    ),
+	                                    _react2['default'].createElement(
+	                                        'g',
+	                                        null,
+	                                        _react2['default'].createElement(
+	                                            'g',
+	                                            { transform: 'translate(-593 -348)' },
+	                                            _react2['default'].createElement('use', { href: '#tmnoa' }),
+	                                            _react2['default'].createElement('use', { fill: '#43afb3', href: '#tmnoa' })
+	                                        )
+	                                    )
+	                                )
+	                            ),
+	                            _react2['default'].createElement(
+	                                'div',
+	                                { className: 'result-top' },
+	                                _react2['default'].createElement(
+	                                    _reactCollapsible2['default'],
+	                                    { trigger: 'Диагностика' },
+	                                    _react2['default'].createElement(
+	                                        'ul',
+	                                        null,
+	                                        _react2['default'].createElement(
+	                                            'ul',
+	                                            { className: 'accordion-pen' },
+	                                            _react2['default'].createElement(
+	                                                'li',
+	                                                null,
+	                                                _react2['default'].createElement(
+	                                                    'div',
+	                                                    { className: 'number-icon' },
+	                                                    '1'
+	                                                ),
+	                                                _react2['default'].createElement(
+	                                                    'div',
+	                                                    { className: 'description-d' },
+	                                                    _react2['default'].createElement(
+	                                                        'p',
+	                                                        null,
+	                                                        ' One Heme это тестирование ткани для  геномной диагностики гематологических раковых заболеваний (лейкемия, лимфома и миелома) и сарком. Тестирование предоставляет Вашему врачу существенную клиническую информацию для оценки риска и прогноза, а также способствует в подборе таргетных методов лечения в соответствии с геномным профилем конкретной опухоли. Методы лечения, подобранные в соответствии с геномным профилем опухоли, могут оказаться более эффективными и менее токсичными. '
+	                                                    )
+	                                                )
+	                                            )
+	                                        )
+	                                    ),
+	                                    _react2['default'].createElement('br', null)
+	                                ),
+	                                _react2['default'].createElement(
+	                                    _reactCollapsible2['default'],
+	                                    { trigger: 'Риски' },
+	                                    _react2['default'].createElement(
+	                                        'ul',
+	                                        { className: 'accordion-pen' },
+	                                        _react2['default'].createElement(
+	                                            'li',
+	                                            null,
+	                                            _react2['default'].createElement(
+	                                                'div',
+	                                                { className: 'number-icon' },
+	                                                '1'
+	                                            ),
+	                                            _react2['default'].createElement(
+	                                                'div',
+	                                                { className: 'description-d' },
+	                                                'База данных компании Foundation Medicine является самой крупной в своем роде во всем мире – она содержит всеобъемлющую геномную информацию и данные более чем 125 000 образцов, взятых из различных опухолей'
+	                                            )
+	                                        ),
+	                                        _react2['default'].createElement(
+	                                            'li',
+	                                            null,
+	                                            _react2['default'].createElement(
+	                                                'div',
+	                                                { className: 'number-icon' },
+	                                                '2'
+	                                            ),
+	                                            _react2['default'].createElement(
+	                                                'div',
+	                                                { className: 'description-d' },
+	                                                'One Heme – это уникальный в своем роде тест, прошедший валидацию (проверку достоверности), что гарантирует высокий уровень точности и чувствительности (до 99%)'
+	                                            )
+	                                        ),
+	                                        _react2['default'].createElement(
+	                                            'li',
+	                                            null,
+	                                            _react2['default'].createElement(
+	                                                'div',
+	                                                { className: 'number-icon' },
+	                                                '3'
+	                                            ),
+	                                            _react2['default'].createElement(
+	                                                'div',
+	                                                { className: 'description-d' },
+	                                                'One Heme выявляет TMB, клинический параметр (маркер) опухоли, помогающий прогнозировать вероятность реакции на определенную иммунотерапию.'
+	                                            )
+	                                        ),
+	                                        _react2['default'].createElement(
+	                                            'li',
+	                                            null,
+	                                            _react2['default'].createElement(
+	                                                'div',
+	                                                { className: 'number-icon' },
+	                                                '4'
+	                                            ),
+	                                            _react2['default'].createElement(
+	                                                'div',
+	                                                { className: 'description-d' },
+	                                                'При тестировании One Heme одновременно сканируется 406 разных генов, ассоциированных с раком на уровне ДНК (наследственный материал), и выявляются все виды мутаций, известные на сегодняшний день как «двигатели» гематологических и саркомных опухолей.'
+	                                            )
+	                                        )
+	                                    ),
+	                                    _react2['default'].createElement('br', null)
+	                                ),
+	                                _react2['default'].createElement(
+	                                    _reactCollapsible2['default'],
+	                                    { trigger: 'Опциональные виды лечения' },
+	                                    _react2['default'].createElement(
+	                                        'ul',
+	                                        { className: 'accordion-pen' },
+	                                        _react2['default'].createElement(
+	                                            'li',
+	                                            null,
+	                                            _react2['default'].createElement(
+	                                                'div',
+	                                                { className: 'number-icon' },
+	                                                '1'
+	                                            ),
+	                                            _react2['default'].createElement(
+	                                                'div',
+	                                                { className: 'description-d' },
+	                                                'Результаты тестирования FoundationOne представляют собой лабораторный отчет, который получаете вы и ваш лечащий врач. Ответы включают рекомендации касательно лечения в соответствии с выявленными геномными изменениями, что поможет врачу подобрать таргетное лечение для каждой конкретной опухоли. '
+	                                            )
+	                                        ),
+	                                        _react2['default'].createElement(
+	                                            'li',
+	                                            null,
+	                                            _react2['default'].createElement(
+	                                                'div',
+	                                                { className: 'number-icon' },
+	                                                '2'
+	                                            ),
+	                                            _react2['default'].createElement(
+	                                                'div',
+	                                                { className: 'description-d' },
+	                                                _react2['default'].createElement('img', { width: '300', src: 'images/image.png' })
+	                                            )
+	                                        )
+	                                    )
+	                                ),
+	                                _react2['default'].createElement(
+	                                    'a',
+	                                    { href: '#', className: 'export-to-pdf' },
+	                                    'Export to PDF'
+	                                )
+	                            )
+	                        )
+	                    });
+	                }
+
 	                // console.log("item", item.question);
 	                if (item.question == "Была Взята биопсия ?") {
 	                    _this.setState({ resultText: _react2['default'].createElement(
@@ -47771,7 +47945,7 @@
 	*
 	* */
 	module.exports = exports['default'];
-	/*<div className="green-text">some text</div>*/ /*<p className="description-small">*/ /*Вы заинтересованны узнать больше*/ /*и получить мнение специалистов*/ /*из-за границы ?</p>*/ /*<h1 className="resulttest">You result: {this.state.result}</h1>*/ /*<div className="your-result">{this.state.result}</div>*/
+	/*<div className="green-text">some text</div>*/ /*<p className="description-small">*/ /*Вы заинтересованны узнать больше*/ /*и получить мнение специалистов*/ /*из-за границы ?</p>*/ /*<div className="green-text">some text</div>*/ /*<p className="description-small">*/ /*Вы заинтересованны узнать больше*/ /*и получить мнение специалистов*/ /*из-за границы ?</p>*/ /*<h1 className="resulttest">You result: {this.state.result}</h1>*/ /*<div className="your-result">{this.state.result}</div>*/
 
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/volodymyr/Стільниця/medpoint/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "SmartTestResult.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
