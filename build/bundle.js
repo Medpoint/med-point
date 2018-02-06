@@ -70,19 +70,23 @@
 
 	var _componentsCategorySmarttestSmarttestsJsx2 = _interopRequireDefault(_componentsCategorySmarttestSmarttestsJsx);
 
-	var _componentsCategorySmarttestSmartTestResultJsx = __webpack_require__(492);
+	var _componentsCategorySmartSmartJsx = __webpack_require__(492);
+
+	var _componentsCategorySmartSmartJsx2 = _interopRequireDefault(_componentsCategorySmartSmartJsx);
+
+	var _componentsCategorySmarttestSmartTestResultJsx = __webpack_require__(494);
 
 	var _componentsCategorySmarttestSmartTestResultJsx2 = _interopRequireDefault(_componentsCategorySmarttestSmartTestResultJsx);
 
-	var _componentsCategorySocialJsx = __webpack_require__(513);
+	var _componentsCategorySocialJsx = __webpack_require__(515);
 
 	var _componentsCategorySocialJsx2 = _interopRequireDefault(_componentsCategorySocialJsx);
 
-	var _componentsCategoryContactsJsx = __webpack_require__(516);
+	var _componentsCategoryContactsJsx = __webpack_require__(518);
 
 	var _componentsCategoryContactsJsx2 = _interopRequireDefault(_componentsCategoryContactsJsx);
 
-	var _reducers = __webpack_require__(519);
+	var _reducers = __webpack_require__(521);
 
 	var _reducers2 = _interopRequireDefault(_reducers);
 
@@ -92,11 +96,11 @@
 
 	var _redux2 = _interopRequireDefault(_redux);
 
-	var _reduxThunk = __webpack_require__(526);
+	var _reduxThunk = __webpack_require__(528);
 
 	var _reduxThunk2 = _interopRequireDefault(_reduxThunk);
 
-	var _reduxDevtoolsExtension = __webpack_require__(527);
+	var _reduxDevtoolsExtension = __webpack_require__(529);
 
 	// import { syncHistoryWithStore } from "react-router-redux";
 	// window.store = .......
@@ -117,6 +121,7 @@
 	            { path: '/', component: _AppJsx2['default'] },
 	            _react2['default'].createElement(_reactRouter.Route, { path: '/medaudit', component: _componentsCategoryMedauditJsx2['default'] }),
 	            _react2['default'].createElement(_reactRouter.Route, { path: '/smarttests', component: _componentsCategorySmarttestSmarttestsJsx2['default'] }),
+	            _react2['default'].createElement(_reactRouter.Route, { path: '/smarttests2', component: _componentsCategorySmartSmartJsx2['default'] }),
 	            _react2['default'].createElement(_reactRouter.Route, { path: '/smarttestresult', components: _componentsCategorySmarttestSmartTestResultJsx2['default'] }),
 	            _react2['default'].createElement(_reactRouter.Route, { path: '/social', component: _componentsCategorySocialJsx2['default'] }),
 	            _react2['default'].createElement(_reactRouter.Route, { path: '/contacts', component: _componentsCategoryContactsJsx2['default'] })
@@ -28173,11 +28178,11 @@
 	                    ),
 	                    _react2['default'].createElement(
 	                        _reactRouter.Link,
-	                        { to: '/smarttest4' },
+	                        { to: '/smarttests2' },
 	                        _react2['default'].createElement(
 	                            'li',
 	                            null,
-	                            'Smart design 2'
+	                            'Smart Test 2 '
 	                        )
 	                    ),
 	                    _react2['default'].createElement(
@@ -28215,7 +28220,6 @@
 
 	exports['default'] = SidebarContent;
 	module.exports = exports['default'];
-	/*<Link to="/smarttest1"><li>Smart Test 2</li></Link>*/ /*<Link to="/smarttest2"><li>Smart Test 3</li></Link>*/ /*<Link to="/smarttest3"><li>Smart Test 4</li></Link>*/
 
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/volodymyr/Стільниця/medpoint/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "SideBarContent.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
@@ -36579,11 +36583,12 @@
 	        };
 	    }
 
-	    // componentWillUnmount(){
-	    //
-	    // }
-
 	    _createClass(Smarttests, [{
+	        key: 'componentDidMount',
+	        value: function componentDidMount() {
+	            this.props.clearAnswer();
+	        }
+	    }, {
 	        key: '_hendleShowHins',
 	        value: function _hendleShowHins(hint) {
 	            this.setState({
@@ -39275,7 +39280,7 @@
 
 
 	// module
-	exports.push([module.id, ".test {\n  -moz-transform: skew(25deg, 10deg);\n  -o-transform: skew(25deg, 10deg);\n  -ms-transform: skew(25deg, 10deg);\n  -webkit-transform: skew(25deg, 10deg);\n  transform: skew(25deg, 10deg);\n  moz-transform-origin: top left;\n  -o-transform-origin: top left;\n  -ms-transform-origin: top left;\n  -webkit-transform-origin: top left;\n  transform-origin: top left;\n  position: absolute;\n  top: 25%;\n  bottom: 25%;\n  left: 25%;\n  right: 25%;\n  background-color: rgba(20, 20, 20, 0.5); }\n\n* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0; }\n\n.animationItem {\n  transform-origin: 0 0;\n  animation: fadeIn 1s; }\n\n@keyframes fadeIn {\n  from {\n    transform: scale(1); }\n  50% {\n    transform: scale(0); }\n  to {\n    transform: scale(1); } }\n\n.smartest-wrapper {\n  height: 100%; }\n  .smartest-wrapper .smarttests {\n    display: -webkit-box;\n    display: -webkit-flex;\n    display: -moz-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: justify;\n    -ms-flex-pack: justify;\n    -webkit-justify-content: space-between;\n    -moz-justify-content: space-between;\n    justify-content: space-between;\n    height: 100%; }\n    @media (max-width: 770px) {\n      .smartest-wrapper .smarttests {\n        flex-direction: column; } }\n    .smartest-wrapper .smarttests .logic {\n      flex: 0 0 75%;\n      padding: 2%;\n      padding-top: 70px; }\n      @media (max-width: 768px) {\n        .smartest-wrapper .smarttests .logic {\n          padding-top: 0px; } }\n      .smartest-wrapper .smarttests .logic .logic-block {\n        display: -webkit-box;\n        display: -webkit-flex;\n        display: -moz-flex;\n        display: -ms-flexbox;\n        display: flex;\n        -webkit-box-direction: normal;\n        -webkit-box-orient: vertical;\n        -webkit-flex-direction: column;\n        -moz-flex-direction: column;\n        -ms-flex-direction: column;\n        flex-direction: column;\n        -ms-flex-pack: distribute;\n        -webkit-justify-content: space-around;\n        -moz-justify-content: space-around;\n        justify-content: space-around;\n        margin-top: 0;\n        margin-left: 50px; }\n        @media (max-width: 768px) {\n          .smartest-wrapper .smarttests .logic .logic-block {\n            -webkit-box-direction: normal;\n            -webkit-box-orient: horizontal;\n            -webkit-flex-direction: row;\n            -moz-flex-direction: row;\n            -ms-flex-direction: row;\n            flex-direction: row;\n            margin-top: 5%;\n            margin-left: 5%; } }\n        .smartest-wrapper .smarttests .logic .logic-block .stepper {\n          position: relative;\n          font-size: 17px;\n          color: #ffffff;\n          width: 319px; }\n          @media (max-width: 768px) {\n            .smartest-wrapper .smarttests .logic .logic-block .stepper {\n              display: none; } }\n          .smartest-wrapper .smarttests .logic .logic-block .stepper svg {\n            fill: #ffffff; }\n          .smartest-wrapper .smarttests .logic .logic-block .stepper .previous-step {\n            display: block;\n            width: 20px;\n            text-align: center;\n            position: absolute;\n            top: 9px;\n            right: 10px; }\n          .smartest-wrapper .smarttests .logic .logic-block .stepper .current-step {\n            display: block;\n            width: 20px;\n            text-align: center;\n            position: absolute;\n            top: 9px;\n            left: 148px; }\n        .smartest-wrapper .smarttests .logic .logic-block .stepper-v {\n          flex: 0 0 20%;\n          display: block; }\n          .smartest-wrapper .smarttests .logic .logic-block .stepper-v .stepper-v-wrapper {\n            display: block;\n            width: 20px;\n            text-align: center;\n            position: relative;\n            font-size: 17px;\n            color: #ffffff; }\n            @media (min-width: 768px) {\n              .smartest-wrapper .smarttests .logic .logic-block .stepper-v .stepper-v-wrapper {\n                display: none; } }\n            .smartest-wrapper .smarttests .logic .logic-block .stepper-v .stepper-v-wrapper svg {\n              fill: #ffffff; }\n            .smartest-wrapper .smarttests .logic .logic-block .stepper-v .stepper-v-wrapper .previous-step {\n              display: block;\n              width: 20px;\n              text-align: center;\n              position: absolute;\n              top: 280px;\n              left: 7px; }\n            .smartest-wrapper .smarttests .logic .logic-block .stepper-v .stepper-v-wrapper .current-step {\n              display: block;\n              width: 20px;\n              text-align: center;\n              position: absolute;\n              top: 151px;\n              left: 7px; }\n        .smartest-wrapper .smarttests .logic .logic-block .logic-container {\n          display: -webkit-box;\n          display: -webkit-flex;\n          display: -moz-flex;\n          display: -ms-flexbox;\n          display: flex;\n          -webkit-box-pack: start;\n          -ms-flex-pack: start;\n          -webkit-justify-content: flex-start;\n          -moz-justify-content: flex-start;\n          justify-content: flex-start;\n          margin-top: 40px;\n          flex: 0 0 80%; }\n          @media (max-width: 768px) {\n            .smartest-wrapper .smarttests .logic .logic-block .logic-container {\n              -webkit-box-direction: normal;\n              -webkit-box-orient: vertical;\n              -webkit-flex-direction: column;\n              -moz-flex-direction: column;\n              -ms-flex-direction: column;\n              flex-direction: column;\n              margin-top: 11px; } }\n          .smartest-wrapper .smarttests .logic .logic-block .logic-container .current-length {\n            flex: 0 0 10%;\n            color: #43afb3;\n            margin-bottom: 10px; }\n            .smartest-wrapper .smarttests .logic .logic-block .logic-container .current-length figure {\n              display: inline-block;\n              text-align: center;\n              width: 37px;\n              height: 37px;\n              border-radius: 50%;\n              padding-top: 9px;\n              border: 1px solid #43afb3; }\n          .smartest-wrapper .smarttests .logic .logic-block .logic-container .stepper-main {\n            flex: 0 0 90%;\n            margin-top: 5px;\n            max-width: 430px; }\n            .smartest-wrapper .smarttests .logic .logic-block .logic-container .stepper-main .img-question {\n              padding: 5px; }\n        .smartest-wrapper .smarttests .logic .logic-block .step-label svg {\n          fill: #43afb3 !important; }\n        .smartest-wrapper .smarttests .logic .logic-block .button {\n          display: flex;\n          align-items: center;\n          margin-top: 20px; }\n          .smartest-wrapper .smarttests .logic .logic-block .button .icon-what {\n            cursor: help;\n            display: inline-block;\n            margin-left: 20px; }\n            .smartest-wrapper .smarttests .logic .logic-block .button .icon-what svg {\n              fill: #6d6d6d; }\n          .smartest-wrapper .smarttests .logic .logic-block .button .btn {\n            position: relative;\n            display: inline-block;\n            cursor: pointer;\n            overflow: hidden;\n            width: 200px;\n            padding: 4px;\n            text-align: center;\n            border: 1px solid #43afb3;\n            color: #43afb3;\n            border-radius: 20px; }\n            @media (min-width: 768px) {\n              .smartest-wrapper .smarttests .logic .logic-block .button .btn:hover:after {\n                height: 480%; }\n              .smartest-wrapper .smarttests .logic .logic-block .button .btn:hover {\n                color: #ffffff; } }\n            .smartest-wrapper .smarttests .logic .logic-block .button .btn:after {\n              content: \"\";\n              display: block;\n              position: absolute;\n              height: 0%;\n              left: 50%;\n              top: 50%;\n              width: 150%;\n              z-index: -1;\n              -webkit-transition: all 1s ease 0s;\n              -moz-transition: all 1s ease 0s;\n              -o-transition: all 1s ease 0s;\n              transition: all 1s ease 0s;\n              background: #43afb3;\n              -moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);\n              -ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);\n              -webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);\n              transform: translateX(-50%) translateY(-50%) rotate(-25deg); }\n        .smartest-wrapper .smarttests .logic .logic-block .button-back {\n          margin-top: 30px;\n          margin-bottom: 50px; }\n          .smartest-wrapper .smarttests .logic .logic-block .button-back .back-icon {\n            display: flex;\n            align-items: center; }\n            .smartest-wrapper .smarttests .logic .logic-block .button-back .back-icon svg {\n              margin-right: -10px; }\n    .smartest-wrapper .smarttests .askQuestion {\n      font-size: 20px;\n      font-weight: 500;\n      margin-bottom: 10px; }\n      @media (max-width: 768px) {\n        .smartest-wrapper .smarttests .askQuestion {\n          font-size: 14px; } }\n    .smartest-wrapper .smarttests .description {\n      overflow: hidden;\n      height: 0;\n      transform: scale(0);\n      color: #464646;\n      font-size: 16px;\n      margin-bottom: 20px;\n      transition: 1s all; }\n      @media (max-width: 768px) {\n        .smartest-wrapper .smarttests .description {\n          font-size: 12px; } }\n    .smartest-wrapper .smarttests .openAccordion {\n      transition: 1s all;\n      transform: scale(1);\n      height: auto !important; }\n\n::-webkit-scrollbar-track {\n  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);\n  border-radius: 10px;\n  background-color: #F5F5F5; }\n\n::-webkit-scrollbar {\n  width: 8px;\n  background-color: #F5F5F5; }\n\n::-webkit-scrollbar-thumb {\n  border-radius: 10px;\n  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);\n  background-color: #bdbdbd; }\n", ""]);
+	exports.push([module.id, ".test {\n  -moz-transform: skew(25deg, 10deg);\n  -o-transform: skew(25deg, 10deg);\n  -ms-transform: skew(25deg, 10deg);\n  -webkit-transform: skew(25deg, 10deg);\n  transform: skew(25deg, 10deg);\n  moz-transform-origin: top left;\n  -o-transform-origin: top left;\n  -ms-transform-origin: top left;\n  -webkit-transform-origin: top left;\n  transform-origin: top left;\n  position: absolute;\n  top: 25%;\n  bottom: 25%;\n  left: 25%;\n  right: 25%;\n  background-color: rgba(20, 20, 20, 0.5); }\n\n* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0; }\n\n.animationItem {\n  transform-origin: 0 0;\n  animation: fadeIn 1s; }\n\n@keyframes fadeIn {\n  from {\n    transform: scale(1); }\n  50% {\n    transform: scale(0); }\n  to {\n    transform: scale(1); } }\n\n.smartest-wrapper {\n  height: 100%; }\n  .smartest-wrapper .smarttests {\n    display: -webkit-box;\n    display: -webkit-flex;\n    display: -moz-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: justify;\n    -ms-flex-pack: justify;\n    -webkit-justify-content: space-between;\n    -moz-justify-content: space-between;\n    justify-content: space-between;\n    height: 100%; }\n    @media (max-width: 770px) {\n      .smartest-wrapper .smarttests {\n        flex-direction: column; } }\n    .smartest-wrapper .smarttests .logic {\n      flex: 0 0 75%;\n      padding: 2%;\n      padding-top: 70px; }\n      @media (max-width: 768px) {\n        .smartest-wrapper .smarttests .logic {\n          padding-top: 0px; } }\n      .smartest-wrapper .smarttests .logic .logic-block {\n        display: -webkit-box;\n        display: -webkit-flex;\n        display: -moz-flex;\n        display: -ms-flexbox;\n        display: flex;\n        -webkit-box-direction: normal;\n        -webkit-box-orient: vertical;\n        -webkit-flex-direction: column;\n        -moz-flex-direction: column;\n        -ms-flex-direction: column;\n        flex-direction: column;\n        -ms-flex-pack: distribute;\n        -webkit-justify-content: space-around;\n        -moz-justify-content: space-around;\n        justify-content: space-around;\n        margin-top: 0;\n        margin-left: 50px; }\n        @media (max-width: 768px) {\n          .smartest-wrapper .smarttests .logic .logic-block {\n            -webkit-box-direction: normal;\n            -webkit-box-orient: horizontal;\n            -webkit-flex-direction: row;\n            -moz-flex-direction: row;\n            -ms-flex-direction: row;\n            flex-direction: row;\n            margin-top: 5%;\n            margin-left: 5%; } }\n        .smartest-wrapper .smarttests .logic .logic-block .stepper {\n          position: relative;\n          font-size: 17px;\n          color: #ffffff;\n          width: 319px; }\n          @media (max-width: 768px) {\n            .smartest-wrapper .smarttests .logic .logic-block .stepper {\n              display: none; } }\n          .smartest-wrapper .smarttests .logic .logic-block .stepper svg {\n            fill: #ffffff; }\n          .smartest-wrapper .smarttests .logic .logic-block .stepper .previous-step {\n            display: block;\n            width: 20px;\n            text-align: center;\n            position: absolute;\n            top: 9px;\n            right: 10px; }\n          .smartest-wrapper .smarttests .logic .logic-block .stepper .current-step {\n            display: block;\n            width: 20px;\n            text-align: center;\n            position: absolute;\n            top: 9px;\n            left: 148px; }\n        .smartest-wrapper .smarttests .logic .logic-block .stepper-v {\n          flex: 0 0 20%;\n          display: block; }\n          .smartest-wrapper .smarttests .logic .logic-block .stepper-v .stepper-v-wrapper {\n            display: block;\n            width: 20px;\n            text-align: center;\n            position: relative;\n            font-size: 17px;\n            color: #ffffff; }\n            @media (min-width: 768px) {\n              .smartest-wrapper .smarttests .logic .logic-block .stepper-v .stepper-v-wrapper {\n                display: none; } }\n            .smartest-wrapper .smarttests .logic .logic-block .stepper-v .stepper-v-wrapper svg {\n              fill: #ffffff; }\n            .smartest-wrapper .smarttests .logic .logic-block .stepper-v .stepper-v-wrapper .previous-step {\n              display: block;\n              width: 20px;\n              text-align: center;\n              position: absolute;\n              top: 280px;\n              left: 7px; }\n            .smartest-wrapper .smarttests .logic .logic-block .stepper-v .stepper-v-wrapper .current-step {\n              display: block;\n              width: 20px;\n              text-align: center;\n              position: absolute;\n              top: 151px;\n              left: 7px; }\n        .smartest-wrapper .smarttests .logic .logic-block .logic-container {\n          display: -webkit-box;\n          display: -webkit-flex;\n          display: -moz-flex;\n          display: -ms-flexbox;\n          display: flex;\n          -webkit-box-pack: start;\n          -ms-flex-pack: start;\n          -webkit-justify-content: flex-start;\n          -moz-justify-content: flex-start;\n          justify-content: flex-start;\n          margin-top: 40px;\n          flex: 0 0 80%; }\n          @media (max-width: 768px) {\n            .smartest-wrapper .smarttests .logic .logic-block .logic-container {\n              -webkit-box-direction: normal;\n              -webkit-box-orient: vertical;\n              -webkit-flex-direction: column;\n              -moz-flex-direction: column;\n              -ms-flex-direction: column;\n              flex-direction: column;\n              margin-top: 11px; } }\n          .smartest-wrapper .smarttests .logic .logic-block .logic-container .current-length {\n            flex: 0 0 10%;\n            color: #43afb3;\n            margin-bottom: 10px; }\n            .smartest-wrapper .smarttests .logic .logic-block .logic-container .current-length figure {\n              display: inline-block;\n              text-align: center;\n              width: 37px;\n              height: 37px;\n              border-radius: 50%;\n              padding-top: 9px;\n              border: 1px solid #43afb3; }\n          .smartest-wrapper .smarttests .logic .logic-block .logic-container .stepper-main {\n            flex: 0 0 90%;\n            margin-top: 5px;\n            max-width: 430px; }\n            .smartest-wrapper .smarttests .logic .logic-block .logic-container .stepper-main .img-question {\n              padding: 5px; }\n        .smartest-wrapper .smarttests .logic .logic-block .step-label svg {\n          fill: #43afb3 !important; }\n        .smartest-wrapper .smarttests .logic .logic-block .button {\n          display: flex;\n          align-items: center;\n          margin-top: 20px; }\n          .smartest-wrapper .smarttests .logic .logic-block .button .icon-what {\n            cursor: help;\n            display: inline-block;\n            margin-left: 20px; }\n            .smartest-wrapper .smarttests .logic .logic-block .button .icon-what svg {\n              fill: #6d6d6d; }\n          .smartest-wrapper .smarttests .logic .logic-block .button .btn {\n            position: relative;\n            display: inline-block;\n            cursor: pointer;\n            overflow: hidden;\n            width: 200px;\n            padding: 4px;\n            text-align: center;\n            border: 1px solid #43afb3;\n            color: #43afb3;\n            border-radius: 20px; }\n            @media (min-width: 768px) {\n              .smartest-wrapper .smarttests .logic .logic-block .button .btn:hover:after {\n                height: 480%; }\n              .smartest-wrapper .smarttests .logic .logic-block .button .btn:hover {\n                color: #ffffff; } }\n            .smartest-wrapper .smarttests .logic .logic-block .button .btn:after {\n              content: \"\";\n              display: block;\n              position: absolute;\n              height: 0%;\n              left: 50%;\n              top: 50%;\n              width: 150%;\n              z-index: -1;\n              -webkit-transition: all 1s ease 0s;\n              -moz-transition: all 1s ease 0s;\n              -o-transition: all 1s ease 0s;\n              transition: all 1s ease 0s;\n              background: #43afb3;\n              -moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);\n              -ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);\n              -webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);\n              transform: translateX(-50%) translateY(-50%) rotate(-25deg); }\n        .smartest-wrapper .smarttests .logic .logic-block .button-back {\n          margin-top: 30px;\n          margin-bottom: 50px; }\n          .smartest-wrapper .smarttests .logic .logic-block .button-back .back-icon {\n            display: flex;\n            align-items: center; }\n            .smartest-wrapper .smarttests .logic .logic-block .button-back .back-icon svg {\n              margin-right: -10px; }\n    .smartest-wrapper .smarttests .askQuestion {\n      font-size: 20px;\n      font-weight: 500;\n      margin-bottom: 10px; }\n      @media (max-width: 768px) {\n        .smartest-wrapper .smarttests .askQuestion {\n          font-size: 14px; } }\n    .smartest-wrapper .smarttests .lorem-ipsum {\n      font-size: 14px;\n      font-weight: 400;\n      color: #6d6d6d; }\n    .smartest-wrapper .smarttests .description {\n      overflow: hidden;\n      height: 0;\n      transform: scale(0);\n      color: #464646;\n      font-size: 16px;\n      margin-bottom: 20px;\n      transition: 1s all; }\n      @media (max-width: 768px) {\n        .smartest-wrapper .smarttests .description {\n          font-size: 12px; } }\n    .smartest-wrapper .smarttests .openAccordion {\n      transition: 1s all;\n      transform: scale(1);\n      height: auto !important; }\n\n::-webkit-scrollbar-track {\n  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);\n  border-radius: 10px;\n  background-color: #F5F5F5; }\n\n::-webkit-scrollbar {\n  width: 8px;\n  background-color: #F5F5F5; }\n\n::-webkit-scrollbar-thumb {\n  border-radius: 10px;\n  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);\n  background-color: #bdbdbd; }\n", ""]);
 
 	// exports
 
@@ -44765,6 +44770,665 @@
 
 	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
 
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _react = __webpack_require__(183);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRedux = __webpack_require__(402);
+
+	__webpack_require__(438);
+
+	var _answerJs = __webpack_require__(493);
+
+	var _answerJs2 = _interopRequireDefault(_answerJs);
+
+	var _smarttestSmartTestLeftSideJsx = __webpack_require__(441);
+
+	var _smarttestSmartTestLeftSideJsx2 = _interopRequireDefault(_smarttestSmartTestLeftSideJsx);
+
+	var _propTypes = __webpack_require__(187);
+
+	var _propTypes2 = _interopRequireDefault(_propTypes);
+
+	var _materialUiCheckbox = __webpack_require__(448);
+
+	var _materialUiCheckbox2 = _interopRequireDefault(_materialUiCheckbox);
+
+	var _materialUiFlatButton = __webpack_require__(487);
+
+	var _materialUiFlatButton2 = _interopRequireDefault(_materialUiFlatButton);
+
+	var Smarttests = (function (_React$Component) {
+	    _inherits(Smarttests, _React$Component);
+
+	    function Smarttests(props, context) {
+	        _classCallCheck(this, Smarttests);
+
+	        _get(Object.getPrototypeOf(Smarttests.prototype), 'constructor', this).call(this, props, context);
+	        this.state = {
+	            video: "",
+	            options: [],
+	            checkboxes: [],
+	            finished: false,
+	            stepIndex: 0,
+	            date: new Date().toString().slice(0, 15),
+	            openHint: true,
+	            hint: '',
+	            showItem: ''
+	        };
+	    }
+
+	    _createClass(Smarttests, [{
+	        key: '_hendleShowHins',
+	        value: function _hendleShowHins(hint) {
+	            this.setState({
+	                openHint: !this.state.openHint,
+	                hint: hint
+	            });
+	        }
+	    }, {
+	        key: 'componentDidMount',
+	        value: function componentDidMount() {
+	            this.props.clearAnswer();
+	        }
+	    }, {
+	        key: 'handleFindNextQuestion',
+	        value: function handleFindNextQuestion(answerCurrent, questionCurrent, index) {
+	            var _this = this;
+
+	            // put anumation !!!!
+	            this.setState({ showItem: 'animationItem' });
+
+	            /**
+	             * if exist array lotof then should be at least one checkbox!
+	             * */
+	            if (questionCurrent && questionCurrent.lotOf && questionCurrent.lotOf.length && this.state.options.length === 0) {
+
+	                return 0;
+	            }
+
+	            var answer = _answerJs2['default'].find(function (item) {
+	                return item.key === answerCurrent.next;
+	            });
+
+	            var formAnswer = answerCurrent.answerForView;
+
+	            if (questionCurrent && questionCurrent.lotOf && questionCurrent.lotOf.length > 1) {
+
+	                // map for get property for  join
+	                var items = this.state.checkboxes.map(function (item) {
+	                    return item.item;
+	                });
+
+	                formAnswer = formAnswer + " " + items.join(', ');
+	            }
+	            /**
+	             * Write result to store by redux
+	             * */
+	            var answerToQuestion = {
+	                ask: answer,
+	                question: questionCurrent.question,
+	                answerForView: formAnswer || '', // answer what was formulate
+	                answer: answerCurrent.text,
+	                checkboxes: this.state.checkboxes
+	            };
+
+	            setTimeout(function () {
+	                _this.props.addAnswer(answerToQuestion);
+	            }, 500);
+
+	            if (answerCurrent.next == null) {
+	                /**
+	                 * for finish logic
+	                 * */
+	                this.context.router.push("/smarttestresult");
+
+	                return 0;
+	            } else {
+	                /**
+	                 * make step after 0.6 sec for animation work
+	                 * */
+	                setTimeout(function () {
+	                    _this.handleNext(index);
+	                }, 600);
+	            }
+
+	            // clear list after previous checkboxes
+	            this.setState({
+	                options: [],
+	                checkboxes: [],
+	                hint: ""
+	            });
+
+	            // animation kill
+	            setTimeout(function () {
+	                _this.setState({
+	                    showItem: ''
+	                });
+	            }, 1000);
+	        }
+	    }, {
+	        key: 'handleCheck',
+	        value: function handleCheck(e) {
+	            var _this2 = this;
+
+	            var options = this.state.options;
+	            var index = undefined;
+
+	            // check if the check box is checked or unchecked
+	            if (e.target.checked) {
+	                options.push(+e.target.value);
+	            } else {
+	                index = options.indexOf(+e.target.value);
+	                options.splice(index, 1);
+	            }
+
+	            //Here we have checkbox what is checked
+	            this.setState({ options: options });
+
+	            //here we have text value
+	            var textValue = [];
+
+	            var lastIndexOfItems = this.props.answer.length - 1;
+	            this.state.options.map(function (item) {
+	                textValue.push(_this2.props.answer[lastIndexOfItems].ask.lotOf[item]);
+	            });
+	            this.setState({ checkboxes: textValue });
+	        }
+	    }, {
+	        key: 'handleNext',
+	        value: function handleNext() {
+	            var stepIndex = this.state.stepIndex;
+
+	            this.setState({
+	                stepIndex: stepIndex + 1
+	                // finished: stepIndex >= this.props.answer.length + 1,
+	            });
+	        }
+	    }, {
+	        key: 'handlePrev',
+	        value: function handlePrev(index) {
+	            this.props.deleteLast(index);
+
+	            var stepIndex = this.state.stepIndex;
+
+	            if (stepIndex > 0) {
+	                this.setState({
+	                    stepIndex: stepIndex - 1,
+	                    hint: ""
+	                });
+	            }
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	            var _this3 = this;
+
+	            // const {stepIndex} = this.state;
+	            var length = this.props.answer.length - 1,
+	                oneOrZero = length <= 0 ? '!' : length;
+
+	            return _react2['default'].createElement(
+	                'div',
+	                { className: 'smartest-wrapper' },
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'smarttests' },
+	                    _react2['default'].createElement(_smarttestSmartTestLeftSideJsx2['default'], null),
+	                    _react2['default'].createElement(
+	                        'div',
+	                        { className: 'logic' },
+	                        _react2['default'].createElement(
+	                            'div',
+	                            { className: 'logic-block' },
+	                            _react2['default'].createElement(
+	                                'div',
+	                                { className: 'stepper' },
+	                                _react2['default'].createElement(
+	                                    'span',
+	                                    { className: 'previous-step' },
+	                                    oneOrZero
+	                                ),
+	                                _react2['default'].createElement(
+	                                    'span',
+	                                    { className: 'current-step' },
+	                                    this.props.answer.length
+	                                ),
+	                                _react2['default'].createElement(
+	                                    'svg',
+	                                    { width: '319', height: '38', viewBox: '0 0 319 38' },
+	                                    _react2['default'].createElement(
+	                                        'defs',
+	                                        null,
+	                                        _react2['default'].createElement('path', { id: 'w45za', d: 'M686.27 213v-1.67h84.53V213z' }),
+	                                        _react2['default'].createElement('path', { id: 'w45zb', d: 'M827.27 213v-1.67h84.53V213z' }),
+	                                        _react2['default'].createElement('path', { id: 'w45zc', d: 'M659 193a19 19 0 1 1 0 38 19 19 0 0 1 0-38z' }),
+	                                        _react2['default'].createElement('path', { id: 'w45zd', d: 'M799 193a19 19 0 1 1 0 38 19 19 0 0 1 0-38z' }),
+	                                        _react2['default'].createElement('path', { id: 'w45ze', d: 'M940 193a19 19 0 1 1 0 38 19 19 0 0 1 0-38z' }),
+	                                        _react2['default'].createElement('path', { id: 'w45zf', d: 'M666.86 220.42a1.1 1.1 0 0 1-.98.58h-11.23c-.9 0-1.65-.76-1.65-1.69v-9.57c0-.68.4-1.27.97-1.54v-4c0-.67.52-1.2 1.16-1.2H665c.65 0 1.17.53 1.17 1.2v14.01l.7 1.06.02.03c.17.35.17.77-.02 1.12zm-11.6-12.37h3.6c.66 0 1 .59 1.16.83l.01.03 4.83 7.34v-11.93h-9.6zm10.3 11.63l-.58-.9-6.06-9.18-.01-.03-.13-.2h-4.13c-.2 0-.36.17-.36.37v9.57c0 .2.17.37.36.37zm-5.85-5.27c0 .37-.29.67-.64.67h-.85v.86c0 .36-.29.66-.64.66a.65.65 0 0 1-.65-.66v-.86h-.85a.65.65 0 0 1-.64-.67c0-.36.29-.66.64-.66h.85v-.86c0-.37.29-.66.65-.66.35 0 .64.3.64.66v.86h.85c.35 0 .64.3.64.66zm4.29-8.28c0 .37-.3.66-.65.66h-6.56a.65.65 0 0 1-.65-.66c0-.37.3-.66.65-.66h6.56c.36 0 .65.3.65.66zm0 2.6c0 .37-.3.67-.65.67h-1.91a.65.65 0 0 1-.65-.67c0-.36.3-.66.65-.66h1.91c.36 0 .65.3.65.66z' })
+	                                    ),
+	                                    _react2['default'].createElement(
+	                                        'g',
+	                                        null,
+	                                        _react2['default'].createElement(
+	                                            'g',
+	                                            { transform: 'translate(-640 -193)' },
+	                                            _react2['default'].createElement('use', { fill: '#e6e6e6', href: '#w45za' }),
+	                                            _react2['default'].createElement('use', { fill: '#43afb3', href: '#w45za' })
+	                                        ),
+	                                        _react2['default'].createElement(
+	                                            'g',
+	                                            { transform: 'translate(-640 -193)' },
+	                                            _react2['default'].createElement('use', { fill: '#e6e6e6', href: '#w45zb' }),
+	                                            _react2['default'].createElement('use', { fill: '#b4b4b4', href: '#w45zb' })
+	                                        ),
+	                                        _react2['default'].createElement(
+	                                            'g',
+	                                            { transform: 'translate(-640 -193)' },
+	                                            _react2['default'].createElement('use', { fill: '#43afb3', href: '#w45zc' })
+	                                        ),
+	                                        _react2['default'].createElement(
+	                                            'g',
+	                                            { transform: 'translate(-640 -193)' },
+	                                            _react2['default'].createElement('use', { fill: '#43afb3', href: '#w45zd' })
+	                                        ),
+	                                        _react2['default'].createElement(
+	                                            'g',
+	                                            { transform: 'translate(-640 -193)' },
+	                                            _react2['default'].createElement('use', { fill: '#43afb3', href: '#w45ze' }),
+	                                            _react2['default'].createElement('use', { fill: '#b4b4b4', href: '#w45ze' })
+	                                        ),
+	                                        _react2['default'].createElement(
+	                                            'g',
+	                                            { transform: 'translate(-640 -193)' },
+	                                            _react2['default'].createElement('use', { href: '#w45zf' }),
+	                                            _react2['default'].createElement('use', { fill: '#fff', href: '#w45zf' })
+	                                        )
+	                                    )
+	                                )
+	                            ),
+	                            _react2['default'].createElement(
+	                                'div',
+	                                { className: 'stepper-v' },
+	                                _react2['default'].createElement(
+	                                    'div',
+	                                    { className: 'stepper-v-wrapper' },
+	                                    _react2['default'].createElement(
+	                                        'span',
+	                                        { className: 'previous-step' },
+	                                        oneOrZero
+	                                    ),
+	                                    _react2['default'].createElement(
+	                                        'span',
+	                                        { className: 'current-step' },
+	                                        this.props.answer.length
+	                                    ),
+	                                    _react2['default'].createElement(
+	                                        'svg',
+	                                        { width: '38', height: '319', viewBox: '0 0 60 470' },
+	                                        _react2['default'].createElement(
+	                                            'defs',
+	                                            null,
+	                                            _react2['default'].createElement('path', { id: '44qba', d: 'M71 454.99h2.98V584h-2.97z' }),
+	                                            _react2['default'].createElement('path', { id: '44qbb', d: 'M70 662h2.98v129h-2.97z' }),
+	                                            _react2['default'].createElement('path', { id: '44qbc', d: 'M73.24 594a28.97 28.97 0 0 1 28.94 29c0 16.02-12.95 29-28.94 29a28.97 28.97 0 0 1-28.95-29c0-16.02 12.96-29 28.95-29z' }),
+	                                            _react2['default'].createElement('path', { id: '44qbd', d: 'M72.05 799A28.97 28.97 0 0 1 101 828c0 16.02-12.96 29-28.95 29a28.97 28.97 0 0 1-28.94-29c0-16.02 12.96-29 28.94-29z' }),
+	                                            _react2['default'].createElement('path', { id: '44qbe', d: 'M72.95 387a28.97 28.97 0 0 1 28.94 29c0 16.02-12.96 29-28.94 29A28.97 28.97 0 0 1 44 416c0-16.02 12.96-29 28.95-29z' }),
+	                                            _react2['default'].createElement('path', { id: '44qbf', d: 'M84.92 428.84a1.69 1.69 0 0 1-1.48.9H66.32a2.55 2.55 0 0 1-2.51-2.58v-14.61c0-1.04.6-1.94 1.47-2.35v-6.12c0-1 .8-1.82 1.77-1.82h15.03c.98 0 1.77.82 1.77 1.82v21.4l1.07 1.62.02.05c.28.53.27 1.17-.02 1.7zm-17.67-18.87h5.48c1.01 0 1.54.9 1.76 1.28l.03.03 7.36 11.2v-18.2H67.25zm15.7 17.75l-.9-1.36-9.22-14.03-.03-.04c-.09-.16-.15-.25-.2-.3h-6.28c-.3 0-.54.26-.54.56v14.6c0 .31.25.57.54.57zm-8.92-8.03a1 1 0 0 1-.98 1h-1.29v1.32a1 1 0 0 1-.98 1.01 1 1 0 0 1-.99-1v-1.32H68.5a1 1 0 0 1-.98-1.01 1 1 0 0 1 .98-1.02h1.29v-1.31a1 1 0 0 1 .99-1.01 1 1 0 0 1 .98 1v1.32h1.29a1 1 0 0 1 .98 1.02zm6.53-12.65a1 1 0 0 1-.99 1.01h-10a1 1 0 0 1-.98-1.01 1 1 0 0 1 .99-1.01h10a1 1 0 0 1 .98 1.01zm0 3.97a1 1 0 0 1-.99 1.01h-2.9a1 1 0 0 1-1-1 1 1 0 0 1 1-1.02h2.9a1 1 0 0 1 .99 1.01z' })
+	                                        ),
+	                                        _react2['default'].createElement(
+	                                            'g',
+	                                            null,
+	                                            _react2['default'].createElement(
+	                                                'g',
+	                                                { transform: 'translate(-43 -387)' },
+	                                                _react2['default'].createElement('use', { fill: '#e6e6e6', href: '#44qba' }),
+	                                                _react2['default'].createElement('use', { fill: '#43afb3', href: '#44qba' })
+	                                            ),
+	                                            _react2['default'].createElement(
+	                                                'g',
+	                                                { transform: 'translate(-43 -387)' },
+	                                                _react2['default'].createElement('use', { fill: '#e6e6e6', href: '#44qbb' }),
+	                                                _react2['default'].createElement('use', { fill: '#b4b4b4', href: '#44qbb' })
+	                                            ),
+	                                            _react2['default'].createElement(
+	                                                'g',
+	                                                { transform: 'translate(-43 -387)' },
+	                                                _react2['default'].createElement('use', { fill: '#43afb3', href: '#44qbc' })
+	                                            ),
+	                                            _react2['default'].createElement(
+	                                                'g',
+	                                                { transform: 'translate(-43 -387)' },
+	                                                _react2['default'].createElement('use', { fill: '#43afb3', href: '#44qbd' }),
+	                                                _react2['default'].createElement('use', { fill: '#b4b4b4', href: '#44qbd' })
+	                                            ),
+	                                            _react2['default'].createElement(
+	                                                'g',
+	                                                { transform: 'translate(-43 -387)' },
+	                                                _react2['default'].createElement('use', { fill: '#43afb3', href: '#44qbe' })
+	                                            ),
+	                                            _react2['default'].createElement(
+	                                                'g',
+	                                                { transform: 'translate(-43 -387)' },
+	                                                _react2['default'].createElement('use', { href: '#44qbf' }),
+	                                                _react2['default'].createElement('use', { fill: '#fff', href: '#44qbf' })
+	                                            )
+	                                        )
+	                                    )
+	                                )
+	                            ),
+	                            _react2['default'].createElement(
+	                                'div',
+	                                { className: this.state.showItem + " logic-container" },
+	                                _react2['default'].createElement(
+	                                    'div',
+	                                    { className: 'current-length' },
+	                                    _react2['default'].createElement(
+	                                        'figure',
+	                                        null,
+	                                        oneOrZero
+	                                    )
+	                                ),
+	                                _react2['default'].createElement(
+	                                    'div',
+	                                    { className: 'stepper-main' },
+	                                    _react2['default'].createElement(
+	                                        'h2',
+	                                        { className: 'askQuestion' },
+	                                        this.props.answer[this.props.answer.length - 1].ask.question
+	                                    ),
+	                                    _react2['default'].createElement(
+	                                        'div',
+	                                        { className: 'lorem-ipsum' },
+	                                        this.props.answer[this.props.answer.length - 1].ask.loremipsum
+	                                    ),
+	                                    _react2['default'].createElement(
+	                                        'div',
+	                                        { className: "description openAccordion" },
+	                                        this.state.hint
+	                                    ),
+	                                    this.props.answer[length].ask.lotOf ? _react2['default'].createElement(
+	                                        'div',
+	                                        null,
+	                                        this.props.answer[length].ask.lotOf.map(function (item, index) {
+	                                            return _react2['default'].createElement(
+	                                                'div',
+	                                                { key: item + index },
+	                                                _react2['default'].createElement(_materialUiCheckbox2['default'], {
+	                                                    value: index,
+	                                                    onCheck: _this3.handleCheck.bind(_this3),
+	                                                    iconStyle: { fill: '#43afb3' },
+	                                                    label: item.item,
+	                                                    labelStyle: {
+	                                                        color: '#43afb3',
+	                                                        font: '14px',
+	                                                        fontWeight: '400',
+	                                                        fontFamily: 'Lato',
+	                                                        marginBottom: '10px'
+	                                                    }
+	                                                })
+	                                            );
+	                                        })
+	                                    ) : "",
+	                                    this.props.answer[length].ask.answers.map(function (currentAnswer, index) {
+	                                        return _react2['default'].createElement(
+	                                            'div',
+	                                            { key: index + 500 },
+	                                            _react2['default'].createElement(
+	                                                'div',
+	                                                { className: 'button' },
+	                                                _react2['default'].createElement(
+	                                                    'div',
+	                                                    { className: 'btn', onClick: _this3.handleFindNextQuestion.bind(_this3, currentAnswer, _this3.props.answer[length].ask, index) },
+	                                                    currentAnswer.text
+	                                                ),
+	                                                currentAnswer.hint ? _react2['default'].createElement(
+	                                                    'i',
+	                                                    { className: 'icon-what', onClick: _this3._hendleShowHins.bind(_this3, currentAnswer.hint) },
+	                                                    _react2['default'].createElement(
+	                                                        'svg',
+	                                                        { width: '16', height: '16', version: '1.1', x: '0px',
+	                                                            y: '0px', viewBox: '0 0 1000 1000',
+	                                                            enableBackground: 'new 0 0 1000 1000' },
+	                                                        _react2['default'].createElement(
+	                                                            'g',
+	                                                            null,
+	                                                            _react2['default'].createElement('path', {
+	                                                                d: 'M500,10C227,10,10,227,10,500s217,490,490,490s490-217,490-490S773,10,500,10z M500,920C269,920,80,731,80,500S269,80,500,80s420,189,420,420S731,920,500,920z' }),
+	                                                            _react2['default'].createElement('path', {
+	                                                                d: 'M542,633h-70c0-7,0-14,0-28c0-49,21-91,63-126c49-35,70-70,70-105c0-56-28-77-84-84c-56,0-91,35-112,105l-70-21c21-105,84-154,196-154c91,7,147,56,154,140c0,56-28,105-91,147c-42,28-63,63-56,98C542,619,542,626,542,633z M549,780h-84v-84h84V780z' })
+	                                                        )
+	                                                    )
+	                                                ) : ""
+	                                            )
+	                                        );
+	                                    }),
+	                                    this.props.answer.length > 0 && _react2['default'].createElement(
+	                                        'div',
+	                                        { className: 'button-back' },
+	                                        _react2['default'].createElement(
+	                                            'i',
+	                                            { className: 'back-icon' },
+	                                            _react2['default'].createElement(
+	                                                'svg',
+	                                                { width: '10', height: '15', viewBox: '0 0 10 15' },
+	                                                _react2['default'].createElement(
+	                                                    'defs',
+	                                                    null,
+	                                                    _react2['default'].createElement('path', { id: '7dpia', d: 'M708.68 650l1.32 1.4-4.35 4.6 4.35 4.6-1.32 1.4-5.68-6z' })
+	                                                ),
+	                                                _react2['default'].createElement(
+	                                                    'g',
+	                                                    null,
+	                                                    _react2['default'].createElement(
+	                                                        'g',
+	                                                        { transform: 'translate(-701 -648)' },
+	                                                        _react2['default'].createElement('use', { href: '#7dpia' }),
+	                                                        _react2['default'].createElement('use', { fill: '#43afb3', href: '#7dpia' })
+	                                                    )
+	                                                )
+	                                            ),
+	                                            _react2['default'].createElement(_materialUiFlatButton2['default'], {
+	                                                label: 'Back',
+	                                                disabled: this.state.stepIndex === 0,
+	                                                disableTouchRipple: true,
+	                                                disableFocusRipple: true,
+	                                                onClick: this.handlePrev.bind(this, length),
+	                                                className: 'flat-button'
+	                                            })
+	                                        )
+	                                    )
+	                                )
+	                            )
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+
+	    return Smarttests;
+	})(_react2['default'].Component);
+
+	Smarttests.contextTypes = {
+	    router: _propTypes2['default'].object
+	};
+
+	// Redux
+	function mapStateToProps(state) {
+	    return {
+	        answer: state.answer
+	    };
+	}
+
+	function dispatchStateToProps(dispach) {
+	    return {
+	        addAnswer: function addAnswer(answer) {
+	            dispach({ type: "ADD_ANSWER", answer: answer });
+	        },
+	        clearAnswer: function clearAnswer() {
+	            dispach({ type: "CLEAR_ANSWER" });
+	        },
+	        deleteLast: function deleteLast(index) {
+	            dispach({ type: "DELETE_PREVIOUS_ITEM", index: index });
+	        }
+	    };
+	}
+
+	exports['default'] = (0, _reactRedux.connect)(mapStateToProps, dispatchStateToProps)(Smarttests);
+	module.exports = exports['default'];
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/volodymyr/Стільниця/medpoint/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "smart.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ }),
+/* 493 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	// array with questions
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+	var _react = __webpack_require__(183);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var arrayOfQuestions = [{
+	    key: 2,
+	    question: "У вас выявлена гематологическое опухоль ?",
+	    loremipsum: 'Опухоли связанны с кровеносной и лимфатической  системами (лейкемия, лимфона, миелома) или с саркомой, опухолью, развивающейся в     соединительной или мышечной ткани. ',
+	    answers: [{
+	        next: 3,
+	        text: "Да",
+	        answerForView: "У вас выявлена гематологическое опухоль."
+	    }, {
+	        next: 5, // free
+	        text: "Нет",
+	        answerForView: "У вас не выявлена гематологическое опухоль."
+	    }]
+	}, {
+	    key: 3,
+	    question: "Имеете ли Вы доступ к фрагменту опухолевой ткани ?",
+	    loremipsum: ' Образец Вашей опухолевой ткани был взят в процессе операции или биопсии и он хранится в отделении патологии в медицинском центре, где проводилась процедура.‎',
+	    answers: [{
+	        next: 4,
+	        text: "Да",
+	        answerForView: 'Я имел доступ к фрагменту опухолевой ткани.'
+	    }, {
+	        next: null,
+	        text: "Нет",
+	        answerForView: 'Нет'
+	    }]
+	}, {
+	    key: 4,
+	    question: "Проходили ли вы уже остновные конвенциональные виды лечения  ?",
+	    answers: [{
+	        next: 6,
+	        text: "Да",
+	        answerForView: 'Да. Я проходил уже остновные конвенциональные виды лечения'
+	    }, {
+	        next: null,
+	        text: "Нет",
+	        answerForView: 'НЕТ'
+	    }]
+	}, {
+	    key: 6,
+	    question: "Какую стадию заболевания оценивает Ваш врач на данный момент ?",
+	    answers: [{
+	        next: null,
+	        text: "2",
+	        answerForView: 'Мой врач оценивает 2 стадию'
+	    }, {
+	        next: null,
+	        text: "3",
+	        answerForView: 'Мой врач оценивает 3 стадию'
+	    }, {
+	        next: null,
+	        text: "4",
+	        answerForView: 'Мой врач оценивает 4 стадию'
+	    }]
+	},
+
+	// HET
+	{
+	    key: 5,
+	    question: 'Вы проходили   хирургическую биопсию (АКТ ) ?',
+	    answers: [{
+	        next: 7,
+	        text: "Да",
+	        answerForView: 'Проходил хирургическую биопсию (АКТ )'
+	    }, {
+	        next: null,
+	        text: "Нет",
+	        answerForView: 'Не проходил хирургическую биопсию (АКТ )'
+	    }]
+	}, {
+	    key: 7,
+	    question: 'У Вас диагностирован :',
+	    answers: [{
+	        next: 8,
+	        text: "next"
+	    }],
+	    lotOf: [{
+	        id: 1,
+	        item: "Агрессивная солидная опухоль (4-й стадии), которые не реагируют на стандартные методы лечения"
+	    }, {
+	        id: 2,
+	        item: "Редкая или нечасто встречающаяся опухоль 4-й степени, для которой не имеется лечения или возможности лечения которой ограничены."
+	    }, {
+	        id: 3,
+	        item: "Опухолью неизвестного происхождения, что затрудняет выбор лечения"
+	    }, {
+	        id: 4,
+	        item: "Пациенты с солидной опухолью 4-й стадии, которые исчерпали все варианты стандартного лечения, или которым необходима молекулярная диагностика, но сохраняющие уровень приемлемого функционирования"
+	    }, {
+	        id: 5,
+	        item: "Немелкоклеточный рак легкого (NSCLC) 4-й степени. "
+	    }]
+	}, {
+	    key: 8,
+	    question: 'Имеете ли Вы доступ к фрагменту опухолевой ткани ?',
+	    loremipsum: 'Образец Вашей опухолевой ткани был взят в процессе операции или биопсии и он хранится в отделении патологии в медицинском центре, где проводилась процедура.‎',
+	    answers: [{
+	        next: null,
+	        text: "Да",
+	        answerForView: 'Да. Я имею доступ к фрагменту опухолевой ткани'
+	    }, {
+	        next: null,
+	        text: "Нет",
+	        answerForView: 'Нет. Я не имею доступ к фрагменту опухолевой ткани'
+	    }]
+	}];
+
+	exports["default"] = arrayOfQuestions;
+	module.exports = exports["default"];
+
+/***/ }),
+/* 494 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/home/volodymyr/Стільниця/medpoint/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/home/volodymyr/Стільниця/medpoint/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	    value: true
+	});
+
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
 	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj['default'] = obj; return newObj; } }
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
@@ -44781,9 +45445,9 @@
 
 	var _reactRouter = __webpack_require__(184);
 
-	__webpack_require__(493);
+	__webpack_require__(495);
 
-	var _reactCollapsible = __webpack_require__(496);
+	var _reactCollapsible = __webpack_require__(498);
 
 	var _reactCollapsible2 = _interopRequireDefault(_reactCollapsible);
 
@@ -44791,7 +45455,7 @@
 
 	var _SmartUserInfoJsx2 = _interopRequireDefault(_SmartUserInfoJsx);
 
-	var _reactScroll = __webpack_require__(497);
+	var _reactScroll = __webpack_require__(499);
 
 	var Scroll = _interopRequireWildcard(_reactScroll);
 
@@ -45224,6 +45888,8 @@
 	    }, {
 	        key: '_handleToTop',
 	        value: function _handleToTop() {
+	            /**
+	             * scroll*/
 	            if (this.state.scrollTo) {
 	                scroll.scrollToTop();
 	            } else {
@@ -45422,13 +46088,13 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/volodymyr/Стільниця/medpoint/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "SmartTestResult.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ }),
-/* 493 */
+/* 495 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(494);
+	var content = __webpack_require__(496);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(246)(content, {});
@@ -45448,7 +46114,7 @@
 	}
 
 /***/ }),
-/* 494 */
+/* 496 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(245)();
@@ -45456,19 +46122,19 @@
 
 
 	// module
-	exports.push([module.id, ".test {\n  -moz-transform: skew(25deg, 10deg);\n  -o-transform: skew(25deg, 10deg);\n  -ms-transform: skew(25deg, 10deg);\n  -webkit-transform: skew(25deg, 10deg);\n  transform: skew(25deg, 10deg);\n  moz-transform-origin: top left;\n  -o-transform-origin: top left;\n  -ms-transform-origin: top left;\n  -webkit-transform-origin: top left;\n  transform-origin: top left;\n  position: absolute;\n  top: 25%;\n  bottom: 25%;\n  left: 25%;\n  right: 25%;\n  background-color: rgba(20, 20, 20, 0.5); }\n\n.wrapperResult {\n  height: 100%; }\n\n.smarttestresult {\n  height: 100%; }\n  .smarttestresult .smart-result-page {\n    display: -webkit-box;\n    display: -webkit-flex;\n    display: -moz-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: space-bettwen;\n    -ms-flex-pack: space-bettwen;\n    -webkit-justify-content: space-bettwen;\n    -moz-justify-content: space-bettwen;\n    justify-content: space-bettwen;\n    -webkit-flex-wrap: wrap;\n    -moz-flex-wrap: wrap;\n    -ms-flex-wrap: wrap;\n    flex-wrap: wrap;\n    width: 100%;\n    min-height: 100%; }\n    .smarttestresult .smart-result-page .left-side-result-page {\n      background-color: #e5e5e5;\n      padding: 30px;\n      text-align: left;\n      flex: 0 0 25%; }\n      @media (max-width: 768px) {\n        .smarttestresult .smart-result-page .left-side-result-page {\n          display: none; } }\n    .smarttestresult .smart-result-page .right-side-result-page {\n      display: -webkit-box;\n      display: -webkit-flex;\n      display: -moz-flex;\n      display: -ms-flexbox;\n      display: flex;\n      flex-direction: column;\n      -webkit-box-pack: space-bettwen;\n      -ms-flex-pack: space-bettwen;\n      -webkit-justify-content: space-bettwen;\n      -moz-justify-content: space-bettwen;\n      justify-content: space-bettwen;\n      flex: 0 0 75%;\n      position: relative; }\n      @media (max-width: 768px) {\n        .smarttestresult .smart-result-page .right-side-result-page {\n          flex: 0 0 100%; } }\n      .smarttestresult .smart-result-page .right-side-result-page .go-top {\n        position: fixed;\n        cursor: pointer;\n        bottom: 10%;\n        right: 3%;\n        width: 60px;\n        height: 60px;\n        border-radius: 50%;\n        background-color: #43afb3;\n        padding: 5px; }\n        .smarttestresult .smart-result-page .right-side-result-page .go-top:before {\n          content: \"\";\n          position: absolute;\n          top: 45%;\n          transition: 1s all;\n          left: 50%;\n          background: transparent;\n          width: 15px;\n          height: 15px;\n          border: solid #ffffff;\n          border-width: 0 3px 3px 0;\n          display: inline-block;\n          padding: 2px;\n          transform: translate(-50%, -50%) rotate(45deg);\n          z-index: 3;\n          transition: all .3s; }\n      .smarttestresult .smart-result-page .right-side-result-page .go-bottom {\n        position: fixed;\n        cursor: pointer;\n        bottom: 10%;\n        right: 5%;\n        width: 60px;\n        height: 60px;\n        border-radius: 50%;\n        background-color: #43afb3; }\n        .smarttestresult .smart-result-page .right-side-result-page .go-bottom:before {\n          content: \"\";\n          position: absolute;\n          top: 55%;\n          transition: 1s all;\n          left: 50%;\n          background: transparent;\n          width: 15px;\n          height: 15px;\n          border: solid #ffffff;\n          border-width: 0 3px 3px 0;\n          display: inline-block;\n          padding: 2px;\n          transform: translate(-50%, -50%) rotate(225deg);\n          z-index: 3;\n          transition: all .3s; }\n      .smarttestresult .smart-result-page .right-side-result-page .answers {\n        background-color: #43afb3;\n        padding: 20px 20px; }\n        @media (max-width: 768px) {\n          .smarttestresult .smart-result-page .right-side-result-page .answers {\n            padding-left: 20px;\n            padding-right: 0px; } }\n        .smarttestresult .smart-result-page .right-side-result-page .answers .image-and-title {\n          display: -webkit-box;\n          display: -webkit-flex;\n          display: -moz-flex;\n          display: -ms-flexbox;\n          display: flex;\n          -webkit-box-pack: start;\n          -ms-flex-pack: start;\n          -webkit-justify-content: flex-start;\n          -moz-justify-content: flex-start;\n          justify-content: flex-start;\n          align-items: flex-end;\n          margin-bottom: 20px; }\n          .smarttestresult .smart-result-page .right-side-result-page .answers .image-and-title .you-result-title {\n            color: #ffffff;\n            font-size: 24px;\n            font-weight: 700; }\n          .smarttestresult .smart-result-page .right-side-result-page .answers .image-and-title i {\n            margin-right: 20px;\n            fill: #464646; }\n        .smarttestresult .smart-result-page .right-side-result-page .answers ul {\n          color: #ffffff;\n          margin-left: 50px;\n          column-count: 3;\n          column-gap: 50px; }\n          @media (max-width: 768px) {\n            .smarttestresult .smart-result-page .right-side-result-page .answers ul {\n              column-count: 1; } }\n          .smarttestresult .smart-result-page .right-side-result-page .answers ul li {\n            list-style: none;\n            margin-bottom: 5px;\n            font-size: 16px;\n            font-weight: 600; }\n            @media (max-width: 768px) {\n              .smarttestresult .smart-result-page .right-side-result-page .answers ul li {\n                font-size: 14px; } }\n            .smarttestresult .smart-result-page .right-side-result-page .answers ul li:nth-child(+n+3) {\n              margin-bottom: 10px; }\n              .smarttestresult .smart-result-page .right-side-result-page .answers ul li:nth-child(+n+3):before {\n                content: \"\";\n                display: inline-block;\n                width: 16px;\n                height: 16px;\n                background-image: url(" + __webpack_require__(495) + ");\n                margin-left: -25px;\n                margin-right: 10px;\n                margin-bottom: -3px; }\n      .smarttestresult .smart-result-page .right-side-result-page .your-result {\n        font-size: 16px;\n        font-weight: 600;\n        color: #43afb3; }\n      .smarttestresult .smart-result-page .right-side-result-page .result {\n        padding: 30px 20px; }\n        .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result {\n          display: flex;\n          justify-content: flex-start; }\n          .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top {\n            margin-left: 20px;\n            padding-right: 40px;\n            /* here */ }\n            .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top h1 {\n              max-width: 283px;\n              font-size: 16px;\n              font-weight: 600;\n              color: #696969;\n              margin-bottom: 29px; }\n            .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top .Collapsible__trigger {\n              display: block;\n              cursor: pointer;\n              font-weight: 400;\n              text-decoration: none;\n              color: gray;\n              position: relative;\n              border: 1px solid white;\n              padding: 10px;\n              color: #464646;\n              border-bottom: 1px solid #43afb3;\n              margin-bottom: 20px; }\n              .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top .Collapsible__trigger:after {\n                content: \"\";\n                display: inline-block;\n                margin-left: 10px;\n                border: solid #43afb3;\n                border-width: 0 2px 2px 0;\n                display: inline-block;\n                padding: 3px;\n                transform: rotate(45deg);\n                transition: transform 300ms; }\n              .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top .Collapsible__trigger.is-open:after {\n                transform: rotateZ(225deg); }\n            .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top .accordion-pen li {\n              display: -webkit-box;\n              display: -webkit-flex;\n              display: -moz-flex;\n              display: -ms-flexbox;\n              display: flex;\n              -webkit-box-pack: start;\n              -ms-flex-pack: start;\n              -webkit-justify-content: flex-start;\n              -moz-justify-content: flex-start;\n              justify-content: flex-start;\n              align-items: center;\n              margin-bottom: 10px; }\n              .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top .accordion-pen li .number-icon {\n                margin-right: 10px;\n                padding-top: 5px;\n                text-align: center;\n                width: 30px;\n                height: 30px;\n                border-radius: 50%;\n                border: 1px solid #43afb3; }\n              .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top .accordion-pen li .description-d {\n                flex: 0 0 70%;\n                color: #464646;\n                font-weight: 400; }\n            .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top .export-to-pdf {\n              cursor: pointer;\n              text-decoration: none;\n              padding: 8px 35px;\n              color: #43afb3;\n              border: 1px solid #43afb3;\n              border-radius: 20px;\n              line-height: 3; }\n      .smarttestresult .smart-result-page .right-side-result-page .result-bottom {\n        display: -webkit-box;\n        display: -webkit-flex;\n        display: -moz-flex;\n        display: -ms-flexbox;\n        display: flex;\n        justify-content: flex-start;\n        padding: 20px; }\n        .smarttestresult .smart-result-page .right-side-result-page .result-bottom .ask-after-result {\n          margin-left: 20px;\n          margin-bottom: 50px; }\n          .smarttestresult .smart-result-page .right-side-result-page .result-bottom .ask-after-result .know-more {\n            max-width: 283px;\n            font-size: 16px;\n            font-weight: 600;\n            color: #696969;\n            margin-bottom: 29px; }\n          .smarttestresult .smart-result-page .right-side-result-page .result-bottom .ask-after-result .know-more-button {\n            cursor: pointer;\n            text-decoration: none;\n            padding: 8px 35px;\n            color: #ffffff;\n            background-color: #43afb3;\n            border-radius: 20px;\n            line-height: 3; }\n", ""]);
+	exports.push([module.id, ".test {\n  -moz-transform: skew(25deg, 10deg);\n  -o-transform: skew(25deg, 10deg);\n  -ms-transform: skew(25deg, 10deg);\n  -webkit-transform: skew(25deg, 10deg);\n  transform: skew(25deg, 10deg);\n  moz-transform-origin: top left;\n  -o-transform-origin: top left;\n  -ms-transform-origin: top left;\n  -webkit-transform-origin: top left;\n  transform-origin: top left;\n  position: absolute;\n  top: 25%;\n  bottom: 25%;\n  left: 25%;\n  right: 25%;\n  background-color: rgba(20, 20, 20, 0.5); }\n\n.wrapperResult {\n  height: 100%; }\n\n.smarttestresult {\n  height: 100%; }\n  .smarttestresult .smart-result-page {\n    display: -webkit-box;\n    display: -webkit-flex;\n    display: -moz-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: space-bettwen;\n    -ms-flex-pack: space-bettwen;\n    -webkit-justify-content: space-bettwen;\n    -moz-justify-content: space-bettwen;\n    justify-content: space-bettwen;\n    -webkit-flex-wrap: wrap;\n    -moz-flex-wrap: wrap;\n    -ms-flex-wrap: wrap;\n    flex-wrap: wrap;\n    width: 100%;\n    min-height: 100%; }\n    .smarttestresult .smart-result-page .left-side-result-page {\n      background-color: #e5e5e5;\n      padding: 30px;\n      text-align: left;\n      flex: 0 0 25%; }\n      @media (max-width: 768px) {\n        .smarttestresult .smart-result-page .left-side-result-page {\n          display: none; } }\n    .smarttestresult .smart-result-page .right-side-result-page {\n      display: -webkit-box;\n      display: -webkit-flex;\n      display: -moz-flex;\n      display: -ms-flexbox;\n      display: flex;\n      flex-direction: column;\n      -webkit-box-pack: space-bettwen;\n      -ms-flex-pack: space-bettwen;\n      -webkit-justify-content: space-bettwen;\n      -moz-justify-content: space-bettwen;\n      justify-content: space-bettwen;\n      flex: 0 0 75%;\n      position: relative; }\n      @media (max-width: 768px) {\n        .smarttestresult .smart-result-page .right-side-result-page {\n          flex: 0 0 100%; } }\n      .smarttestresult .smart-result-page .right-side-result-page .go-top {\n        position: fixed;\n        cursor: pointer;\n        bottom: 10%;\n        right: 3%;\n        width: 60px;\n        height: 60px;\n        border-radius: 50%;\n        background-color: #43afb3;\n        padding: 5px; }\n        .smarttestresult .smart-result-page .right-side-result-page .go-top:before {\n          content: \"\";\n          position: absolute;\n          top: 45%;\n          transition: 1s all;\n          left: 50%;\n          background: transparent;\n          width: 15px;\n          height: 15px;\n          border: solid #ffffff;\n          border-width: 0 3px 3px 0;\n          display: inline-block;\n          padding: 2px;\n          transform: translate(-50%, -50%) rotate(45deg);\n          z-index: 3;\n          transition: all .3s; }\n      .smarttestresult .smart-result-page .right-side-result-page .go-bottom {\n        position: fixed;\n        cursor: pointer;\n        bottom: 10%;\n        right: 5%;\n        width: 60px;\n        height: 60px;\n        border-radius: 50%;\n        background-color: #43afb3; }\n        .smarttestresult .smart-result-page .right-side-result-page .go-bottom:before {\n          content: \"\";\n          position: absolute;\n          top: 55%;\n          transition: 1s all;\n          left: 50%;\n          background: transparent;\n          width: 15px;\n          height: 15px;\n          border: solid #ffffff;\n          border-width: 0 3px 3px 0;\n          display: inline-block;\n          padding: 2px;\n          transform: translate(-50%, -50%) rotate(225deg);\n          z-index: 3;\n          transition: all .3s; }\n      .smarttestresult .smart-result-page .right-side-result-page .answers {\n        background-color: #43afb3;\n        padding: 20px 20px; }\n        @media (max-width: 768px) {\n          .smarttestresult .smart-result-page .right-side-result-page .answers {\n            padding-left: 20px;\n            padding-right: 0px; } }\n        .smarttestresult .smart-result-page .right-side-result-page .answers .image-and-title {\n          display: -webkit-box;\n          display: -webkit-flex;\n          display: -moz-flex;\n          display: -ms-flexbox;\n          display: flex;\n          -webkit-box-pack: start;\n          -ms-flex-pack: start;\n          -webkit-justify-content: flex-start;\n          -moz-justify-content: flex-start;\n          justify-content: flex-start;\n          align-items: flex-end;\n          margin-bottom: 20px; }\n          .smarttestresult .smart-result-page .right-side-result-page .answers .image-and-title .you-result-title {\n            color: #ffffff;\n            font-size: 24px;\n            font-weight: 700; }\n          .smarttestresult .smart-result-page .right-side-result-page .answers .image-and-title i {\n            margin-right: 20px;\n            fill: #464646; }\n        .smarttestresult .smart-result-page .right-side-result-page .answers ul {\n          color: #ffffff;\n          margin-left: 50px;\n          column-count: 3;\n          column-gap: 50px; }\n          @media (max-width: 768px) {\n            .smarttestresult .smart-result-page .right-side-result-page .answers ul {\n              column-count: 1; } }\n          .smarttestresult .smart-result-page .right-side-result-page .answers ul li {\n            list-style: none;\n            margin-bottom: 5px;\n            font-size: 16px;\n            font-weight: 600; }\n            @media (max-width: 768px) {\n              .smarttestresult .smart-result-page .right-side-result-page .answers ul li {\n                font-size: 14px; } }\n            .smarttestresult .smart-result-page .right-side-result-page .answers ul li:nth-child(+n+3) {\n              margin-bottom: 10px; }\n              .smarttestresult .smart-result-page .right-side-result-page .answers ul li:nth-child(+n+3):before {\n                content: \"\";\n                display: inline-block;\n                width: 16px;\n                height: 16px;\n                background-image: url(" + __webpack_require__(497) + ");\n                margin-left: -25px;\n                margin-right: 10px;\n                margin-bottom: -3px; }\n      .smarttestresult .smart-result-page .right-side-result-page .your-result {\n        font-size: 16px;\n        font-weight: 600;\n        color: #43afb3; }\n      .smarttestresult .smart-result-page .right-side-result-page .result {\n        padding: 30px 20px; }\n        .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result {\n          display: flex;\n          justify-content: flex-start; }\n          .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top {\n            margin-left: 20px;\n            padding-right: 40px;\n            /* here */ }\n            .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top h1 {\n              max-width: 283px;\n              font-size: 16px;\n              font-weight: 600;\n              color: #696969;\n              margin-bottom: 29px; }\n            .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top .Collapsible__trigger {\n              display: block;\n              cursor: pointer;\n              font-weight: 400;\n              text-decoration: none;\n              color: gray;\n              position: relative;\n              border: 1px solid white;\n              padding: 10px;\n              color: #464646;\n              border-bottom: 1px solid #43afb3;\n              margin-bottom: 20px; }\n              .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top .Collapsible__trigger:after {\n                content: \"\";\n                display: inline-block;\n                margin-left: 10px;\n                border: solid #43afb3;\n                border-width: 0 2px 2px 0;\n                display: inline-block;\n                padding: 3px;\n                transform: rotate(45deg);\n                transition: transform 300ms; }\n              .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top .Collapsible__trigger.is-open:after {\n                transform: rotateZ(225deg); }\n            .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top .accordion-pen li {\n              display: -webkit-box;\n              display: -webkit-flex;\n              display: -moz-flex;\n              display: -ms-flexbox;\n              display: flex;\n              -webkit-box-pack: start;\n              -ms-flex-pack: start;\n              -webkit-justify-content: flex-start;\n              -moz-justify-content: flex-start;\n              justify-content: flex-start;\n              align-items: center;\n              margin-bottom: 10px; }\n              .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top .accordion-pen li .number-icon {\n                margin-right: 10px;\n                padding-top: 5px;\n                text-align: center;\n                width: 30px;\n                height: 30px;\n                border-radius: 50%;\n                border: 1px solid #43afb3; }\n              .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top .accordion-pen li .description-d {\n                flex: 0 0 70%;\n                color: #464646;\n                font-weight: 400; }\n            .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top .export-to-pdf {\n              cursor: pointer;\n              text-decoration: none;\n              padding: 8px 35px;\n              color: #43afb3;\n              border: 1px solid #43afb3;\n              border-radius: 20px;\n              line-height: 3; }\n      .smarttestresult .smart-result-page .right-side-result-page .result-bottom {\n        display: -webkit-box;\n        display: -webkit-flex;\n        display: -moz-flex;\n        display: -ms-flexbox;\n        display: flex;\n        justify-content: flex-start;\n        padding: 20px; }\n        .smarttestresult .smart-result-page .right-side-result-page .result-bottom .ask-after-result {\n          margin-left: 20px;\n          margin-bottom: 50px; }\n          .smarttestresult .smart-result-page .right-side-result-page .result-bottom .ask-after-result .know-more {\n            max-width: 283px;\n            font-size: 16px;\n            font-weight: 600;\n            color: #696969;\n            margin-bottom: 29px; }\n          .smarttestresult .smart-result-page .right-side-result-page .result-bottom .ask-after-result .know-more-button {\n            cursor: pointer;\n            text-decoration: none;\n            padding: 8px 35px;\n            color: #ffffff;\n            background-color: #43afb3;\n            border-radius: 20px;\n            line-height: 3; }\n", ""]);
 
 	// exports
 
 
 /***/ }),
-/* 495 */
+/* 497 */
 /***/ (function(module, exports) {
 
 	module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiI+PGRlZnM+PHBhdGggaWQ9ImN6NTlhIiBkPSJNNjUxIDE4NXYtMTZoMTZ2MTZ6bTEtOGE3IDcgMCAxIDAgMTQgMCA3IDcgMCAwIDAtMTQgMHoiLz48cGF0aCBpZD0iY3o1OWIiIGQ9Ik02NTkgMTcwYTcgNyAwIDEgMSAwIDE0IDcgNyAwIDAgMSAwLTE0eiIvPjxwYXRoIGlkPSJjejU5ZCIgZD0iTTY2MS43NyAxNzRsLTMuNyAzLjYtMS44NC0xLjhMNjU1IDE3N2wzLjA4IDMgNC45Mi00Ljh6Ii8+PGNsaXBQYXRoIGlkPSJjejU5YyI+PHVzZSBmaWxsPSIjZmZmIiB4bGluazpocmVmPSIjY3o1OWEiLz48L2NsaXBQYXRoPjwvZGVmcz48Zz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjUxIC0xNjkpIj48Zz48dXNlIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMCIgc3Ryb2tlPSIjNDY0NjQ2IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSI1MCIgc3Ryb2tlLXdpZHRoPSIyIiBjbGlwLXBhdGg9InVybCgmcXVvdDsjY3o1OWMmcXVvdDspIiB4bGluazpocmVmPSIjY3o1OWIiLz48L2c+PGc+PHVzZSB4bGluazpocmVmPSIjY3o1OWQiLz48dXNlIGZpbGw9IiM0NjQ2NDYiIHhsaW5rOmhyZWY9IiNjejU5ZCIvPjwvZz48L2c+PC9nPjwvc3ZnPg=="
 
 /***/ }),
-/* 496 */
+/* 498 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -45752,7 +46418,7 @@
 
 
 /***/ }),
-/* 497 */
+/* 499 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -45762,43 +46428,43 @@
 	});
 	exports.Helpers = exports.ScrollElement = exports.ScrollLink = exports.animateScroll = exports.scrollSpy = exports.Events = exports.scroller = exports.Element = exports.Button = exports.Link = undefined;
 
-	var _Link = __webpack_require__(498);
+	var _Link = __webpack_require__(500);
 
 	var _Link2 = _interopRequireDefault(_Link);
 
-	var _Button = __webpack_require__(509);
+	var _Button = __webpack_require__(511);
 
 	var _Button2 = _interopRequireDefault(_Button);
 
-	var _Element = __webpack_require__(510);
+	var _Element = __webpack_require__(512);
 
 	var _Element2 = _interopRequireDefault(_Element);
 
-	var _scroller = __webpack_require__(503);
+	var _scroller = __webpack_require__(505);
 
 	var _scroller2 = _interopRequireDefault(_scroller);
 
-	var _scrollEvents = __webpack_require__(507);
+	var _scrollEvents = __webpack_require__(509);
 
 	var _scrollEvents2 = _interopRequireDefault(_scrollEvents);
 
-	var _scrollSpy = __webpack_require__(501);
+	var _scrollSpy = __webpack_require__(503);
 
 	var _scrollSpy2 = _interopRequireDefault(_scrollSpy);
 
-	var _animateScroll = __webpack_require__(504);
+	var _animateScroll = __webpack_require__(506);
 
 	var _animateScroll2 = _interopRequireDefault(_animateScroll);
 
-	var _scrollLink = __webpack_require__(499);
+	var _scrollLink = __webpack_require__(501);
 
 	var _scrollLink2 = _interopRequireDefault(_scrollLink);
 
-	var _scrollElement = __webpack_require__(511);
+	var _scrollElement = __webpack_require__(513);
 
 	var _scrollElement2 = _interopRequireDefault(_scrollElement);
 
-	var _Helpers = __webpack_require__(512);
+	var _Helpers = __webpack_require__(514);
 
 	var _Helpers2 = _interopRequireDefault(_Helpers);
 
@@ -45817,7 +46483,7 @@
 	exports.default = { Link: _Link2.default, Button: _Button2.default, Element: _Element2.default, scroller: _scroller2.default, Events: _scrollEvents2.default, scrollSpy: _scrollSpy2.default, animateScroll: _animateScroll2.default, ScrollLink: _scrollLink2.default, ScrollElement: _scrollElement2.default, Helpers: _Helpers2.default };
 
 /***/ }),
-/* 498 */
+/* 500 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -45830,7 +46496,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _scrollLink = __webpack_require__(499);
+	var _scrollLink = __webpack_require__(501);
 
 	var _scrollLink2 = _interopRequireDefault(_scrollLink);
 
@@ -45873,7 +46539,7 @@
 	exports.default = (0, _scrollLink2.default)(LinkElement);
 
 /***/ }),
-/* 499 */
+/* 501 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -45894,15 +46560,15 @@
 
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 
-	var _utils = __webpack_require__(500);
+	var _utils = __webpack_require__(502);
 
 	var _utils2 = _interopRequireDefault(_utils);
 
-	var _scrollSpy = __webpack_require__(501);
+	var _scrollSpy = __webpack_require__(503);
 
 	var _scrollSpy2 = _interopRequireDefault(_scrollSpy);
 
-	var _scroller = __webpack_require__(503);
+	var _scroller = __webpack_require__(505);
 
 	var _scroller2 = _interopRequireDefault(_scroller);
 
@@ -45910,7 +46576,7 @@
 
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 
-	var _scrollHash = __webpack_require__(508);
+	var _scrollHash = __webpack_require__(510);
 
 	var _scrollHash2 = _interopRequireDefault(_scrollHash);
 
@@ -46138,7 +46804,7 @@
 	};
 
 /***/ }),
-/* 500 */
+/* 502 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -46181,7 +46847,7 @@
 	};
 
 /***/ }),
-/* 501 */
+/* 503 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -46190,7 +46856,7 @@
 	  value: true
 	});
 
-	var _passiveEventListeners = __webpack_require__(502);
+	var _passiveEventListeners = __webpack_require__(504);
 
 	var eventThrottler = function eventThrottler(eventHandler) {
 	  var eventHandlerTimeout = void 0;
@@ -46281,7 +46947,7 @@
 	exports.default = scrollSpy;
 
 /***/ }),
-/* 502 */
+/* 504 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -46315,7 +46981,7 @@
 	};
 
 /***/ }),
-/* 503 */
+/* 505 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -46326,15 +46992,15 @@
 
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-	var _utils = __webpack_require__(500);
+	var _utils = __webpack_require__(502);
 
 	var _utils2 = _interopRequireDefault(_utils);
 
-	var _animateScroll = __webpack_require__(504);
+	var _animateScroll = __webpack_require__(506);
 
 	var _animateScroll2 = _interopRequireDefault(_animateScroll);
 
-	var _scrollEvents = __webpack_require__(507);
+	var _scrollEvents = __webpack_require__(509);
 
 	var _scrollEvents2 = _interopRequireDefault(_scrollEvents);
 
@@ -46426,7 +47092,7 @@
 	};
 
 /***/ }),
-/* 504 */
+/* 506 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -46437,19 +47103,19 @@
 
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-	var _utils = __webpack_require__(500);
+	var _utils = __webpack_require__(502);
 
 	var _utils2 = _interopRequireDefault(_utils);
 
-	var _smooth = __webpack_require__(505);
+	var _smooth = __webpack_require__(507);
 
 	var _smooth2 = _interopRequireDefault(_smooth);
 
-	var _cancelEvents = __webpack_require__(506);
+	var _cancelEvents = __webpack_require__(508);
 
 	var _cancelEvents2 = _interopRequireDefault(_cancelEvents);
 
-	var _scrollEvents = __webpack_require__(507);
+	var _scrollEvents = __webpack_require__(509);
 
 	var _scrollEvents2 = _interopRequireDefault(_scrollEvents);
 
@@ -46653,7 +47319,7 @@
 	};
 
 /***/ }),
-/* 505 */
+/* 507 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -46729,7 +47395,7 @@
 	};
 
 /***/ }),
-/* 506 */
+/* 508 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -46738,7 +47404,7 @@
 	  value: true
 	});
 
-	var _passiveEventListeners = __webpack_require__(502);
+	var _passiveEventListeners = __webpack_require__(504);
 
 	var events = ['mousedown', 'mousewheel', 'touchmove', 'keydown'];
 
@@ -46751,7 +47417,7 @@
 	};
 
 /***/ }),
-/* 507 */
+/* 509 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -46775,7 +47441,7 @@
 	exports.default = Events;
 
 /***/ }),
-/* 508 */
+/* 510 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -46784,9 +47450,9 @@
 	  value: true
 	});
 
-	var _passiveEventListeners = __webpack_require__(502);
+	var _passiveEventListeners = __webpack_require__(504);
 
-	var _utils = __webpack_require__(500);
+	var _utils = __webpack_require__(502);
 
 	var _utils2 = _interopRequireDefault(_utils);
 
@@ -46858,7 +47524,7 @@
 	exports.default = scrollHash;
 
 /***/ }),
-/* 509 */
+/* 511 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -46873,7 +47539,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _scrollLink = __webpack_require__(499);
+	var _scrollLink = __webpack_require__(501);
 
 	var _scrollLink2 = _interopRequireDefault(_scrollLink);
 
@@ -46913,7 +47579,7 @@
 	exports.default = (0, _scrollLink2.default)(ButtonElement);
 
 /***/ }),
-/* 510 */
+/* 512 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -46930,7 +47596,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _scrollElement = __webpack_require__(511);
+	var _scrollElement = __webpack_require__(513);
 
 	var _scrollElement2 = _interopRequireDefault(_scrollElement);
 
@@ -46989,7 +47655,7 @@
 	exports.default = (0, _scrollElement2.default)(ElementWrapper);
 
 /***/ }),
-/* 511 */
+/* 513 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -47010,7 +47676,7 @@
 
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 
-	var _scroller = __webpack_require__(503);
+	var _scroller = __webpack_require__(505);
 
 	var _scroller2 = _interopRequireDefault(_scroller);
 
@@ -47090,7 +47756,7 @@
 	};
 
 /***/ }),
-/* 512 */
+/* 514 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -47110,11 +47776,11 @@
 	var React = __webpack_require__(183);
 	var ReactDOM = __webpack_require__(1);
 
-	var utils = __webpack_require__(500);
-	var scrollSpy = __webpack_require__(501);
-	var defaultScroller = __webpack_require__(503);
+	var utils = __webpack_require__(502);
+	var scrollSpy = __webpack_require__(503);
+	var defaultScroller = __webpack_require__(505);
 	var PropTypes = __webpack_require__(187);
-	var scrollHash = __webpack_require__(508);
+	var scrollHash = __webpack_require__(510);
 
 	var protoTypes = {
 	  to: PropTypes.string.isRequired,
@@ -47419,7 +48085,7 @@
 	module.exports = Helpers;
 
 /***/ }),
-/* 513 */
+/* 515 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/home/volodymyr/Стільниця/medpoint/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/home/volodymyr/Стільниця/medpoint/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -47440,7 +48106,7 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	__webpack_require__(514);
+	__webpack_require__(516);
 
 	var _react = __webpack_require__(183);
 
@@ -47475,13 +48141,13 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/volodymyr/Стільниця/medpoint/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "Social.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ }),
-/* 514 */
+/* 516 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(515);
+	var content = __webpack_require__(517);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(246)(content, {});
@@ -47501,7 +48167,7 @@
 	}
 
 /***/ }),
-/* 515 */
+/* 517 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(245)();
@@ -47515,7 +48181,7 @@
 
 
 /***/ }),
-/* 516 */
+/* 518 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/home/volodymyr/Стільниця/medpoint/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/home/volodymyr/Стільниця/medpoint/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -47542,7 +48208,7 @@
 
 	var _reactRouter = __webpack_require__(184);
 
-	__webpack_require__(517);
+	__webpack_require__(519);
 
 	var Contacts = (function (_React$Component) {
 	    _inherits(Contacts, _React$Component);
@@ -47578,13 +48244,13 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/volodymyr/Стільниця/medpoint/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "Contacts.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ }),
-/* 517 */
+/* 519 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(518);
+	var content = __webpack_require__(520);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(246)(content, {});
@@ -47604,7 +48270,7 @@
 	}
 
 /***/ }),
-/* 518 */
+/* 520 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(245)();
@@ -47618,7 +48284,7 @@
 
 
 /***/ }),
-/* 519 */
+/* 521 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -47629,9 +48295,9 @@
 
 	var _redux = __webpack_require__(412);
 
-	var _reactRouterRedux = __webpack_require__(520);
+	var _reactRouterRedux = __webpack_require__(522);
 
-	var _smartTestReduserJs = __webpack_require__(525);
+	var _smartTestReduserJs = __webpack_require__(527);
 
 	exports["default"] = (0, _redux.combineReducers)({
 	    // routing: routerReducer,
@@ -47640,7 +48306,7 @@
 	module.exports = exports["default"];
 
 /***/ }),
-/* 520 */
+/* 522 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -47650,7 +48316,7 @@
 	});
 	exports.routerMiddleware = exports.routerActions = exports.goForward = exports.goBack = exports.go = exports.replace = exports.push = exports.CALL_HISTORY_METHOD = exports.routerReducer = exports.LOCATION_CHANGE = exports.syncHistoryWithStore = undefined;
 
-	var _reducer = __webpack_require__(521);
+	var _reducer = __webpack_require__(523);
 
 	Object.defineProperty(exports, 'LOCATION_CHANGE', {
 	  enumerable: true,
@@ -47665,7 +48331,7 @@
 	  }
 	});
 
-	var _actions = __webpack_require__(522);
+	var _actions = __webpack_require__(524);
 
 	Object.defineProperty(exports, 'CALL_HISTORY_METHOD', {
 	  enumerable: true,
@@ -47710,11 +48376,11 @@
 	  }
 	});
 
-	var _sync = __webpack_require__(523);
+	var _sync = __webpack_require__(525);
 
 	var _sync2 = _interopRequireDefault(_sync);
 
-	var _middleware = __webpack_require__(524);
+	var _middleware = __webpack_require__(526);
 
 	var _middleware2 = _interopRequireDefault(_middleware);
 
@@ -47724,7 +48390,7 @@
 	exports.routerMiddleware = _middleware2['default'];
 
 /***/ }),
-/* 521 */
+/* 523 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -47767,7 +48433,7 @@
 	}
 
 /***/ }),
-/* 522 */
+/* 524 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -47809,7 +48475,7 @@
 	var routerActions = exports.routerActions = { push: push, replace: replace, go: go, goBack: goBack, goForward: goForward };
 
 /***/ }),
-/* 523 */
+/* 525 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -47822,7 +48488,7 @@
 
 	exports['default'] = syncHistoryWithStore;
 
-	var _reducer = __webpack_require__(521);
+	var _reducer = __webpack_require__(523);
 
 	var defaultSelectLocationState = function defaultSelectLocationState(state) {
 	  return state.routing;
@@ -47969,7 +48635,7 @@
 	}
 
 /***/ }),
-/* 524 */
+/* 526 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -47979,7 +48645,7 @@
 	});
 	exports['default'] = routerMiddleware;
 
-	var _actions = __webpack_require__(522);
+	var _actions = __webpack_require__(524);
 
 	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 
@@ -48007,7 +48673,7 @@
 	}
 
 /***/ }),
-/* 525 */
+/* 527 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -48071,7 +48737,7 @@
 	}
 
 /***/ }),
-/* 526 */
+/* 528 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -48099,7 +48765,7 @@
 	exports['default'] = thunk;
 
 /***/ }),
-/* 527 */
+/* 529 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
