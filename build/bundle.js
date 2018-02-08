@@ -78,15 +78,15 @@
 
 	var _componentsCategorySmarttestSmartTestResultJsx2 = _interopRequireDefault(_componentsCategorySmarttestSmartTestResultJsx);
 
-	var _componentsCategorySocialJsx = __webpack_require__(515);
+	var _componentsCategorySocialJsx = __webpack_require__(518);
 
 	var _componentsCategorySocialJsx2 = _interopRequireDefault(_componentsCategorySocialJsx);
 
-	var _componentsCategoryContactsJsx = __webpack_require__(518);
+	var _componentsCategoryContactsJsx = __webpack_require__(521);
 
 	var _componentsCategoryContactsJsx2 = _interopRequireDefault(_componentsCategoryContactsJsx);
 
-	var _reducers = __webpack_require__(521);
+	var _reducers = __webpack_require__(524);
 
 	var _reducers2 = _interopRequireDefault(_reducers);
 
@@ -96,11 +96,11 @@
 
 	var _redux2 = _interopRequireDefault(_redux);
 
-	var _reduxThunk = __webpack_require__(528);
+	var _reduxThunk = __webpack_require__(531);
 
 	var _reduxThunk2 = _interopRequireDefault(_reduxThunk);
 
-	var _reduxDevtoolsExtension = __webpack_require__(529);
+	var _reduxDevtoolsExtension = __webpack_require__(532);
 
 	// import { syncHistoryWithStore } from "react-router-redux";
 	// window.store = .......
@@ -44895,7 +44895,10 @@
 	                /**
 	                 * for finish logic
 	                 * */
-	                this.context.router.push("/smarttestresult");
+	                // here is costil
+	                setTimeout(function () {
+	                    _this.context.router.push("/smarttestresult");
+	                }, 500);
 
 	                return 0;
 	            } else {
@@ -45338,11 +45341,11 @@
 	        answerForView: "У вас не выявлена гематологическое опухоль."
 	    }]
 	}, {
-	    key: 3,
+	    key: 6,
 	    question: "Имеете ли Вы доступ к фрагменту опухолевой ткани ?",
 	    loremipsum: ' Образец Вашей опухолевой ткани был взят в процессе операции или биопсии и он хранится в отделении патологии в медицинском центре, где проводилась процедура.‎',
 	    answers: [{
-	        next: 4,
+	        next: null,
 	        text: "Да",
 	        answerForView: 'Я имел доступ к фрагменту опухолевой ткани.'
 	    }, {
@@ -45358,23 +45361,23 @@
 	        text: "Да",
 	        answerForView: 'Да. Я проходил уже остновные конвенциональные виды лечения'
 	    }, {
-	        next: null,
+	        next: 6,
 	        text: "Нет",
 	        answerForView: 'НЕТ'
 	    }]
 	}, {
-	    key: 6,
+	    key: 3,
 	    question: "Какую стадию заболевания оценивает Ваш врач на данный момент ?",
 	    answers: [{
-	        next: null,
+	        next: 4,
 	        text: "2",
 	        answerForView: 'Мой врач оценивает 2 стадию'
 	    }, {
-	        next: null,
+	        next: 4,
 	        text: "3",
 	        answerForView: 'Мой врач оценивает 3 стадию'
 	    }, {
-	        next: null,
+	        next: 4,
 	        text: "4",
 	        answerForView: 'Мой врач оценивает 4 стадию'
 	    }]
@@ -45383,7 +45386,7 @@
 	// HET
 	{
 	    key: 5,
-	    question: 'Вы проходили   хирургическую биопсию (АКТ ) ?',
+	    question: 'Вы проходили хирургическую биопсию ?',
 	    answers: [{
 	        next: 7,
 	        text: "Да",
@@ -47147,6 +47150,18 @@
 
 	var Scroll = _interopRequireWildcard(_reactScroll);
 
+	var _resultsOneHemeJsx = __webpack_require__(515);
+
+	var _resultsOneHemeJsx2 = _interopRequireDefault(_resultsOneHemeJsx);
+
+	var _resultsOneJsx = __webpack_require__(516);
+
+	var _resultsOneJsx2 = _interopRequireDefault(_resultsOneJsx);
+
+	var _resultsActJsx = __webpack_require__(517);
+
+	var _resultsActJsx2 = _interopRequireDefault(_resultsActJsx);
+
 	var scroll = Scroll.animateScroll;
 
 	var SmartTestsResult = (function (_React$Component) {
@@ -47247,177 +47262,19 @@
 
 	            this.props.answer.map(function (item) {
 
-	                if (item.question == 'У Вас диагностирован :') {
+	                if (item.question == 'Имеете ли Вы доступ к фрагменту опухолевой ткани ?') {
+	                    if (item.answer == "Нет") {
+	                        _this.setState({ resultText: _react2['default'].createElement(_resultsOneHemeJsx2['default'], null) });
+	                    } else {
+	                        _this.setState({ resultText: _react2['default'].createElement(_resultsOneJsx2['default'], null) });
+	                    }
 
-	                    _this.setState({ resultText: _react2['default'].createElement(
-	                            'div',
-	                            { className: 'accordion-result' },
-	                            _react2['default'].createElement(
-	                                'i',
-	                                null,
-	                                _react2['default'].createElement(
-	                                    'svg',
-	                                    { width: '32', height: '33', viewBox: '0 0 32 33' },
-	                                    _react2['default'].createElement(
-	                                        'defs',
-	                                        null,
-	                                        _react2['default'].createElement('path', { id: 'tmnoa', d: 'M624.99 377.35v.39c0 1.8-1.45 3.26-3.23 3.26h-25.54a3.25 3.25 0 0 1-3.23-3.26v-18.95c0-1.8 1.45-3.26 3.23-3.26h5.12v-3.34a4.18 4.18 0 0 1 4.16-4.19h6.98a4.18 4.18 0 0 1 4.15 4.19v3.34h5.13a3.25 3.25 0 0 1 3.23 3.26v18.56zm-22.22-25.16v3.34h1.42v-3.34c0-.73.59-1.32 1.3-1.32h6.99c.72 0 1.3.6 1.3 1.32v3.34h1.43v-3.34a2.75 2.75 0 0 0-2.73-2.76h-6.98a2.75 2.75 0 0 0-2.73 2.76zm2.84.11v3.23h6.76v-3.23zm-11.16 6.1h29.07a1.82 1.82 0 0 0-1.76-1.43h-25.54c-.86 0-1.59.61-1.77 1.43zm29.12 18.23v-9.59h-4.1v1.94c0 .4-.31.72-.7.72h-3.2a.71.71 0 0 1-.71-.72v-1.94h-11.74v1.94c0 .4-.32.72-.7.72h-3.2a.71.71 0 0 1-.72-.72v-1.94h-4.09v9.6h7.72c.4 0 .7.32.7.71 0 .4-.3.72-.7.72h-7.69c.16.85.9 1.5 1.78 1.5h25.54c.88 0 1.62-.65 1.78-1.5h-3.68a.71.71 0 0 1-.71-.72c0-.4.32-.72.7-.72zm-21.87-8.37v-2.87h-1.78v2.87zm16.36 0v-2.87h-1.78v2.87zm5.5-8.42h-29.15v5.77h4.09v-.93c0-.4.32-.72.71-.72h3.2c.4 0 .71.32.71.72v.93h11.74v-.93c0-.4.31-.72.7-.72h3.2c.4 0 .72.32.72.72v.93h4.09zm-9.77 11.6v3.58c0 .4-.32.72-.71.72h-1.6v1.61c0 .4-.32.72-.71.72h-3.56a.71.71 0 0 1-.71-.72v-1.61h-1.6a.71.71 0 0 1-.71-.72v-3.59c0-.4.32-.71.71-.71h1.6v-1.62c0-.4.32-.72.71-.72h3.56c.39 0 .7.33.7.72v1.62h1.6c.4 0 .72.32.72.71zm-1.42.71h-1.6a.71.71 0 0 1-.71-.72v-1.61h-2.14v1.61c0 .4-.32.72-.7.72h-1.6v2.15h1.6c.38 0 .7.32.7.72v1.61h2.14v-1.61c0-.4.31-.72.7-.72h1.6zm4.73 5.2c0 .4-.32.72-.71.72h-.08a.71.71 0 0 1-.7-.72c0-.4.31-.72.7-.72h.08c.39 0 .7.33.7.72z' })
-	                                    ),
-	                                    _react2['default'].createElement(
-	                                        'g',
-	                                        null,
-	                                        _react2['default'].createElement(
-	                                            'g',
-	                                            { transform: 'translate(-593 -348)' },
-	                                            _react2['default'].createElement('use', { href: '#tmnoa' }),
-	                                            _react2['default'].createElement('use', { fill: '#43afb3', href: '#tmnoa' })
-	                                        )
-	                                    )
-	                                )
-	                            ),
-	                            _react2['default'].createElement(
-	                                'div',
-	                                { className: 'result-top' },
-	                                _react2['default'].createElement(
-	                                    _reactCollapsible2['default'],
-	                                    { trigger: 'Диагностика' },
-	                                    _react2['default'].createElement(
-	                                        'ul',
-	                                        null,
-	                                        _react2['default'].createElement(
-	                                            'ul',
-	                                            { className: 'accordion-pen' },
-	                                            _react2['default'].createElement(
-	                                                'li',
-	                                                null,
-	                                                _react2['default'].createElement(
-	                                                    'div',
-	                                                    { className: 'number-icon' },
-	                                                    '1'
-	                                                ),
-	                                                _react2['default'].createElement(
-	                                                    'div',
-	                                                    { className: 'description-d' },
-	                                                    _react2['default'].createElement(
-	                                                        'p',
-	                                                        null,
-	                                                        ' One Heme это тестирование ткани для  геномной диагностики гематологических раковых заболеваний (лейкемия, лимфома и миелома) и сарком. Тестирование предоставляет Вашему врачу существенную клиническую информацию для оценки риска и прогноза, а также способствует в подборе таргетных методов лечения в соответствии с геномным профилем конкретной опухоли. Методы лечения, подобранные в соответствии с геномным профилем опухоли, могут оказаться более эффективными и менее токсичными. '
-	                                                    )
-	                                                )
-	                                            )
-	                                        )
-	                                    ),
-	                                    _react2['default'].createElement('br', null)
-	                                ),
-	                                _react2['default'].createElement(
-	                                    _reactCollapsible2['default'],
-	                                    { trigger: 'Риски' },
-	                                    _react2['default'].createElement(
-	                                        'ul',
-	                                        { className: 'accordion-pen' },
-	                                        _react2['default'].createElement(
-	                                            'li',
-	                                            null,
-	                                            _react2['default'].createElement(
-	                                                'div',
-	                                                { className: 'number-icon' },
-	                                                '1'
-	                                            ),
-	                                            _react2['default'].createElement(
-	                                                'div',
-	                                                { className: 'description-d' },
-	                                                'База данных компании Foundation Medicine является самой крупной в своем роде во всем мире – она содержит всеобъемлющую геномную информацию и данные более чем 125 000 образцов, взятых из различных опухолей'
-	                                            )
-	                                        ),
-	                                        _react2['default'].createElement(
-	                                            'li',
-	                                            null,
-	                                            _react2['default'].createElement(
-	                                                'div',
-	                                                { className: 'number-icon' },
-	                                                '2'
-	                                            ),
-	                                            _react2['default'].createElement(
-	                                                'div',
-	                                                { className: 'description-d' },
-	                                                'One Heme – это уникальный в своем роде тест, прошедший валидацию (проверку достоверности), что гарантирует высокий уровень точности и чувствительности (до 99%)'
-	                                            )
-	                                        ),
-	                                        _react2['default'].createElement(
-	                                            'li',
-	                                            null,
-	                                            _react2['default'].createElement(
-	                                                'div',
-	                                                { className: 'number-icon' },
-	                                                '3'
-	                                            ),
-	                                            _react2['default'].createElement(
-	                                                'div',
-	                                                { className: 'description-d' },
-	                                                'One Heme выявляет TMB, клинический параметр (маркер) опухоли, помогающий прогнозировать вероятность реакции на определенную иммунотерапию.'
-	                                            )
-	                                        ),
-	                                        _react2['default'].createElement(
-	                                            'li',
-	                                            null,
-	                                            _react2['default'].createElement(
-	                                                'div',
-	                                                { className: 'number-icon' },
-	                                                '4'
-	                                            ),
-	                                            _react2['default'].createElement(
-	                                                'div',
-	                                                { className: 'description-d' },
-	                                                'При тестировании One Heme одновременно сканируется 406 разных генов, ассоциированных с раком на уровне ДНК (наследственный материал), и выявляются все виды мутаций, известные на сегодняшний день как «двигатели» гематологических и саркомных опухолей.'
-	                                            )
-	                                        )
-	                                    ),
-	                                    _react2['default'].createElement('br', null)
-	                                ),
-	                                _react2['default'].createElement(
-	                                    _reactCollapsible2['default'],
-	                                    { trigger: 'Опциональные виды лечения' },
-	                                    _react2['default'].createElement(
-	                                        'ul',
-	                                        { className: 'accordion-pen' },
-	                                        _react2['default'].createElement(
-	                                            'li',
-	                                            null,
-	                                            _react2['default'].createElement(
-	                                                'div',
-	                                                { className: 'number-icon' },
-	                                                '1'
-	                                            ),
-	                                            _react2['default'].createElement(
-	                                                'div',
-	                                                { className: 'description-d' },
-	                                                'Результаты тестирования FoundationOne представляют собой лабораторный отчет, который получаете вы и ваш лечащий врач. Ответы включают рекомендации касательно лечения в соответствии с выявленными геномными изменениями, что поможет врачу подобрать таргетное лечение для каждой конкретной опухоли. '
-	                                            )
-	                                        ),
-	                                        _react2['default'].createElement(
-	                                            'li',
-	                                            null,
-	                                            _react2['default'].createElement(
-	                                                'div',
-	                                                { className: 'number-icon' },
-	                                                '2'
-	                                            ),
-	                                            _react2['default'].createElement(
-	                                                'div',
-	                                                { className: 'description-d' },
-	                                                _react2['default'].createElement('img', { width: '300', src: 'images/image.png' })
-	                                            )
-	                                        )
-	                                    )
-	                                ),
-	                                _react2['default'].createElement(
-	                                    'a',
-	                                    { href: '#', className: 'export-to-pdf' },
-	                                    'Export to PDF'
-	                                )
-	                            )
-	                        )
-	                    });
+	                    // console.log("eee", <oneHeme />)
+	                }
+	                if (item.question == 'Вы проходили хирургическую биопсию ?') {
+	                    if (item.answer == "Нет") {
+	                        _this.setState({ resultText: _react2['default'].createElement(_resultsActJsx2['default'], null) });
+	                    }
 	                }
 
 	                // console.log("item", item.question);
@@ -47475,6 +47332,16 @@
 	                                                        'p',
 	                                                        null,
 	                                                        'Биопсия под контролем Маммографии и УЗИ'
+	                                                    ),
+	                                                    _react2['default'].createElement(
+	                                                        'div',
+	                                                        { className: 'green-text' },
+	                                                        'some text'
+	                                                    ),
+	                                                    _react2['default'].createElement(
+	                                                        'p',
+	                                                        { className: 'description-small' },
+	                                                        'Вы заинтересованны узнать больше и получить мнение специалистов из-за границы ?'
 	                                                    )
 	                                                )
 	                                            ),
@@ -47945,7 +47812,7 @@
 	*
 	* */
 	module.exports = exports['default'];
-	/*<div className="green-text">some text</div>*/ /*<p className="description-small">*/ /*Вы заинтересованны узнать больше*/ /*и получить мнение специалистов*/ /*из-за границы ?</p>*/ /*<div className="green-text">some text</div>*/ /*<p className="description-small">*/ /*Вы заинтересованны узнать больше*/ /*и получить мнение специалистов*/ /*из-за границы ?</p>*/ /*<h1 className="resulttest">You result: {this.state.result}</h1>*/ /*<div className="your-result">{this.state.result}</div>*/
+	/*<h1 className="resulttest">You result: {this.state.result}</h1>*/ /*<div className="your-result">{this.state.result}</div>*/
 
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/volodymyr/Стільниця/medpoint/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "SmartTestResult.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
@@ -47984,7 +47851,7 @@
 
 
 	// module
-	exports.push([module.id, ".test {\n  -moz-transform: skew(25deg, 10deg);\n  -o-transform: skew(25deg, 10deg);\n  -ms-transform: skew(25deg, 10deg);\n  -webkit-transform: skew(25deg, 10deg);\n  transform: skew(25deg, 10deg);\n  moz-transform-origin: top left;\n  -o-transform-origin: top left;\n  -ms-transform-origin: top left;\n  -webkit-transform-origin: top left;\n  transform-origin: top left;\n  position: absolute;\n  top: 25%;\n  bottom: 25%;\n  left: 25%;\n  right: 25%;\n  background-color: rgba(20, 20, 20, 0.5); }\n\n.wrapperResult {\n  height: 100%; }\n\n.smarttestresult {\n  height: 100%; }\n  .smarttestresult .smart-result-page {\n    display: -webkit-box;\n    display: -webkit-flex;\n    display: -moz-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: space-bettwen;\n    -ms-flex-pack: space-bettwen;\n    -webkit-justify-content: space-bettwen;\n    -moz-justify-content: space-bettwen;\n    justify-content: space-bettwen;\n    -webkit-flex-wrap: wrap;\n    -moz-flex-wrap: wrap;\n    -ms-flex-wrap: wrap;\n    flex-wrap: wrap;\n    width: 100%;\n    min-height: 100%; }\n    .smarttestresult .smart-result-page .left-side-result-page {\n      background-color: #e5e5e5;\n      padding: 30px;\n      text-align: left;\n      flex: 0 0 25%; }\n      @media (max-width: 768px) {\n        .smarttestresult .smart-result-page .left-side-result-page {\n          display: none; } }\n    .smarttestresult .smart-result-page .right-side-result-page {\n      display: -webkit-box;\n      display: -webkit-flex;\n      display: -moz-flex;\n      display: -ms-flexbox;\n      display: flex;\n      flex-direction: column;\n      -webkit-box-pack: space-bettwen;\n      -ms-flex-pack: space-bettwen;\n      -webkit-justify-content: space-bettwen;\n      -moz-justify-content: space-bettwen;\n      justify-content: space-bettwen;\n      flex: 0 0 75%;\n      position: relative; }\n      @media (max-width: 768px) {\n        .smarttestresult .smart-result-page .right-side-result-page {\n          flex: 0 0 100%; } }\n      .smarttestresult .smart-result-page .right-side-result-page .go-top {\n        position: fixed;\n        cursor: pointer;\n        bottom: 10%;\n        right: 3%;\n        width: 60px;\n        height: 60px;\n        border-radius: 50%;\n        background-color: #43afb3;\n        padding: 5px; }\n        .smarttestresult .smart-result-page .right-side-result-page .go-top:before {\n          content: \"\";\n          position: absolute;\n          top: 45%;\n          transition: 1s all;\n          left: 50%;\n          background: transparent;\n          width: 15px;\n          height: 15px;\n          border: solid #ffffff;\n          border-width: 0 3px 3px 0;\n          display: inline-block;\n          padding: 2px;\n          transform: translate(-50%, -50%) rotate(45deg);\n          z-index: 3;\n          transition: all .3s; }\n      .smarttestresult .smart-result-page .right-side-result-page .go-bottom {\n        position: fixed;\n        cursor: pointer;\n        bottom: 10%;\n        right: 3%;\n        width: 60px;\n        height: 60px;\n        border-radius: 50%;\n        background-color: #43afb3; }\n        .smarttestresult .smart-result-page .right-side-result-page .go-bottom:before {\n          content: \"\";\n          position: absolute;\n          top: 55%;\n          transition: 1s all;\n          left: 50%;\n          background: transparent;\n          width: 15px;\n          height: 15px;\n          border: solid #ffffff;\n          border-width: 0 3px 3px 0;\n          display: inline-block;\n          padding: 2px;\n          transform: translate(-50%, -50%) rotate(225deg);\n          z-index: 3;\n          transition: all .3s; }\n      .smarttestresult .smart-result-page .right-side-result-page .answers {\n        background-color: #43afb3;\n        padding: 20px 20px; }\n        @media (max-width: 768px) {\n          .smarttestresult .smart-result-page .right-side-result-page .answers {\n            padding-left: 20px;\n            padding-right: 0px; } }\n        .smarttestresult .smart-result-page .right-side-result-page .answers .image-and-title {\n          display: -webkit-box;\n          display: -webkit-flex;\n          display: -moz-flex;\n          display: -ms-flexbox;\n          display: flex;\n          -webkit-box-pack: start;\n          -ms-flex-pack: start;\n          -webkit-justify-content: flex-start;\n          -moz-justify-content: flex-start;\n          justify-content: flex-start;\n          align-items: flex-end;\n          margin-bottom: 20px; }\n          .smarttestresult .smart-result-page .right-side-result-page .answers .image-and-title .you-result-title {\n            color: #ffffff;\n            font-size: 24px;\n            font-weight: 700; }\n          .smarttestresult .smart-result-page .right-side-result-page .answers .image-and-title i {\n            margin-right: 20px;\n            fill: #464646; }\n        .smarttestresult .smart-result-page .right-side-result-page .answers ul {\n          color: #ffffff;\n          margin-left: 50px;\n          column-count: 3;\n          column-gap: 50px; }\n          @media (max-width: 768px) {\n            .smarttestresult .smart-result-page .right-side-result-page .answers ul {\n              column-count: 1; } }\n          .smarttestresult .smart-result-page .right-side-result-page .answers ul li {\n            list-style: none;\n            margin-bottom: 5px;\n            font-size: 16px;\n            font-weight: 600; }\n            @media (max-width: 768px) {\n              .smarttestresult .smart-result-page .right-side-result-page .answers ul li {\n                font-size: 14px; } }\n            .smarttestresult .smart-result-page .right-side-result-page .answers ul li:nth-child(+n+3) {\n              margin-bottom: 10px; }\n              .smarttestresult .smart-result-page .right-side-result-page .answers ul li:nth-child(+n+3):before {\n                content: \"\";\n                display: inline-block;\n                width: 16px;\n                height: 16px;\n                background-image: url(" + __webpack_require__(513) + ");\n                margin-left: -25px;\n                margin-right: 10px;\n                margin-bottom: -3px; }\n      .smarttestresult .smart-result-page .right-side-result-page .your-result {\n        font-size: 16px;\n        font-weight: 600;\n        color: #43afb3; }\n      .smarttestresult .smart-result-page .right-side-result-page .result {\n        padding: 30px 20px; }\n        .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result {\n          display: flex;\n          justify-content: flex-start; }\n          .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top {\n            margin-left: 20px;\n            padding-right: 40px;\n            /* here */ }\n            .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top h1 {\n              max-width: 283px;\n              font-size: 16px;\n              font-weight: 600;\n              color: #696969;\n              margin-bottom: 29px; }\n            .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top .Collapsible__trigger {\n              display: block;\n              cursor: pointer;\n              font-weight: 400;\n              text-decoration: none;\n              color: gray;\n              position: relative;\n              border: 1px solid white;\n              padding: 10px;\n              color: #464646;\n              border-bottom: 1px solid #43afb3;\n              margin-bottom: 20px; }\n              .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top .Collapsible__trigger:after {\n                content: \"\";\n                display: inline-block;\n                margin-left: 10px;\n                border: solid #43afb3;\n                border-width: 0 2px 2px 0;\n                display: inline-block;\n                padding: 3px;\n                transform: rotate(45deg);\n                transition: transform 300ms; }\n              .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top .Collapsible__trigger.is-open:after {\n                transform: rotateZ(225deg); }\n            .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top .accordion-pen li {\n              display: -webkit-box;\n              display: -webkit-flex;\n              display: -moz-flex;\n              display: -ms-flexbox;\n              display: flex;\n              -webkit-box-pack: start;\n              -ms-flex-pack: start;\n              -webkit-justify-content: flex-start;\n              -moz-justify-content: flex-start;\n              justify-content: flex-start;\n              align-items: center;\n              margin-bottom: 10px; }\n              .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top .accordion-pen li .number-icon {\n                margin-right: 10px;\n                padding-top: 5px;\n                text-align: center;\n                width: 30px;\n                height: 30px;\n                border-radius: 50%;\n                border: 1px solid #43afb3; }\n              .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top .accordion-pen li .description-d {\n                flex: 0 0 70%;\n                color: #464646;\n                font-weight: 400; }\n            .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top .export-to-pdf {\n              cursor: pointer;\n              text-decoration: none;\n              padding: 8px 35px;\n              color: #43afb3;\n              border: 1px solid #43afb3;\n              border-radius: 20px;\n              line-height: 3; }\n      .smarttestresult .smart-result-page .right-side-result-page .result-bottom {\n        display: -webkit-box;\n        display: -webkit-flex;\n        display: -moz-flex;\n        display: -ms-flexbox;\n        display: flex;\n        justify-content: flex-start;\n        padding: 20px; }\n        .smarttestresult .smart-result-page .right-side-result-page .result-bottom .ask-after-result {\n          margin-left: 20px;\n          margin-bottom: 50px; }\n          .smarttestresult .smart-result-page .right-side-result-page .result-bottom .ask-after-result .know-more {\n            max-width: 283px;\n            font-size: 16px;\n            font-weight: 600;\n            color: #696969;\n            margin-bottom: 29px; }\n          .smarttestresult .smart-result-page .right-side-result-page .result-bottom .ask-after-result .know-more-button {\n            cursor: pointer;\n            text-decoration: none;\n            padding: 8px 35px;\n            color: #ffffff;\n            background-color: #43afb3;\n            border-radius: 20px;\n            line-height: 3; }\n", ""]);
+	exports.push([module.id, ".test {\n  -moz-transform: skew(25deg, 10deg);\n  -o-transform: skew(25deg, 10deg);\n  -ms-transform: skew(25deg, 10deg);\n  -webkit-transform: skew(25deg, 10deg);\n  transform: skew(25deg, 10deg);\n  moz-transform-origin: top left;\n  -o-transform-origin: top left;\n  -ms-transform-origin: top left;\n  -webkit-transform-origin: top left;\n  transform-origin: top left;\n  position: absolute;\n  top: 25%;\n  bottom: 25%;\n  left: 25%;\n  right: 25%;\n  background-color: rgba(20, 20, 20, 0.5); }\n\n.wrapperResult {\n  height: 100%; }\n\n.smarttestresult {\n  height: 100%; }\n  .smarttestresult .smart-result-page {\n    display: -webkit-box;\n    display: -webkit-flex;\n    display: -moz-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: space-bettwen;\n    -ms-flex-pack: space-bettwen;\n    -webkit-justify-content: space-bettwen;\n    -moz-justify-content: space-bettwen;\n    justify-content: space-bettwen;\n    -webkit-flex-wrap: wrap;\n    -moz-flex-wrap: wrap;\n    -ms-flex-wrap: wrap;\n    flex-wrap: wrap;\n    width: 100%;\n    min-height: 100%; }\n    .smarttestresult .smart-result-page .left-side-result-page {\n      background-color: #e5e5e5;\n      padding: 30px;\n      text-align: left;\n      flex: 0 0 25%; }\n      @media (max-width: 768px) {\n        .smarttestresult .smart-result-page .left-side-result-page {\n          display: none; } }\n    .smarttestresult .smart-result-page .right-side-result-page {\n      display: -webkit-box;\n      display: -webkit-flex;\n      display: -moz-flex;\n      display: -ms-flexbox;\n      display: flex;\n      flex-direction: column;\n      -webkit-box-pack: space-bettwen;\n      -ms-flex-pack: space-bettwen;\n      -webkit-justify-content: space-bettwen;\n      -moz-justify-content: space-bettwen;\n      justify-content: space-bettwen;\n      flex: 0 0 75%;\n      position: relative; }\n      @media (max-width: 768px) {\n        .smarttestresult .smart-result-page .right-side-result-page {\n          flex: 0 0 100%; } }\n      .smarttestresult .smart-result-page .right-side-result-page .go-top {\n        position: fixed;\n        cursor: pointer;\n        bottom: 10%;\n        right: 3%;\n        width: 60px;\n        height: 60px;\n        border-radius: 50%;\n        background-color: #43afb3;\n        padding: 5px; }\n        .smarttestresult .smart-result-page .right-side-result-page .go-top:before {\n          content: \"\";\n          position: absolute;\n          top: 45%;\n          transition: 1s all;\n          left: 50%;\n          background: transparent;\n          width: 15px;\n          height: 15px;\n          border: solid #ffffff;\n          border-width: 0 3px 3px 0;\n          display: inline-block;\n          padding: 2px;\n          transform: translate(-50%, -50%) rotate(45deg);\n          z-index: 3;\n          transition: all .3s; }\n      .smarttestresult .smart-result-page .right-side-result-page .go-bottom {\n        position: fixed;\n        cursor: pointer;\n        bottom: 10%;\n        right: 3%;\n        width: 60px;\n        height: 60px;\n        border-radius: 50%;\n        background-color: #43afb3; }\n        .smarttestresult .smart-result-page .right-side-result-page .go-bottom:before {\n          content: \"\";\n          position: absolute;\n          top: 55%;\n          transition: 1s all;\n          left: 50%;\n          background: transparent;\n          width: 15px;\n          height: 15px;\n          border: solid #ffffff;\n          border-width: 0 3px 3px 0;\n          display: inline-block;\n          padding: 2px;\n          transform: translate(-50%, -50%) rotate(225deg);\n          z-index: 3;\n          transition: all .3s; }\n      .smarttestresult .smart-result-page .right-side-result-page .answers {\n        background-color: #43afb3;\n        padding: 20px 20px; }\n        @media (max-width: 768px) {\n          .smarttestresult .smart-result-page .right-side-result-page .answers {\n            padding-left: 20px;\n            padding-right: 0px; } }\n        .smarttestresult .smart-result-page .right-side-result-page .answers .image-and-title {\n          display: -webkit-box;\n          display: -webkit-flex;\n          display: -moz-flex;\n          display: -ms-flexbox;\n          display: flex;\n          -webkit-box-pack: start;\n          -ms-flex-pack: start;\n          -webkit-justify-content: flex-start;\n          -moz-justify-content: flex-start;\n          justify-content: flex-start;\n          align-items: flex-end;\n          margin-bottom: 20px; }\n          .smarttestresult .smart-result-page .right-side-result-page .answers .image-and-title .you-result-title {\n            color: #ffffff;\n            font-size: 24px;\n            font-weight: 700; }\n          .smarttestresult .smart-result-page .right-side-result-page .answers .image-and-title i {\n            margin-right: 20px;\n            fill: #464646; }\n        .smarttestresult .smart-result-page .right-side-result-page .answers ul {\n          color: #ffffff;\n          margin-left: 50px;\n          column-count: 3;\n          column-gap: 50px; }\n          @media (max-width: 768px) {\n            .smarttestresult .smart-result-page .right-side-result-page .answers ul {\n              column-count: 1; } }\n          .smarttestresult .smart-result-page .right-side-result-page .answers ul li {\n            list-style: none;\n            margin-bottom: 5px;\n            font-size: 16px;\n            font-weight: 600; }\n            @media (max-width: 768px) {\n              .smarttestresult .smart-result-page .right-side-result-page .answers ul li {\n                font-size: 14px; } }\n            .smarttestresult .smart-result-page .right-side-result-page .answers ul li:nth-child(+n+3) {\n              margin-bottom: 10px; }\n              .smarttestresult .smart-result-page .right-side-result-page .answers ul li:nth-child(+n+3):before {\n                content: \"\";\n                display: inline-block;\n                width: 16px;\n                height: 16px;\n                background-image: url(" + __webpack_require__(513) + ");\n                margin-left: -25px;\n                margin-right: 10px;\n                margin-bottom: -3px; }\n      .smarttestresult .smart-result-page .right-side-result-page .your-result {\n        font-size: 16px;\n        font-weight: 600;\n        color: #43afb3; }\n      .smarttestresult .smart-result-page .right-side-result-page .result {\n        padding: 30px 20px; }\n        .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result {\n          display: flex;\n          justify-content: flex-start; }\n          .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top {\n            margin-left: 20px;\n            padding-right: 20px;\n            /* here */ }\n            .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top h1 {\n              max-width: 283px;\n              font-size: 16px;\n              font-weight: 600;\n              color: #696969;\n              margin-bottom: 29px; }\n            .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top .Collapsible__trigger {\n              display: block;\n              cursor: pointer;\n              font-weight: 400;\n              text-decoration: none;\n              color: gray;\n              position: relative;\n              border: 1px solid white;\n              padding: 10px;\n              color: #464646;\n              border-bottom: 1px solid #43afb3;\n              margin-bottom: 20px; }\n              .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top .Collapsible__trigger:after {\n                content: \"\";\n                display: inline-block;\n                margin-left: 10px;\n                border: solid #43afb3;\n                border-width: 0 2px 2px 0;\n                display: inline-block;\n                padding: 3px;\n                transform: rotate(45deg);\n                transition: transform 300ms; }\n              .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top .Collapsible__trigger.is-open:after {\n                transform: rotateZ(225deg); }\n            .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top .accordion-pen li {\n              display: -webkit-box;\n              display: -webkit-flex;\n              display: -moz-flex;\n              display: -ms-flexbox;\n              display: flex;\n              -webkit-box-pack: start;\n              -ms-flex-pack: start;\n              -webkit-justify-content: flex-start;\n              -moz-justify-content: flex-start;\n              justify-content: flex-start;\n              align-items: center;\n              margin-bottom: 10px; }\n              .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top .accordion-pen li .number-icon {\n                margin-right: 10px;\n                padding-top: 5px;\n                text-align: center;\n                width: 30px;\n                height: 30px;\n                border-radius: 50%;\n                border: 1px solid #43afb3;\n                align-self: self-start; }\n              .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top .accordion-pen li .description-d {\n                flex: 1 1 70%;\n                color: #464646;\n                font-weight: 400; }\n                .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top .accordion-pen li .description-d img {\n                  display: block; }\n            .smarttestresult .smart-result-page .right-side-result-page .result .accordion-result .result-top .export-to-pdf {\n              cursor: pointer;\n              text-decoration: none;\n              padding: 8px 35px;\n              color: #43afb3;\n              border: 1px solid #43afb3;\n              border-radius: 20px;\n              line-height: 3; }\n      .smarttestresult .smart-result-page .right-side-result-page .result-bottom {\n        display: -webkit-box;\n        display: -webkit-flex;\n        display: -moz-flex;\n        display: -ms-flexbox;\n        display: flex;\n        justify-content: flex-start;\n        padding: 20px; }\n        .smarttestresult .smart-result-page .right-side-result-page .result-bottom .ask-after-result {\n          margin-left: 20px;\n          margin-bottom: 50px; }\n          .smarttestresult .smart-result-page .right-side-result-page .result-bottom .ask-after-result .know-more {\n            max-width: 283px;\n            font-size: 16px;\n            font-weight: 600;\n            color: #696969;\n            margin-bottom: 29px; }\n          .smarttestresult .smart-result-page .right-side-result-page .result-bottom .ask-after-result .know-more-button {\n            cursor: pointer;\n            text-decoration: none;\n            padding: 8px 35px;\n            color: #ffffff;\n            background-color: #43afb3;\n            border-radius: 20px;\n            line-height: 3; }\n", ""]);
 
 	// exports
 
@@ -48301,7 +48168,792 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	__webpack_require__(516);
+	var _react = __webpack_require__(183);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactCollapsible = __webpack_require__(514);
+
+	var _reactCollapsible2 = _interopRequireDefault(_reactCollapsible);
+
+	var OneHeme = (function (_React$Component) {
+	    _inherits(OneHeme, _React$Component);
+
+	    function OneHeme() {
+	        _classCallCheck(this, OneHeme);
+
+	        _get(Object.getPrototypeOf(OneHeme.prototype), "constructor", this).apply(this, arguments);
+	    }
+
+	    _createClass(OneHeme, [{
+	        key: "render",
+	        value: function render() {
+	            return _react2["default"].createElement(
+	                "div",
+	                { className: "accordion-result" },
+	                _react2["default"].createElement(
+	                    "i",
+	                    null,
+	                    _react2["default"].createElement(
+	                        "svg",
+	                        { width: "32", height: "33", viewBox: "0 0 32 33" },
+	                        _react2["default"].createElement(
+	                            "defs",
+	                            null,
+	                            _react2["default"].createElement("path", { id: "tmnoa", d: "M624.99 377.35v.39c0 1.8-1.45 3.26-3.23 3.26h-25.54a3.25 3.25 0 0 1-3.23-3.26v-18.95c0-1.8 1.45-3.26 3.23-3.26h5.12v-3.34a4.18 4.18 0 0 1 4.16-4.19h6.98a4.18 4.18 0 0 1 4.15 4.19v3.34h5.13a3.25 3.25 0 0 1 3.23 3.26v18.56zm-22.22-25.16v3.34h1.42v-3.34c0-.73.59-1.32 1.3-1.32h6.99c.72 0 1.3.6 1.3 1.32v3.34h1.43v-3.34a2.75 2.75 0 0 0-2.73-2.76h-6.98a2.75 2.75 0 0 0-2.73 2.76zm2.84.11v3.23h6.76v-3.23zm-11.16 6.1h29.07a1.82 1.82 0 0 0-1.76-1.43h-25.54c-.86 0-1.59.61-1.77 1.43zm29.12 18.23v-9.59h-4.1v1.94c0 .4-.31.72-.7.72h-3.2a.71.71 0 0 1-.71-.72v-1.94h-11.74v1.94c0 .4-.32.72-.7.72h-3.2a.71.71 0 0 1-.72-.72v-1.94h-4.09v9.6h7.72c.4 0 .7.32.7.71 0 .4-.3.72-.7.72h-7.69c.16.85.9 1.5 1.78 1.5h25.54c.88 0 1.62-.65 1.78-1.5h-3.68a.71.71 0 0 1-.71-.72c0-.4.32-.72.7-.72zm-21.87-8.37v-2.87h-1.78v2.87zm16.36 0v-2.87h-1.78v2.87zm5.5-8.42h-29.15v5.77h4.09v-.93c0-.4.32-.72.71-.72h3.2c.4 0 .71.32.71.72v.93h11.74v-.93c0-.4.31-.72.7-.72h3.2c.4 0 .72.32.72.72v.93h4.09zm-9.77 11.6v3.58c0 .4-.32.72-.71.72h-1.6v1.61c0 .4-.32.72-.71.72h-3.56a.71.71 0 0 1-.71-.72v-1.61h-1.6a.71.71 0 0 1-.71-.72v-3.59c0-.4.32-.71.71-.71h1.6v-1.62c0-.4.32-.72.71-.72h3.56c.39 0 .7.33.7.72v1.62h1.6c.4 0 .72.32.72.71zm-1.42.71h-1.6a.71.71 0 0 1-.71-.72v-1.61h-2.14v1.61c0 .4-.32.72-.7.72h-1.6v2.15h1.6c.38 0 .7.32.7.72v1.61h2.14v-1.61c0-.4.31-.72.7-.72h1.6zm4.73 5.2c0 .4-.32.72-.71.72h-.08a.71.71 0 0 1-.7-.72c0-.4.31-.72.7-.72h.08c.39 0 .7.33.7.72z" })
+	                        ),
+	                        _react2["default"].createElement(
+	                            "g",
+	                            null,
+	                            _react2["default"].createElement(
+	                                "g",
+	                                { transform: "translate(-593 -348)" },
+	                                _react2["default"].createElement("use", { href: "#tmnoa" }),
+	                                _react2["default"].createElement("use", { fill: "#43afb3", href: "#tmnoa" })
+	                            )
+	                        )
+	                    )
+	                ),
+	                _react2["default"].createElement(
+	                    "div",
+	                    { className: "result-top" },
+	                    _react2["default"].createElement(
+	                        _reactCollapsible2["default"],
+	                        { trigger: "Цель Анализа" },
+	                        _react2["default"].createElement(
+	                            "ul",
+	                            null,
+	                            _react2["default"].createElement(
+	                                "ul",
+	                                { className: "accordion-pen" },
+	                                _react2["default"].createElement(
+	                                    "li",
+	                                    null,
+	                                    _react2["default"].createElement(
+	                                        "div",
+	                                        { className: "number-icon" },
+	                                        "1"
+	                                    ),
+	                                    _react2["default"].createElement(
+	                                        "div",
+	                                        { className: "description-d" },
+	                                        _react2["default"].createElement(
+	                                            "p",
+	                                            null,
+	                                            " One Heme –анализ для полной геномной диагностики гематологических раковых заболеваний : Лейкемия/ Лимфома Миелома/ Саркома. "
+	                                        )
+	                                    )
+	                                ),
+	                                _react2["default"].createElement(
+	                                    "li",
+	                                    null,
+	                                    _react2["default"].createElement(
+	                                        "div",
+	                                        { className: "number-icon" },
+	                                        "2"
+	                                    ),
+	                                    _react2["default"].createElement(
+	                                        "div",
+	                                        { className: "description-d" },
+	                                        _react2["default"].createElement(
+	                                            "p",
+	                                            null,
+	                                            "Методы лечения, подобранные в соответствии с геномным профилем опухоли, могут оказаться более эффективными и менее токсичными. "
+	                                        )
+	                                    )
+	                                ),
+	                                _react2["default"].createElement(
+	                                    "li",
+	                                    null,
+	                                    _react2["default"].createElement(
+	                                        "div",
+	                                        { className: "number-icon" },
+	                                        "3"
+	                                    ),
+	                                    _react2["default"].createElement(
+	                                        "div",
+	                                        { className: "description-d" },
+	                                        _react2["default"].createElement(
+	                                            "p",
+	                                            null,
+	                                            " Тестирование предоставляет врачу существенную клиническую информацию для оценки риска и прогноза. "
+	                                        )
+	                                    )
+	                                ),
+	                                _react2["default"].createElement(
+	                                    "li",
+	                                    null,
+	                                    _react2["default"].createElement(
+	                                        "div",
+	                                        { className: "number-icon" },
+	                                        "4"
+	                                    ),
+	                                    _react2["default"].createElement(
+	                                        "div",
+	                                        { className: "description-d" },
+	                                        _react2["default"].createElement(
+	                                            "p",
+	                                            null,
+	                                            " One Heme –анализ для полной геномной диагностики гематологических раковых заболеваний : Лейкемия/ Лимфома Миелома/ Саркома. "
+	                                        )
+	                                    )
+	                                )
+	                            )
+	                        ),
+	                        _react2["default"].createElement("br", null)
+	                    ),
+	                    _react2["default"].createElement(
+	                        _reactCollapsible2["default"],
+	                        { trigger: "Результаты" },
+	                        _react2["default"].createElement(
+	                            "ul",
+	                            { className: "accordion-pen" },
+	                            _react2["default"].createElement(
+	                                "li",
+	                                null,
+	                                _react2["default"].createElement(
+	                                    "div",
+	                                    { className: "number-icon" },
+	                                    "1"
+	                                ),
+	                                _react2["default"].createElement(
+	                                    "div",
+	                                    { className: "description-d" },
+	                                    "Ответы в отчете представлены в понятном и легком для понимания виде, и они включают большую часть информации, необходимой врачу для того, чтобы определить наиболее подходящее для Вас лечение. "
+	                                )
+	                            ),
+	                            _react2["default"].createElement(
+	                                "li",
+	                                null,
+	                                _react2["default"].createElement(
+	                                    "div",
+	                                    { className: "number-icon" },
+	                                    "2"
+	                                ),
+	                                _react2["default"].createElement(
+	                                    "div",
+	                                    { className: "description-d" },
+	                                    "В  отчет включается статус TMB (параметр мутационной нагрузки опухоли) и MSI (микросателлитная нестабильность), которые указывают на вероятность положительного ответа на иммунотерапию."
+	                                )
+	                            ),
+	                            _react2["default"].createElement(
+	                                "li",
+	                                null,
+	                                _react2["default"].createElement(
+	                                    "div",
+	                                    { className: "number-icon" },
+	                                    "3"
+	                                ),
+	                                _react2["default"].createElement(
+	                                    "div",
+	                                    { className: "description-d" },
+	                                    "Таблица, приводимая на первой странице отчета, представляет собой сводку полученных данных. "
+	                                )
+	                            ),
+	                            _react2["default"].createElement(
+	                                "li",
+	                                null,
+	                                _react2["default"].createElement(
+	                                    "div",
+	                                    { className: "number-icon" },
+	                                    "4"
+	                                ),
+	                                _react2["default"].createElement(
+	                                    "div",
+	                                    { className: "description-d" },
+	                                    _react2["default"].createElement("img", { width: "161", src: "images/forResult/1.png" }),
+	                                    _react2["default"].createElement("img", { width: "161", src: "images/forResult/3.png" }),
+	                                    _react2["default"].createElement("img", { width: "161", src: "images/forResult/4.png" }),
+	                                    _react2["default"].createElement("img", { width: "161", src: "images/forResult/5.png" }),
+	                                    _react2["default"].createElement("img", { width: "161", src: "images/forResult/6.png" })
+	                                )
+	                            )
+	                        ),
+	                        _react2["default"].createElement("br", null)
+	                    ),
+	                    _react2["default"].createElement(
+	                        _reactCollapsible2["default"],
+	                        { trigger: "Опциональные виды лечения" },
+	                        _react2["default"].createElement(
+	                            "ul",
+	                            { className: "accordion-pen" },
+	                            _react2["default"].createElement(
+	                                "li",
+	                                null,
+	                                _react2["default"].createElement(
+	                                    "div",
+	                                    { className: "number-icon" },
+	                                    "1"
+	                                ),
+	                                _react2["default"].createElement(
+	                                    "div",
+	                                    { className: "description-d" },
+	                                    "Результаты тестирования FoundationOne представляют собой лабораторный отчет, который получаете вы и ваш лечащий врач. Ответы включают рекомендации касательно лечения в соответствии с выявленными геномными изменениями, что поможет врачу подобрать таргетное лечение для каждой конкретной опухоли. "
+	                                )
+	                            ),
+	                            _react2["default"].createElement(
+	                                "li",
+	                                null,
+	                                _react2["default"].createElement(
+	                                    "div",
+	                                    { className: "number-icon" },
+	                                    "2"
+	                                ),
+	                                _react2["default"].createElement(
+	                                    "div",
+	                                    { className: "description-d" },
+	                                    _react2["default"].createElement("img", { width: "200", src: "images/image.png" })
+	                                )
+	                            )
+	                        )
+	                    ),
+	                    _react2["default"].createElement(
+	                        "a",
+	                        { href: "#", className: "export-to-pdf" },
+	                        "Export to PDF"
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+
+	    return OneHeme;
+	})(_react2["default"].Component);
+
+	exports["default"] = OneHeme;
+	module.exports = exports["default"];
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/volodymyr/Стільниця/medpoint/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "one-heme.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ }),
+/* 516 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/home/volodymyr/Стільниця/medpoint/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/home/volodymyr/Стільниця/medpoint/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _react = __webpack_require__(183);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactCollapsible = __webpack_require__(514);
+
+	var _reactCollapsible2 = _interopRequireDefault(_reactCollapsible);
+
+	var One = (function (_React$Component) {
+	    _inherits(One, _React$Component);
+
+	    function One() {
+	        _classCallCheck(this, One);
+
+	        _get(Object.getPrototypeOf(One.prototype), "constructor", this).apply(this, arguments);
+	    }
+
+	    _createClass(One, [{
+	        key: "render",
+	        value: function render() {
+	            return _react2["default"].createElement(
+	                "div",
+	                { className: "accordion-result" },
+	                _react2["default"].createElement(
+	                    "i",
+	                    null,
+	                    _react2["default"].createElement(
+	                        "svg",
+	                        { width: "32", height: "33", viewBox: "0 0 32 33" },
+	                        _react2["default"].createElement(
+	                            "defs",
+	                            null,
+	                            _react2["default"].createElement("path", { id: "tmnoa", d: "M624.99 377.35v.39c0 1.8-1.45 3.26-3.23 3.26h-25.54a3.25 3.25 0 0 1-3.23-3.26v-18.95c0-1.8 1.45-3.26 3.23-3.26h5.12v-3.34a4.18 4.18 0 0 1 4.16-4.19h6.98a4.18 4.18 0 0 1 4.15 4.19v3.34h5.13a3.25 3.25 0 0 1 3.23 3.26v18.56zm-22.22-25.16v3.34h1.42v-3.34c0-.73.59-1.32 1.3-1.32h6.99c.72 0 1.3.6 1.3 1.32v3.34h1.43v-3.34a2.75 2.75 0 0 0-2.73-2.76h-6.98a2.75 2.75 0 0 0-2.73 2.76zm2.84.11v3.23h6.76v-3.23zm-11.16 6.1h29.07a1.82 1.82 0 0 0-1.76-1.43h-25.54c-.86 0-1.59.61-1.77 1.43zm29.12 18.23v-9.59h-4.1v1.94c0 .4-.31.72-.7.72h-3.2a.71.71 0 0 1-.71-.72v-1.94h-11.74v1.94c0 .4-.32.72-.7.72h-3.2a.71.71 0 0 1-.72-.72v-1.94h-4.09v9.6h7.72c.4 0 .7.32.7.71 0 .4-.3.72-.7.72h-7.69c.16.85.9 1.5 1.78 1.5h25.54c.88 0 1.62-.65 1.78-1.5h-3.68a.71.71 0 0 1-.71-.72c0-.4.32-.72.7-.72zm-21.87-8.37v-2.87h-1.78v2.87zm16.36 0v-2.87h-1.78v2.87zm5.5-8.42h-29.15v5.77h4.09v-.93c0-.4.32-.72.71-.72h3.2c.4 0 .71.32.71.72v.93h11.74v-.93c0-.4.31-.72.7-.72h3.2c.4 0 .72.32.72.72v.93h4.09zm-9.77 11.6v3.58c0 .4-.32.72-.71.72h-1.6v1.61c0 .4-.32.72-.71.72h-3.56a.71.71 0 0 1-.71-.72v-1.61h-1.6a.71.71 0 0 1-.71-.72v-3.59c0-.4.32-.71.71-.71h1.6v-1.62c0-.4.32-.72.71-.72h3.56c.39 0 .7.33.7.72v1.62h1.6c.4 0 .72.32.72.71zm-1.42.71h-1.6a.71.71 0 0 1-.71-.72v-1.61h-2.14v1.61c0 .4-.32.72-.7.72h-1.6v2.15h1.6c.38 0 .7.32.7.72v1.61h2.14v-1.61c0-.4.31-.72.7-.72h1.6zm4.73 5.2c0 .4-.32.72-.71.72h-.08a.71.71 0 0 1-.7-.72c0-.4.31-.72.7-.72h.08c.39 0 .7.33.7.72z" })
+	                        ),
+	                        _react2["default"].createElement(
+	                            "g",
+	                            null,
+	                            _react2["default"].createElement(
+	                                "g",
+	                                { transform: "translate(-593 -348)" },
+	                                _react2["default"].createElement("use", { href: "#tmnoa" }),
+	                                _react2["default"].createElement("use", { fill: "#43afb3", href: "#tmnoa" })
+	                            )
+	                        )
+	                    )
+	                ),
+	                _react2["default"].createElement(
+	                    "div",
+	                    { className: "result-top" },
+	                    _react2["default"].createElement(
+	                        _reactCollapsible2["default"],
+	                        { trigger: "Цель Анализа" },
+	                        _react2["default"].createElement(
+	                            "ul",
+	                            null,
+	                            _react2["default"].createElement(
+	                                "ul",
+	                                { className: "accordion-pen" },
+	                                _react2["default"].createElement(
+	                                    "li",
+	                                    null,
+	                                    _react2["default"].createElement(
+	                                        "div",
+	                                        { className: "number-icon" },
+	                                        "1"
+	                                    ),
+	                                    _react2["default"].createElement(
+	                                        "div",
+	                                        { className: "description-d" },
+	                                        _react2["default"].createElement(
+	                                            "p",
+	                                            null,
+	                                            " One – анализ  всеобъемлющей геномной диагностики опухолевой ткани, с помощью которого врач сможет подобрать таргетное лечения для конкретной опухоли    "
+	                                        )
+	                                    )
+	                                ),
+	                                _react2["default"].createElement(
+	                                    "li",
+	                                    null,
+	                                    _react2["default"].createElement(
+	                                        "div",
+	                                        { className: "number-icon" },
+	                                        "2"
+	                                    ),
+	                                    _react2["default"].createElement(
+	                                        "div",
+	                                        { className: "description-d" },
+	                                        _react2["default"].createElement(
+	                                            "p",
+	                                            null,
+	                                            "позволяет параллельно выявлять сотни генов и все геномные мутации, которые могут вызывать развитие рака, в отличие от геномных анализов первого поколения  "
+	                                        )
+	                                    )
+	                                ),
+	                                _react2["default"].createElement(
+	                                    "li",
+	                                    null,
+	                                    _react2["default"].createElement(
+	                                        "div",
+	                                        { className: "number-icon" },
+	                                        "3"
+	                                    ),
+	                                    _react2["default"].createElement(
+	                                        "div",
+	                                        { className: "description-d" },
+	                                        _react2["default"].createElement(
+	                                            "p",
+	                                            null,
+	                                            " Методы лечения, подобранные в соответствии с геномным профилем опухоли, могут оказаться более эффективными и менее токсичными.  "
+	                                        )
+	                                    )
+	                                )
+	                            )
+	                        ),
+	                        _react2["default"].createElement("br", null)
+	                    ),
+	                    _react2["default"].createElement(
+	                        _reactCollapsible2["default"],
+	                        { trigger: "Результаты" },
+	                        _react2["default"].createElement(
+	                            "ul",
+	                            { className: "accordion-pen" },
+	                            _react2["default"].createElement(
+	                                "li",
+	                                null,
+	                                _react2["default"].createElement(
+	                                    "div",
+	                                    { className: "number-icon" },
+	                                    "1"
+	                                ),
+	                                _react2["default"].createElement(
+	                                    "div",
+	                                    { className: "description-d" },
+	                                    "Ответы в отчете представлены в понятном и легком для понимания виде, и они включают большую часть информации, необходимой врачу для того, чтобы определить наиболее подходящее для Вас лечение.  "
+	                                )
+	                            ),
+	                            _react2["default"].createElement(
+	                                "li",
+	                                null,
+	                                _react2["default"].createElement(
+	                                    "div",
+	                                    { className: "number-icon" },
+	                                    "2"
+	                                ),
+	                                _react2["default"].createElement(
+	                                    "div",
+	                                    { className: "description-d" },
+	                                    "В  отчет включается статус TMB (параметр мутационной нагрузки опухоли) и MSI (микросателлитная нестабильность), которые указывают на вероятность положительного ответа на иммунотерапию."
+	                                )
+	                            ),
+	                            _react2["default"].createElement(
+	                                "li",
+	                                null,
+	                                _react2["default"].createElement(
+	                                    "div",
+	                                    { className: "number-icon" },
+	                                    "3"
+	                                ),
+	                                _react2["default"].createElement(
+	                                    "div",
+	                                    { className: "description-d" },
+	                                    "Таблица, приводимая на первой странице отчета, представляет собой сводку полученных данных. "
+	                                )
+	                            )
+	                        ),
+	                        _react2["default"].createElement("br", null)
+	                    ),
+	                    _react2["default"].createElement(
+	                        _reactCollapsible2["default"],
+	                        { trigger: "Процесс тестирования " },
+	                        _react2["default"].createElement(
+	                            "ul",
+	                            { className: "accordion-pen" },
+	                            _react2["default"].createElement(
+	                                "li",
+	                                null,
+	                                _react2["default"].createElement(
+	                                    "div",
+	                                    { className: "number-icon" },
+	                                    "1"
+	                                ),
+	                                _react2["default"].createElement(
+	                                    "div",
+	                                    { className: "description-d" },
+	                                    "В течение 14-ти дней после получения образца лабораторией . Результаты тестирования будут включать подробную информацию о геномном составе опухоли и вариантах лечения, которые, возможно, подходят к геномному профилю опухоли."
+	                                )
+	                            ),
+	                            _react2["default"].createElement(
+	                                "li",
+	                                null,
+	                                _react2["default"].createElement(
+	                                    "div",
+	                                    { className: "number-icon" },
+	                                    "2"
+	                                ),
+	                                _react2["default"].createElement(
+	                                    "div",
+	                                    { className: "description-d" },
+	                                    _react2["default"].createElement("img", { width: "200", src: "images/image.png" })
+	                                )
+	                            )
+	                        )
+	                    ),
+	                    _react2["default"].createElement(
+	                        "a",
+	                        { href: "#", className: "export-to-pdf" },
+	                        "Export to PDF"
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+
+	    return One;
+	})(_react2["default"].Component);
+
+	exports["default"] = One;
+	module.exports = exports["default"];
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/volodymyr/Стільниця/medpoint/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "one.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ }),
+/* 517 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/home/volodymyr/Стільниця/medpoint/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/home/volodymyr/Стільниця/medpoint/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _react = __webpack_require__(183);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactCollapsible = __webpack_require__(514);
+
+	var _reactCollapsible2 = _interopRequireDefault(_reactCollapsible);
+
+	var Act = (function (_React$Component) {
+	    _inherits(Act, _React$Component);
+
+	    function Act() {
+	        _classCallCheck(this, Act);
+
+	        _get(Object.getPrototypeOf(Act.prototype), "constructor", this).apply(this, arguments);
+	    }
+
+	    _createClass(Act, [{
+	        key: "render",
+	        value: function render() {
+	            return _react2["default"].createElement(
+	                "div",
+	                { className: "accordion-result" },
+	                _react2["default"].createElement(
+	                    "i",
+	                    null,
+	                    _react2["default"].createElement(
+	                        "svg",
+	                        { width: "32", height: "33", viewBox: "0 0 32 33" },
+	                        _react2["default"].createElement(
+	                            "defs",
+	                            null,
+	                            _react2["default"].createElement("path", { id: "tmnoa", d: "M624.99 377.35v.39c0 1.8-1.45 3.26-3.23 3.26h-25.54a3.25 3.25 0 0 1-3.23-3.26v-18.95c0-1.8 1.45-3.26 3.23-3.26h5.12v-3.34a4.18 4.18 0 0 1 4.16-4.19h6.98a4.18 4.18 0 0 1 4.15 4.19v3.34h5.13a3.25 3.25 0 0 1 3.23 3.26v18.56zm-22.22-25.16v3.34h1.42v-3.34c0-.73.59-1.32 1.3-1.32h6.99c.72 0 1.3.6 1.3 1.32v3.34h1.43v-3.34a2.75 2.75 0 0 0-2.73-2.76h-6.98a2.75 2.75 0 0 0-2.73 2.76zm2.84.11v3.23h6.76v-3.23zm-11.16 6.1h29.07a1.82 1.82 0 0 0-1.76-1.43h-25.54c-.86 0-1.59.61-1.77 1.43zm29.12 18.23v-9.59h-4.1v1.94c0 .4-.31.72-.7.72h-3.2a.71.71 0 0 1-.71-.72v-1.94h-11.74v1.94c0 .4-.32.72-.7.72h-3.2a.71.71 0 0 1-.72-.72v-1.94h-4.09v9.6h7.72c.4 0 .7.32.7.71 0 .4-.3.72-.7.72h-7.69c.16.85.9 1.5 1.78 1.5h25.54c.88 0 1.62-.65 1.78-1.5h-3.68a.71.71 0 0 1-.71-.72c0-.4.32-.72.7-.72zm-21.87-8.37v-2.87h-1.78v2.87zm16.36 0v-2.87h-1.78v2.87zm5.5-8.42h-29.15v5.77h4.09v-.93c0-.4.32-.72.71-.72h3.2c.4 0 .71.32.71.72v.93h11.74v-.93c0-.4.31-.72.7-.72h3.2c.4 0 .72.32.72.72v.93h4.09zm-9.77 11.6v3.58c0 .4-.32.72-.71.72h-1.6v1.61c0 .4-.32.72-.71.72h-3.56a.71.71 0 0 1-.71-.72v-1.61h-1.6a.71.71 0 0 1-.71-.72v-3.59c0-.4.32-.71.71-.71h1.6v-1.62c0-.4.32-.72.71-.72h3.56c.39 0 .7.33.7.72v1.62h1.6c.4 0 .72.32.72.71zm-1.42.71h-1.6a.71.71 0 0 1-.71-.72v-1.61h-2.14v1.61c0 .4-.32.72-.7.72h-1.6v2.15h1.6c.38 0 .7.32.7.72v1.61h2.14v-1.61c0-.4.31-.72.7-.72h1.6zm4.73 5.2c0 .4-.32.72-.71.72h-.08a.71.71 0 0 1-.7-.72c0-.4.31-.72.7-.72h.08c.39 0 .7.33.7.72z" })
+	                        ),
+	                        _react2["default"].createElement(
+	                            "g",
+	                            null,
+	                            _react2["default"].createElement(
+	                                "g",
+	                                { transform: "translate(-593 -348)" },
+	                                _react2["default"].createElement("use", { href: "#tmnoa" }),
+	                                _react2["default"].createElement("use", { fill: "#43afb3", href: "#tmnoa" })
+	                            )
+	                        )
+	                    )
+	                ),
+	                _react2["default"].createElement(
+	                    "div",
+	                    { className: "result-top" },
+	                    _react2["default"].createElement(
+	                        _reactCollapsible2["default"],
+	                        { trigger: "Цель Анализа" },
+	                        _react2["default"].createElement(
+	                            "ul",
+	                            null,
+	                            _react2["default"].createElement(
+	                                "ul",
+	                                { className: "accordion-pen" },
+	                                _react2["default"].createElement(
+	                                    "li",
+	                                    null,
+	                                    _react2["default"].createElement(
+	                                        "div",
+	                                        { className: "number-icon" },
+	                                        "1"
+	                                    ),
+	                                    _react2["default"].createElement(
+	                                        "div",
+	                                        { className: "description-d" },
+	                                        _react2["default"].createElement(
+	                                            "p",
+	                                            null,
+	                                            ".Анализ способствует в подборе самых новых таргетных методов лечения в соответствии с геномным профилем опухоли."
+	                                        )
+	                                    )
+	                                ),
+	                                _react2["default"].createElement(
+	                                    "li",
+	                                    null,
+	                                    _react2["default"].createElement(
+	                                        "div",
+	                                        { className: "number-icon" },
+	                                        "2"
+	                                    ),
+	                                    _react2["default"].createElement(
+	                                        "div",
+	                                        { className: "description-d" },
+	                                        _react2["default"].createElement(
+	                                            "p",
+	                                            null,
+	                                            "В рамках анализа АСТ проверяются 62 гена, ассоциированные с поддающимися лечению видами рака, и выявляются все виды возможных и существенных в данном случае мутаций в этих генах."
+	                                        )
+	                                    )
+	                                ),
+	                                _react2["default"].createElement(
+	                                    "li",
+	                                    null,
+	                                    _react2["default"].createElement(
+	                                        "div",
+	                                        { className: "number-icon" },
+	                                        "3"
+	                                    ),
+	                                    _react2["default"].createElement(
+	                                        "div",
+	                                        { className: "description-d" },
+	                                        _react2["default"].createElement(
+	                                            "p",
+	                                            null,
+	                                            "У пациентом с раком на продвинутой стадии анализ дает возможность отслеживания изменений в опухоли на протяжении времени."
+	                                        )
+	                                    )
+	                                )
+	                            )
+	                        ),
+	                        _react2["default"].createElement("br", null)
+	                    ),
+	                    _react2["default"].createElement(
+	                        _reactCollapsible2["default"],
+	                        { trigger: "Результаты " },
+	                        _react2["default"].createElement(
+	                            "ul",
+	                            { className: "accordion-pen" },
+	                            _react2["default"].createElement(
+	                                "li",
+	                                null,
+	                                _react2["default"].createElement(
+	                                    "div",
+	                                    { className: "number-icon" },
+	                                    "1"
+	                                ),
+	                                _react2["default"].createElement(
+	                                    "div",
+	                                    { className: "description-d" },
+	                                    _react2["default"].createElement(
+	                                        "p",
+	                                        null,
+	                                        "Ответы в отчете представлены в понятном и легком для понимания виде, и они включают большую часть информации, необходимой врачу для того, чтобы определить наиболее подходящее для Вас лечение."
+	                                    )
+	                                )
+	                            ),
+	                            _react2["default"].createElement(
+	                                "li",
+	                                null,
+	                                _react2["default"].createElement(
+	                                    "div",
+	                                    { className: "number-icon" },
+	                                    "2"
+	                                ),
+	                                _react2["default"].createElement(
+	                                    "div",
+	                                    { className: "description-d" },
+	                                    _react2["default"].createElement(
+	                                        "p",
+	                                        null,
+	                                        "Таблица, приводимая на первой странице отчета, представляет собой сводку полученных данных."
+	                                    )
+	                                )
+	                            )
+	                        ),
+	                        _react2["default"].createElement("br", null)
+	                    ),
+	                    _react2["default"].createElement(
+	                        _reactCollapsible2["default"],
+	                        { trigger: "Процесс тестирования" },
+	                        _react2["default"].createElement(
+	                            "ul",
+	                            { className: "accordion-pen" },
+	                            _react2["default"].createElement(
+	                                "li",
+	                                null,
+	                                _react2["default"].createElement(
+	                                    "div",
+	                                    { className: "number-icon" },
+	                                    "1"
+	                                ),
+	                                _react2["default"].createElement(
+	                                    "div",
+	                                    { className: "description-d" },
+	                                    _react2["default"].createElement(
+	                                        "p",
+	                                        null,
+	                                        "Чтобы выполнить тест, потребуется 2 пробирки крови. Кровь у вас возьмет врач по согласованию с нашим центром обслуживания ."
+	                                    )
+	                                )
+	                            ),
+	                            _react2["default"].createElement(
+	                                "li",
+	                                null,
+	                                _react2["default"].createElement(
+	                                    "div",
+	                                    { className: "number-icon" },
+	                                    "2"
+	                                ),
+	                                _react2["default"].createElement(
+	                                    "div",
+	                                    { className: "description-d" },
+	                                    _react2["default"].createElement(
+	                                        "p",
+	                                        null,
+	                                        "Отправка образца крови в лабораторию"
+	                                    )
+	                                )
+	                            ),
+	                            _react2["default"].createElement(
+	                                "li",
+	                                null,
+	                                _react2["default"].createElement(
+	                                    "div",
+	                                    { className: "number-icon" },
+	                                    "3"
+	                                ),
+	                                _react2["default"].createElement(
+	                                    "div",
+	                                    { className: "description-d" },
+	                                    _react2["default"].createElement(
+	                                        "p",
+	                                        null,
+	                                        "В течение 14-ти дней после получения образца лабораторией . Результаты тестирования будут включать подробную информацию о геномном составе опухоли и вариантах лечения, которые, возможно, подходят к геномному профилю опухоли."
+	                                    )
+	                                )
+	                            )
+	                        )
+	                    ),
+	                    _react2["default"].createElement(
+	                        "a",
+	                        { href: "#", className: "export-to-pdf" },
+	                        "Export to PDF"
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+
+	    return Act;
+	})(_react2["default"].Component);
+
+	exports["default"] = Act;
+	module.exports = exports["default"];
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/volodymyr/Стільниця/medpoint/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "act.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ }),
+/* 518 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/home/volodymyr/Стільниця/medpoint/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/home/volodymyr/Стільниця/medpoint/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	__webpack_require__(519);
 
 	var _react = __webpack_require__(183);
 
@@ -48336,13 +48988,13 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/volodymyr/Стільниця/medpoint/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "Social.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ }),
-/* 516 */
+/* 519 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(517);
+	var content = __webpack_require__(520);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(246)(content, {});
@@ -48362,7 +49014,7 @@
 	}
 
 /***/ }),
-/* 517 */
+/* 520 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(245)();
@@ -48376,7 +49028,7 @@
 
 
 /***/ }),
-/* 518 */
+/* 521 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/home/volodymyr/Стільниця/medpoint/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/home/volodymyr/Стільниця/medpoint/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -48403,7 +49055,7 @@
 
 	var _reactRouter = __webpack_require__(184);
 
-	__webpack_require__(519);
+	__webpack_require__(522);
 
 	var Contacts = (function (_React$Component) {
 	    _inherits(Contacts, _React$Component);
@@ -48439,13 +49091,13 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/volodymyr/Стільниця/medpoint/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "Contacts.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ }),
-/* 519 */
+/* 522 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(520);
+	var content = __webpack_require__(523);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(246)(content, {});
@@ -48465,7 +49117,7 @@
 	}
 
 /***/ }),
-/* 520 */
+/* 523 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(245)();
@@ -48479,7 +49131,7 @@
 
 
 /***/ }),
-/* 521 */
+/* 524 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -48490,9 +49142,9 @@
 
 	var _redux = __webpack_require__(412);
 
-	var _reactRouterRedux = __webpack_require__(522);
+	var _reactRouterRedux = __webpack_require__(525);
 
-	var _smartTestReduserJs = __webpack_require__(527);
+	var _smartTestReduserJs = __webpack_require__(530);
 
 	exports["default"] = (0, _redux.combineReducers)({
 	    // routing: routerReducer,
@@ -48501,7 +49153,7 @@
 	module.exports = exports["default"];
 
 /***/ }),
-/* 522 */
+/* 525 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -48511,7 +49163,7 @@
 	});
 	exports.routerMiddleware = exports.routerActions = exports.goForward = exports.goBack = exports.go = exports.replace = exports.push = exports.CALL_HISTORY_METHOD = exports.routerReducer = exports.LOCATION_CHANGE = exports.syncHistoryWithStore = undefined;
 
-	var _reducer = __webpack_require__(523);
+	var _reducer = __webpack_require__(526);
 
 	Object.defineProperty(exports, 'LOCATION_CHANGE', {
 	  enumerable: true,
@@ -48526,7 +49178,7 @@
 	  }
 	});
 
-	var _actions = __webpack_require__(524);
+	var _actions = __webpack_require__(527);
 
 	Object.defineProperty(exports, 'CALL_HISTORY_METHOD', {
 	  enumerable: true,
@@ -48571,11 +49223,11 @@
 	  }
 	});
 
-	var _sync = __webpack_require__(525);
+	var _sync = __webpack_require__(528);
 
 	var _sync2 = _interopRequireDefault(_sync);
 
-	var _middleware = __webpack_require__(526);
+	var _middleware = __webpack_require__(529);
 
 	var _middleware2 = _interopRequireDefault(_middleware);
 
@@ -48585,7 +49237,7 @@
 	exports.routerMiddleware = _middleware2['default'];
 
 /***/ }),
-/* 523 */
+/* 526 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -48628,7 +49280,7 @@
 	}
 
 /***/ }),
-/* 524 */
+/* 527 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -48670,7 +49322,7 @@
 	var routerActions = exports.routerActions = { push: push, replace: replace, go: go, goBack: goBack, goForward: goForward };
 
 /***/ }),
-/* 525 */
+/* 528 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -48683,7 +49335,7 @@
 
 	exports['default'] = syncHistoryWithStore;
 
-	var _reducer = __webpack_require__(523);
+	var _reducer = __webpack_require__(526);
 
 	var defaultSelectLocationState = function defaultSelectLocationState(state) {
 	  return state.routing;
@@ -48830,7 +49482,7 @@
 	}
 
 /***/ }),
-/* 526 */
+/* 529 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -48840,7 +49492,7 @@
 	});
 	exports['default'] = routerMiddleware;
 
-	var _actions = __webpack_require__(524);
+	var _actions = __webpack_require__(527);
 
 	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 
@@ -48868,7 +49520,7 @@
 	}
 
 /***/ }),
-/* 527 */
+/* 530 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -48932,7 +49584,7 @@
 	}
 
 /***/ }),
-/* 528 */
+/* 531 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -48960,7 +49612,7 @@
 	exports['default'] = thunk;
 
 /***/ }),
-/* 529 */
+/* 532 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
